@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="..." crossorigin="anonymous" />
   </head>
   <body>
     <header class="header-container">
@@ -36,9 +37,7 @@
         <div class="grid-1-2">
           <div class="content-box">
             <h2 class="text-title">News</h2>
-            <p class="text-content">
-              
-            </p>
+            <p><span class="label-date">Oct 10.2023</span> Initial Release</p>
           </div>
           <div class="content-box">
             <h2 class="text-title">What is SWE-bench?</h2>
@@ -51,29 +50,30 @@
               SWE-bench aims to serve as a testbed for evaluating language models that are more
               practical, intelligent, and autonomous with practical applications in software.
             </p>
+            <div class="button-container" style="margin-top:1em;">
+              <a class="button unfilled" href="TODO">
+                <i class="fa fa-paperclip"></i> Paper
+              </a>
+            </div>
             <div class="button-container">
-              <div>
-                <a class="button unfilled" href="">
-                  Paper (arXiv)
-                </a>
-              </div>
+              <a class="button unfilled" href="TODO">
+                <i class="fab fa-github"></i> GitHub
+              </a>
             </div>
           </div>
           <div class="content-box">
             <h2 class="text-title">Download</h2>
-            <div class="button-container">
-              <div>
-                <a class="button unfilled" href="">
-                  Download
-                </a>
-              </div>
+            <div class="button-container" style="margin-top:1em;">
+              <a class="button unfilled" href="TODO">
+                <i class="fa fa-download"></i> Download
+              </a>
             </div>
           </div>
           <div class="content-box">
             <h2 class="text-title">Question & Contributing</h2>
             <p class="text-content">
               If you have any questions or would like to contribute to SWE-bench, you can
-              post an issue on the SWE-bench <a href="">GitHub issues page</a>.
+              post an issue on the SWE-bench <a href="TODO">GitHub issues page</a>.
               Also, please feel free to contact <a href="http://www.carlosejimenez.com/">Carlos Jimenez</a> and
               <a href="https://john-b-yang.github.io/">John Yang</a> directly.
             </p>
@@ -113,19 +113,25 @@
         <div class="grid-1-2">
           <div class="content-box">
             <h2 class="text-title">Leaderboard</h2>
+            <p class="text-content">
+              The <b>% Resolved</b> metrics refers to the percentage of SWE-bench tasks (2294 total)
+              that were <i>resolved</i> by the model. For this leaderboard, we do not consider
+              models that generate based on the "oracle" retrieval setting (correct files to edit are
+              given directly to the model).
+            </p>
             <table class="content-table">
               <thead>
                 <tr>
                   <th>Rank</th>
                   <th>Model</th>
-                  <th>Test BPB</th>
+                  <th>% Resolved</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <td>
                     <p class="rank-number">1.</p>
-                    <p><span class="label-date">Jan 1.2021</span></p>
+                    <p><span class="label-date">Oct 10.2023</span></p>
                   </td>
                   <td>
                     <p class="model-type">GPT-3 (Zero-Shot)*</p>
@@ -133,22 +139,11 @@
                   </td>
                   <td><p class="number">0.7177</p></td>
                 </tr>
-                <tr>
-                  <td>
-                    <p class="rank-number">2.</p>
-                    <p><span class="label-date">Jan 1.2021</span></p>
-                  </td>
-                  <td>
-                    <p class="model-type">GPT-2 (Zero-Shot)*</p>
-                    <p class="model-owner">OpenAI</p>
-                  </td>
-                  <td><p class="number">1.2253</p></td>
-                </tr>
               </tbody>
             </table>
             <div class="centered-text-container">
               <p class="text-content centralize-text">
-                <a href="">Evaluation code</a>
+                <a href="TODO">Evaluation code</a>
               </p>
             </div>
           </div>
@@ -157,7 +152,7 @@
     </section>
     <footer class="footer-container">
       <div class="content-wrapper">
-        <div class="footer-text"><a href="https://princeton-nlp.github.io/">Princeton NLP 2023</a></div>
+        <div class="footer-text"><a href="https://princeton-nlp.github.io/">© Princeton NLP 2023</a></div>
       </div>
     </footer>
   </body>
