@@ -147,6 +147,84 @@
               </p>
             </div>
           </div>
+          <div class="content-box">
+            <h2 class="text-title">Leaderboard (Patch Generation)</h2>
+            <p class="text-content">
+              For this leaderboard, we consider models that generate based on the "oracle" retrieval
+              setting. "Oracle" retrieval refers to the setting where the correct <i>files</i> to edit
+              are given directly to the model. This setting is meant to focus on a model's patch generation
+              ability.
+            </p>
+            <table class="content-table">
+              <thead>
+                <tr>
+                  <th>Rank</th>
+                  <th>Model</th>
+                  <th>% Resolved</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <p class="rank-number">1.</p>
+                    <p><span class="label-date">Oct 10.2023</span></p>
+                  </td>
+                  <td>
+                    <p class="model-type">GPT-3 (Zero-Shot)*</p>
+                    <p class="model-owner">OpenAI</p>
+                  </td>
+                  <td><p class="number">0.7177</p></td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="centered-text-container">
+              <p class="text-content centralize-text">
+                <a href="TODO">Evaluation code</a>
+              </p>
+            </div>
+          </div>
+          <div class="content-box">
+            <h2 class="text-title">Leaderboard (Edit Localization)</h2>
+            <p class="text-content">
+              For this leaderboard, we evaluate models on the task of, given an
+              <i>issue</i>, does a model identify the sames files as the corresponding
+              reference solution? This task is meant to focus on a model's ability to localize
+              the correct files to edit.
+              <br><br>
+              This task is not directly comparable to the other two tasks since
+              the other two tasks require the model to generate a patch. This task only requires
+              the model to identify the files that are edited by the reference solution. In addition,
+              it is possible for models to edit files not touched by the reference solution and
+              still resolve the issue successfully.
+            </p>
+            <table class="content-table">
+              <thead>
+                <tr>
+                  <th>Rank</th>
+                  <th>Model</th>
+                  <th>% Resolved</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <p class="rank-number">1.</p>
+                    <p><span class="label-date">Oct 10.2023</span></p>
+                  </td>
+                  <td>
+                    <p class="model-type">GPT-3 (Zero-Shot)*</p>
+                    <p class="model-owner">OpenAI</p>
+                  </td>
+                  <td><p class="number">0.7177</p></td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="centered-text-container">
+              <p class="text-content centralize-text">
+                <a href="TODO">Evaluation code</a>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
