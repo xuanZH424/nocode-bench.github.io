@@ -46,84 +46,123 @@
       <section class="main-container">
         <div class="content-wrapper">
           <div class="content-box">
-            <ul class="tab">
-              <li><a href="#" class="tablinks" onclick="openCity(event, 'London')">London</a></li>
-              <li><a href="#" class="tablinks" onclick="openCity(event, 'Paris')">Paris</a></li>
-              <li><a href="#" class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</a></li>
-            </ul>
-            
-            <div id="London" class="tabcontent">
-              <h3>London</h3>
-              <p>London is the capital city of England.</p>
-            </div>
-            
-            <div id="Paris" class="tabcontent">
-              <h3>Paris</h3>
-              <p>Paris is the capital of France.</p>
-            </div>
-            
-            <div id="Tokyo" class="tabcontent">
-              <h3>Tokyo</h3>
-              <p>Tokyo is the capital of Japan.</p>
-            </div>
-          </div>
-        </div>
-        <div class="content-wrapper">
-          <div class="content-box">
             <h2 class="text-title">Leaderboard</h2>
-            <table class="table scrollable">
-              <thead>
-                <tr>
-                  <th><div class="sticky-header-content">Model</div></th>
-                  <th><div class="sticky-header-content">% Resolved</div></th>
-                  <th><div class="sticky-header-content">% Date</div></th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>
-                    <p class="model-type">GPT-4 (Zero-Shot)*</p>
-                  </td>
-                  <td><p class="number">2.7177</p></td>
-                  <td>
-                    <p><span class="label-date">2023-10-10</span></p>
-                  </td>                
-                </tr>
-                <tr>
-                  <td>
-                    <p class="model-type">GPT-3 (Zero-Shot)*</p>
-                  </td>
-                  <td><p class="number">1.7177</p></td>
-                  <td>
-                    <p><span class="label-date">2023-10-10</span></p>
-                  </td>                
-                </tr>
-                <tr>
-                  <td>
-                    <p class="model-type">GPT-2 (Zero-Shot)*</p>
-                  </td>
-                  <td><p class="number">0.7177</p></td>
-                  <td>
-                    <p><span class="label-date">2023-10-10</span></p>
-                  </td>                
-                </tr>
-                <tr>
-                  <td>
-                    <p class="model-type">GPT (Zero-Shot)*</p>
-                  </td>
-                  <td><p class="number">0.3177</p></td>
-                  <td>
-                    <p><span class="label-date">2023-10-10</span></p>
-                  </td>                
-                </tr>
-              </tbody>
-            </table>
             <p class="text-content">
               The <b>% Resolved</b> metrics refers to the percentage of SWE-bench tasks (2294 total)
-              that were <i>resolved</i> by the model. For this leaderboard, we do not consider
+              that were <i>resolved</i> by the model.
+              <br>
+              For the <b>Unassisted</b> leaderboard, we do not consider
               models that generate based on the "oracle" retrieval setting (correct files to edit are
               given directly to the model).
+              <br>
+              For the <b>Assisted</b> leaderboard, we consider models that generate based on the "oracle"
+              retrieval setting. "Oracle" retrieval refers to the setting where the correct <i>files</i>
+              to edit are given directly to the model. This setting is meant to focus on a model's patch
+              generation ability.
             </p>
+            <ul class="tab">
+              <li><a href="#" class="tablinks" onclick="openLeaderboard(event, 'Unassisted')">Unassisted</a></li>
+              <li><a href="#" class="tablinks" onclick="openLeaderboard(event, 'Assisted')">Assisted</a></li>
+            </ul>
+            
+            <div id="Unassisted" class="tabcontent">
+              <table class="table scrollable">
+                <thead>
+                  <tr>
+                    <th><div class="sticky-header-content">Model</div></th>
+                    <th><div class="sticky-header-content">% Resolved</div></th>
+                    <th><div class="sticky-header-content">% Date</div></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <p class="model-type">Claude 2 + BM25 Retrieval</p>
+                    </td>
+                    <td><p class="number">1.96</p></td>
+                    <td>
+                      <p><span class="label-date">2023-10-10</span></p>
+                    </td>                
+                  </tr>
+                  <tr>
+                    <td>
+                      <p class="model-type">SWE-Llama 13B + BM25 Retrieval</p>
+                    </td>
+                    <td><p class="number">0.70</p></td>
+                    <td>
+                      <p><span class="label-date">2023-10-10</span></p>
+                    </td>                
+                  </tr>
+                  <tr>
+                    <td>
+                      <p class="model-type">SWE-Llama 7B + BM25 Retrieval</p>
+                    </td>
+                    <td><p class="number">0.70</p></td>
+                    <td>
+                      <p><span class="label-date">2023-10-10</span></p>
+                    </td>                
+                  </tr>
+                  <tr>
+                    <td>
+                      <p class="model-type">ChatGPT 3.5 + BM25 Retrieval</p>
+                    </td>
+                    <td><p class="number">0.20</p></td>
+                    <td>
+                      <p><span class="label-date">2023-10-10</span></p>
+                    </td>                
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div id="Assisted" class="tabcontent">
+              <table class="table scrollable">
+                <thead>
+                  <tr>
+                    <th><div class="sticky-header-content">Model</div></th>
+                    <th><div class="sticky-header-content">% Resolved</div></th>
+                    <th><div class="sticky-header-content">% Date</div></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <p class="model-type">Claude 2</p>
+                    </td>
+                    <td><p class="number">4.80</p></td>
+                    <td>
+                      <p><span class="label-date">2023-10-10</span></p>
+                    </td>                
+                  </tr>
+                  <tr>
+                    <td>
+                      <p class="model-type">SWE-Llama 13B</p>
+                    </td>
+                    <td><p class="number">4.00</p></td>
+                    <td>
+                      <p><span class="label-date">2023-10-10</span></p>
+                    </td>                
+                  </tr>
+                  <tr>
+                    <td>
+                      <p class="model-type">SWE-Llama 7B</p>
+                    </td>
+                    <td><p class="number">3.00</p></td>
+                    <td>
+                      <p><span class="label-date">2023-10-10</span></p>
+                    </td>                
+                  </tr>
+                  <tr>
+                    <td>
+                      <p class="model-type">ChatGPT 3.5</p>
+                    </td>
+                    <td><p class="number">0.52</p></td>
+                    <td>
+                      <p><span class="label-date">2023-10-10</span></p>
+                    </td>                
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
         <div class="content-wrapper">
@@ -153,5 +192,26 @@
         </div>
       </div>
     </footer>
+    <script>
+      function openLeaderboard(evt, leaderboard) {
+        var i, tabcontent, tablinks;
+        // Get elements by class
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        // Remove active class
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        // Make current tabe active
+        document.getElementById(leaderboard).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+      window.onload = function() {
+        openLeaderboard(event, 'Unassisted')
+      };
+    </script>
   </body>
 </html>
