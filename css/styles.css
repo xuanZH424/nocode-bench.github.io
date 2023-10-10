@@ -185,13 +185,13 @@ button {
       color: black;
     }
     &.outline.download:hover {
-      color: wheat;
-      border-color: wheat;
+      color: var(--accent_color);
+      border-color: var(--accent_color);
       transition: all 0.2s linear;
     }
     &.outline.download:hover a {
-      color: wheat;
-      border-color: wheat;
+      color: var(--accent_color);
+      border-color: var(--accent_color);
       transition: all 0.2s linear;
     }
 }
