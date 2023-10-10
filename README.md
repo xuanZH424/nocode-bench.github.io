@@ -1,9 +1,8 @@
 <p align="center">
   <a href="https://github.com/princeton-nlp/Llamao">
-    <img src="img/swellama.svg" height="200px" alt="swellama logo" />
+    <img src="img/swellama_banner.svg" width="50%" alt="swellama logo" />
   </a>
 </p>
-
 
 # SWE-bench Website
 
