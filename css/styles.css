@@ -61,6 +61,37 @@ body {
   border-radius: 7px;
   padding: 1em;
   width: 100%;
+  &.content-box.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+}
+
+.download {
+  height: 3em;
+  width: 80%;
+  min-width: 80%;
+  color: black;
+  background: transparent;
+  border: black 2px solid;
+  border-radius: 2em;
+  transition: all 0.1s linear;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.5em;
+}
+
+.download:hover {
+  color: var(--accent_color);
+  border-color: var(--accent_color);
+  transition: all 0.1s linear;
 }
 
 .logo-container.left {
@@ -147,7 +178,7 @@ button {
       border: white 2px solid;
       border-radius: 0.5em;
       padding: 0.5em 1em;
-      margin: 0em 0.5em;
+      margin: 0.2em 0.5em;
       transition: all 0.2s linear;
       a {
         text-decoration: none;
@@ -163,35 +194,6 @@ button {
     }
     &.outline:hover a {
       color: wheat;
-      transition: all 0.2s linear;
-    }
-    &.outline.download {
-      height: 3em;
-      width: 80%;
-      min-width: 80%;
-      color: black;
-      position: relative;
-      background: transparent;
-      border: black 2px solid;
-      border-radius: 2em;
-      padding: 0.5em 1em;
-      margin: 0.4em 0.5em;
-      transition: all 0.2s linear;
-      a {
-        text-decoration: none;
-      }
-    }
-    &.outline.download a {
-      color: black;
-    }
-    &.outline.download:hover {
-      color: var(--accent_color);
-      border-color: var(--accent_color);
-      transition: all 0.2s linear;
-    }
-    &.outline.download:hover a {
-      color: var(--accent_color);
-      border-color: var(--accent_color);
       transition: all 0.2s linear;
     }
 }

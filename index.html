@@ -3,40 +3,65 @@
   <head>
     <meta charset="utf-8" />
     <title>SWE-bench</title>
-    <meta name="description" content="SWE-bench: Evaluate Language Models on Open Source Software Tasks" />
+    <meta
+      name="description"
+      content="SWE-bench: Evaluate Language Models on Open Source Software Tasks"
+    />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
     <meta property="og:image" content="/logo.png" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="..." crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="..."
+      crossorigin="anonymous"
+    />
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H9XFCMDPNS"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-H9XFCMDPNS"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-      gtag('config', 'G-H9XFCMDPNS');
+      gtag("config", "G-H9XFCMDPNS");
     </script>
   </head>
   <body>
-    <div style="padding-bottom: 50px;">
-      <section style="background-color: var(--dark_accent_color);">
-        <div class="content-wrapper title-wrapper" style="flex-direction:column;">
-          <div style="display:flex;flex-direction: row;align-items: center;padding-bottom: 15px;">
-          <h1 style="font-size:60px; padding-top: 0.4em;">
-            SWE-bench
-          </h1>
-          <img src="img/swellama.png " style="height: 100px;padding-top:0em;padding-left: 0.5em;" />
+    <div style="padding-bottom: 50px">
+      <section style="background-color: var(--dark_accent_color)">
+        <div
+          class="content-wrapper title-wrapper"
+          style="flex-direction: column"
+        >
+          <div
+            style="
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              padding-bottom: 15px;
+            "
+          >
+            <h1 style="font-size: 60px; padding-top: 0.4em">SWE-bench</h1>
+            <img
+              src="img/swellama.png "
+              style="height: 100px; padding-top: 0em; padding-left: 0.5em"
+            />
           </div>
-          <h3>
-            Can Language Models Resolve Real-World GitHub Issues?
-          </h3>
-          <div class="content-wrapper" style="margin-top:2em;">
+          <h3>Can Language Models Resolve Real-World GitHub Issues?</h3>
+          <div class="content-wrapper" style="margin-top: 2em">
             <button class="outline">
               <a href="paper.pdf">
                 <i class="fa fa-paperclip"></i> Paper&nbsp;
@@ -55,23 +80,39 @@
           <div class="content-box">
             <h2 class="text-title">Leaderboard</h2>
             <p class="text-content">
-              The <b>% Resolved</b> metrics refers to the percentage of SWE-bench instances (2294 total)
-              that were <i>resolved</i> by the model.
-              <br>
-              For the <b>Unassisted</b> leaderboard, we do not consider
-              models that generate based on the "oracle" retrieval setting (correct files to edit are
-              given directly to the model).
-              <br>
-              For the <b>Assisted</b> leaderboard, we consider models that generate based on the "oracle"
-              retrieval setting. "Oracle" retrieval refers to the setting where the correct <i>files</i>
-              to edit are given directly to the model. This setting is meant to focus on a model's patch
-              generation ability.
+              The <b>% Resolved</b> metrics refers to the percentage of
+              SWE-bench instances (2294 total) that were <i>resolved</i> by the
+              model.
+              <br />
+              For the <b>Unassisted</b> leaderboard, we do not consider models
+              that generate based on the "oracle" retrieval setting (correct
+              files to edit are given directly to the model).
+              <br />
+              For the <b>Assisted</b> leaderboard, we consider models that
+              generate based on the "oracle" retrieval setting. "Oracle"
+              retrieval refers to the setting where the correct <i>files</i>
+              to edit are given directly to the model. This setting is meant to
+              focus on a model's patch generation ability.
             </p>
             <ul class="tab">
-              <li><a href="#" class="tablinks" onclick="openLeaderboard(event, 'Unassisted')">Unassisted</a></li>
-              <li><a href="#" class="tablinks" onclick="openLeaderboard(event, 'Assisted')">Assisted</a></li>
+              <li>
+                <a
+                  href="#"
+                  class="tablinks"
+                  onclick="openLeaderboard(event, 'Unassisted')"
+                  >Unassisted</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="tablinks"
+                  onclick="openLeaderboard(event, 'Assisted')"
+                  >Assisted</a
+                >
+              </li>
             </ul>
-            
+
             <div id="Unassisted" class="tabcontent">
               <table class="table scrollable">
                 <thead>
@@ -89,7 +130,7 @@
                     <td><p class="number">1.96</p></td>
                     <td>
                       <p><span class="label-date">2023-10-10</span></p>
-                    </td>                
+                    </td>
                   </tr>
                   <tr>
                     <td>
@@ -98,7 +139,7 @@
                     <td><p class="number">0.70</p></td>
                     <td>
                       <p><span class="label-date">2023-10-10</span></p>
-                    </td>                
+                    </td>
                   </tr>
                   <tr>
                     <td>
@@ -107,7 +148,7 @@
                     <td><p class="number">0.70</p></td>
                     <td>
                       <p><span class="label-date">2023-10-10</span></p>
-                    </td>                
+                    </td>
                   </tr>
                   <tr>
                     <td>
@@ -116,7 +157,7 @@
                     <td><p class="number">0.20</p></td>
                     <td>
                       <p><span class="label-date">2023-10-10</span></p>
-                    </td>                
+                    </td>
                   </tr>
                   <tr>
                     <td>
@@ -125,7 +166,7 @@
                     <td><p class="number">0.00</p></td>
                     <td>
                       <p><span class="label-date">2023-10-10</span></p>
-                    </td>                
+                    </td>
                   </tr>
                 </tbody>
               </table>
@@ -147,7 +188,7 @@
                     <td><p class="number">4.80</p></td>
                     <td>
                       <p><span class="label-date">2023-10-10</span></p>
-                    </td>                
+                    </td>
                   </tr>
                   <tr>
                     <td>
@@ -156,7 +197,7 @@
                     <td><p class="number">4.00</p></td>
                     <td>
                       <p><span class="label-date">2023-10-10</span></p>
-                    </td>                
+                    </td>
                   </tr>
                   <tr>
                     <td>
@@ -165,7 +206,7 @@
                     <td><p class="number">3.00</p></td>
                     <td>
                       <p><span class="label-date">2023-10-10</span></p>
-                    </td>                
+                    </td>
                   </tr>
                   <tr>
                     <td>
@@ -174,7 +215,7 @@
                     <td><p class="number">1.74</p></td>
                     <td>
                       <p><span class="label-date">2023-10-10</span></p>
-                    </td>                
+                    </td>
                   </tr>
                   <tr>
                     <td>
@@ -183,7 +224,7 @@
                     <td><p class="number">0.52</p></td>
                     <td>
                       <p><span class="label-date">2023-10-10</span></p>
-                    </td>                
+                    </td>
                   </tr>
                 </tbody>
               </table>
@@ -195,68 +236,100 @@
         </div>
         <div class="content-wrapper">
           <div class="content-box">
-          <h2 class="text-title">Resources</h2>
-          <p class="text-content">
-            We provide the original dataset, including preprocessed versions, and the models used in our paper.
-          </p>
-          <div class="content-wrapper" style="width: 100%;">
-            <div class="content-box" style="display: flex; flex-direction: column; align-items: center; border: none; padding: 0; margin: 0; width: 100%;">
-              <button class="outline download">
-                <a href="https://huggingface.co/datasets/princeton-nlp/SWE-bench">
-                  🤗 SWE-bench
+            <h2 class="text-title">Resources</h2>
+            <p class="text-content">
+              You can download the 2294 SWE-bench evaluation instances from HuggingFace or directly as a JSON
+              file from this <a href="https://drive.google.com/uc?export=download&id=164g55i3_B78F6EphCZGtgSrd2GneFyRM">download link</a>.
+              For your convenience, to fine tune your own model for evaluation on SWE-bench, we provide five pre-tokenized
+              datasets at different retrieval settings ("Oracle", 13k, 27k, 50k) with two different tokenizers
+              (Llama and cl100k).
+            </p>
+            <div class="content-wrapper" style="width: 100%">
+              <div class="content-box column">
+                <a
+                  style="width: 100%"
+                  href="https://huggingface.co/datasets/princeton-nlp/SWE-bench"
+                >
+                  <div class="download">🤗 SWE-bench</div>
                 </a>
-              </button>
-              <button class="outline download">
-                <a href="https://huggingface.co/datasets/princeton-nlp/SWE-bench_oracle_llama">
-                  🤗 "Oracle" Retrieval (Llama tokenized)
+                <a
+                  style="width: 100%"
+                  href="https://huggingface.co/datasets/princeton-nlp/SWE-bench_oracle_llama"
+                >
+                  <div class="download">
+                    🤗 "Oracle" Retrieval (Llama tokenized)
+                  </div>
                 </a>
-              </button>
-              <button class="outline download">
-                <a href="https://huggingface.co/datasets/princeton-nlp/SWE-bench_oracle_cl100k">
-                  🤗 "Oracle" Retrieval (cl100k tokenized)
+                <a
+                  style="width: 100%"
+                  href="https://huggingface.co/datasets/princeton-nlp/SWE-bench_oracle_cl100k"
+                >
+                  <div class="download">
+                    🤗 "Oracle" Retrieval (cl100k tokenized)
+                  </div>
                 </a>
-              </button>
-              <button class="outline download">
-                <a href="https://huggingface.co/datasets/princeton-nlp/SWE-bench_bm25_13k_cl100k">
-                  🤗 BM25 Retrieval 13k (cl100k tokenized)
+              </div>
+              <div class="content-box column">
+                <a
+                  style="width: 100%"
+                  href="https://huggingface.co/datasets/princeton-nlp/SWE-bench_bm25_13k_cl100k"
+                >
+                  <div class="download">
+                    🤗 BM25 Retrieval 13k (cl100k tokenized)
+                  </div>
                 </a>
-              </button>
-              <button class="outline download">
-                <a href="https://huggingface.co/datasets/princeton-nlp/SWE-bench_bm25_27k_cl100k">
-                  🤗 BM25 Retrieval 27k (cl100k tokenized)
+                <a
+                  style="width: 100%"
+                  href="https://huggingface.co/datasets/princeton-nlp/SWE-bench_bm25_27k_cl100k"
+                >
+                  <div class="download">
+                    🤗 BM25 Retrieval 27k (cl100k tokenized)
+                  </div>
                 </a>
-              </button>
+                <a
+                  style="width: 100%"
+                  href="https://huggingface.co/datasets/princeton-nlp/SWE-bench_bm25_50k_llama"
+                >
+                  <div class="download">
+                    🤗 BM25 Retrieval 50k (Llama tokenized)
+                  </div>
+                </a>
+              </div>
             </div>
-
-              <div class="content-box" style="display: flex; flex-direction: column; align-items: center; margin: 0; padding: 0; border: none; width: 100%;">
-              <button class="outline download">
-                <a href="https://huggingface.co/datasets/princeton-nlp/SWE-bench_bm25_50k_llama">
-                  🤗 BM25 Retrieval 50k (Llama tokenized)
+            <p class="text-content" style="margin-top:1em;">
+              In addition, we also provide the SWE-Llama models at 13b and 7b parameters, along with their PEFT counterparts.
+            </p>
+            <div class="content-wrapper" style="width: 100%">
+              <div class="content-box column">
+                <a
+                  style="width: 100%"
+                  href="https://huggingface.co/princeton-nlp/SWE-Llama-13b"
+                >
+                  <div class="download">🦙 SWE-Llama 13b</div>
                 </a>
-              </button>
-              <button class="outline download">
-                <a href="https://huggingface.co/princeton-nlp/SWE-Llama-13b">
-                  🦙 SWE-Llama 13b
+                <a
+                  style="width: 100%"
+                  href="https://huggingface.co/princeton-nlp/SWE-Llama-13b-peft"
+                >
+                  <div class="download">🦙 SWE-Llama 13b (PEFT)</div>
                 </a>
-              </button>
-              <button class="outline download">
-                <a href="https://huggingface.co/princeton-nlp/SWE-Llama-13b-peft">
-                  🦙 SWE-Llama 13b (PEFT)
+              </div>
+              <div class="content-box column">
+                <a
+                  style="width: 100%"
+                  href="https://huggingface.co/princeton-nlp/SWE-Llama-7b"
+                >
+                  <div class="download">🦙 SWE-Llama 7b</div>
                 </a>
-              </button>
-              <button class="outline download">
-                <a href="https://huggingface.co/princeton-nlp/SWE-Llama-7b">
-                  🦙 SWE-Llama 7b
+                <a
+                  style="width: 100%"
+                  href="https://huggingface.co/princeton-nlp/SWE-Llama-7b-peft"
+                >
+                  <div class="download">🦙 SWE-Llama 7b (PEFT)</div>
                 </a>
-              </button>
-              <button class="outline download">
-                <a href="https://huggingface.co/princeton-nlp/SWE-Llama-7b-peft">
-                  🦙 SWE-Llama 7b (PEFT)
-                </a>
-              </button>
+              </div>
             </div>
           </div>
-        </div>
         </div>
         <div class="content-wrapper">
           <div class="content-box">
@@ -272,20 +345,34 @@
     booktitle = {ArXiv},
     year = {2023},
   }</code> -->
-              <b>Disclaimer:</b> SWE-bench is for research purposes only. Models trained and evaluated on SWE-bench can produce unexpected results. We are not responsible for any damages caused by the use of SWE-bench, including but not limited to, any loss of profit, data, or use of data.
+              <b>Disclaimer:</b> SWE-bench is for research purposes only. Models
+              trained and evaluated on SWE-bench can produce unexpected results.
+              We are not responsible for any damages caused by the use of
+              SWE-bench, including but not limited to, any loss of profit, data,
+              or use of data.
             </p>
-            <p>
-              Correspondence to: {<a href="mailto:carlosej@princeton.edu">carlosej</a>,<a href="mailto:jy1682@princeton.edu">jy1682</a>}@princeton.edu
+            <p class="text-content">
+              Correspondence to: {<a href="mailto:carlosej@princeton.edu"
+                >carlosej</a
+              >,<a href="mailto:jy1682@princeton.edu">jy1682</a>}@princeton.edu
             </p>
             <div class="content-wrapper">
-              <img src="img/princeton_seal.svg" style="height: 3em;padding-top:0.5em;padding-right: 1em" />
-              <img src="img/pli_logo.svg" style="height: 3em;padding-top:0.5em;padding-right: 1em" />
-              <img src="img/chicago_seal.svg" style="height: 3em;padding-top:0.5em;padding-right: 1em" />
+              <img
+                src="img/princeton_seal.svg"
+                style="height: 3em; padding-top: 0.5em; padding-right: 1em"
+              />
+              <img
+                src="img/pli_logo.svg"
+                style="height: 3em; padding-top: 0.5em; padding-right: 1em"
+              />
+              <img
+                src="img/chicago_seal.svg"
+                style="height: 3em; padding-top: 0.5em; padding-right: 1em"
+              />
             </div>
           </div>
         </div>
       </section>
-
     </div>
     <footer class="footer-container">
       <div class="content-wrapper">
@@ -300,19 +387,19 @@
         // Get elements by class
         tabcontent = document.getElementsByClassName("tabcontent");
         for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
+          tabcontent[i].style.display = "none";
         }
         // Remove active class
         tablinks = document.getElementsByClassName("tablinks");
         for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
         }
         // Make current tab active
         document.getElementById(leaderboard).style.display = "block";
         evt.currentTarget.className += " active";
       }
-      window.onload = function() {
-        openLeaderboard(event, 'Unassisted')
+      window.onload = function () {
+        openLeaderboard(event, "Unassisted");
       };
     </script>
   </body>
