@@ -1,3 +1,10 @@
+<p align="center">
+  <a href="https://github.com/princeton-nlp/Llamao">
+    <img src="img/swellama.svg" height="200px" alt="swellama logo" />
+  </a>
+</p>
+
+
 # SWE-bench Website
 
 This repository contains the code for the website and leaderboard of the SWE-bench project.
