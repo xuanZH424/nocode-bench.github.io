@@ -40,15 +40,6 @@ p {
 
 a {
   text-decoration: none;
-  color: var(--black);
-}
-
-.bold {
-  font-weight: bold;
-}
-
-.centralize-text {
-  text-align: center;
 }
 
 body {
@@ -57,22 +48,11 @@ body {
   color: var(--black);
 }
 
-.header-container {
-  height: 4em;
-  background-color: var(--dark_accent_color);
-  justify-content: center;
-}
-
 .content-wrapper {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   padding: 0 1em;
-}
-
-.grid-1-2 {
-  margin: 1em 0;
-  max-width: 100%;
 }
 
 .content-box {
@@ -108,42 +88,6 @@ h1.logo {
   justify-content: center;
   /* padding order: top right bottom left */
   padding: 1em 5em 2em 5em;
-}
-
-.subtitle {
-  position: absolute;
-  top: 3.8em;
-  left: 1.2em;
-  font-size: 0.6em;
-  font-weight: 300;
-  font-style: italic;
-}
-
-.logo-button {
-  background-color: var(--blue);
-  display: inline-block;
-  padding: 0.15em 1.1em;
-  position: relative;
-}
-
-.logo-button .logo-button-text {
-  font-size: 0.6em;
-  position: relative;
-  bottom: 0.2em;
-  left: 0.4em;
-  font-weight: bold;
-}
-
-.logo-button .logo-button-icon {
-  top: 0.4em;
-  left: 0.4em;
-  position: absolute;
-  width: 11px;
-  height: 11px;
-}
-
-a.logo-button:hover {
-  filter: brightness(85%);
 }
 
 .main-container {
@@ -191,79 +135,35 @@ code {
   color: #ffffff;
 }
 
-
-.small-text {
-  font-size: 0.85em;
-  font-weight: 300;
-}
-
-.image-content {
-  text-align: center;
-}
-
-.image-content img {
-  width: 100%;
-}
-
-.button-container {
-  text-align: center;
-}
-
-.centered-text-container {
-  margin-top: 0.6em;
-  text-align: center;
-}
-
-.button-container button.button,
-.button-container a.button {
-  width: 12.3em;
-  height: 2.22em;
-  margin-bottom: 1em;
-  color: white;
-  border: 0 none;
+button {
   cursor: pointer;
-  display: inline-block;
-  padding: 0.45em 0;
-  box-sizing: border-box;
-}
-
-.button-container button.button:hover,
-.button-container a.button:hover {
-  filter: brightness(85%);
-}
-
-button.button.green,
-a.button.green {
-  background-color: var(--green);
-}
-button.button.blue,
-a.button.blue {
-  background-color: var(--blue);
-}
-
-button.button.unfilled,
-a.button.unfilled {
-  background-color: transparent;
-  border: 1px solid var(--blue);
-  color: var(--blue);
-  font-weight: normal;
-  position: relative;
-}
-button.button.unfilled:hover,
-a.button.unfilled:hover {
-  border-color: var(--grey);
-  color: var(--grey);
-}
-
-.button-icon {
-  position: absolute;
-  right: 0.9em;
-  top: 0.45em;
-}
-
-.content-table {
-  margin-top: 1.7em;
-  width: 100%;
+  outline: none;
+    &.outline {
+      height: 3em;
+      width: 8em;
+      position: relative;
+      background: transparent;
+      border: var(--black) 2px solid;
+      border-radius: 0.5em;
+      padding: 0.5em 1em;
+      margin: 0em 0.5em;
+      transition: all 0.2s linear;
+      a {
+        text-decoration: none;
+      }
+    }
+    &.outline:hover {
+      color: white;
+      border-color: white;
+      transition: all 0.2s linear;
+    }
+    &.outline a {
+      color: var(--black);
+    }
+    &.outline:hover a {
+      color: white;
+      transition: all 0.2s linear;
+    }
 }
 
 table,
@@ -273,37 +173,6 @@ tr {
   margin: 0;
   padding: 0;
   border-collapse: collapse;
-}
-
-.content-table td,
-th {
-  text-align: center;
-  font-size: 0.9em;
-}
-
-.content-table th {
-  padding: 1em 0;
-}
-
-.content-table tr td {
-  padding: 0.8em 0em;
-}
-.model-owner {
-  font-weight: 300;
-  font-style: italic;
-}
-
-.content-table thead th {
-  border-top: 1px solid var(--accent_color);
-  border-bottom: 1px solid var(--accent_color);
-}
-
-.content-table tbody td {
-  border-bottom: 1px dotted var(--accent_color);
-}
-
-.rank-number {
-  margin-bottom: 0.5em;
 }
 
 .label-date {
@@ -320,16 +189,19 @@ th {
 }
 
 .footer-container {
-  margin-top: 2em;
   background-color: var(--accent_color);
   padding: 0.75em 0;
-  position: absolute;
+  position: fixed;
   bottom: 0;
-  width: 100%;
+  right: 0;
+  left: 0;
 }
 
 .footer-text {
   margin-left: auto;
+  & a {
+    color: var(--black);
+  }
 }
 
 /* ------ RESPONSIVE STYLES ------ */
