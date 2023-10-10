@@ -25,7 +25,7 @@
           <img src="img/swellama.svg " style="height: 100px;padding-top:0em;padding-left: 0.5em;" />
           </div>
           <h3>
-            Evaluating Language Models on Software Development
+            Can Language Models Resolve Real-World GitHub Issues?
           </h3>
           <div class="content-wrapper" style="margin-top:2em;">
             <button class="outline">
@@ -46,7 +46,7 @@
           <div class="content-box">
             <h2 class="text-title">Leaderboard</h2>
             <p class="text-content">
-              The <b>% Resolved</b> metrics refers to the percentage of SWE-bench tasks (2294 total)
+              The <b>% Resolved</b> metrics refers to the percentage of SWE-bench instances (2294 total)
               that were <i>resolved</i> by the model.
               <br>
               For the <b>Unassisted</b> leaderboard, we do not consider
@@ -165,6 +165,71 @@
         </div>
         <div class="content-wrapper">
           <div class="content-box">
+          <h2 class="text-title">Resources</h2>
+          <p class="text-content">
+            We provide the original dataset, including preprocessed versions, and the models used in our paper.
+          </p>
+          <div class="content-wrapper">
+            <div class="content-box" style="display: flex; flex-direction: column; align-items: center; border: none; padding: 0; margin: 0;">
+              <button class="outline download">
+                <a href="https://huggingface.co/datasets/princeton-nlp/SWE-bench">
+                  🤗 SWE-bench
+                </a>
+              </button>
+              <button class="outline download">
+                <a href="https://huggingface.co/datasets/princeton-nlp/SWE-bench_oracle_llama">
+                  🤗 "Oracle" Retrieval (Llama tokenized)
+                </a>
+              </button>
+              <button class="outline download">
+                <a href="https://huggingface.co/datasets/princeton-nlp/SWE-bench_oracle_cl100k">
+                  🤗 "Oracle" Retrieval (cl100k tokenized)
+                </a>
+              </button>
+              <button class="outline download">
+                <a href="https://huggingface.co/datasets/princeton-nlp/SWE-bench_bm25_13k_cl100k">
+                  🤗 BM25 Retrieval 13k (cl100k tokenized)
+                </a>
+              </button>
+              <button class="outline download">
+                <a href="https://huggingface.co/datasets/princeton-nlp/SWE-bench_bm25_27k_cl100k">
+                  🤗 BM25 Retrieval 27k (cl100k tokenized)
+                </a>
+              </button>
+            </div>
+
+              <div class="content-box" style="display: flex; flex-direction: column; align-items: center; margin: 0; padding: 0; border: none;">
+              <button class="outline download">
+                <a href="https://huggingface.co/datasets/princeton-nlp/SWE-bench_bm25_50k_llama">
+                  🤗 BM25 Retrieval 50k (Llama tokenized)
+                </a>
+              </button>
+              <button class="outline download">
+                <a href="https://huggingface.co/princeton-nlp/SWE-Llama-13b">
+                  🦙 SWE-Llama 13b
+                </a>
+              </button>
+              <button class="outline download">
+                <a href="https://huggingface.co/princeton-nlp/SWE-Llama-13b-peft">
+                  🦙 SWE-Llama 13b (PEFT)
+                </a>
+              </button>
+              <button class="outline download">
+                <a href="https://huggingface.co/princeton-nlp/SWE-Llama-7b">
+                  🦙 SWE-Llama 7b
+                </a>
+              </button>
+              <button class="outline download">
+                <a href="https://huggingface.co/princeton-nlp/SWE-Llama-7b-peft">
+                  🦙 SWE-Llama 7b (PEFT)
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="content-wrapper">
+          <div class="content-box">
             <h2 class="text-title">About</h2>
             <p class="text-content">
               <!-- Citation: <pre>
@@ -179,6 +244,9 @@
   }</code> -->
               <b>Disclaimer:</b> SWE-bench is for research purposes only. Models trained and evaluated on SWE-bench can produce unexpected results. We are not responsible for any damages caused by the use of SWE-bench, including but not limited to, any loss of profit, data, or use of data.
             </p>
+            <p>
+              Correspondence to: {<a href="mailto:carlosej@princeton.edu">carlosej</a>,<a href="mailto:jy1682@princeton.edu">jy1682</a>}@princeton.edu
+            </p>
             <div class="content-wrapper">
               <img src="img/princeton_seal.svg" style="height: 3em;padding-top:0.5em;padding-right: 1em" />
               <img src="img/pli_logo.svg" style="height: 3em;padding-top:0.5em;padding-right: 1em" />
@@ -187,6 +255,7 @@
           </div>
         </div>
       </section>
+
     </div>
     <footer class="footer-container">
       <div class="content-wrapper">

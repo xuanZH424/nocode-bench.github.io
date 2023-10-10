@@ -88,6 +88,7 @@ h1.logo {
   justify-content: center;
   /* padding order: top right bottom left */
   padding: 2em 5em 2em 5em;
+  color: white;
 }
 
 .main-container {
@@ -143,7 +144,7 @@ button {
       width: 8em;
       position: relative;
       background: transparent;
-      border: var(--black) 2px solid;
+      border: white 2px solid;
       border-radius: 0.5em;
       padding: 0.5em 1em;
       margin: 0em 0.5em;
@@ -153,15 +154,44 @@ button {
       }
     }
     &.outline:hover {
-      color: white;
-      border-color: white;
+      color: wheat;
+      border-color: wheat;
       transition: all 0.2s linear;
     }
     &.outline a {
-      color: var(--black);
+      color: white;
     }
     &.outline:hover a {
-      color: white;
+      color: wheat;
+      transition: all 0.2s linear;
+    }
+    &.outline.download {
+      height: 3em;
+      width: 80%;
+      min-width: 80%;
+      color: black;
+      position: relative;
+      background: transparent;
+      border: black 2px solid;
+      border-radius: 2em;
+      padding: 0.5em 1em;
+      margin: 0.4em 0.5em;
+      transition: all 0.2s linear;
+      a {
+        text-decoration: none;
+      }
+    }
+    &.outline.download a {
+      color: black;
+    }
+    &.outline.download:hover {
+      color: wheat;
+      border-color: wheat;
+      transition: all 0.2s linear;
+    }
+    &.outline.download:hover a {
+      color: wheat;
+      border-color: wheat;
       transition: all 0.2s linear;
     }
 }
@@ -232,7 +262,7 @@ tr {
 .footer-text {
   margin-left: auto;
   & a {
-    color: var(--black);
+    color: white;
   }
 }
 
