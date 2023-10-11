@@ -180,20 +180,11 @@ button {
       padding: 0.5em 1em;
       margin: 0.2em 0.5em;
       transition: all 0.2s linear;
-      a {
-        text-decoration: none;
-      }
+      color: white;
     }
     &.outline:hover {
       color: wheat;
       border-color: wheat;
-      transition: all 0.2s linear;
-    }
-    &.outline a {
-      color: white;
-    }
-    &.outline:hover a {
-      color: wheat;
       transition: all 0.2s linear;
     }
 }
