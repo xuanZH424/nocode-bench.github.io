@@ -83,6 +83,7 @@
               <li>
                 <a
                   href="#"
+                  id="tab-unassisted"
                   class="tablinks"
                   onclick="openLeaderboard(event, 'Unassisted')"
                   >Unassisted</a
@@ -91,6 +92,7 @@
               <li>
                 <a
                   href="#"
+                  id="tab-assisted"
                   class="tablinks"
                   onclick="openLeaderboard(event, 'Assisted')"
                   >Assisted</a
@@ -416,6 +418,7 @@
       }
       window.onload = function () {
         openLeaderboard(event, "Unassisted");
+        document.getElementById("tab-unassisted").className += " active";
       };
     </script>
   </body>
