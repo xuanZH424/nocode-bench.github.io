@@ -223,14 +223,12 @@
               The <b>% Resolved</b> metrics refers to the percentage of SWE-bench instances (2294 total)
               that were <i>resolved</i> by the model.
               <br>
-              For the <b>Unassisted</b> leaderboard, we do not consider
-              models that generate based on the "oracle" retrieval setting (correct files to edit are
-              given directly to the model).
+              For the <b>Unassisted</b> leaderboard, we only consider systems that have no assistance 
+              finding the relevant files in the repository.
               <br>
               For the <b>Assisted</b> leaderboard, we consider models that generate based on the "oracle"
-              retrieval setting. "Oracle" retrieval refers to the setting where the correct <i>files</i>
-              to edit are given directly to the model. This setting is meant to focus on a model's patch
-              generation ability.
+              retrieval setting. "Oracle" retrieval refers to the setting where systems are provided the list 
+              of files that were modified in the pull request.
             </p>
           </div>
         </div>
