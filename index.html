@@ -90,7 +90,7 @@
                 <a
                   href="#"
                   id="tab-unassisted"
-                  class="tablinks"
+                  class="tablinks all"
                   style="border-right: var(--accent_color) 1px solid;"
                   onclick="openLeaderboard(event, 'Unassisted')"
                   >Unassisted</a
@@ -100,7 +100,7 @@
                 <a
                   href="#"
                   id="tab-assisted"
-                  class="tablinks"
+                  class="tablinks all"
                   style="border-right: var(--accent_color) 1px solid;"
                   onclick="openLeaderboard(event, 'Assisted')"
                   >Assisted</a
@@ -108,13 +108,13 @@
               </li>
             </ul>
 
-            <div id="Unassisted" class="tabcontent">
+            <div id="Unassisted" class="tabcontent tabcontentall">
               <table class="table scrollable">
                 <thead>
                   <tr>
                     <th><div class="sticky-header-content">Model</div></th>
                     <th><div class="sticky-header-content">% Resolved</div></th>
-                    <th><div class="sticky-header-content">% Date</div></th>
+                    <th><div class="sticky-header-content">Date</div></th>
                   </tr>
                 </thead>
                 <tbody>
@@ -166,13 +166,13 @@
                 </tbody>
               </table>
             </div>
-            <div id="Assisted" class="tabcontent">
+            <div id="Assisted" class="tabcontent tabcontentall">
               <table class="table scrollable">
                 <thead>
                   <tr>
                     <th><div class="sticky-header-content">Model</div></th>
                     <th><div class="sticky-header-content">% Resolved</div></th>
-                    <th><div class="sticky-header-content">% Date</div></th>
+                    <th><div class="sticky-header-content">Date</div></th>
                   </tr>
                 </thead>
                 <tbody>
@@ -241,6 +241,149 @@
             <p class="text-content">
               <b>Submissions:</b> Please email the authors at <a href="mailto:carlosej@princeton.edu,jy1682@princeton.edu">{carlosej, jy1682}@princeton.edu</a> for consideration.
             </p>
+          </div>
+        </div>
+        <div class="content-wrapper">
+          <div class="content-box">
+            <h2 class="text-title">Leaderboard (Lite)</h2>
+            <ul class="tab">
+              <li>
+                <a
+                  href="#"
+                  id="tab-unassisted-lite"
+                  class="tablinks lite"
+                  style="border-right: var(--accent_color) 1px solid;"
+                  onclick="openLeaderboard(event, 'UnassistedLite')"
+                  >Unassisted</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  id="tab-assisted-lite"
+                  class="tablinks lite"
+                  style="border-right: var(--accent_color) 1px solid;"
+                  onclick="openLeaderboard(event, 'AssistedLite')"
+                  >Assisted</a
+                >
+              </li>
+            </ul>
+            <div id="UnassistedLite" class="tabcontent tabcontentlite">
+              <table class="table scrollable">
+                <thead>
+                  <tr>
+                    <th><div class="sticky-header-content">Model</div></th>
+                    <th><div class="sticky-header-content">% Resolved</div></th>
+                    <th><div class="sticky-header-content">Date</div></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <p class="model-type">Claude 2 + BM25 Retrieval</p>
+                    </td>
+                    <td><p class="number">1.96</p></td>
+                    <td>
+                      <p><span class="label-date">2023-10-10</span></p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p class="model-type">SWE-Llama 13B + BM25 Retrieval</p>
+                    </td>
+                    <td><p class="number">0.70</p></td>
+                    <td>
+                      <p><span class="label-date">2023-10-10</span></p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p class="model-type">SWE-Llama 7B + BM25 Retrieval</p>
+                    </td>
+                    <td><p class="number">0.70</p></td>
+                    <td>
+                      <p><span class="label-date">2023-10-10</span></p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p class="model-type">ChatGPT 3.5 + BM25 Retrieval</p>
+                    </td>
+                    <td><p class="number">0.20</p></td>
+                    <td>
+                      <p><span class="label-date">2023-10-10</span></p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p class="model-type">GPT 4 + BM25 Retrieval*</p>
+                    </td>
+                    <td><p class="number">0.00</p></td>
+                    <td>
+                      <p><span class="label-date">2023-10-10</span></p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div id="AssistedLite" class="tabcontent tabcontentlite">
+              <table class="table scrollable">
+                <thead>
+                  <tr>
+                    <th><div class="sticky-header-content">Model</div></th>
+                    <th><div class="sticky-header-content">% Resolved</div></th>
+                    <th><div class="sticky-header-content">Date</div></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <p class="model-type">Claude 2</p>
+                    </td>
+                    <td><p class="number">4.80</p></td>
+                    <td>
+                      <p><span class="label-date">2023-10-10</span></p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p class="model-type">SWE-Llama 13B</p>
+                    </td>
+                    <td><p class="number">3.97</p></td>
+                    <td>
+                      <p><span class="label-date">2023-10-10</span></p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p class="model-type">SWE-Llama 7B</p>
+                    </td>
+                    <td><p class="number">3.01</p></td>
+                    <td>
+                      <p><span class="label-date">2023-10-10</span></p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p class="model-type">GPT 4*</p>
+                    </td>
+                    <td><p class="number">1.74</p></td>
+                    <td>
+                      <p><span class="label-date">2023-10-10</span></p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p class="model-type">ChatGPT 3.5</p>
+                    </td>
+                    <td><p class="number">0.52</p></td>
+                    <td>
+                      <p><span class="label-date">2023-10-10</span></p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
         <div class="content-wrapper">
@@ -423,13 +566,16 @@
         evt.preventDefault();
 
         var i, tabcontent, tablinks;
-        // Get elements by class
-        tabcontent = document.getElementsByClassName("tabcontent");
+        var tag = "all"
+        if (leaderboard.includes("Lite")) {
+          tag = "lite"
+        }
+
+        tabcontent = document.getElementsByClassName("tabcontent" + tag);
         for (i = 0; i < tabcontent.length; i++) {
           tabcontent[i].style.display = "none";
         }
-        // Remove active class
-        tablinks = document.getElementsByClassName("tablinks");
+        tablinks = document.getElementsByClassName(tag);
         for (i = 0; i < tablinks.length; i++) {
           tablinks[i].className = tablinks[i].className.replace(" active", "");
         }
@@ -446,8 +592,16 @@
         document.getElementById("tab-assisted").addEventListener("click", function(event) {
           openLeaderboard(event, "Assisted");
         });
+        document.getElementById("tab-unassisted-lite").addEventListener("click", function(event) {
+          openLeaderboard(event, "UnassistedLite");
+        });
+        document.getElementById("tab-assisted-lite").addEventListener("click", function(event) {
+          openLeaderboard(event, "AssistedLite");
+        });
         openLeaderboard(event, "Unassisted");
         document.getElementById("tab-unassisted").className += " active";
+        openLeaderboard(event, "UnassistedLite");
+        document.getElementById("tab-unassisted-lite").className += " active";
       };
     </script>
   </body>
