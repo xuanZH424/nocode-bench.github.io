@@ -417,7 +417,11 @@
       </div>
     </footer>
     <script>
+      // Define function to handle tab clicks
       function openLeaderboard(evt, leaderboard) {
+        // Prevent default action
+        evt.preventDefault();
+
         var i, tabcontent, tablinks;
         // Get elements by class
         tabcontent = document.getElementsByClassName("tabcontent");
@@ -433,7 +437,15 @@
         document.getElementById(leaderboard).style.display = "block";
         evt.currentTarget.className += " active";
       }
+
+      // Add event listeners to tab links
       window.onload = function () {
+        document.getElementById("tab-unassisted").addEventListener("click", function(event) {
+          openLeaderboard(event, "Unassisted");
+        });
+        document.getElementById("tab-assisted").addEventListener("click", function(event) {
+          openLeaderboard(event, "Assisted");
+        });
         openLeaderboard(event, "Unassisted");
         document.getElementById("tab-unassisted").className += " active";
       };
