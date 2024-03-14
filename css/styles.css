@@ -117,8 +117,7 @@ h1.logo {
 .title-wrapper {
   align-items: center;
   justify-content: center;
-  /* padding order: top right bottom left */
-  padding: 2em 5em 2em 5em;
+  padding: 2em 5em;
   color: white;
 }
 
