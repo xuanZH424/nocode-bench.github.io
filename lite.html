@@ -67,6 +67,43 @@
               To remedy these issues, we've released a canonical subset of SWE-bench called SWE-bench lite. SWE-bench lite comprises 300 instances from SWE-bench that have been sampled to be more self-contained, with a focus on evaluating functional bug fixes. SWE-bench lite covers 11 of the original 12 repositories in SWE-bench, with a similar diversity and distribution of repositories as the original. We perform similar filtering on the SWE-bench dev set to provide 23 development instances that can be useful for active development on the SWE-bench task. We recommend future systems evaluating on SWE-bench to report numbers on SWE-bench lite in lieu of the full SWE-bench set if necessary. You can find the source code for how SWE-bench lite was created in <a href="https://github.com/princeton-nlp/SWE-bench/tree/main/collect/make_lite">SWE-bench/collect/make_lite</a>.
           </p>
           <br/>
+          <div class="content-wrapper" style="width: 100%">
+            <div class="content-box column">
+              <a
+                style="width: 100%"
+                href="https://huggingface.co/datasets/princeton-nlp/SWE-bench_Lite"
+              >
+                <div class="download">🤗 SWE-bench Lite</div>
+              </a>
+              <a
+                style="width: 100%"
+                href="https://huggingface.co/datasets/princeton-nlp/SWE-bench_Lite_oracle"
+              >
+                <div class="download">
+                  🤗 "Oracle" Retrieval Lite
+                </div>
+              </a>
+            </div>
+            <div class="content-box column">
+              <a
+                style="width: 100%"
+                href="https://huggingface.co/datasets/princeton-nlp/SWE-bench_Lite_bm25_13K"
+              >
+                <div class="download">
+                  🤗 BM25 Retrieval 13K Lite
+                </div>
+              </a>
+              <a
+                style="width: 100%"
+                href="https://huggingface.co/datasets/princeton-nlp/SWE-bench_Lite_bm25_27K"
+              >
+                <div class="download">
+                  🤗 BM25 Retrieval 27K Lite
+                </div>
+              </a>
+            </div>
+          </div>
+          <br/>
           <img src="img/swebench-lite-pie.png" style="width: 50%; max-width: 400px; margin: auto; display: block;"/>
           <p class="text-content" style="width: 50%; margin: auto; text-align: center;">
             SWE-bench Lite distribution across repositories. Compare to the full SWE-bench in Figure 3 of the <a href="https://arxiv.org/abs/2310.06770">SWE-bench paper</a>.
