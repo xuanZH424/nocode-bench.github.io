@@ -72,7 +72,17 @@
               Since its release, we've found that for most systems evaluating on SWE-bench, running each instance can take a lot of time and compute. We've also found that SWE-bench can be a particularly difficult benchmark, which is useful for evaluating LMs in the long term, but discouraging for systems trying to make progress in the short term.
               <br/>
               <br/>
-              To remedy these issues, we've released a canonical subset of SWE-bench called SWE-bench Lite. SWE-bench Lite comprises 300 instances from SWE-bench that have been sampled to be more self-contained, with a focus on evaluating functional bug fixes. SWE-bench Lite covers 11 of the original 12 repositories in SWE-bench, with a similar diversity and distribution of repositories as the original. We perform similar filtering on the SWE-bench dev set to provide 23 development instances that can be useful for active development on the SWE-bench task. We recommend future systems evaluating on SWE-bench to report numbers on SWE-bench Lite in lieu of the full SWE-bench set if necessary. You can find the source code for how SWE-bench Lite was created in <a href="https://github.com/princeton-nlp/SWE-bench/tree/main/collect/make_Lite">SWE-bench/collect/make_Lite</a>.
+              To remedy these issues, we've released a canonical subset of SWE-bench called SWE-bench Lite. SWE-bench Lite comprises 300 instances from SWE-bench that have been sampled to be more self-contained, with a focus on evaluating functional bug fixes. SWE-bench Lite covers 11 of the original 12 repositories in SWE-bench, with a similar diversity and distribution of repositories as the original. We perform similar filtering on the SWE-bench dev set to provide 23 development instances that can be useful for active development on the SWE-bench task. We recommend future systems evaluating on SWE-bench to report numbers on SWE-bench Lite in lieu of the full SWE-bench set if necessary. You can find the source code for how SWE-bench Lite was created in <a href="https://github.com/princeton-nlp/SWE-bench/tree/main/collect/make_lite">SWE-bench/collect/make_lite</a>.
+              <br/>
+              <br/>
+              Here's a list of the general criteria we used to select SWE-bench Lite instances:
+              <li> We remove instances with images, external hyperlinks, references to specific commit shas and references to other pull requests or issues. </li>
+              <li> We remove instances that have fewer than 40 words in the problem statement. </li>
+              <li> We remove instances that edit more than 1 file. </li>
+              <li> We remove instances where the gold patch has more than 3 edit hunks (see patch). </li>
+              <li> We remove instances that create or remove files. </li>
+              <li> We remove instances that contain tests with error message checks. </li>
+              <li> Finally, we sample 300 test instances and 23 development instances from the remaining instances. </li>
           </p>
           <br/>
           <p class="text-content">
