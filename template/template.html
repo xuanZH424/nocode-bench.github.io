@@ -102,49 +102,13 @@
                   </tr>
                 </thead>
                 <tbody>
-                  
+                  {% for item in test_leaderboard %}
                   <tr>
-                    <td><p class="model-type">SWE-agent + GPT 4</p></td>
-                    <td><p class="number">12.29</p></td>
-                    <td><p><span class="label-date">2024-4-2</span></p></td>
+                    <td><p class="model-type">{{item.name}}</p></td>
+                    <td><p class="number">{{item.resolved}}</p></td>
+                    <td><p><span class="label-date">{{item.date}}</span></p></td>
                   </tr>
-                  
-                  <tr>
-                    <td><p class="model-type">RAG + Claude 3 Opus</p></td>
-                    <td><p class="number">3.79</p></td>
-                    <td><p><span class="label-date">2024-4-2</span></p></td>
-                  </tr>
-                  
-                  <tr>
-                    <td><p class="model-type">RAG + Claude 2</p></td>
-                    <td><p class="number">1.96</p></td>
-                    <td><p><span class="label-date">2023-10-10</span></p></td>
-                  </tr>
-                  
-                  <tr>
-                    <td><p class="model-type">RAG + GPT 4</p></td>
-                    <td><p class="number">1.44</p></td>
-                    <td><p><span class="label-date">2024-4-2</span></p></td>
-                  </tr>
-                  
-                  <tr>
-                    <td><p class="model-type">RAG + SWE-Llama 13B</p></td>
-                    <td><p class="number">0.70</p></td>
-                    <td><p><span class="label-date">2023-10-10</span></p></td>
-                  </tr>
-                  
-                  <tr>
-                    <td><p class="model-type">RAG + SWE-Llama 7B</p></td>
-                    <td><p class="number">0.70</p></td>
-                    <td><p><span class="label-date">2023-10-10</span></p></td>
-                  </tr>
-                  
-                  <tr>
-                    <td><p class="model-type">RAG + ChatGPT 3.5</p></td>
-                    <td><p class="number">0.20</p></td>
-                    <td><p><span class="label-date">2023-10-10</span></p></td>
-                  </tr>
-                  
+                  {% endfor %}
                 </tbody>
               </table>
             </div>
@@ -174,55 +138,13 @@
                   </tr>
                 </thead>
                 <tbody>
-                  
+                  {% for item in lite_leaderboard %}
                   <tr>
-                    <td><p class="model-type">SWE-agent + GPT 4</p></td>
-                    <td><p class="number">17.00</p></td>
-                    <td><p><span class="label-date">2024-4-2</span></p></td>
+                    <td><p class="model-type">{{item.name}}</p></td>
+                    <td><p class="number">{{item.resolved}}</p></td>
+                    <td><p><span class="label-date">{{item.date}}</span></p></td>
                   </tr>
-                  
-                  <tr>
-                    <td><p class="model-type">SWE-agent + Claude 3 Opus</p></td>
-                    <td><p class="number">11.67</p></td>
-                    <td><p><span class="label-date">2024-4-2</span></p></td>
-                  </tr>
-                  
-                  <tr>
-                    <td><p class="model-type">RAG + Claude 3 Opus</p></td>
-                    <td><p class="number">4.00</p></td>
-                    <td><p><span class="label-date">2024-4-2</span></p></td>
-                  </tr>
-                  
-                  <tr>
-                    <td><p class="model-type">RAG + GPT 4</p></td>
-                    <td><p class="number">2.67</p></td>
-                    <td><p><span class="label-date">2024-4-2</span></p></td>
-                  </tr>
-                  
-                  <tr>
-                    <td><p class="model-type">RAG + Claude 2</p></td>
-                    <td><p class="number">2.00</p></td>
-                    <td><p><span class="label-date">2023-10-10</span></p></td>
-                  </tr>
-                  
-                  <tr>
-                    <td><p class="model-type">RAG + SWE-Llama 13B</p></td>
-                    <td><p class="number">1.67</p></td>
-                    <td><p><span class="label-date">2023-10-10</span></p></td>
-                  </tr>
-                  
-                  <tr>
-                    <td><p class="model-type">RAG + SWE-Llama 7B</p></td>
-                    <td><p class="number">1.33</p></td>
-                    <td><p><span class="label-date">2023-10-10</span></p></td>
-                  </tr>
-                  
-                  <tr>
-                    <td><p class="model-type">RAG + ChatGPT 3.5</p></td>
-                    <td><p class="number">0.33</p></td>
-                    <td><p><span class="label-date">2023-10-10</span></p></td>
-                  </tr>
-                  
+                  {% endfor %}
                 </tbody>
               </table>
             </div>
@@ -398,7 +320,7 @@
             </br></br>
               Citation: <pre style="margin: 0px;"><code>@inproceedings{
     jimenez2024swebench,
-    title={{SWE}-bench: Can Language Models Resolve Real-world Github Issues?},
+    title={{"{"}}{{"{"}}SWE{{"}"}}-bench: Can Language Models Resolve Real-world Github Issues?},
     author={Carlos E Jimenez and John Yang and Alexander Wettig and Shunyu Yao and Kexin Pei and Ofir Press and Karthik R Narasimhan},
     booktitle={The Twelfth International Conference on Learning Representations},
     year={2024},

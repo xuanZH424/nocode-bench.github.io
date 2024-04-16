@@ -1,0 +1,82 @@
+{
+    "test_leaderboard": [
+        {
+
+            "name": "SWE-agent + GPT 4",
+            "resolved": "12.29",
+            "date": "2024-4-2"
+        },
+        {
+            "name": "RAG + Claude 3 Opus",
+            "resolved": "3.79",
+            "date": "2024-4-2"
+        },
+        {
+            "name": "RAG + Claude 2",
+            "resolved": "1.96",
+            "date": "2023-10-10"
+        },
+        {
+            "name": "RAG + GPT 4",
+            "resolved": "1.44",
+            "date": "2024-4-2"
+        },
+        {
+            "name": "RAG + SWE-Llama 13B",
+            "resolved": "0.70",
+            "date": "2023-10-10"
+        },
+        {
+            "name": "RAG + SWE-Llama 7B",
+            "resolved": "0.70",
+            "date": "2023-10-10"
+        },
+        {
+            "name": "RAG + ChatGPT 3.5",
+            "resolved": "0.20",
+            "date": "2023-10-10"
+        }
+    ],
+    "lite_leaderboard": [
+        {
+            "name": "SWE-agent + GPT 4",
+            "resolved": "17.00",
+            "date": "2024-4-2"
+        },
+        {
+            "name": "SWE-agent + Claude 3 Opus",
+            "resolved": "11.67",
+            "date": "2024-4-2"
+        },
+        {
+            "name": "RAG + Claude 3 Opus",
+            "resolved": "4.00",
+            "date": "2024-4-2"
+        },
+        {
+            "name": "RAG + GPT 4",
+            "resolved": "2.67",
+            "date": "2024-4-2"
+        },
+        {
+            "name": "RAG + Claude 2",
+            "resolved": "2.00",
+            "date": "2023-10-10"
+        },
+        {
+            "name": "RAG + SWE-Llama 13B",
+            "resolved": "1.67",
+            "date": "2023-10-10"
+        },
+        {
+            "name": "RAG + SWE-Llama 7B",
+            "resolved": "1.33",
+            "date": "2023-10-10"
+        },
+        {
+            "name": "RAG + ChatGPT 3.5",
+            "resolved": "0.33",
+            "date": "2023-10-10"
+        }
+    ]
+}
