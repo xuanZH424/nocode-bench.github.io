@@ -1,6 +1,12 @@
 import json
 from jinja2 import Environment, FileSystemLoader
 
+"""
+usage: python generate_index.py
+
+Make sure Jinja2 is installed
+"""
+
 # Set up Jinja2 environment
 env = Environment(loader=FileSystemLoader('.'))
 

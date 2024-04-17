@@ -86,7 +86,7 @@
           <div style="background-color: black; padding: 1.5em 1em; color: white; border-radius: 1em; text-align: center; width: 80%;">
             🎉 Check out our latest work,
             <a href="https://swe-agent.com/" class="light-blue-link" target="_blank" rel="noopener noreferrer">SWE-agent</a>,
-            which achieves a state of the art 12.29% resolve rate on SWE-bench!
+            which achieves a state of the art 12.47% resolve rate on SWE-bench!
           </div>
         </div>
         <div class="content-wrapper">
@@ -99,50 +99,146 @@
                     <th><div class="sticky-header-content">Model</div></th>
                     <th><div class="sticky-header-content">% Resolved</div></th>
                     <th><div class="sticky-header-content">Date</div></th>
+                    <th><div class="sticky-header-content">Logs</div></th>
+                    <th><div class="sticky-header-content">Trajs</div></th>
+                    <th><div class="sticky-header-content">Verified?</div></th>
                   </tr>
                 </thead>
                 <tbody>
                   
                   <tr>
                     <td><p class="model-type">SWE-agent + GPT 4</p></td>
-                    <td><p class="number">12.29</p></td>
+                    <td><p class="number">12.47</p></td>
                     <td><p><span class="label-date">2024-4-2</span></p></td>
+                    <td>
+                        <p style="text-align: center;">
+                        
+                            <a href="https://github.com/swe-bench/experiments/tree/main/evaluation/test/20240402_sweagent_gpt4/logs">🔗</a>
+                        
+                        </p>
+                    </td>
+                    <td>
+                        <p style="text-align: center;">
+                        
+                            <a href="https://github.com/swe-bench/experiments/tree/main/evaluation/test/20240402_sweagent_gpt4/trajs">🔗</a>
+                        
+                        </p>
+                    </td>
+                    <td><p style="text-align: center;">✓</p></td>
                   </tr>
                   
                   <tr>
                     <td><p class="model-type">RAG + Claude 3 Opus</p></td>
                     <td><p class="number">3.79</p></td>
                     <td><p><span class="label-date">2024-4-2</span></p></td>
+                    <td>
+                        <p style="text-align: center;">
+                        
+                            <a href="https://github.com/swe-bench/experiments/tree/main/evaluation/test/20240402_rag_claude3opus/logs">🔗</a>
+                        
+                        </p>
+                    </td>
+                    <td>
+                        <p style="text-align: center;">
+                         - 
+                        </p>
+                    </td>
+                    <td><p style="text-align: center;">✓</p></td>
                   </tr>
                   
                   <tr>
                     <td><p class="model-type">RAG + Claude 2</p></td>
                     <td><p class="number">1.96</p></td>
                     <td><p><span class="label-date">2023-10-10</span></p></td>
+                    <td>
+                        <p style="text-align: center;">
+                        
+                            <a href="https://github.com/swe-bench/experiments/tree/main/evaluation/test/20231010_rag_claude2/logs">🔗</a>
+                        
+                        </p>
+                    </td>
+                    <td>
+                        <p style="text-align: center;">
+                         - 
+                        </p>
+                    </td>
+                    <td><p style="text-align: center;">✓</p></td>
                   </tr>
                   
                   <tr>
                     <td><p class="model-type">RAG + GPT 4</p></td>
-                    <td><p class="number">1.44</p></td>
+                    <td><p class="number">1.31</p></td>
                     <td><p><span class="label-date">2024-4-2</span></p></td>
+                    <td>
+                        <p style="text-align: center;">
+                        
+                            <a href="https://github.com/swe-bench/experiments/tree/main/evaluation/test/20240402_rag_gpt4/logs">🔗</a>
+                        
+                        </p>
+                    </td>
+                    <td>
+                        <p style="text-align: center;">
+                         - 
+                        </p>
+                    </td>
+                    <td><p style="text-align: center;">✓</p></td>
                   </tr>
                   
                   <tr>
                     <td><p class="model-type">RAG + SWE-Llama 13B</p></td>
                     <td><p class="number">0.70</p></td>
                     <td><p><span class="label-date">2023-10-10</span></p></td>
+                    <td>
+                        <p style="text-align: center;">
+                        
+                            <a href="https://github.com/swe-bench/experiments/tree/main/evaluation/test/20231010_rag_swellama13b/logs">🔗</a>
+                        
+                        </p>
+                    </td>
+                    <td>
+                        <p style="text-align: center;">
+                         - 
+                        </p>
+                    </td>
+                    <td><p style="text-align: center;">✓</p></td>
                   </tr>
                   
                   <tr>
                     <td><p class="model-type">RAG + SWE-Llama 7B</p></td>
                     <td><p class="number">0.70</p></td>
                     <td><p><span class="label-date">2023-10-10</span></p></td>
+                    <td>
+                        <p style="text-align: center;">
+                        
+                            <a href="https://github.com/swe-bench/experiments/tree/main/evaluation/test/20231010_rag_swellama7b/logs">🔗</a>
+                        
+                        </p>
+                    </td>
+                    <td>
+                        <p style="text-align: center;">
+                         - 
+                        </p>
+                    </td>
+                    <td><p style="text-align: center;">✓</p></td>
                   </tr>
                   
                   <tr>
                     <td><p class="model-type">RAG + ChatGPT 3.5</p></td>
-                    <td><p class="number">0.20</p></td>
+                    <td><p class="number">0.17</p></td>
                     <td><p><span class="label-date">2023-10-10</span></p></td>
+                    <td>
+                        <p style="text-align: center;">
+                        
+                            <a href="https://github.com/swe-bench/experiments/tree/main/evaluation/test/20231010_rag_gpt35/logs">🔗</a>
+                        
+                        </p>
+                    </td>
+                    <td>
+                        <p style="text-align: center;">
+                         - 
+                        </p>
+                    </td>
+                    <td><p style="text-align: center;">✓</p></td>
                   </tr>
                   
                 </tbody>
@@ -152,7 +248,9 @@
               The <b>% Resolved</b> metrics refers to the percentage of SWE-bench instances (2294 total)
               that were <i>resolved</i> by the model.
               <br />
-              <b>Submissions:</b> Please email the authors at <a href="mailto:carlosej@princeton.edu,jy1682@princeton.edu">{carlosej, jy1682}@princeton.edu</a> for consideration.
+              <b>Submissions:</b> Please follow the instructions and add your results to the
+              <a href="https://github.com/swe-bench/experiments/tree/main">SWE-bench/experiments</a>
+              repository for consideration.
             </p>
           </div>
         </div>
@@ -171,56 +269,167 @@
                     <th><div class="sticky-header-content">Model</div></th>
                     <th><div class="sticky-header-content">% Resolved</div></th>
                     <th><div class="sticky-header-content">Date</div></th>
+                    <th><div class="sticky-header-content">Logs</div></th>
+                    <th><div class="sticky-header-content">Trajs</div></th>
+                    <th><div class="sticky-header-content">Verified?</div></th>
                   </tr>
                 </thead>
                 <tbody>
                   
                   <tr>
                     <td><p class="model-type">SWE-agent + GPT 4</p></td>
-                    <td><p class="number">17.00</p></td>
+                    <td><p class="number">18.00</p></td>
                     <td><p><span class="label-date">2024-4-2</span></p></td>
+                    <td>
+                        <p style="text-align: center;">
+                        
+                            <a href="https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20240402_sweagent_gpt4/logs">🔗</a>
+                        
+                        </p>
+                    </td>
+                    <td>
+                        <p style="text-align: center;">
+                        
+                            <a href="https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20240402_sweagent_gpt4/trajs">🔗</a>
+                        
+                        </p>
+                    </td>
+                    <td><p style="text-align: center;">✓</p></td>
                   </tr>
                   
                   <tr>
                     <td><p class="model-type">SWE-agent + Claude 3 Opus</p></td>
                     <td><p class="number">11.67</p></td>
                     <td><p><span class="label-date">2024-4-2</span></p></td>
+                    <td>
+                        <p style="text-align: center;">
+                        
+                            <a href="https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20240402_sweagent_claude3opus/logs">🔗</a>
+                        
+                        </p>
+                    </td>
+                    <td>
+                        <p style="text-align: center;">
+                        
+                            <a href="https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20240402_sweagent_claude3opus/trajs">🔗</a>
+                        
+                        </p>
+                    </td>
+                    <td><p style="text-align: center;">✓</p></td>
                   </tr>
                   
                   <tr>
                     <td><p class="model-type">RAG + Claude 3 Opus</p></td>
-                    <td><p class="number">4.00</p></td>
+                    <td><p class="number">4.33</p></td>
                     <td><p><span class="label-date">2024-4-2</span></p></td>
+                    <td>
+                        <p style="text-align: center;">
+                        
+                            <a href="https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20240402_rag_claude3opus/logs">🔗</a>
+                        
+                        </p>
+                    </td>
+                    <td>
+                        <p style="text-align: center;">
+                         - 
+                        </p>
+                    </td>
+                    <td><p style="text-align: center;">✓</p></td>
+                  </tr>
+                  
+                  <tr>
+                    <td><p class="model-type">RAG + Claude 2</p></td>
+                    <td><p class="number">3.00</p></td>
+                    <td><p><span class="label-date">2023-10-10</span></p></td>
+                    <td>
+                        <p style="text-align: center;">
+                        
+                            <a href="https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20231010_rag_claude2/logs">🔗</a>
+                        
+                        </p>
+                    </td>
+                    <td>
+                        <p style="text-align: center;">
+                         - 
+                        </p>
+                    </td>
+                    <td><p style="text-align: center;">✓</p></td>
                   </tr>
                   
                   <tr>
                     <td><p class="model-type">RAG + GPT 4</p></td>
                     <td><p class="number">2.67</p></td>
                     <td><p><span class="label-date">2024-4-2</span></p></td>
-                  </tr>
-                  
-                  <tr>
-                    <td><p class="model-type">RAG + Claude 2</p></td>
-                    <td><p class="number">2.00</p></td>
-                    <td><p><span class="label-date">2023-10-10</span></p></td>
-                  </tr>
-                  
-                  <tr>
-                    <td><p class="model-type">RAG + SWE-Llama 13B</p></td>
-                    <td><p class="number">1.67</p></td>
-                    <td><p><span class="label-date">2023-10-10</span></p></td>
+                    <td>
+                        <p style="text-align: center;">
+                        
+                            <a href="https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20240402_rag_gpt4/logs">🔗</a>
+                        
+                        </p>
+                    </td>
+                    <td>
+                        <p style="text-align: center;">
+                         - 
+                        </p>
+                    </td>
+                    <td><p style="text-align: center;">✓</p></td>
                   </tr>
                   
                   <tr>
                     <td><p class="model-type">RAG + SWE-Llama 7B</p></td>
                     <td><p class="number">1.33</p></td>
                     <td><p><span class="label-date">2023-10-10</span></p></td>
+                    <td>
+                        <p style="text-align: center;">
+                        
+                            <a href="https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20231010_rag_swellama7b/logs">🔗</a>
+                        
+                        </p>
+                    </td>
+                    <td>
+                        <p style="text-align: center;">
+                         - 
+                        </p>
+                    </td>
+                    <td><p style="text-align: center;">✓</p></td>
+                  </tr>
+                  
+                  <tr>
+                    <td><p class="model-type">RAG + SWE-Llama 13B</p></td>
+                    <td><p class="number">1.00</p></td>
+                    <td><p><span class="label-date">2023-10-10</span></p></td>
+                    <td>
+                        <p style="text-align: center;">
+                        
+                            <a href="https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20231010_rag_swellama13b/logs">🔗</a>
+                        
+                        </p>
+                    </td>
+                    <td>
+                        <p style="text-align: center;">
+                         - 
+                        </p>
+                    </td>
+                    <td><p style="text-align: center;">✓</p></td>
                   </tr>
                   
                   <tr>
                     <td><p class="model-type">RAG + ChatGPT 3.5</p></td>
                     <td><p class="number">0.33</p></td>
                     <td><p><span class="label-date">2023-10-10</span></p></td>
+                    <td>
+                        <p style="text-align: center;">
+                        
+                            <a href="https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20231010_rag_gpt35/logs">🔗</a>
+                        
+                        </p>
+                    </td>
+                    <td>
+                        <p style="text-align: center;">
+                         - 
+                        </p>
+                    </td>
+                    <td><p style="text-align: center;">✓</p></td>
                   </tr>
                   
                 </tbody>

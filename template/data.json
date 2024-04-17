@@ -1,82 +1,114 @@
 {
     "test_leaderboard": [
         {
-
             "name": "SWE-agent + GPT 4",
-            "resolved": "12.29",
-            "date": "2024-4-2"
+            "resolved": "12.47",
+            "date": "2024-4-2",
+            "logs": "https://github.com/swe-bench/experiments/tree/main/evaluation/test/20240402_sweagent_gpt4/logs",
+            "trajs": "https://github.com/swe-bench/experiments/tree/main/evaluation/test/20240402_sweagent_gpt4/trajs",
+            "verified": true
         },
         {
             "name": "RAG + Claude 3 Opus",
             "resolved": "3.79",
-            "date": "2024-4-2"
+            "date": "2024-4-2",
+            "logs": "https://github.com/swe-bench/experiments/tree/main/evaluation/test/20240402_rag_claude3opus/logs",
+            "verified": true
         },
         {
             "name": "RAG + Claude 2",
             "resolved": "1.96",
-            "date": "2023-10-10"
+            "date": "2023-10-10",
+            "logs": "https://github.com/swe-bench/experiments/tree/main/evaluation/test/20231010_rag_claude2/logs",
+            "verified": true
         },
         {
             "name": "RAG + GPT 4",
-            "resolved": "1.44",
-            "date": "2024-4-2"
+            "resolved": "1.31",
+            "date": "2024-4-2",
+            "logs": "https://github.com/swe-bench/experiments/tree/main/evaluation/test/20240402_rag_gpt4/logs",
+            "verified": true
         },
         {
             "name": "RAG + SWE-Llama 13B",
             "resolved": "0.70",
-            "date": "2023-10-10"
+            "date": "2023-10-10",
+            "logs": "https://github.com/swe-bench/experiments/tree/main/evaluation/test/20231010_rag_swellama13b/logs",
+            "verified": true
         },
         {
             "name": "RAG + SWE-Llama 7B",
             "resolved": "0.70",
-            "date": "2023-10-10"
+            "date": "2023-10-10",
+            "logs": "https://github.com/swe-bench/experiments/tree/main/evaluation/test/20231010_rag_swellama7b/logs",
+            "verified": true
         },
         {
             "name": "RAG + ChatGPT 3.5",
-            "resolved": "0.20",
-            "date": "2023-10-10"
+            "resolved": "0.17",
+            "date": "2023-10-10",
+            "logs": "https://github.com/swe-bench/experiments/tree/main/evaluation/test/20231010_rag_gpt35/logs",
+            "verified": true
         }
     ],
     "lite_leaderboard": [
         {
             "name": "SWE-agent + GPT 4",
-            "resolved": "17.00",
-            "date": "2024-4-2"
+            "resolved": "18.00",
+            "date": "2024-4-2",
+            "logs": "https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20240402_sweagent_gpt4/logs",
+            "trajs": "https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20240402_sweagent_gpt4/trajs",
+            "verified": true
         },
         {
             "name": "SWE-agent + Claude 3 Opus",
             "resolved": "11.67",
-            "date": "2024-4-2"
+            "logs": "https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20240402_sweagent_claude3opus/logs",
+            "trajs": "https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20240402_sweagent_claude3opus/trajs",
+            "date": "2024-4-2",
+            "verified": true
         },
         {
             "name": "RAG + Claude 3 Opus",
-            "resolved": "4.00",
-            "date": "2024-4-2"
+            "resolved": "4.33",
+            "date": "2024-4-2",
+            "logs": "https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20240402_rag_claude3opus/logs",
+            "verified": true
+        },
+        {
+            "name": "RAG + Claude 2",
+            "resolved": "3.00",
+            "date": "2023-10-10",
+            "logs": "https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20231010_rag_claude2/logs",
+            "verified": true
         },
         {
             "name": "RAG + GPT 4",
             "resolved": "2.67",
-            "date": "2024-4-2"
-        },
-        {
-            "name": "RAG + Claude 2",
-            "resolved": "2.00",
-            "date": "2023-10-10"
-        },
-        {
-            "name": "RAG + SWE-Llama 13B",
-            "resolved": "1.67",
-            "date": "2023-10-10"
+            "date": "2024-4-2",
+            "logs": "https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20240402_rag_gpt4/logs",
+            "verified": true
         },
         {
             "name": "RAG + SWE-Llama 7B",
             "resolved": "1.33",
-            "date": "2023-10-10"
+            "date": "2023-10-10",
+            "logs": "https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20231010_rag_swellama7b/logs",
+            "verified": true
+        },
+        {
+            "name": "RAG + SWE-Llama 13B",
+            "resolved": "1.00",
+            "date": "2023-10-10",
+            "logs": "https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20231010_rag_swellama13b/logs",
+            "verified": true
         },
         {
             "name": "RAG + ChatGPT 3.5",
             "resolved": "0.33",
-            "date": "2023-10-10"
+            "date": "2023-10-10",
+            "logs": "https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20231010_rag_gpt35/logs",
+            "verified": true
         }
     ]
 }
