@@ -1,9 +1,15 @@
 {
     "test_leaderboard": [
         {
+            "name": "Amazon Q Developer Agent (v20240430-dev)",
+            "resolved": "13.82",
+            "date": "2024-05-09",
+            "logs": "https://github.com/swe-bench/experiments/tree/main/evaluation/test/20240509_amazon-q-developer-agent-20240430-dev/logs"
+        },
+        {
             "name": "SWE-agent + GPT 4",
             "resolved": "12.47",
-            "date": "2024-4-2",
+            "date": "2024-04-02",
             "logs": "https://github.com/swe-bench/experiments/tree/main/evaluation/test/20240402_sweagent_gpt4/logs",
             "trajs": "https://github.com/swe-bench/experiments/tree/main/evaluation/test/20240402_sweagent_gpt4/trajs",
             "verified": true
@@ -11,7 +17,7 @@
         {
             "name": "SWE-agent + Claude 3 Opus",
             "resolved": "10.51",
-            "date": "2024-4-2",
+            "date": "2024-04-02",
             "logs": "https://github.com/swe-bench/experiments/tree/main/evaluation/test/20240402_sweagent_claude3opus/logs",
             "trajs": "https://github.com/swe-bench/experiments/tree/main/evaluation/test/20240402_sweagent_claude3opus/trajs",
             "verified": false
@@ -19,7 +25,7 @@
         {
             "name": "RAG + Claude 3 Opus",
             "resolved": "3.79",
-            "date": "2024-4-2",
+            "date": "2024-04-02",
             "logs": "https://github.com/swe-bench/experiments/tree/main/evaluation/test/20240402_rag_claude3opus/logs",
             "verified": true
         },
@@ -33,7 +39,7 @@
         {
             "name": "RAG + GPT 4",
             "resolved": "1.31",
-            "date": "2024-4-2",
+            "date": "2024-04-02",
             "logs": "https://github.com/swe-bench/experiments/tree/main/evaluation/test/20240402_rag_gpt4/logs",
             "verified": true
         },
@@ -61,9 +67,15 @@
     ],
     "lite_leaderboard": [
         {
+            "name": "Amazon Q Developer Agent (v20240430-dev)",
+            "resolved": "20.33",
+            "date": "2024-05-09",
+            "logs": "https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20240509_amazon-q-developer-agent-20240430-dev/logs"
+        },
+        {
             "name": "SWE-agent + GPT 4",
             "resolved": "18.00",
-            "date": "2024-4-2",
+            "date": "2024-04-02",
             "logs": "https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20240402_sweagent_gpt4/logs",
             "trajs": "https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20240402_sweagent_gpt4/trajs",
             "verified": true
@@ -73,13 +85,13 @@
             "resolved": "11.67",
             "logs": "https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20240402_sweagent_claude3opus/logs",
             "trajs": "https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20240402_sweagent_claude3opus/trajs",
-            "date": "2024-4-2",
+            "date": "2024-04-02",
             "verified": true
         },
         {
             "name": "RAG + Claude 3 Opus",
             "resolved": "4.33",
-            "date": "2024-4-2",
+            "date": "2024-04-02",
             "logs": "https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20240402_rag_claude3opus/logs",
             "verified": true
         },
@@ -93,7 +105,7 @@
         {
             "name": "RAG + GPT 4",
             "resolved": "2.67",
-            "date": "2024-4-2",
+            "date": "2024-04-02",
             "logs": "https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20240402_rag_gpt4/logs",
             "verified": true
         },

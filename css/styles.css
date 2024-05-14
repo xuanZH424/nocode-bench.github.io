@@ -176,7 +176,7 @@ button {
   outline: none;
     &.outline {
       font-size: 16pt;
-      height: 2.7em;
+      height: 2em;
       width: 7em;
       position: relative;
       background: transparent;
@@ -288,8 +288,9 @@ tr {
 }
 
 .scrollable {
-  max-height: 300px;
-  overflow-y: auto;
+  /* max-height: 300px; */
+  overflow-y: hidden;
+  overflow-x: auto;
   display: block;
   width: 100%;
   border: 2px solid var(--accent_color);
