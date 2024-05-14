@@ -9,6 +9,14 @@
             "verified": true
         },
         {
+            "name": "SWE-agent + Claude 3 Opus",
+            "resolved": "10.51",
+            "date": "2024-4-2",
+            "logs": "https://github.com/swe-bench/experiments/tree/main/evaluation/test/20240402_sweagent_claude3opus/logs",
+            "trajs": "https://github.com/swe-bench/experiments/tree/main/evaluation/test/20240402_sweagent_claude3opus/trajs",
+            "verified": false
+        },
+        {
             "name": "RAG + Claude 3 Opus",
             "resolved": "3.79",
             "date": "2024-4-2",
