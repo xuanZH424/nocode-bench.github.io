@@ -75,6 +75,18 @@
     ],
     "lite_leaderboard": [
         {
+            "name": "Aider",
+            "resolved": "26.33",
+            "date": "2024-05-23",
+            "logs": "https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20240523_aider/logs"
+        },
+        {
+            "name": "OpenCSG StarShip CodeGenAgent",
+            "resolved": "23.67",
+            "date": "2024-05-24",
+            "logs": "https://github.com/swe-bench/experiemnts/tree/main/evaluation/lite/20240524_20240524_opencsg_starship_gpt4/logs"
+        },
+        {
             "name": "Amazon Q Developer Agent (v20240430-dev)",
             "resolved": "20.33",
             "date": "2024-05-09",
