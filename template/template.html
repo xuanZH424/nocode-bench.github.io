@@ -101,6 +101,7 @@
                     <th><div class="sticky-header-content">Date</div></th>
                     <th><div class="sticky-header-content">Logs</div></th>
                     <th><div class="sticky-header-content">Trajs</div></th>
+                    <th><div class="sticky-header-content">Site</div></th>
                     <th><div class="sticky-header-content">Verified?</div></th>
                     <th><div class="sticky-header-content">Open?</div></th>
                   </tr>
@@ -108,13 +109,21 @@
                 <tbody>
                   {% for item in test_leaderboard %}
                   <tr>
-                    <td><p class="model-type">{{item.name}}</p></td>
+                    <td>
+                      <p class="model-type">
+                        {% if loop.index == 1 %}🥇
+                        {% elif loop.index == 2 %}🥈
+                        {% elif loop.index == 3 %}🥉
+                        {% endif %}
+                        {{item.name}}
+                      </p>
+                    </td>
                     <td><p class="number">{{item.resolved}}</p></td>
                     <td><p><span class="label-date">{{item.date}}</span></p></td>
                     <td>
                         <p style="text-align: center;">
                         {% if item.logs is defined %}
-                            <a href="{{item.logs}}">🔗</a>
+                            <a href="https://github.com/swe-bench/experiments/tree/main/evaluation/{{item.logs}}">🔗</a>
                         {% else %} - {% endif %}
                         </p>
                     </td>
@@ -125,8 +134,15 @@
                         {% else %} - {% endif %}
                         </p>
                     </td>
-                    <td><p style="text-align: center;">{{'✓' if item.verified is defined else ' '}}</p></td>
-                    <td><p style="text-align: center;">{{'✓' if item.oss is defined else ' '}}</p></td>
+                    <td>
+                        <p style="text-align: center;">
+                        {% if item.site is defined %}
+                            <a href="{{item.site}}">🔗</a>
+                        {% else %} - {% endif %}
+                        </p>
+                    </td>
+                    <td><p style="text-align: center;">{{'✓' if item.verified is defined else '✘'}}</p></td>
+                    <td><p style="text-align: center;">{{'✓' if item.oss is defined else '✘'}}</p></td>
                   </tr>
                   {% endfor %}
                 </tbody>
@@ -164,6 +180,7 @@
                     <th><div class="sticky-header-content">Date</div></th>
                     <th><div class="sticky-header-content">Logs</div></th>
                     <th><div class="sticky-header-content">Trajs</div></th>
+                    <th><div class="sticky-header-content">Site</div></th>
                     <th><div class="sticky-header-content">Verified?</div></th>
                     <th><div class="sticky-header-content">Open?</div></th>
                   </tr>
@@ -171,7 +188,15 @@
                 <tbody>
                   {% for item in lite_leaderboard %}
                   <tr>
-                    <td><p class="model-type">{{item.name}}</p></td>
+                    <td>
+                      <p class="model-type">
+                        {% if loop.index == 1 %}🥇
+                        {% elif loop.index == 2 %}🥈
+                        {% elif loop.index == 3 %}🥉
+                        {% endif %}
+                        {{item.name}}
+                      </p>
+                    </td>
                     <td><p class="number">{{item.resolved}}</p></td>
                     <td><p><span class="label-date">{{item.date}}</span></p></td>
                     <td>
@@ -188,8 +213,15 @@
                         {% else %} - {% endif %}
                         </p>
                     </td>
-                    <td><p style="text-align: center;">{{'✓' if item.verified is defined else ' '}}</p></td>
-                    <td><p style="text-align: center;">{{'✓' if item.oss is defined else ' '}}</p></td>
+                    <td>
+                        <p style="text-align: center;">
+                        {% if item.site is defined %}
+                            <a href="{{item.site}}">🔗</a>
+                        {% else %} - {% endif %}
+                        </p>
+                    </td>
+                    <td><p style="text-align: center;">{{'✓' if item.verified is defined else '✘'}}</p></td>
+                    <td><p style="text-align: center;">{{'✓' if item.oss is defined else '✘'}}</p></td>
                   </tr>
                   {% endfor %}
                 </tbody>
