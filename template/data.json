@@ -78,7 +78,7 @@
     ],
     "lite_leaderboard": [
         {
-            "name": "Aider + Claude 3 Opus",
+            "name": "Aider + GPT 4o & Claude 3 Opus",
             "resolved": "26.33",
             "date": "2024-05-23",
             "logs": "lite/20240523_aider/logs",
