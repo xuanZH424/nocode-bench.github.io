@@ -93,6 +93,13 @@
             "site": "https://opencsg.com/product?class=StarShip"
         },
         {
+            "name": "Bytedance MarsCode Agent",
+            "resolved": "22.00",
+            "date": "2024-05-27",
+            "logs": "lite/20240527_20240527_marscode-agent-dev/logs",
+            "site": "https://www.marscode.com/"
+        },
+        {
             "name": "Amazon Q Developer Agent (v20240430-dev)",
             "resolved": "20.33",
             "date": "2024-05-09",
