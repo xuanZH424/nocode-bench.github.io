@@ -34,8 +34,6 @@ function updateCallMain(data) {
 }
 
 function updateMainResults(split, model) {
-    console.log(split);
-    console.log(model);
     const url = `https://raw.githubusercontent.com/swe-bench/experiments/main/evaluation/${split}/${model}/results/results.json`;
     fetch(url)
         .then(response => response.json())

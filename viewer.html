@@ -39,56 +39,65 @@
 
       gtag("config", "G-H9XFCMDPNS");
     </script>
+    <!-- Custom Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
     <div style="padding-bottom: 50px">
     <section style="background-color: var(--dark_accent_color)">
         <div
             class="content-wrapper title-wrapper"
-            style="flex-direction: column"
+            style="flex-direction: column;text-align: center;"
         >
             <h1 style="font-size: 60px; padding-top: 0.4em">SWE-bench Analysis</h1>
+            <div class="content-wrapper" style="margin-top: 2em">
+                <a href="index.html">
+                  <button class="outline" style="flex-direction: row; display: flex; justify-content: center; align-items: center; width: 9em;">
+                    <img src="img/swellama.png" style="height: 1.3em; margin-right: 0.4em; margin-bottom: 0.3em;" />
+                     SWE-bench&nbsp;
+                  </button>
+                </a>
+            </div>
         </div>
     </section>
     <section class="main-container">
-        <div class="content-wrapper">
-            <div class="content-box">
-                <p class="text-content">
-                    Hi
-                </p>
-            </div>
-        </div>
         <div style="text-align: center; margin: 1em 0 1.5em 0;">
-            <label for="split">Split:</label>
-            <select id="split">
-                <option value="lite">lite</option>
-                <option value="test">test</option>
-            </select>
-            
-            <label for="model">Model:</label>
-            <select id="model">
-                <option value="20240402_sweagent_gpt4">(2024/04/02) SWE-agent + GPT 4 (1106)</option>
-                <option value="20240530_autocoderover-v20240408">(2024/05/30) AutoCodeRover (v20240408)</option>
+            <label for="split-and-model">Split & Model:</label>
+            <select id="split-and-model">
+                <option value="lite,20240402_sweagent_claude3opus">Lite / (2024/04/02) SWE-agent + Claude 3 Opus</option>
+                <option value="lite,20240402_sweagent_gpt4">Lite / (2024/04/02) SWE-agent + GPT 4 (1106)</option>
+                <option value="lite,20240509_amazon-q-developer-agent-20240430-dev">Lite / (2024/05/09) Amazon Q Developer Agent</option>
+                <option value="lite,20240523_aider">Lite / (2024/05/23) Aider</option>
+                <option value="lite,20240524_opencsg_starship_gpt4">Lite / (2024/05/24) OpenCSG StarShip CodeGenAgent</option>
+                <option value="lite,20240527_marscode-agent-dev">Lite / (2024/05/27) MarsCode Agent</option>
+                <option value="lite,20240530_autocoderover-v20240408">Lite / (2024/05/30) AutoCodeRover (v20240408)</option>
+                <option value="test,20240402_sweagent_gpt4">Test / (2024/04/02) SWE-agent + GPT 4 (1106)</option>
+                <option value="test,20240509_amazon-q-developer-agent-20240430-dev">Test / (2024/05/09) Amazon Q Developer Agent</option>
             </select>
             <button id="loadData">Load Data</button>
         </div>
         <div id="displaySelections" style="text-align: center; margin: 1em 0;">
             Viewing <span style="color:#0ca7ff" id="selectedModel"></span>'s performance
             on the SWE-bench <span style="color:#0ca7ff" id="selectedSplit"></span> split.
+            (SWE-bench/experiments <a href="" id="modelSplitURL">Logs</a>)
         </div>
-        <br>
         <div class="content-wrapper">
+            <div class="content-box" id="readme">
+                Loading README.md...
+            </div>
+        </div>
+        <!-- <div class="content-wrapper">
             <h3 style="flex: 0 0 15%;margin: 0;">Main Results</h3>
             <div id="outcome-list" class="outcome-list"></div>
         </div>
-        <br><br>
+        <br><br> -->
         <div class="content-wrapper">
             <h3 style="flex: 0 0 15%;margin: 0;">% Resolved by Repository</h3>
             <table id="table-by-repo" class="table-results">
                 <thead>
                     <tr>
-                        <th>Repository</th>
+                        <th width="40%">Repository</th>
                         <th>Resolved</th>
                         <th>Total</th>
                         <th>% Resolved</th>
@@ -103,7 +112,7 @@
             <table id="table-by-year" class="table-results">
                 <thead>
                     <tr>
-                        <th style="width: 25%">Year</th>
+                        <th style="width: 40%">Year</th>
                         <th>Resolved</th>
                         <th>Total</th>
                         <th>% Resolved</th>
@@ -118,14 +127,33 @@
     <script src="js/tableByRepo.js"></script>
     <script src="js/tableByYear.js"></script>
     <script>
+function updateReadme(split, model) {
+    const url = `https://raw.githubusercontent.com/swe-bench/experiments/main/evaluation/${split}/${model}/README.md`;
+    fetch(url)
+        .then(response => response.text())
+        .then(data => {
+            if (data === '404: Not Found') {
+                document.getElementById('readme').innerHTML = "README.md not provided."
+            } else {
+                document.getElementById('readme').innerHTML = marked.parse(data);
+            }
+        })
+        .catch(error => {
+            document.getElementById('readme').innerHTML = "README.md not provided."
+        });
+}
+
 document.getElementById('loadData').addEventListener('click', () => {
-    const splitValue = document.getElementById('split').value;
-    const modelValue = document.getElementById('model').value;
+    const value = document.getElementById('split-and-model').value;
+    const splitValue = value.split(',')[0];
+    const modelValue = value.split(',')[1];
 
     document.getElementById('selectedSplit').textContent = splitValue;
     document.getElementById('selectedModel').textContent = modelValue;
+    document.getElementById('modelSplitURL').href = `https://github.com/swe-bench/experiments/tree/main/evaluation/${splitValue}/${modelValue}`;
 
     updateMainResults(splitValue, modelValue);
+    updateReadme(splitValue, modelValue);
     updateTableByRepo(splitValue, modelValue);
     updateTableByYear(splitValue, modelValue);
 });
@@ -136,14 +164,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const defaultModel = '20240402_sweagent_gpt4';
 
     // Set default values for the select elements
-    document.getElementById('split').value = defaultSplit;
-    document.getElementById('model').value = defaultModel;
+    document.getElementById('split-and-model').value = `${defaultSplit},${defaultModel}`;
 
     // Display the default values
     document.getElementById('selectedSplit').textContent = defaultSplit;
     document.getElementById('selectedModel').textContent = defaultModel;
+    document.getElementById('modelSplitURL').href = `https://github.com/swe-bench/experiments/tree/main/evaluation/${defaultSplit}/${defaultModel}`;
 
     updateMainResults(defaultSplit, defaultModel);
+    updateReadme(defaultSplit, defaultModel);
     updateTableByRepo(defaultSplit, defaultModel);
     updateTableByYear(defaultSplit, defaultModel);
 });

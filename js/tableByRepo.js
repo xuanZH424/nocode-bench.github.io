@@ -34,8 +34,6 @@ function updateCallRepo(data) {
 }
 
 function updateTableByRepo(split, model) {
-    console.log(split);
-    console.log(model);
     const url = `https://raw.githubusercontent.com/swe-bench/experiments/main/evaluation/${split}/${model}/results/resolved_by_repo.json`;
     fetch(url)
         .then(response => response.json())
