@@ -5,9 +5,14 @@ function updateCallYear(data) {
     const sortedEntries = Object.entries(data).sort((a, b) => {
         const repoA = a[0].toLowerCase();
         const repoB = b[0].toLowerCase();
-        if (repoA < repoB) return -1;
-        if (repoA > repoB) return 1;
-        return 0;
+
+        const canBeIntegerA = Number.isInteger(parseInt(repoA, 10));
+        const canBeIntegerB = Number.isInteger(parseInt(repoB, 10));
+
+        if (canBeIntegerA && !canBeIntegerB) return -1;
+        if (!canBeIntegerA && canBeIntegerB) return 1;
+        if (canBeIntegerA && canBeIntegerB) return parseInt(repoB, 10) - parseInt(repoA, 10);
+        return repoA.localeCompare(repoB);
     });
 
     for (const [repo, values] of sortedEntries) {

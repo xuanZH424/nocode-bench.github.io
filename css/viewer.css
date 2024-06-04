@@ -30,3 +30,48 @@
         margin: 0.5em 1.5em;
     }
 }
+
+.table-by-statuses {
+    overflow: auto;
+    height: 10em;
+    border: 1px solid #ccc;
+
+    thead {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    tbody {
+        font-size: 0.8em;
+    }
+
+    table  {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        padding: 0.5em;
+        width: 20%;
+    }
+
+    th {
+        background:#eee;
+        border-bottom: 1px solid #ccc;
+    }
+
+    th, td {
+        vertical-align: top;
+        border-left: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+    }
+
+    th:nth-child(1), td:nth-child(1) {
+        border-left: none;
+    }
+
+    th:nth-child(5), td:nth-child(5) {
+        border-right: none;
+    }
+}

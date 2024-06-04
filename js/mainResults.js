@@ -1,36 +1,56 @@
-// Function to update the outcome list
-function updateCallMain(data) {
-    const outcomeList = document.querySelector('#outcome-list');
-    outcomeList.innerHTML = ''; // Clear existing content
+function createTableHeader(keys, table) {
+    const headerRowWrapper = document.createElement('thead');
+    const headerRow = document.createElement('tr');
+    for (const status of keys) {
+        const th = document.createElement('th');
+        th.textContent = status;
+        headerRow.appendChild(th);
+    }
+    headerRowWrapper.appendChild(headerRow);
+    table.appendChild(headerRowWrapper);
+}
 
-    for (const [status, ids] of Object.entries(data)) {
-        const section = document.createElement('div');
-        section.classList.add('outcome-section');
+function createTableBody(keys, data, table) {
+    const bodyRowWrapper = document.createElement('tbody');
+    const bodyRow = document.createElement('tr');
+    for (const status of keys) {
+        const td = document.createElement('td');
 
-        const header = document.createElement('h4');
-        header.textContent = `${status} (${ids.length})`;
-        header.classList.add('outcome-header');
-        header.onclick = () => {
-            const content = section.querySelector('.outcome-content');
-            content.style.display = content.style.display === 'none' ? 'block' : 'none';
-        };
+        // Sort ids alphabetically
+        const ids = data[status].slice().sort();
 
-        const content = document.createElement('div');
-        content.classList.add('outcome-content');
-        content.style.display = 'none'; // Initially hidden
-
-        const idList = document.createElement('ul');
         ids.forEach(id => {
-            const listItem = document.createElement('li');
-            listItem.textContent = id;
-            idList.appendChild(listItem);
+            const div = document.createElement('div');
+            div.textContent = id;
+            td.appendChild(div);
         });
 
-        content.appendChild(idList);
-        section.appendChild(header);
-        section.appendChild(content);
-        outcomeList.appendChild(section);
+        bodyRow.appendChild(td);
     }
+    bodyRowWrapper.appendChild(bodyRow);
+    table.appendChild(bodyRowWrapper);
+}
+
+// Function to update the outcome table
+function updateCallMain(data) {
+    const outcomeTable1 = document.querySelector('#table-by-statuses-1');
+    const outcomeTable2 = document.querySelector('#table-by-statuses-2');
+    outcomeTable1.innerHTML = '';
+    outcomeTable2.innerHTML = '';
+
+    // Split the data keys into two halves
+    const keys = Object.keys(data);
+    const mid = Math.ceil(keys.length / 2);
+    const firstHalfKeys = keys.slice(0, mid);
+    const secondHalfKeys = keys.slice(mid);
+
+    // Create table header rows
+    createTableHeader(firstHalfKeys, outcomeTable1);
+    createTableHeader(secondHalfKeys, outcomeTable2);
+
+    // Create table body row
+    createTableBody(firstHalfKeys, data, outcomeTable1);
+    createTableBody(secondHalfKeys, data, outcomeTable2);
 }
 
 function updateMainResults(split, model) {
@@ -44,4 +64,3 @@ function updateMainResults(split, model) {
             console.error('Error fetching the JSON data:', error);
         });
 }
-
