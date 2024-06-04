@@ -1,4 +1,4 @@
-function updateCallYear(data) {
+function updateTableByYearHelper(data) {
     const tableBody = document.querySelector('#table-by-year tbody');
     tableBody.innerHTML = ''; // Clear existing rows
 
@@ -43,7 +43,7 @@ function updateTableByYear(split, model) {
     fetch(url)
         .then(response => response.json())
         .then(data => {
-            updateCallYear(data);
+            updateTableByYearHelper(data);
         })
         .catch(error => {
             console.error('Error fetching the JSON data:', error);

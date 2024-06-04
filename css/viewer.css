@@ -1,7 +1,6 @@
 .table-results {
     width: 100%;
     border-collapse: collapse;
-    margin-left: 1em;
 
     th, td {
         padding: 0.5em;
@@ -32,6 +31,7 @@
 }
 
 .table-by-statuses {
+    width: 100%;
     overflow: auto;
     height: 10em;
     border: 1px solid #ccc;
@@ -73,5 +73,23 @@
 
     th:nth-child(5), td:nth-child(5) {
         border-right: none;
+    }
+}
+
+#log-viewer {
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+
+    pre {
+        border: 2px solid var(--accent_color);
+        border-radius: 0.5em;
+        margin: 1em 0 0 0;
+        padding: 1em;
+        overflow-x: none;
+        overflow-y: scroll;
+        white-space: pre-wrap;
+        height: 20em;
+        font-size: 0.8em;
     }
 }

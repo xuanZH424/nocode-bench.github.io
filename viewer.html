@@ -129,8 +129,14 @@
                 </div>
             </div>
         </div>
+        <br><br>
+        <div class="content-wrapper">
+            <h3 style="flex: 0 0 15%;margin: 0;">Log Viewer</h3>
+            <div id="log-viewer"></div>
+        </div>
     </section>
     </div>
+    <script src="js/logViewer.js"></script>
     <script src="js/mainResults.js"></script>
     <script src="js/tableByRepo.js"></script>
     <script src="js/tableByYear.js"></script>
@@ -179,6 +185,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('selectedModel').textContent = defaultModel;
     document.getElementById('modelSplitURL').href = `https://github.com/swe-bench/experiments/tree/main/evaluation/${defaultSplit}/${defaultModel}`;
 
+    updateLogViewer("astropy__astropy-14995", defaultSplit, defaultModel);
     updateMainResults(defaultSplit, defaultModel);
     updateReadme(defaultSplit, defaultModel);
     updateTableByRepo(defaultSplit, defaultModel);

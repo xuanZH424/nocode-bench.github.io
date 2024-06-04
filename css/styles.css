@@ -156,12 +156,13 @@ h2.text-title {
   text-align: center;
 }
 
-pre {
+#citation {
   background-color: var(--grey);
   border: 2px solid var(--accent_color);
-  padding: 15px;             /* Padding inside the block */
-  overflow-x: auto;          /* Horizontal scrolling for long lines */
-  border-radius: 5px;        /* Rounded corners */
+  padding: 15px;
+  overflow-x: auto;
+  border-radius: 0.5em;
+  margin: 0;
 }
 
 code {

@@ -1,4 +1,4 @@
-function updateCallRepo(data) {
+function updateTableByRepoHelper(data) {
     const tableBody = document.querySelector('#table-by-repo tbody');
     tableBody.innerHTML = ''; // Clear existing rows
 
@@ -38,7 +38,7 @@ function updateTableByRepo(split, model) {
     fetch(url)
         .then(response => response.json())
         .then(data => {
-            updateCallRepo(data);
+            updateTableByRepoHelper(data);
         })
         .catch(error => {
             console.error('Error fetching the JSON data:', error);

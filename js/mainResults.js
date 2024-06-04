@@ -1,9 +1,23 @@
+// Dictionary mapping status to natual language
+const statusToNaturalLanguage = {
+    'no_generation': 'No Generation',
+    'generated': 'Generated',
+    'with_logs': 'With Logs',
+    'install_fail': 'Install Failed',
+    'reset_failed': 'Reset Failed',
+    'no_apply': 'Patch Apply Failed',
+    'applied': 'Patch Applied',
+    'test_errored': 'Test Errored',
+    'test_timeout': 'Test Timed Out',
+    'resolved': 'Resolved'
+}
+
 function createTableHeader(keys, table) {
     const headerRowWrapper = document.createElement('thead');
     const headerRow = document.createElement('tr');
     for (const status of keys) {
         const th = document.createElement('th');
-        th.textContent = status;
+        th.textContent = statusToNaturalLanguage[status];
         headerRow.appendChild(th);
     }
     headerRowWrapper.appendChild(headerRow);
@@ -32,7 +46,7 @@ function createTableBody(keys, data, table) {
 }
 
 // Function to update the outcome table
-function updateCallMain(data) {
+function updateMainResultsHelper(data) {
     const outcomeTable1 = document.querySelector('#table-by-statuses-1');
     const outcomeTable2 = document.querySelector('#table-by-statuses-2');
     outcomeTable1.innerHTML = '';
@@ -58,7 +72,7 @@ function updateMainResults(split, model) {
     fetch(url)
         .then(response => response.json())
         .then(data => {
-            updateCallMain(data);
+            updateMainResultsHelper(data);
         })
         .catch(error => {
             console.error('Error fetching the JSON data:', error);
