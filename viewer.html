@@ -77,6 +77,11 @@
         </div>
     </section>
     <section class="main-container">
+        <div class="content-wrapper" style="display: flex; justify-content: center; align-items: center;">
+            <div style="background-color: black; padding: 1.5em 1em; color: white; border-radius: 1em; text-align: center; width: 80%;">
+                Select the split & model below to get automated analyses of the model's performance on the SWE-bench split.
+            </div>
+        </div>
         <div style="text-align: center; margin: 1em 0 1.5em 0;">
             <label for="split-and-model">Split & Model:</label>
             <select id="split-and-model">
@@ -137,7 +142,7 @@
         </div>
         <br><br>
         <div class="content-wrapper">
-            <h3 style="flex: 0 0 15%;margin: 0;">Main Results</h3>
+            <h3 style="flex: 0 0 15%;margin: 0;">Instances by Outcomes</h3>
             <div style="flex-direction:column;width:100%;">
                 <div class="table-by-statuses">
                     <table id="table-by-statuses-1"></table>
