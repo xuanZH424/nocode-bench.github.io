@@ -87,21 +87,12 @@
         </div>
     </section>
     <section class="main-container">
-        <div class="content-wrapper">
-            <div class="content-box">
-                <p>
-                    We maintain records of all official submissions to the SWE-bench leaderboard at the
-                    <a href="https://github.com/swe-bench/experiments/tree/main">SWE-bench/experiments</a>
-                    GitHub repository.
-                </p>
-                <p style="margin-top: 0.5em;">
-                    <span style="color:#0ea7ff;"><b>Submissions</b></span>: Please follow the below instructions and add your results to the
-                    <a href="https://github.com/swe-bench/experiments/tree/main">SWE-bench/experiments</a>
-                    repository for consideration.
-                </p>
-                <p style="margin-top: 0.5em;">
-                    <span style="color:#0ea7ff;"><b>Verification</b></span>: The <i>Verified</i> check ✓ indicates that we (the SWE-bench team) received access to the model and were able to reproduce the patch generations. If you're interested in having your model be verified, please create an <a href="https://github.com/swe-bench/experiments/issues">issue</a> describing how we can run inference on your model.
-                </p>
+        <div class="content-wrapper" style="display: flex; justify-content: center; align-items: center;">
+            <div style="background-color: black; padding: 1.5em 1em; color: white; border-radius: 1em; text-align: center; width: 80%;">
+                All official submissions to the SWE-bench leaderboard are maintained at
+                <a href="https://github.com/swe-bench/experiments/" class="light-blue-link" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i> SWE-bench/experiments
+                </a>
             </div>
         </div>
         <div class="content-wrapper">
@@ -134,7 +125,12 @@
         <div class="content-wrapper">
             <div class="content-box">
                 <h3>Verify Your Results</h3>
-                <p>If you are interested in receiving the "verified" checkmark ✓ on your submission, please do the following:</p>
+                <p>
+                    The <i>Verified</i> check ✓ indicates that we (the SWE-bench team) received access to the model and were able to reproduce the patch generations.
+                </p>
+                <p style="margin-top:0.5em;">
+                    If you are interested in receiving the "verified" checkmark ✓ on your submission, please do the following:
+                </p>
                 <ol>
                     <li>Create an issue</li>
                     <li>In the issue, provide us instructions on how to run your model on SWE-bench.</li>
