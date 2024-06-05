@@ -28,6 +28,15 @@
     ul {
         margin: 0.5em 1.5em;
     }
+
+    pre {
+        border-radius: 0.5em;
+        background-color: #0e1117;
+        color: white;
+        margin: 1em 0 0 0;
+        padding: 1em;
+        white-space: pre-wrap;
+    }
 }
 
 .table-by-statuses {
