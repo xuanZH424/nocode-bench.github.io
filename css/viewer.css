@@ -86,6 +86,11 @@
 
     .instance {
         color: blue;
+        cursor: pointer;
+    }
+
+    .instance:hover {
+        text-decoration: underline;
     }
 
     .instance-not-clickable {

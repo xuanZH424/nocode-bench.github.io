@@ -50,7 +50,7 @@ function createTableHeader(keys, table) {
     table.appendChild(headerRowWrapper);
 }
 
-function createTableBody(keys, data, table) {
+function createTableBody(data, split, model, keys, table) {
     const bodyRowWrapper = document.createElement('tbody');
     const bodyRow = document.createElement('tr');
     for (const status of keys) {
@@ -64,7 +64,7 @@ function createTableBody(keys, data, table) {
             div.textContent = id;
             if (!(status === 'no_generation' || status === 'generated')) {
                 div.classList.add('instance');
-                div.style.cursor = 'pointer';
+                div.classList.add(id);
             } else {
                 div.classList.add('instance-not-clickable');
             }
@@ -75,10 +75,25 @@ function createTableBody(keys, data, table) {
     }
     bodyRowWrapper.appendChild(bodyRow);
     table.appendChild(bodyRowWrapper);
+
+    for (const status of keys) {
+        const ids = data[status].slice().sort();
+        ids.forEach(id => {
+            if (!(status === 'no_generation' || status === 'generated')) {
+                const divs = document.getElementsByClassName(id);
+                Array.from(divs).forEach(div => {
+                    div.addEventListener('click', () => {
+                        updateLogViewer(id, split, model);
+                    });
+                });
+            }
+        });
+    }
 }
 
+
 // Function to update the outcome table
-function updateMainResultsHelper(data) {
+function updateMainResultsHelper(data, split, model) {
     const outcomeTable1 = document.querySelector('#table-by-statuses-1');
     const outcomeTable2 = document.querySelector('#table-by-statuses-2');
     outcomeTable1.innerHTML = '';
@@ -95,8 +110,8 @@ function updateMainResultsHelper(data) {
     createTableHeader(secondHalfKeys, outcomeTable2);
 
     // Create table body row
-    createTableBody(firstHalfKeys, data, outcomeTable1);
-    createTableBody(secondHalfKeys, data, outcomeTable2);
+    createTableBody(data, split, model, firstHalfKeys, outcomeTable1);
+    createTableBody(data, split, model, secondHalfKeys, outcomeTable2);
 }
 
 function updateMainResults(split, model) {
@@ -104,7 +119,7 @@ function updateMainResults(split, model) {
     fetch(url)
         .then(response => response.json())
         .then(data => {
-            updateMainResultsHelper(data);
+            updateMainResultsHelper(data, split, model);
         })
         .catch(error => {
             console.error('Error fetching the JSON data:', error);
