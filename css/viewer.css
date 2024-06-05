@@ -111,3 +111,8 @@
         font-size: 0.8em;
     }
 }
+
+#displaySelections {
+    margin: 0 auto;
+    text-align: center;
+}

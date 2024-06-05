@@ -92,10 +92,14 @@
             </select>
             <button id="loadData">Load Data</button>
         </div>
-        <div id="displaySelections" style="text-align: center; margin: 1em 0;">
-            Viewing <span style="color:#0ca7ff" id="selectedModel"></span>'s performance
-            on the SWE-bench <span style="color:#0ca7ff" id="selectedSplit"></span> split.
-            (SWE-bench/experiments <a href="" id="modelSplitURL">Logs</a>)
+        <div class="content-wrapper">
+            <div id="displaySelections">
+                Viewing <span style="color:#0ca7ff" id="selectedModel"></span>'s performance
+                on the SWE-bench <span style="color:#0ca7ff" id="selectedSplit"></span> split,
+                which resolved <span style="color:#0ca7ff" id="selectedResolved"></span>% of
+                <span style="color:#0ca7ff" id="selectedSplitNum"></span> issues.
+                (<a href="" id="modelSplitURL">Logs</a>)
+            </div>
         </div>
         <div class="content-wrapper">
             <div class="content-box" id="readme">
@@ -178,6 +182,7 @@ document.getElementById('loadData').addEventListener('click', () => {
 
     document.getElementById('selectedSplit').textContent = splitValue;
     document.getElementById('selectedModel').textContent = modelValue;
+    document.getElementById('selectedSplitNum').textContent = splitValue == 'lite' ? 300 : 2294;
     document.getElementById('modelSplitURL').href = `https://github.com/swe-bench/experiments/tree/main/evaluation/${splitValue}/${modelValue}`;
 
     updateMainResults(splitValue, modelValue);
@@ -197,6 +202,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Display the default values
     document.getElementById('selectedSplit').textContent = defaultSplit;
     document.getElementById('selectedModel').textContent = defaultModel;
+    document.getElementById('selectedSplitNum').textContent = 300;
     document.getElementById('modelSplitURL').href = `https://github.com/swe-bench/experiments/tree/main/evaluation/${defaultSplit}/${defaultModel}`;
 
     updateLogViewer("astropy__astropy-14995", defaultSplit, defaultModel);

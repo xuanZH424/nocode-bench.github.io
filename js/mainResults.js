@@ -119,6 +119,12 @@ function updateMainResults(split, model) {
     fetch(url)
         .then(response => response.json())
         .then(data => {
+            const resolved = data['resolved'].length;
+            const total = split == 'lite' ? 300 : 2294;
+            const percentResolved = (resolved / total * 100).toFixed(2);
+            const resolvedElement = document.getElementById('selectedResolved');
+            resolvedElement.textContent = percentResolved;
+            
             updateMainResultsHelper(data, split, model);
         })
         .catch(error => {
