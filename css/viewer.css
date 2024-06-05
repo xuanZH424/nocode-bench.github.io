@@ -74,6 +74,14 @@
     th:nth-child(5), td:nth-child(5) {
         border-right: none;
     }
+
+    .instance {
+        color: blue;
+    }
+
+    .instance-not-clickable {
+        color: gray;
+    }
 }
 
 #log-viewer {
@@ -89,7 +97,7 @@
         overflow-x: none;
         overflow-y: scroll;
         white-space: pre-wrap;
-        height: 20em;
+        height: 15em;
         font-size: 0.8em;
     }
 }
