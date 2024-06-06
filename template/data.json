@@ -78,6 +78,13 @@
     ],
     "lite_leaderboard": [
         {
+            "name": "CodeR + GPT 4 (1106)",
+            "resolved": "29.00",
+            "date": "2024-06-04",
+            "logs": "lite/20240604_CodeR/logs",
+            "site": "https://github.com/NL2Code/CodeR"
+        },
+        {
             "name": "Aider + GPT 4o & Claude 3 Opus",
             "resolved": "26.33",
             "date": "2024-05-23",
