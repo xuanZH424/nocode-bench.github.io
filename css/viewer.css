@@ -37,6 +37,11 @@
     img {
         width: 80%;
     }
+
+    code {
+        background-color: black;
+        border-radius: 0.25em;
+    }
 }
 
 .table-by-statuses {

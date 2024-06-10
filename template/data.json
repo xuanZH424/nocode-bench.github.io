@@ -79,7 +79,7 @@
     "lite_leaderboard": [
         {
             "name": "CodeR + GPT 4 (1106)",
-            "resolved": "29.00",
+            "resolved": "28.33",
             "date": "2024-06-04",
             "logs": "lite/20240604_CodeR/logs",
             "site": "https://github.com/NL2Code/CodeR"
@@ -98,6 +98,16 @@
             "date": "2024-05-24",
             "logs": "lite/20240524_opencsg_starship_gpt4/logs",
             "site": "https://opencsg.com/product?class=StarShip"
+        },
+        {
+            "name": "Moatless Tools + GPT 4o (2024-05-13)",
+            "resolved": "23.33",
+            "date": "2024-06-09",
+            "logs": "lite/20240609_moatless_gpt4o/logs",
+            "trajs": "lite/20240609_moatless_gpt4o/trajs",
+            "site": "https://github.com/aorwall/moatless-tools",
+            "verified": true,
+            "oss": true
         },
         {
             "name": "Bytedance MarsCode Agent",
