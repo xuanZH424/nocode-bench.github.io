@@ -132,6 +132,14 @@
             "oss": true
         },
         {
+            "name": "SWE-agent + GPT 4o (2024-05-13)",
+            "resolved": "17.00",
+            "date": "2024-06-03",
+            "site": "https://swe-agent.com/",
+            "verified": true,
+            "oss": true
+        },
+        {
             "name": "SWE-agent + Claude 3 Opus",
             "resolved": "11.67",
             "logs": "lite/20240402_sweagent_claude3opus/logs",
