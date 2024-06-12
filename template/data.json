@@ -85,6 +85,13 @@
             "site": "https://github.com/NL2Code/CodeR"
         },
         {
+            "name": "IBM Research Agent-101",
+            "resolved": "26.67",
+            "date": "2024-06-12",
+            "logs": "lite/20240612_IBM_Research_Agent101/logs",
+            "site": "https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20240612_IBM_Research_Agent101"
+        },
+        {
             "name": "Aider + GPT 4o & Claude 3 Opus",
             "resolved": "26.33",
             "date": "2024-05-23",
