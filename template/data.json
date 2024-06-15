@@ -85,6 +85,13 @@
             "site": "https://github.com/NL2Code/CodeR"
         },
         {
+            "name": "MASAI + GPT 4o (2024-05-13)",
+            "resolved": "28.00",
+            "date": "2024-06-12",
+            "logs": "lite/20240612_MASAI_gpt4o/logs",
+            "site": "https://github.com/masai-dev-agent/masai"
+        },
+        {
             "name": "IBM Research Agent-101",
             "resolved": "26.67",
             "date": "2024-06-12",
