@@ -100,6 +100,13 @@
             "oss": true
         },
         {
+            "name": "Bytedance MarsCode Agent + GPT 4o (2024-05-13)",
+            "resolved": "25.33",
+            "date": "2024-06-12",
+            "logs": "lite/20240612_marscode-agent-dev/logs",
+            "site": "https://www.marscode.com/"
+        },
+        {
             "name": "OpenCSG StarShip CodeGenAgent + GPT 4 (0613)",
             "resolved": "23.67",
             "date": "2024-05-24",
@@ -115,13 +122,6 @@
             "site": "https://github.com/aorwall/moatless-tools",
             "verified": true,
             "oss": true
-        },
-        {
-            "name": "Bytedance MarsCode Agent",
-            "resolved": "22.00",
-            "date": "2024-05-27",
-            "logs": "lite/20240527_marscode-agent-dev/logs",
-            "site": "https://www.marscode.com/"
         },
         {
             "name": "Amazon Q Developer Agent (v20240430-dev)",
