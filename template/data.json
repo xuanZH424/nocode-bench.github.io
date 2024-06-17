@@ -1,6 +1,13 @@
 {
     "test_leaderboard": [
         {
+            "name": "AppMap Navie + GPT 4o (2024-05-13)",
+            "resolved": "14.60",
+            "date": "2024-06-15",
+            "logs": "lite/20240615_appmap-navie_gpt4o/logs",
+            "site": "appmap.io/navie"
+        },
+        {
             "name": "Amazon Q Developer Agent (v20240430-dev)",
             "resolved": "13.82",
             "date": "2024-05-09",
@@ -129,6 +136,13 @@
             "site": "https://github.com/aorwall/moatless-tools",
             "verified": true,
             "oss": true
+        },
+        {
+            "name": "AppMap Navie + GPT 4o (2024-05-13)",
+            "resolved": "21.67",
+            "date": "2024-06-15",
+            "logs": "lite/20240615_appmap-navie_gpt4o/logs",
+            "site": "appmap.io/navie"
         },
         {
             "name": "Amazon Q Developer Agent (v20240430-dev)",
