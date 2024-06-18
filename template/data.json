@@ -135,21 +135,21 @@
             "site": "https://www.marscode.com/"
         },
         {
+            "name": "Moatless Tools + GPT 4o (2024-05-13)",
+            "resolved": "24.67",
+            "date": "2024-06-17",
+            "logs": "lite/20240617_moatless_gpt4o/logs",
+            "trajs": "lite/20240617_moatless_gpt4o/trajs",
+            "site": "https://github.com/aorwall/moatless-tools",
+            "verified": true,
+            "oss": true
+        },
+        {
             "name": "OpenCSG StarShip CodeGenAgent + GPT 4 (0613)",
             "resolved": "23.67",
             "date": "2024-05-24",
             "logs": "lite/20240524_opencsg_starship_gpt4/logs",
             "site": "https://opencsg.com/product?class=StarShip"
-        },
-        {
-            "name": "Moatless Tools + GPT 4o (2024-05-13)",
-            "resolved": "23.33",
-            "date": "2024-06-09",
-            "logs": "lite/20240609_moatless_gpt4o/logs",
-            "trajs": "lite/20240609_moatless_gpt4o/trajs",
-            "site": "https://github.com/aorwall/moatless-tools",
-            "verified": true,
-            "oss": true
         },
         {
             "name": "AppMap Navie + GPT 4o (2024-05-13)",
