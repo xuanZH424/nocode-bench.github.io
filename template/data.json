@@ -1,11 +1,18 @@
 {
     "test_leaderboard": [
         {
+            "name": "Factory Code Droid",
+            "resolved": "19.27",
+            "date": "2024-06-17",
+            "logs": "test/20240617_factory_code_droid/logs",
+            "site": "https://www.factory.ai/"
+        },
+        {
             "name": "AppMap Navie + GPT 4o (2024-05-13)",
             "resolved": "14.60",
             "date": "2024-06-15",
-            "logs": "lite/20240615_appmap-navie_gpt4o/logs",
-            "site": "appmap.io/navie"
+            "logs": "test/20240615_appmap-navie_gpt4o/logs",
+            "site": "https://appmap.io/navie"
         },
         {
             "name": "Amazon Q Developer Agent (v20240430-dev)",
@@ -85,6 +92,13 @@
     ],
     "lite_leaderboard": [
         {
+            "name": "Factory Code Droid",
+            "resolved": "31.33",
+            "date": "2024-06-17",
+            "logs": "lite/20240617_factory_code_droid/logs",
+            "site": "https://www.factory.ai/"
+        },
+        {
             "name": "CodeR + GPT 4 (1106)",
             "resolved": "28.33",
             "date": "2024-06-04",
@@ -142,7 +156,7 @@
             "resolved": "21.67",
             "date": "2024-06-15",
             "logs": "lite/20240615_appmap-navie_gpt4o/logs",
-            "site": "appmap.io/navie"
+            "site": "https://appmap.io/navie"
         },
         {
             "name": "Amazon Q Developer Agent (v20240430-dev)",
