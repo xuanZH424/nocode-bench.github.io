@@ -211,6 +211,8 @@
             "name": "SWE-agent + GPT 4o (2024-05-13)",
             "resolved": "17.00",
             "date": "2024-06-03",
+            "logs": "lite/20240603_sweagent_gpt4o/logs",
+            "trajs": "lite/20240603_sweagent_gpt4o/trajs",
             "site": "https://swe-agent.com/",
             "verified": true,
             "oss": true
