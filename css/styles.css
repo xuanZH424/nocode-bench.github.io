@@ -311,7 +311,6 @@ tr {
   text-align: left;
   position: sticky;
   top: 0;
-  z-index: 3;
   background-color: var(--even_line_color);
 }
 
@@ -343,7 +342,6 @@ tr {
 .sticky-header-content {
   position: sticky;
   top: 0;
-  z-index: 3;
   padding: 6px 0px; /* Adjusted padding */
   /* box-sizing: border-box; */
   background-color: var(--even_line_color);

@@ -92,11 +92,25 @@
     ],
     "lite_leaderboard": [
         {
+            "name": "Alibaba Lingma Agent",
+            "resolved": "33.00",
+            "date": "2024-06-22",
+            "logs": "lite/20240622_Lingma_Agent/logs",
+            "site": "https://arxiv.org/abs/2406.01422"
+        },
+        {
             "name": "Factory Code Droid",
             "resolved": "31.33",
             "date": "2024-06-17",
             "logs": "lite/20240617_factory_code_droid/logs",
             "site": "https://www.factory.ai/"
+        },
+        {
+            "name": "AutoCodeRover (v20240620) + GPT 4o (2024-05-13)",
+            "resolved": "30.67",
+            "date": "2024-06-21",
+            "logs": "lite/20240621_autocoderover-v20240620/logs",
+            "site": "https://autocoderover.dev/"
         },
         {
             "name": "CodeR + GPT 4 (1106)",
@@ -118,6 +132,16 @@
             "date": "2024-06-12",
             "logs": "lite/20240612_IBM_Research_Agent101/logs",
             "site": "https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20240612_IBM_Research_Agent101"
+        },
+        {
+            "name": "Moatless Tools + Claude 3.5 Sonnet",
+            "resolved": "26.67",
+            "date": "2024-06-23",
+            "logs": "lite/20240623_moatless_claude35sonnet/logs",
+            "trajs": "lite/20240623_moatless_claude35sonnet/trajs",
+            "site": "https://github.com/aorwall/moatless-tools",
+            "verified": true,
+            "oss": true
         },
         {
             "name": "Aider + GPT 4o & Claude 3 Opus",
