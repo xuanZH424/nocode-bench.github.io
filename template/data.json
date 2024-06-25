@@ -12,7 +12,8 @@
             "resolved": "14.60",
             "date": "2024-06-15",
             "logs": "test/20240615_appmap-navie_gpt4o/logs",
-            "site": "https://appmap.io/navie"
+            "site": "https://appmap.io/navie",
+            "oss": true
         },
         {
             "name": "Amazon Q Developer Agent (v20240430-dev)",
@@ -180,7 +181,8 @@
             "resolved": "21.67",
             "date": "2024-06-15",
             "logs": "lite/20240615_appmap-navie_gpt4o/logs",
-            "site": "https://appmap.io/navie"
+            "site": "https://appmap.io/navie",
+            "oss": true
         },
         {
             "name": "Amazon Q Developer Agent (v20240430-dev)",
