@@ -13,6 +13,7 @@
             "date": "2024-06-15",
             "logs": "test/20240615_appmap-navie_gpt4o/logs",
             "site": "https://appmap.io/navie",
+            "verified": true,
             "oss": true
         },
         {
@@ -182,6 +183,7 @@
             "date": "2024-06-15",
             "logs": "lite/20240615_appmap-navie_gpt4o/logs",
             "site": "https://appmap.io/navie",
+            "verified": true,
             "oss": true
         },
         {
