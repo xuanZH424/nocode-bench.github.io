@@ -8,6 +8,13 @@
             "site": "https://www.factory.ai/"
         },
         {
+            "name": "AutoCodeRover (v20240620) + GPT 4o (2024-05-13)",
+            "resolved": "18.83",
+            "date": "2024-06-28",
+            "logs": "test/20240628_autocoderover-v20240620/logs",
+            "site": "https://autocoderover.dev/"
+        },
+        {
             "name": "AppMap Navie + GPT 4o (2024-05-13)",
             "resolved": "14.60",
             "date": "2024-06-15",
@@ -94,6 +101,20 @@
     ],
     "lite_leaderboard": [
         {
+            "name": "CodeStory Aide + Mixed Models",
+            "resolved": "43.00",
+            "date": "2024-07-02",
+            "logs": "lite/20240702_codestory_aide_mixed/logs",
+            "site": "https://aide.dev/"
+        },
+        {
+            "name": "AbanteAI MentatBot + GPT 4o (2024-05-13)",
+            "resolved": "38.00",
+            "date": "2024-06-27",
+            "logs": "lite/20240627_abanteai_mentatbot_gpt4o/logs",
+            "site": "https://mentat.ai/blog/mentatbot-sota-coding-agent"
+        },
+        {
             "name": "Alibaba Lingma Agent",
             "resolved": "33.00",
             "date": "2024-06-22",
@@ -127,6 +148,14 @@
             "date": "2024-06-12",
             "logs": "lite/20240612_MASAI_gpt4o/logs",
             "site": "https://github.com/masai-dev-agent/masai"
+        },
+        {
+            "name": "Agentless + GPT 4o (2024-05-13)",
+            "resolved": "27.33",
+            "date": "2024-06-30",
+            "logs": "lite/20240630_agentless_gpt4o/logs",
+            "site": "https://github.com/OpenAutoCoder/Agentless",
+            "oss": true
         },
         {
             "name": "IBM Research Agent-101",
