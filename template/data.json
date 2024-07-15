@@ -150,6 +150,13 @@
             "site": "https://github.com/masai-dev-agent/masai"
         },
         {
+            "name": "SIMA + GPT 4o (2024-05-13)",
+            "resolved": "27.67",
+            "date": "2024-07-06",
+            "logs": "lite/20240706_sima_gpt4o/logs",
+            "site": "https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20240706_sima_gpt4o"
+        },
+        {
             "name": "Agentless + GPT 4o (2024-05-13)",
             "resolved": "27.33",
             "date": "2024-06-30",
