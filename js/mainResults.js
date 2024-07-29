@@ -91,29 +91,6 @@ function createTableBody(data, split, model, keys, table) {
     }
 }
 
-
-// Function to update the outcome table
-function updateMainResultsHelper(data, split, model) {
-    const outcomeTable1 = document.querySelector('#table-by-statuses-1');
-    const outcomeTable2 = document.querySelector('#table-by-statuses-2');
-    outcomeTable1.innerHTML = '';
-    outcomeTable2.innerHTML = '';
-
-    // Split the data keys into two halves
-    const keys = Object.keys(data);
-    const mid = Math.ceil(keys.length / 2);
-    const firstHalfKeys = keys.slice(0, mid);
-    const secondHalfKeys = keys.slice(mid);
-
-    // Create table header rows
-    createTableHeader(firstHalfKeys, outcomeTable1);
-    createTableHeader(secondHalfKeys, outcomeTable2);
-
-    // Create table body row
-    createTableBody(data, split, model, firstHalfKeys, outcomeTable1);
-    createTableBody(data, split, model, secondHalfKeys, outcomeTable2);
-}
-
 function updateMainResults(split, model) {
     const url = `https://raw.githubusercontent.com/swe-bench/experiments/main/evaluation/${split}/${model}/results/results.json`;
     fetch(url)
@@ -124,8 +101,6 @@ function updateMainResults(split, model) {
             const percentResolved = (resolved / total * 100).toFixed(2);
             const resolvedElement = document.getElementById('selectedResolved');
             resolvedElement.textContent = percentResolved;
-            
-            updateMainResultsHelper(data, split, model);
         })
         .catch(error => {
             console.error('Error fetching the JSON data:', error);
