@@ -128,19 +128,19 @@
                         {{item.name}}
                       </p>
                     </td>
-                    <td><p class="number">{{item.resolved}}</p></td>
+                    <td><p class="number">{{ "%.2f"|format(item.resolved|float) }}</p></td>
                     <td><p><span class="label-date">{{item.date}}</span></p></td>
                     <td>
                         <p style="text-align: center;">
-                        {% if item.logs is defined %}
-                            <a href="https://github.com/swe-bench/experiments/tree/main/evaluation/{{item.logs}}">🔗</a>
+                        {% if item.logs %}
+                            <a href="{{item.logs}}">🔗</a>
                         {% else %} - {% endif %}
                         </p>
                     </td>
                     <td>
                         <p style="text-align: center;">
-                        {% if item.trajs is defined %}
-                            <a href="https://github.com/swe-bench/experiments/tree/main/evaluation/{{item.trajs}}">🔗</a>
+                        {% if item.trajs %}
+                            <a href="{{item.trajs}}">🔗</a>
                         {% else %} - {% endif %}
                         </p>
                     </td>
@@ -151,8 +151,8 @@
                         {% else %} - {% endif %}
                         </p>
                     </td>
-                    <td><p style="text-align: center;">{{'✓' if item.verified is defined else '✘'}}</p></td>
-                    <td><p style="text-align: center;">{{'✓' if item.oss is defined else '✘'}}</p></td>
+                    <td><p style="text-align: center;">{{'✓' if item.verified else '✘'}}</p></td>
+                    <td><p style="text-align: center;">{{'✓' if item.oss else '✘'}}</p></td>
                   </tr>
                   {% endfor %}
                 </tbody>
@@ -212,19 +212,19 @@
                         {{item.name}}
                       </p>
                     </td>
-                    <td><p class="number">{{item.resolved}}</p></td>
+                    <td><p class="number">{{"%.2f"|format(item.resolved|float)}}</p></td>
                     <td><p><span class="label-date">{{item.date}}</span></p></td>
                     <td>
                         <p style="text-align: center;">
-                        {% if item.logs is defined %}
-                            <a href="https://github.com/swe-bench/experiments/tree/main/evaluation/{{item.logs}}">🔗</a>
+                        {% if item.logs %}
+                            <a href="{{item.logs}}">🔗</a>
                         {% else %} - {% endif %}
                         </p>
                     </td>
                     <td>
                         <p style="text-align: center;">
-                        {% if item.trajs is defined %}
-                            <a href="https://github.com/swe-bench/experiments/tree/main/evaluation/{{item.trajs}}">🔗</a>
+                        {% if item.trajs %}
+                            <a href="{{item.trajs}}">🔗</a>
                         {% else %} - {% endif %}
                         </p>
                     </td>
@@ -235,8 +235,8 @@
                         {% else %} - {% endif %}
                         </p>
                     </td>
-                    <td><p style="text-align: center;">{{'✓' if item.verified is defined else '✘'}}</p></td>
-                    <td><p style="text-align: center;">{{'✓' if item.oss is defined else '✘'}}</p></td>
+                    <td><p style="text-align: center;">{{'✓' if item.verified else '✘'}}</p></td>
+                    <td><p style="text-align: center;">{{'✓' if item.oss else '✘'}}</p></td>
                   </tr>
                   {% endfor %}
                 </tbody>

@@ -11,15 +11,19 @@ Make sure Jinja2 is installed
 env = Environment(loader=FileSystemLoader('.'))
 
 # Load the template
-template = env.get_template('template.html')
+template_index = env.get_template('template_index.html')
+template_viewer = env.get_template('template_viewer.html')
 
 # Load JSON data
 with open('data.json', 'r') as f:
     data = json.load(f)
 
 # Render the template with the data
-output_html = template.render(data)
+output_html_index = template_index.render(data)
+output_html_viewer = template_viewer.render(data)
 
 # Write the output to a new HTML file
 with open('../index.html', 'w') as f:
-    f.write(output_html)
+    f.write(output_html_index)
+with open('../viewer.html', 'w') as f:
+    f.write(output_html_viewer)
