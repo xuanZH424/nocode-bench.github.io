@@ -376,3 +376,9 @@ tr {
   scrollbar-width: thin;  /* "auto" or "thin" */
   scrollbar-color: #888 var(--accent_color); /* scroll thumb and track */
 }
+
+#reasoning-traces {
+  p {
+    margin-bottom: 1em;
+  }
+}

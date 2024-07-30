@@ -112,8 +112,6 @@
                     <th><div class="sticky-header-content">Logs</div></th>
                     <th><div class="sticky-header-content">Trajs</div></th>
                     <th><div class="sticky-header-content">Site</div></th>
-                    <th><div class="sticky-header-content">Verified?</div></th>
-                    <th><div class="sticky-header-content">Open?</div></th>
                   </tr>
                 </thead>
                 <tbody>
@@ -125,6 +123,8 @@
                         {% elif loop.index == 2 %}🥈
                         {% elif loop.index == 3 %}🥉
                         {% endif %}
+                        {% if item.oss %}🤠{% endif %}
+                        {% if item.verified %}✅{% endif %}
                         {{item.name}}
                       </p>
                     </td>
@@ -151,8 +151,6 @@
                         {% else %} - {% endif %}
                         </p>
                     </td>
-                    <td><p style="text-align: center;">{{'✓' if item.verified else '✘'}}</p></td>
-                    <td><p style="text-align: center;">{{'✓' if item.oss else '✘'}}</p></td>
                   </tr>
                   {% endfor %}
                 </tbody>
@@ -162,10 +160,10 @@
               - The <span style="color:#0ea7ff;"><b>% Resolved</b></span> metric refers to the percentage of SWE-bench instances (2294 total)
               that were <i>resolved</i> by the model.
               <br>
-              - <span style="color:#0ea7ff;">"<b>Verified</b>"</span> indicates that we, the SWE-bench team, received access to the system and
+              - <span style="color:#0ea7ff;"><b>✅ Verified</b></span> indicates that we, the SWE-bench team, received access to the system and
               were able to reproduce the patch generations.
               <br>
-              - <span style="color:#0ea7ff;">"<b>Open</b>"</span> refers to submissions that have open-source code. This does <i>not</i>
+              - <span style="color:#0ea7ff;"><b>🤠 Open</b></span> refers to submissions that have open-source code. This does <i>not</i>
               necessarily mean the underlying model is open-source.
               <br>
               - The leaderboard is updated once a week on <b>Monday</b>.
@@ -196,8 +194,6 @@
                     <th><div class="sticky-header-content">Logs</div></th>
                     <th><div class="sticky-header-content">Trajs</div></th>
                     <th><div class="sticky-header-content">Site</div></th>
-                    <th><div class="sticky-header-content">Verified?</div></th>
-                    <th><div class="sticky-header-content">Open?</div></th>
                   </tr>
                 </thead>
                 <tbody>
@@ -209,6 +205,8 @@
                         {% elif loop.index == 2 %}🥈
                         {% elif loop.index == 3 %}🥉
                         {% endif %}
+                        {% if item.oss %}🤠{% endif %}
+                        {% if item.verified %}✅{% endif %}
                         {{item.name}}
                       </p>
                     </td>
@@ -235,8 +233,6 @@
                         {% else %} - {% endif %}
                         </p>
                     </td>
-                    <td><p style="text-align: center;">{{'✓' if item.verified else '✘'}}</p></td>
-                    <td><p style="text-align: center;">{{'✓' if item.oss else '✘'}}</p></td>
                   </tr>
                   {% endfor %}
                 </tbody>
