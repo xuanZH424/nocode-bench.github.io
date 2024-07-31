@@ -100,6 +100,17 @@
       "oss": true
     },
     {
+      "name": "SWE-agent + Claude 3.5 Sonnet",
+      "folder": "20240620_sweagent_claude3.5sonnet",
+      "resolved": 18.13,
+      "date": "2024-06-20",
+      "logs": "https://github.com/swe-bench/experiments/tree/main/evaluation/test/20240620_sweagent_claude3.5sonnet/logs",
+      "trajs": "https://github.com/swe-bench/experiments/tree/main/evaluation/test/20240620_sweagent_claude3.5sonnet/trajs",
+      "site": null,
+      "verified": true,
+      "oss": true
+    },
+    {
       "name": "SWE-agent + GPT 4 (1106)",
       "folder": "20240402_sweagent_gpt4",
       "resolved": 12.47,
@@ -177,6 +188,17 @@
       "site": "https://autocoderover.dev/",
       "verified": false,
       "oss": false
+    },
+    {
+      "name": "SWE-agent + Claude 3.5 Sonnet",
+      "folder": "20240620_sweagent_claude3.5sonnet",
+      "resolved": 18.13,
+      "date": "2024-06-20",
+      "logs": "https://github.com/swe-bench/experiments/tree/main/evaluation/test/20240620_sweagent_claude3.5sonnet/logs",
+      "trajs": "https://github.com/swe-bench/experiments/tree/main/evaluation/test/20240620_sweagent_claude3.5sonnet/trajs",
+      "site": null,
+      "verified": true,
+      "oss": true
     },
     {
       "name": "AppMap Navie + GPT 4o (2024-05-13)",
@@ -450,7 +472,7 @@
       "resolved": 27.67,
       "date": "2024-07-06",
       "logs": "https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20240706_sima_gpt4o/logs",
-      "trajs": null,
+      "trajs": "https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20240706_sima_gpt4o/trajs",
       "site": "https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20240706_sima_gpt4o",
       "verified": false,
       "oss": false
@@ -473,6 +495,17 @@
       "date": "2023-10-10",
       "logs": "https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20231010_rag_swellama7b/logs",
       "trajs": null,
+      "site": null,
+      "verified": true,
+      "oss": true
+    },
+    {
+      "name": "SWE-agent + Claude 3.5 Sonnet",
+      "folder": "20240620_sweagent_claude3.5sonnet",
+      "resolved": 23.0,
+      "date": "2024-06-20",
+      "logs": "https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20240620_sweagent_claude3.5sonnet/logs",
+      "trajs": "https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20240620_sweagent_claude3.5sonnet/trajs",
       "site": null,
       "verified": true,
       "oss": true
@@ -570,7 +603,7 @@
       "folder": "20240723_marscode-agent-dev",
       "resolved": 34.0,
       "date": "2024-07-23",
-      "logs": null,
+      "logs": "https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20240723_marscode-agent-dev/logs",
       "trajs": null,
       "site": "https://www.marscode.com/",
       "verified": false,
@@ -638,7 +671,7 @@
       "folder": "20240723_marscode-agent-dev",
       "resolved": 34.0,
       "date": "2024-07-23",
-      "logs": null,
+      "logs": "https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20240723_marscode-agent-dev/logs",
       "trajs": null,
       "site": "https://www.marscode.com/",
       "verified": false,
@@ -716,7 +749,7 @@
       "resolved": 27.67,
       "date": "2024-07-06",
       "logs": "https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20240706_sima_gpt4o/logs",
-      "trajs": null,
+      "trajs": "https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20240706_sima_gpt4o/trajs",
       "site": "https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20240706_sima_gpt4o",
       "verified": false,
       "oss": false
@@ -797,6 +830,17 @@
       "site": "https://opencsg.com/product?class=StarShip",
       "verified": false,
       "oss": false
+    },
+    {
+      "name": "SWE-agent + Claude 3.5 Sonnet",
+      "folder": "20240620_sweagent_claude3.5sonnet",
+      "resolved": 23.0,
+      "date": "2024-06-20",
+      "logs": "https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20240620_sweagent_claude3.5sonnet/logs",
+      "trajs": "https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20240620_sweagent_claude3.5sonnet/trajs",
+      "site": null,
+      "verified": true,
+      "oss": true
     },
     {
       "name": "AppMap Navie + GPT 4o (2024-05-13)",
