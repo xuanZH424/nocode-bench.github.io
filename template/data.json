@@ -117,7 +117,7 @@
       "date": "2024-04-02",
       "logs": "https://github.com/swe-bench/experiments/tree/main/evaluation/test/20240402_sweagent_gpt4/logs",
       "trajs": "https://github.com/swe-bench/experiments/tree/main/evaluation/test/20240402_sweagent_gpt4/trajs",
-      "site": "https://swe-agent.com/",
+      "site": "https://github.com/princeton-nlp/SWE-agent",
       "verified": true,
       "oss": true
     },
@@ -128,7 +128,7 @@
       "date": "2024-04-02",
       "logs": "https://github.com/swe-bench/experiments/tree/main/evaluation/test/20240402_rag_claude3opus/logs",
       "trajs": null,
-      "site": "https://github.com/princeton-nlp/SWE-bench/tree/main/inference",
+      "site": "https://github.com/princeton-nlp/SWE-bench/tree/main/swebench/inference",
       "verified": true,
       "oss": true
     },
@@ -229,7 +229,7 @@
       "date": "2024-04-02",
       "logs": "https://github.com/swe-bench/experiments/tree/main/evaluation/test/20240402_sweagent_gpt4/logs",
       "trajs": "https://github.com/swe-bench/experiments/tree/main/evaluation/test/20240402_sweagent_gpt4/trajs",
-      "site": "https://swe-agent.com/",
+      "site": "https://github.com/princeton-nlp/SWE-agent",
       "verified": true,
       "oss": true
     },
@@ -251,7 +251,7 @@
       "date": "2024-04-02",
       "logs": "https://github.com/swe-bench/experiments/tree/main/evaluation/test/20240402_rag_claude3opus/logs",
       "trajs": null,
-      "site": "https://github.com/princeton-nlp/SWE-bench/tree/main/inference",
+      "site": "https://github.com/princeton-nlp/SWE-bench/tree/main/swebench/inference",
       "verified": true,
       "oss": true
     },
@@ -429,7 +429,7 @@
       "date": "2024-06-03",
       "logs": "https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20240603_sweagent_gpt4o/logs",
       "trajs": "https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20240603_sweagent_gpt4o/trajs",
-      "site": "https://swe-agent.com/",
+      "site": "https://github.com/princeton-nlp/SWE-agent",
       "verified": true,
       "oss": true
     },
@@ -517,7 +517,7 @@
       "date": "2024-04-02",
       "logs": "https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20240402_sweagent_gpt4/logs",
       "trajs": "https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20240402_sweagent_gpt4/trajs",
-      "site": "https://swe-agent.com/",
+      "site": "https://github.com/princeton-nlp/SWE-agent",
       "verified": true,
       "oss": true
     },
@@ -539,7 +539,7 @@
       "date": "2024-04-02",
       "logs": "https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20240402_rag_claude3opus/logs",
       "trajs": null,
-      "site": "https://github.com/princeton-nlp/SWE-bench/tree/main/inference",
+      "site": "https://github.com/princeton-nlp/SWE-bench/tree/main/swebench/inference",
       "verified": true,
       "oss": true
     },
@@ -882,7 +882,7 @@
       "date": "2024-04-02",
       "logs": "https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20240402_sweagent_gpt4/logs",
       "trajs": "https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20240402_sweagent_gpt4/trajs",
-      "site": "https://swe-agent.com/",
+      "site": "https://github.com/princeton-nlp/SWE-agent",
       "verified": true,
       "oss": true
     },
@@ -893,7 +893,7 @@
       "date": "2024-06-03",
       "logs": "https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20240603_sweagent_gpt4o/logs",
       "trajs": "https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20240603_sweagent_gpt4o/trajs",
-      "site": "https://swe-agent.com/",
+      "site": "https://github.com/princeton-nlp/SWE-agent",
       "verified": true,
       "oss": true
     },
@@ -915,7 +915,7 @@
       "date": "2024-04-02",
       "logs": "https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20240402_rag_claude3opus/logs",
       "trajs": null,
-      "site": "https://github.com/princeton-nlp/SWE-bench/tree/main/inference",
+      "site": "https://github.com/princeton-nlp/SWE-bench/tree/main/swebench/inference",
       "verified": true,
       "oss": true
     },
