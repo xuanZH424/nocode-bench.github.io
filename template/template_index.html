@@ -102,7 +102,13 @@
         <div class="content-wrapper">
           <div class="content-box">
             <h2 class="text-title">Leaderboard</h2>
-            <div class="tabcontent tabcontentall" style="display: block">
+            <ul class="tab">
+              <li><button id="tab-lite" class="tablinks" data-leaderboard="Lite">Lite</button></li>
+              <li><button id="tab-verified" class="tablinks" data-leaderboard="Verified">Verified</button></li>
+              <li><button id="tab-test" class="tablinks" data-leaderboard="Test">Test</button></li>
+            </ul>
+            {% for leaderboard in leaderboards %}
+            <div class="tabcontent" style="display: block" id="leaderboard-{{leaderboard.name}}">
               <table class="table scrollable">
                 <thead>
                   <tr>
@@ -115,7 +121,7 @@
                   </tr>
                 </thead>
                 <tbody>
-                  {% for item in test_leaderboard %}
+                  {% for item in leaderboard.results %}
                   <tr>
                     <td>
                       <p class="model-type">
@@ -156,8 +162,10 @@
                 </tbody>
               </table>
             </div>
+            {% endfor %}
             <p class="text-content">
-              - The <span style="color:#0ea7ff;"><b>% Resolved</b></span> metric refers to the percentage of SWE-bench instances (2294 total)
+              - The <span style="color:#0ea7ff;"><b>% Resolved</b></span> metric refers to the percentage of SWE-bench instances
+              (<b>2294</b> for test, <b>500</b> for verified, <b>300</b> for lite)
               that were <i>resolved</i> by the model.
               <br>
               - <span style="color:#0ea7ff;"><b>✅ Verified</b></span> indicates that we, the SWE-bench team, received access to the system and
@@ -174,73 +182,6 @@
               <code style="color:black;background-color:#ddd;border-radius: 0.25em">hints_text</code>,
               and are in the unassisted setting.
             </p>
-          </div>
-        </div>
-        <div class="content-wrapper">
-          <div class="content-box">
-            <h2 class="text-title">Leaderboard (Lite)</h2>
-            <p class="text-content" style="padding-top: 0;">
-              SWE-bench <i>Lite</i> is a subset of SWE-bench that's been
-              curated to make evaluation less costly and more accessible.
-              If you'd like to learn more, please read our blog <a href="lite.html">post</a>.
-            </p>
-            <div class="tabcontent tabcontentlite" style="display: block">
-              <table class="table scrollable">
-                <thead>
-                  <tr>
-                    <th><div class="sticky-header-content">Model</div></th>
-                    <th><div class="sticky-header-content">% Resolved</div></th>
-                    <th><div class="sticky-header-content">Date</div></th>
-                    <th><div class="sticky-header-content">Logs</div></th>
-                    <th><div class="sticky-header-content">Trajs</div></th>
-                    <th><div class="sticky-header-content">Site</div></th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {% for item in lite_leaderboard %}
-                  <tr>
-                    <td>
-                      <p class="model-type">
-                        {% if loop.index == 1 %}🥇
-                        {% elif loop.index == 2 %}🥈
-                        {% elif loop.index == 3 %}🥉
-                        {% endif %}
-                        {% if item.oss %}🤠{% endif %}
-                        {% if item.verified %}✅{% endif %}
-                        {{item.name}}
-                      </p>
-                    </td>
-                    <td><p class="number">{{"%.2f"|format(item.resolved|float)}}</p></td>
-                    <td><p><span class="label-date">{{item.date}}</span></p></td>
-                    <td>
-                        <p style="text-align: center;">
-                        {% if item.logs %}
-                            <a href="{{item.logs}}">🔗</a>
-                        {% else %} - {% endif %}
-                        </p>
-                    </td>
-                    <td>
-                        <p style="text-align: center;">
-                        {% if item.trajs %}
-                            <a href="{{item.trajs}}">🔗</a>
-                        {% else %} - {% endif %}
-                        </p>
-                    </td>
-                    <td>
-                        <p style="text-align: center;">
-                        {% if item.site %}
-                            <a href="{{item.site}}">🔗</a>
-                        {% else %} - {% endif %}
-                        </p>
-                    </td>
-                  </tr>
-                  {% endfor %}
-                </tbody>
-              </table>
-              <p class="text-content">
-                The <span style="color:#0ea7ff;"><b>% Resolved</b></span> metric is out of 300 instances for SWE-bench Lite.
-              </p>
-            </div>
           </div>
         </div>
         <div class="content-wrapper">
@@ -448,5 +389,33 @@
         </div>
       </section>
     </div>
+    <script>
+      function openLeaderboard(leaderboard) {
+        var tabcontent = document.getElementsByClassName("tabcontent");
+        for (var i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+
+        var tablinks = document.getElementsByClassName("tablinks");
+        for (var i = 0; i < tablinks.length; i++) {
+          tablinks[i].classList.remove("active");
+        }
+
+        document.getElementById(`leaderboard-${leaderboard}`).style.display = "block";
+        document.querySelector(`[data-leaderboard="${leaderboard}"]`).classList.add("active");
+      }
+
+      document.addEventListener('DOMContentLoaded', function() {
+        var tabs = document.querySelectorAll('.tablinks');
+        tabs.forEach(function(tab) {
+          tab.addEventListener('click', function(event) {
+            openLeaderboard(this.getAttribute('data-leaderboard'));
+          });
+        });
+
+        // Open the 'lite' leaderboard by default
+        openLeaderboard('Lite');
+      });
+    </script>
   </body>
 </html>

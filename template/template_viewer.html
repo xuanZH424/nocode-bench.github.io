@@ -85,11 +85,10 @@
         <div style="text-align: center; margin: 1em 0 1.5em 0;">
             <label for="split-and-model">Split & Model:</label>
             <select id="split-and-model">
-                {% for item in lite_leaderboard %}
-                    <option value="lite,{{ item.folder }}">Lite / ({{ item.date }}) {{item.name}}</option>
-                {% endfor %}
-                {% for item in test_leaderboard %}
-                    <option value="test,{{ item.folder }}">Test / ({{ item.date }}) {{item.name}}</option>
+                {% for leaderboard in leaderboards %}
+                    {% for item in leaderboard.results %}
+                        <option value="{{ leaderboard.name.lower() }},{{ item.folder }}">{{ leaderboard.name }} / ({{ item.date }}) {{item.name}}</option>
+                    {% endfor %}
                 {% endfor %}
             </select>
             <button id="loadData">Load Data</button>
@@ -171,7 +170,7 @@ document.getElementById('loadData').addEventListener('click', () => {
 
     document.getElementById('selectedSplit').textContent = splitValue;
     document.getElementById('selectedModel').textContent = modelValue;
-    document.getElementById('selectedSplitNum').textContent = splitValue == 'lite' ? 300 : 2294;
+    document.getElementById('selectedSplitNum').textContent = splitValue.lower() == 'lite' ? 300 : 'verified' ? 500 : 2294;
     document.getElementById('modelSplitURL').href = `https://github.com/swe-bench/experiments/tree/main/evaluation/${splitValue}/${modelValue}`;
 
     updateMainResults(splitValue, modelValue);

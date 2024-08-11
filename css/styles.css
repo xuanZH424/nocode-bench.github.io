@@ -193,6 +193,32 @@ button {
     }
 }
 
+/* MARK: Styling for tab-style table  */
+ul.tab {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 2px solid var(--accent_color);
+  border-bottom: 0;
+  background-color: #f1f1f1;
+}
+
+ul.tab li {float: left;}
+ul.tab li button {
+  border: none;
+  color: black;
+  display: inline-block;
+  font-size: 17px;
+  padding: 0.5em 1em;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+ul.tab li a:hover {background-color: #ddd;}
+ul.tab li a:focus, .active {background-color: #ccc;}
+
 .tabcontent {
   display: none;
   border-top: none;

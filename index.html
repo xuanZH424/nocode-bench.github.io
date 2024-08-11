@@ -102,7 +102,13 @@
         <div class="content-wrapper">
           <div class="content-box">
             <h2 class="text-title">Leaderboard</h2>
-            <div class="tabcontent tabcontentall" style="display: block">
+            <ul class="tab">
+              <li><button id="tab-lite" class="tablinks" data-leaderboard="Lite">Lite</button></li>
+              <li><button id="tab-verified" class="tablinks" data-leaderboard="Verified">Verified</button></li>
+              <li><button id="tab-test" class="tablinks" data-leaderboard="Test">Test</button></li>
+            </ul>
+            
+            <div class="tabcontent" style="display: block" id="leaderboard-Test">
               <table class="table scrollable">
                 <thead>
                   <tr>
@@ -562,35 +568,435 @@
                 </tbody>
               </table>
             </div>
-            <p class="text-content">
-              - The <span style="color:#0ea7ff;"><b>% Resolved</b></span> metric refers to the percentage of SWE-bench instances (2294 total)
-              that were <i>resolved</i> by the model.
-              <br>
-              - <span style="color:#0ea7ff;"><b>✅ Verified</b></span> indicates that we, the SWE-bench team, received access to the system and
-              were able to reproduce the patch generations.
-              <br>
-              - <span style="color:#0ea7ff;"><b>🤠 Open</b></span> refers to submissions that have open-source code. This does <i>not</i>
-              necessarily mean the underlying model is open-source.
-              <br>
-              - The leaderboard is updated once a week on <b>Monday</b>.
-              <br>
-              - If you would like to submit your model to the leaderboard, please check the <a href="submit.html">submission</a> page.
-              <br>
-              - All submissions are Pass@1, do not use
-              <code style="color:black;background-color:#ddd;border-radius: 0.25em">hints_text</code>,
-              and are in the unassisted setting.
-            </p>
-          </div>
-        </div>
-        <div class="content-wrapper">
-          <div class="content-box">
-            <h2 class="text-title">Leaderboard (Lite)</h2>
-            <p class="text-content" style="padding-top: 0;">
-              SWE-bench <i>Lite</i> is a subset of SWE-bench that's been
-              curated to make evaluation less costly and more accessible.
-              If you'd like to learn more, please read our blog <a href="lite.html">post</a>.
-            </p>
-            <div class="tabcontent tabcontentlite" style="display: block">
+            
+            <div class="tabcontent" style="display: block" id="leaderboard-Verified">
+              <table class="table scrollable">
+                <thead>
+                  <tr>
+                    <th><div class="sticky-header-content">Model</div></th>
+                    <th><div class="sticky-header-content">% Resolved</div></th>
+                    <th><div class="sticky-header-content">Date</div></th>
+                    <th><div class="sticky-header-content">Logs</div></th>
+                    <th><div class="sticky-header-content">Trajs</div></th>
+                    <th><div class="sticky-header-content">Site</div></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  
+                  <tr>
+                    <td>
+                      <p class="model-type">
+                        🥇
+                        
+                        
+                        
+                        Amazon Q Developer Agent (v20240719-dev)
+                      </p>
+                    </td>
+                    <td><p class="number">38.80</p></td>
+                    <td><p><span class="label-date">2024-07-21</span></p></td>
+                    <td>
+                        <p style="text-align: center;">
+                         - 
+                        </p>
+                    </td>
+                    <td>
+                        <p style="text-align: center;">
+                         - 
+                        </p>
+                    </td>
+                    <td>
+                        <p style="text-align: center;">
+                        
+                            <a href="https://aws.amazon.com/q/developer/">🔗</a>
+                        
+                        </p>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <p class="model-type">
+                        🥈
+                        
+                        
+                        
+                        AutoCodeRover (v20240620) + GPT 4o (2024-05-13)
+                      </p>
+                    </td>
+                    <td><p class="number">38.40</p></td>
+                    <td><p><span class="label-date">2024-06-28</span></p></td>
+                    <td>
+                        <p style="text-align: center;">
+                         - 
+                        </p>
+                    </td>
+                    <td>
+                        <p style="text-align: center;">
+                         - 
+                        </p>
+                    </td>
+                    <td>
+                        <p style="text-align: center;">
+                        
+                            <a href="https://autocoderover.dev/">🔗</a>
+                        
+                        </p>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <p class="model-type">
+                        🥉
+                        
+                        
+                        
+                        Factory Code Droid
+                      </p>
+                    </td>
+                    <td><p class="number">37.00</p></td>
+                    <td><p><span class="label-date">2024-06-17</span></p></td>
+                    <td>
+                        <p style="text-align: center;">
+                         - 
+                        </p>
+                    </td>
+                    <td>
+                        <p style="text-align: center;">
+                         - 
+                        </p>
+                    </td>
+                    <td>
+                        <p style="text-align: center;">
+                        
+                            <a href="https://www.factory.ai/">🔗</a>
+                        
+                        </p>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <p class="model-type">
+                        
+                        🤠
+                        ✅
+                        SWE-agent + Claude 3.5 Sonnet
+                      </p>
+                    </td>
+                    <td><p class="number">33.60</p></td>
+                    <td><p><span class="label-date">2024-06-20</span></p></td>
+                    <td>
+                        <p style="text-align: center;">
+                         - 
+                        </p>
+                    </td>
+                    <td>
+                        <p style="text-align: center;">
+                         - 
+                        </p>
+                    </td>
+                    <td>
+                        <p style="text-align: center;">
+                         - 
+                        </p>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <p class="model-type">
+                        
+                        🤠
+                        ✅
+                        AppMap Navie + GPT 4o (2024-05-13)
+                      </p>
+                    </td>
+                    <td><p class="number">26.20</p></td>
+                    <td><p><span class="label-date">2024-06-15</span></p></td>
+                    <td>
+                        <p style="text-align: center;">
+                         - 
+                        </p>
+                    </td>
+                    <td>
+                        <p style="text-align: center;">
+                         - 
+                        </p>
+                    </td>
+                    <td>
+                        <p style="text-align: center;">
+                        
+                            <a href="https://appmap.io/navie">🔗</a>
+                        
+                        </p>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <p class="model-type">
+                        
+                        
+                        
+                        Amazon Q Developer Agent (v20240430-dev)
+                      </p>
+                    </td>
+                    <td><p class="number">25.60</p></td>
+                    <td><p><span class="label-date">2024-05-09</span></p></td>
+                    <td>
+                        <p style="text-align: center;">
+                         - 
+                        </p>
+                    </td>
+                    <td>
+                        <p style="text-align: center;">
+                         - 
+                        </p>
+                    </td>
+                    <td>
+                        <p style="text-align: center;">
+                        
+                            <a href="https://aws.amazon.com/q/developer/">🔗</a>
+                        
+                        </p>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <p class="model-type">
+                        
+                        🤠
+                        ✅
+                        SWE-agent + GPT 4 (1106)
+                      </p>
+                    </td>
+                    <td><p class="number">22.40</p></td>
+                    <td><p><span class="label-date">2024-04-02</span></p></td>
+                    <td>
+                        <p style="text-align: center;">
+                         - 
+                        </p>
+                    </td>
+                    <td>
+                        <p style="text-align: center;">
+                         - 
+                        </p>
+                    </td>
+                    <td>
+                        <p style="text-align: center;">
+                        
+                            <a href="https://github.com/princeton-nlp/SWE-agent">🔗</a>
+                        
+                        </p>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <p class="model-type">
+                        
+                        🤠
+                        ✅
+                        SWE-agent + Claude 3 Opus
+                      </p>
+                    </td>
+                    <td><p class="number">18.20</p></td>
+                    <td><p><span class="label-date">2024-04-02</span></p></td>
+                    <td>
+                        <p style="text-align: center;">
+                         - 
+                        </p>
+                    </td>
+                    <td>
+                        <p style="text-align: center;">
+                         - 
+                        </p>
+                    </td>
+                    <td>
+                        <p style="text-align: center;">
+                         - 
+                        </p>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <p class="model-type">
+                        
+                        🤠
+                        ✅
+                        RAG + Claude 3 Opus
+                      </p>
+                    </td>
+                    <td><p class="number">7.00</p></td>
+                    <td><p><span class="label-date">2024-04-02</span></p></td>
+                    <td>
+                        <p style="text-align: center;">
+                         - 
+                        </p>
+                    </td>
+                    <td>
+                        <p style="text-align: center;">
+                         - 
+                        </p>
+                    </td>
+                    <td>
+                        <p style="text-align: center;">
+                        
+                            <a href="https://github.com/princeton-nlp/SWE-bench/tree/main/swebench/inference">🔗</a>
+                        
+                        </p>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <p class="model-type">
+                        
+                        🤠
+                        ✅
+                        RAG + Claude 2
+                      </p>
+                    </td>
+                    <td><p class="number">4.40</p></td>
+                    <td><p><span class="label-date">2023-10-10</span></p></td>
+                    <td>
+                        <p style="text-align: center;">
+                         - 
+                        </p>
+                    </td>
+                    <td>
+                        <p style="text-align: center;">
+                         - 
+                        </p>
+                    </td>
+                    <td>
+                        <p style="text-align: center;">
+                         - 
+                        </p>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <p class="model-type">
+                        
+                        🤠
+                        ✅
+                        RAG + GPT 4 (1106)
+                      </p>
+                    </td>
+                    <td><p class="number">2.80</p></td>
+                    <td><p><span class="label-date">2024-04-02</span></p></td>
+                    <td>
+                        <p style="text-align: center;">
+                         - 
+                        </p>
+                    </td>
+                    <td>
+                        <p style="text-align: center;">
+                         - 
+                        </p>
+                    </td>
+                    <td>
+                        <p style="text-align: center;">
+                         - 
+                        </p>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <p class="model-type">
+                        
+                        🤠
+                        ✅
+                        RAG + SWE-Llama 7B
+                      </p>
+                    </td>
+                    <td><p class="number">1.40</p></td>
+                    <td><p><span class="label-date">2023-10-10</span></p></td>
+                    <td>
+                        <p style="text-align: center;">
+                         - 
+                        </p>
+                    </td>
+                    <td>
+                        <p style="text-align: center;">
+                         - 
+                        </p>
+                    </td>
+                    <td>
+                        <p style="text-align: center;">
+                         - 
+                        </p>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <p class="model-type">
+                        
+                        🤠
+                        ✅
+                        RAG + SWE-Llama 13B
+                      </p>
+                    </td>
+                    <td><p class="number">1.20</p></td>
+                    <td><p><span class="label-date">2023-10-10</span></p></td>
+                    <td>
+                        <p style="text-align: center;">
+                         - 
+                        </p>
+                    </td>
+                    <td>
+                        <p style="text-align: center;">
+                         - 
+                        </p>
+                    </td>
+                    <td>
+                        <p style="text-align: center;">
+                         - 
+                        </p>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <p class="model-type">
+                        
+                        🤠
+                        ✅
+                        RAG + ChatGPT 3.5
+                      </p>
+                    </td>
+                    <td><p class="number">0.40</p></td>
+                    <td><p><span class="label-date">2023-10-10</span></p></td>
+                    <td>
+                        <p style="text-align: center;">
+                         - 
+                        </p>
+                    </td>
+                    <td>
+                        <p style="text-align: center;">
+                         - 
+                        </p>
+                    </td>
+                    <td>
+                        <p style="text-align: center;">
+                         - 
+                        </p>
+                    </td>
+                  </tr>
+                  
+                </tbody>
+              </table>
+            </div>
+            
+            <div class="tabcontent" style="display: block" id="leaderboard-Lite">
               <table class="table scrollable">
                 <thead>
                   <tr>
@@ -1571,10 +1977,27 @@
                   
                 </tbody>
               </table>
-              <p class="text-content">
-                The <span style="color:#0ea7ff;"><b>% Resolved</b></span> metric is out of 300 instances for SWE-bench Lite.
-              </p>
             </div>
+            
+            <p class="text-content">
+              - The <span style="color:#0ea7ff;"><b>% Resolved</b></span> metric refers to the percentage of SWE-bench instances
+              (<b>2294</b> for test, <b>500</b> for verified, <b>300</b> for lite)
+              that were <i>resolved</i> by the model.
+              <br>
+              - <span style="color:#0ea7ff;"><b>✅ Verified</b></span> indicates that we, the SWE-bench team, received access to the system and
+              were able to reproduce the patch generations.
+              <br>
+              - <span style="color:#0ea7ff;"><b>🤠 Open</b></span> refers to submissions that have open-source code. This does <i>not</i>
+              necessarily mean the underlying model is open-source.
+              <br>
+              - The leaderboard is updated once a week on <b>Monday</b>.
+              <br>
+              - If you would like to submit your model to the leaderboard, please check the <a href="submit.html">submission</a> page.
+              <br>
+              - All submissions are Pass@1, do not use
+              <code style="color:black;background-color:#ddd;border-radius: 0.25em">hints_text</code>,
+              and are in the unassisted setting.
+            </p>
           </div>
         </div>
         <div class="content-wrapper">
@@ -1782,5 +2205,33 @@
         </div>
       </section>
     </div>
+    <script>
+      function openLeaderboard(leaderboard) {
+        var tabcontent = document.getElementsByClassName("tabcontent");
+        for (var i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+
+        var tablinks = document.getElementsByClassName("tablinks");
+        for (var i = 0; i < tablinks.length; i++) {
+          tablinks[i].classList.remove("active");
+        }
+
+        document.getElementById(`leaderboard-${leaderboard}`).style.display = "block";
+        document.querySelector(`[data-leaderboard="${leaderboard}"]`).classList.add("active");
+      }
+
+      document.addEventListener('DOMContentLoaded', function() {
+        var tabs = document.querySelectorAll('.tablinks');
+        tabs.forEach(function(tab) {
+          tab.addEventListener('click', function(event) {
+            openLeaderboard(this.getAttribute('data-leaderboard'));
+          });
+        });
+
+        // Open the 'lite' leaderboard by default
+        openLeaderboard('Lite');
+      });
+    </script>
   </body>
 </html>
