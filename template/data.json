@@ -366,6 +366,17 @@
           "oss": false
         },
         {
+          "name": "SuperCoder2.0",
+          "folder": "20240806_SuperCoder2.0",
+          "resolved": 34.0,
+          "date": "2024-08-06",
+          "logs": "https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20240806_SuperCoder2.0/logs",
+          "trajs": "https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20240806_SuperCoder2.0/trajs",
+          "site": "https://superagi.com/supercoder/",
+          "verified": false,
+          "oss": false
+        },
+        {
           "name": "Bytedance MarsCode Agent + GPT 4o (2024-05-13)",
           "folder": "20240723_marscode-agent-dev",
           "resolved": 34.0,
