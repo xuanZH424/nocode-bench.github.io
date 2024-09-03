@@ -97,7 +97,7 @@ function updateMainResults(split, model) {
         .then(response => response.json())
         .then(data => {
             const resolved = data['resolved'].length;
-            const total = split == 'lite' ? 300 : 2294;
+            const total = split == 'lite' ? 300 : 'verified' ? 500 : 2294;
             const percentResolved = (resolved / total * 100).toFixed(2);
             const resolvedElement = document.getElementById('selectedResolved');
             resolvedElement.textContent = percentResolved;

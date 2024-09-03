@@ -83,14 +83,20 @@
             </div>
         </div>
         <div style="text-align: center; margin: 1em 0 1.5em 0;">
-            <label for="split-and-model">Split & Model:</label>
-            <select id="split-and-model">
-                {% for leaderboard in leaderboards %}
-                    {% for item in leaderboard.results %}
-                        <option value="{{ leaderboard.name.lower() }},{{ item.folder }}">{{ leaderboard.name }} / ({{ item.date }}) {{item.name}}</option>
-                    {% endfor %}
-                {% endfor %}
+            <label for="split-select">Split:</label>
+            <select id="split-select">
+            {% for leaderboard in leaderboards %}
+                <option value="{{ leaderboard.name.lower() }}">{{ leaderboard.name }}</option>{% endfor %}
             </select>
+            &nbsp;
+            <label for="model-select">Model:</label>
+            {% for leaderboard in leaderboards %}
+                <select id="model-select-{{ leaderboard.name.lower() }}" hidden>
+                {% for item in leaderboard.results %}
+                    <option value="{{ item.folder }}">({{ item.date }}) {{item.name}}</option>{% endfor %}
+                </select>
+            {% endfor %}
+            &nbsp;
             <button id="loadData">Load Data</button>
         </div>
         <div class="content-wrapper">
@@ -164,9 +170,8 @@ function updateReadme(split, model) {
 }
 
 document.getElementById('loadData').addEventListener('click', () => {
-    const value = document.getElementById('split-and-model').value;
-    const splitValue = value.split(',')[0];
-    const modelValue = value.split(',')[1];
+    const splitValue = document.getElementById('split-select').value;
+    const modelValue = document.getElementById(`model-select-${splitValue}`).value;
 
     document.getElementById('selectedSplit').textContent = splitValue;
     document.getElementById('selectedModel').textContent = modelValue;
@@ -179,13 +184,30 @@ document.getElementById('loadData').addEventListener('click', () => {
     updateTableByYear(splitValue, modelValue);
 });
 
+document.getElementById('split-select').addEventListener('change', () => {
+    const splitValue = document.getElementById('split-select').value;
+
+    // Hide all model selects except the selected one
+    for (const leaderboard of document.querySelectorAll('[id^="model-select-"]')) {
+        if (leaderboard.id === `model-select-${splitValue}`) {
+            leaderboard.removeAttribute('hidden');
+        } else {
+            leaderboard.setAttribute('hidden', '');
+        }
+    }
+})
+
 // Display table for the default values
 document.addEventListener('DOMContentLoaded', () => {
     const defaultSplit = 'lite';
     const defaultModel = '20240402_sweagent_gpt4';
 
+    // Unhide lite model select
+    document.getElementById('model-select-lite').removeAttribute('hidden');
+
     // Set default values for the select elements
-    document.getElementById('split-and-model').value = `${defaultSplit},${defaultModel}`;
+    document.getElementById('split-select').value = defaultSplit;
+    document.getElementById('model-select-lite').value = defaultModel;
 
     // Display the default values
     document.getElementById('selectedSplit').textContent = defaultSplit;
