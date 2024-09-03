@@ -4,12 +4,23 @@
       "name": "Test",
       "results": [
         {
+          "name": "Honeycomb",
+          "folder": "20240820_honeycomb",
+          "resolved": 22.06,
+          "date": "2024-08-20",
+          "logs": "https://github.com/swe-bench/experiments/tree/main/evaluation/test/20240820_honeycomb/logs",
+          "trajs": "https://github.com/swe-bench/experiments/tree/main/evaluation/test/20240820_honeycomb/trajs",
+          "site": "honeycomb.sh",
+          "verified": false,
+          "oss": false
+        },
+        {
           "name": "Amazon Q Developer Agent (v20240719-dev)",
           "folder": "20240721_amazon-q-developer-agent-20240719-dev",
           "resolved": 19.75,
           "date": "2024-07-21",
           "logs": "https://github.com/swe-bench/experiments/tree/main/evaluation/test/20240721_amazon-q-developer-agent-20240719-dev/logs",
-          "trajs": null,
+          "trajs": "https://github.com/swe-bench/experiments/tree/main/evaluation/test/20240721_amazon-q-developer-agent-20240719-dev/trajs",
           "site": "https://aws.amazon.com/q/developer/",
           "verified": false,
           "oss": false
@@ -174,12 +185,34 @@
       "name": "Verified",
       "results": [
         {
+          "name": "Gru(2024-08-24)",
+          "folder": "20240824_gru",
+          "resolved": 45.2,
+          "date": "2024-08-24",
+          "logs": "https://github.com/swe-bench/experiments/tree/main/evaluation/verified/20240824_gru/logs",
+          "trajs": "https://github.com/swe-bench/experiments/tree/main/evaluation/verified/20240824_gru/trajs",
+          "site": "https://gru.ai",
+          "verified": false,
+          "oss": false
+        },
+        {
+          "name": "Honeycomb",
+          "folder": "20240820_honeycomb",
+          "resolved": 40.6,
+          "date": "2024-08-20",
+          "logs": "https://github.com/swe-bench/experiments/tree/main/evaluation/verified/20240820_honeycomb/logs",
+          "trajs": "https://github.com/swe-bench/experiments/tree/main/evaluation/verified/20240820_honeycomb/trajs",
+          "site": "honeycomb.sh",
+          "verified": false,
+          "oss": false
+        },
+        {
           "name": "Amazon Q Developer Agent (v20240719-dev)",
           "folder": "20240721_amazon-q-developer-agent-20240719-dev",
           "resolved": 38.8,
           "date": "2024-07-21",
           "logs": "https://github.com/swe-bench/experiments/tree/main/evaluation/verified/20240721_amazon-q-developer-agent-20240719-dev/logs",
-          "trajs": null,
+          "trajs": "https://github.com/swe-bench/experiments/tree/main/evaluation/verified/20240721_amazon-q-developer-agent-20240719-dev/trajs",
           "site": "https://aws.amazon.com/q/developer/",
           "verified": false,
           "oss": false
@@ -236,6 +269,17 @@
           "logs": "https://github.com/swe-bench/experiments/tree/main/evaluation/verified/20240509_amazon-q-developer-agent-20240430-dev/logs",
           "trajs": null,
           "site": "https://aws.amazon.com/q/developer/",
+          "verified": false,
+          "oss": false
+        },
+        {
+          "name": "EPAM AI/Run Developer Agent + GPT4o",
+          "folder": "20240820_epam-ai-run-gpt-4o",
+          "resolved": 24.0,
+          "date": "2024-08-20",
+          "logs": "https://github.com/swe-bench/experiments/tree/main/evaluation/verified/20240820_epam-ai-run-gpt-4o/logs",
+          "trajs": "https://github.com/swe-bench/experiments/tree/main/evaluation/verified/20240820_epam-ai-run-gpt-4o/trajs",
+          "site": "https://www.epam.com/services/artificial-intelligence",
           "verified": false,
           "oss": false
         },
@@ -344,6 +388,17 @@
           "oss": false
         },
         {
+          "name": "Honeycomb",
+          "folder": "20240820_honeycomb",
+          "resolved": 38.33,
+          "date": "2024-08-20",
+          "logs": "https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20240820_honeycomb/logs",
+          "trajs": "https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20240820_honeycomb/trajs",
+          "site": "honeycomb.sh",
+          "verified": false,
+          "oss": false
+        },
+        {
           "name": "AbanteAI MentatBot + GPT 4o (2024-05-13)",
           "folder": "20240627_abanteai_mentatbot_gpt4o",
           "resolved": 38.0,
@@ -362,6 +417,17 @@
           "logs": "https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20240811_gru/logs",
           "trajs": "https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20240811_gru/trajs",
           "site": "https://gru.ai",
+          "verified": false,
+          "oss": false
+        },
+        {
+          "name": "Isoform",
+          "folder": "20240829_Isoform",
+          "resolved": 35.0,
+          "date": "2024-08-29",
+          "logs": "https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20240829_Isoform/logs",
+          "trajs": "https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20240829_Isoform/trajs",
+          "site": "https://isoform.ai",
           "verified": false,
           "oss": false
         },
@@ -393,7 +459,7 @@
           "resolved": 33.0,
           "date": "2024-06-22",
           "logs": "https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20240622_Lingma_Agent/logs",
-          "trajs": null,
+          "trajs": "https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20240622_Lingma_Agent/trajs",
           "site": "https://arxiv.org/abs/2406.01422",
           "verified": false,
           "oss": false
@@ -415,10 +481,10 @@
           "resolved": 30.67,
           "date": "2024-06-21",
           "logs": "https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20240621_autocoderover-v20240620/logs",
-          "trajs": null,
+          "trajs": "https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20240621_autocoderover-v20240620/trajs",
           "site": "https://autocoderover.dev/",
           "verified": false,
-          "oss": false
+          "oss": true
         },
         {
           "name": "Amazon Q Developer Agent (v20240719-dev)",
@@ -426,7 +492,7 @@
           "resolved": 29.67,
           "date": "2024-07-21",
           "logs": "https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20240721_amazon-q-developer-agent-20240719-dev/logs",
-          "trajs": null,
+          "trajs": "https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20240721_amazon-q-developer-agent-20240719-dev/trajs",
           "site": "https://aws.amazon.com/q/developer/",
           "verified": false,
           "oss": false
@@ -573,6 +639,17 @@
           "site": "https://appmap.io/navie",
           "verified": true,
           "oss": true
+        },
+        {
+          "name": "Bytedance AutoSE (based on SWE-Agent) + GPT4/GPT4o Mixed (20240828)",
+          "folder": "20240828_autose_mixed",
+          "resolved": 21.67,
+          "date": "2024-08-28",
+          "logs": "https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20240828_autose_mixed/logs",
+          "trajs": "https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20240828_autose_mixed/trajs",
+          "site": null,
+          "verified": false,
+          "oss": false
         },
         {
           "name": "Amazon Q Developer Agent (v20240430-dev)",
