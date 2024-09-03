@@ -284,6 +284,17 @@
           "oss": false
         },
         {
+          "name": "SWE-agent + GPT 4o (2024-05-13)",
+          "folder": "20240728_sweagent_gpt4o",
+          "resolved": 23.2,
+          "date": "2024-07-28",
+          "logs": "https://github.com/swe-bench/experiments/tree/main/evaluation/verified/20240728_sweagent_gpt4o/logs",
+          "trajs": "https://github.com/swe-bench/experiments/tree/main/evaluation/verified/20240728_sweagent_gpt4o/trajs",
+          "site": "https://github.com/princeton-nlp/SWE-agent",
+          "verified": true,
+          "oss": true
+        },
+        {
           "name": "SWE-agent + GPT 4 (1106)",
           "folder": "20240402_sweagent_gpt4",
           "resolved": 22.4,
@@ -691,17 +702,6 @@
           "date": "2024-04-02",
           "logs": "https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20240402_sweagent_gpt4/logs",
           "trajs": "https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20240402_sweagent_gpt4/trajs",
-          "site": "https://github.com/princeton-nlp/SWE-agent",
-          "verified": true,
-          "oss": true
-        },
-        {
-          "name": "SWE-agent + GPT 4o (2024-05-13)",
-          "folder": "20240603_sweagent_gpt4o",
-          "resolved": 17.0,
-          "date": "2024-06-03",
-          "logs": "https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20240603_sweagent_gpt4o/logs",
-          "trajs": "https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20240603_sweagent_gpt4o/trajs",
           "site": "https://github.com/princeton-nlp/SWE-agent",
           "verified": true,
           "oss": true
