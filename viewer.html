@@ -309,10 +309,12 @@ document.getElementById('loadData').addEventListener('click', () => {
     const value = document.getElementById('split-and-model').value;
     const splitValue = value.split(',')[0];
     const modelValue = value.split(',')[1];
+    console.log(splitValue);
+    console.log(modelValue);
 
     document.getElementById('selectedSplit').textContent = splitValue;
     document.getElementById('selectedModel').textContent = modelValue;
-    document.getElementById('selectedSplitNum').textContent = splitValue.lower() == 'lite' ? 300 : 'verified' ? 500 : 2294;
+    document.getElementById('selectedSplitNum').textContent = splitValue == 'lite' ? 300 : 'verified' ? 500 : 2294;
     document.getElementById('modelSplitURL').href = `https://github.com/swe-bench/experiments/tree/main/evaluation/${splitValue}/${modelValue}`;
 
     updateMainResults(splitValue, modelValue);

@@ -170,7 +170,7 @@ document.getElementById('loadData').addEventListener('click', () => {
 
     document.getElementById('selectedSplit').textContent = splitValue;
     document.getElementById('selectedModel').textContent = modelValue;
-    document.getElementById('selectedSplitNum').textContent = splitValue.lower() == 'lite' ? 300 : 'verified' ? 500 : 2294;
+    document.getElementById('selectedSplitNum').textContent = splitValue == 'lite' ? 300 : 'verified' ? 500 : 2294;
     document.getElementById('modelSplitURL').href = `https://github.com/swe-bench/experiments/tree/main/evaluation/${splitValue}/${modelValue}`;
 
     updateMainResults(splitValue, modelValue);
