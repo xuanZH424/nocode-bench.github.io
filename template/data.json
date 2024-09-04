@@ -10,7 +10,7 @@
           "date": "2024-08-20",
           "logs": "https://github.com/swe-bench/experiments/tree/main/evaluation/test/20240820_honeycomb/logs",
           "trajs": "https://github.com/swe-bench/experiments/tree/main/evaluation/test/20240820_honeycomb/trajs",
-          "site": "honeycomb.sh",
+          "site": "https://honeycomb.sh/",
           "verified": false,
           "oss": false
         },
@@ -202,7 +202,7 @@
           "date": "2024-08-20",
           "logs": "https://github.com/swe-bench/experiments/tree/main/evaluation/verified/20240820_honeycomb/logs",
           "trajs": "https://github.com/swe-bench/experiments/tree/main/evaluation/verified/20240820_honeycomb/trajs",
-          "site": "honeycomb.sh",
+          "site": "https://honeycomb.sh/",
           "verified": false,
           "oss": false
         },
@@ -405,7 +405,7 @@
           "date": "2024-08-20",
           "logs": "https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20240820_honeycomb/logs",
           "trajs": "https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20240820_honeycomb/trajs",
-          "site": "honeycomb.sh",
+          "site": "https://honeycomb.sh/",
           "verified": false,
           "oss": false
         },
