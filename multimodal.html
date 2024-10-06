@@ -75,26 +75,26 @@
             Gabriel Synnaeve, Karthik Narasimhan, Diyi Yang, Sida I. Wang, Ofir Press
           </p>
           <div class="content-wrapper" style="margin-top: 2em;">
+            <a href="index.html">
+              <button
+                class="outline multimodal"
+                style="flex-direction: row; display: flex; justify-content: center; align-items: center;">
+                <img
+                  src="img/swellama.png"
+                  style="height: 1.3em; margin-right: 0.4em; margin-bottom: 0.3em;" />
+                  Home&nbsp;
+              </button>
+            </a>
             <a href="https://arxiv.org/abs/2310.06770">
               <button class="outline multimodal">
                 <i class="fa fa-paperclip"></i> Paper&nbsp;
               </button>
             </a>
-            <!-- <a href="https://github.com/princeton-nlp/SWE-bench"> -->
-              <button class="outline multimodal disabled">
-                <i class="fab fa-github"></i> Code&nbsp;
+            <a href="https://huggingface.co/datasets/princeton-nlp/SWE-bench_Multimodal">
+              <button class="outline multimodal">
+                <i class="fa fa-database"></i> Dataset&nbsp;
               </button>
-            <!-- </a>
-            <a href="submit.html"> -->
-              <button class="outline multimodal disabled">
-                <i class="fa fa-upload"></i> Submit&nbsp;
-              </button>
-            <!-- </a>
-            <a href="viewer.html"> -->
-              <button class="outline multimodal disabled">
-                <i class="fa fa-chart-simple"></i> Analysis&nbsp;
-              </button>
-            <!-- </a> -->
+            </a>
           </div>
         </div>
       </section>
@@ -103,15 +103,15 @@
           <div class="content-box">
             <h2 class="text-title">Leaderboard</h2>
             <div class="tabcontent" style="display: block" id="leaderboard-multimodal">
-              <table class="table scrollable">
+              <table class="table scrollable" style="border-color: #2F4F4F;">
                 <thead>
                   <tr>
-                    <th><div class="sticky-header-content">Model</div></th>
-                    <th><div class="sticky-header-content">% Resolved</div></th>
-                    <th><div class="sticky-header-content">Date</div></th>
-                    <th><div class="sticky-header-content">Logs</div></th>
-                    <th><div class="sticky-header-content">Trajs</div></th>
-                    <th><div class="sticky-header-content">Site</div></th>
+                    <th><div class="sticky-header-content" style="border-color: #2F4F4F;">Model</div></th>
+                    <th><div class="sticky-header-content" style="border-color: #2F4F4F;">% Resolved</div></th>
+                    <th><div class="sticky-header-content" style="border-color: #2F4F4F;">Date</div></th>
+                    <th><div class="sticky-header-content" style="border-color: #2F4F4F;">Logs</div></th>
+                    <th><div class="sticky-header-content" style="border-color: #2F4F4F;">Trajs</div></th>
+                    <th><div class="sticky-header-content" style="border-color: #2F4F4F;">Site</div></th>
                   </tr>
                 </thead>
                 <tbody>
@@ -434,7 +434,8 @@
                 The dataset covers a range of challenges including UI glitches, map rendering problems, or data visualization bugs.
                 SWE-bench Multimodal challenges AI systems to tackle the diverse, multimodal nature of modern software development.
             </p class="text-content">
-              Citation: <pre id="citation"><code>@misc{
+            <h3 class="text-title" style="margin-bottom:0.5em">Citation</h3>
+            <pre id="citation" style="border-color: #2F4F4F;"><code>@misc{
     yang2024swebenchmultimodal,
     title={SWE-bench Multimodal: Do AI Systems Generalize to Visual Software Domains?},
     author={John Yang and Carlos E Jimenez and Alex L Zhang and Kilian Lieret and Joyce Yang and Xindi Wu and Ori Press and Niklas Muennighoff and Gabriel Synnaeve and Karthik Narasimhan and Diyi Yang and Sida I Wang and Ofir Press},
