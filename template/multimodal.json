@@ -1,0 +1,84 @@
+{
+    "leaderboard": [
+        {
+            "name": "SWE-agent Multimodal + GPT 4o (2024-08-06)",
+            "resolved": 12.2,
+            "date": "2024-10-06",
+            "site": "https://github.com/princeton-nlp/SWE-agent",
+            "verified": true,
+            "oss": true
+        },
+        {
+            "name": "SWE-agent + Claude Sonnet 3.5",
+            "resolved": 12.2,
+            "date": "2024-10-06",
+            "site": "https://github.com/princeton-nlp/SWE-agent",
+            "verified": true,
+            "oss": true
+        },
+        {
+            "name": "SWE-agent + GPT 4o (2024-08-06)",
+            "resolved": 12.0,
+            "date": "2024-10-06",
+            "site": "https://github.com/princeton-nlp/SWE-agent",
+            "verified": true,
+            "oss": true
+        },
+        {
+            "name": "SWE-agent JavaScript + Claude Sonnet 3.5",
+            "resolved": 12.0,
+            "date": "2024-10-06",
+            "site": "https://github.com/princeton-nlp/SWE-agent",
+            "verified": true,
+            "oss": true
+        },
+        {
+            "name": "SWE-agent Multimodal + Claude 3.5 Sonnet",
+            "resolved": 11.4,
+            "date": "2024-10-06",
+            "site": "https://github.com/princeton-nlp/SWE-agent",
+            "verified": true,
+            "oss": true
+        },
+        {
+            "name": "SWE-agent JavaScript + GPT 4o (2024-08-06)",
+            "resolved": 9.2,
+            "date": "2024-10-06",
+            "site": "https://github.com/princeton-nlp/SWE-agent",
+            "verified": true,
+            "oss": true
+        },
+        {
+            "name": "Agentless + Claude 3.5 Sonnet",
+            "resolved": 6.2,
+            "date": "2024-10-06",
+            "site": "https://github.com/OpenAutoCoder/Agentless",
+            "verified": true,
+            "oss": true
+        },
+        {
+            "name": "RAG + GPT 4o (2024-08-06)",
+            "resolved": 6.0,
+            "date": "2024-10-06",
+            "site": "https://github.com/princeton-nlp/SWE-bench",
+            "verified": true,
+            "oss": true
+        },
+        {
+            "name": "RAG + Claude 3.5 Sonnet",
+            "resolved": 5.0,
+            "date": "2024-10-06",
+            "site": "https://github.com/princeton-nlp/SWE-bench",
+            "verified": true,
+            "oss": true
+        },
+        {
+            "name": "Agentless + GPT 4o (2024-08-06)",
+            "resolved": 3.1,
+            "date": "2024-10-06",
+            "site": "https://github.com/OpenAutoCoder/Agentless",
+            "verified": true,
+            "oss": true
+        }
+    ]
+}

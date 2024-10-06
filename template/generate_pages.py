@@ -13,17 +13,23 @@ env = Environment(loader=FileSystemLoader('.'))
 # Load the template
 template_index = env.get_template('template_index.html')
 template_viewer = env.get_template('template_viewer.html')
+template_multimodal = env.get_template('template_multimodal.html')
 
 # Load JSON data
 with open('data.json', 'r') as f:
     data = json.load(f)
+with open('multimodal.json', 'r') as f:
+    data_mm = json.load(f)
 
 # Render the template with the data
 output_html_index = template_index.render(data)
 output_html_viewer = template_viewer.render(data)
+output_html_multimodal = template_multimodal.render(data_mm)
 
 # Write the output to a new HTML file
 with open('../index.html', 'w') as f:
     f.write(output_html_index)
 with open('../viewer.html', 'w') as f:
     f.write(output_html_viewer)
+with open('../multimodal.html', 'w') as f:
+    f.write(output_html_multimodal)
