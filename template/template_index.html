@@ -169,16 +169,12 @@
                     <td><p><span class="label-date">{{item.date}}</span></p></td>
                     <td>
                         <p style="text-align: center;">
-                        {% if item.logs %}
-                            <a href="{{item.logs}}">🔗</a>
-                        {% else %} - {% endif %}
+                        {% if item.logs %}✓{% else %} - {% endif %}
                         </p>
                     </td>
                     <td>
                         <p style="text-align: center;">
-                        {% if item.trajs %}
-                            <a href="{{item.trajs}}">🔗</a>
-                        {% else %} - {% endif %}
+                        {% if item.trajs %}✓{% else %} - {% endif %}
                         </p>
                     </td>
                     <td>
