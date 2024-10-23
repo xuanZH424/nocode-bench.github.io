@@ -145,6 +145,7 @@
                   <tr>
                     <th><div class="sticky-header-content">Model</div></th>
                     <th><div class="sticky-header-content">% Resolved</div></th>
+                    <th><div class="sticky-header-content">Org</div></th>
                     <th><div class="sticky-header-content">Date</div></th>
                     <th><div class="sticky-header-content">Logs</div></th>
                     <th><div class="sticky-header-content">Trajs</div></th>
@@ -166,6 +167,13 @@
                       </p>
                     </td>
                     <td><p class="number">{{ "%.2f"|format(item.resolved|float) }}</p></td>
+                    <td>
+                      <p style="display: flex; justify-content: center; align-items: center;">
+                        {% if item.org_logo %}
+                        <img src="{{item.org_logo}}" style="height: 1em;" />
+                        {% else %} - {% endif %}
+                      </p>
+                    </td>
                     <td><p><span class="label-date">{{item.date}}</span></p></td>
                     <td>
                         <p style="text-align: center;">
