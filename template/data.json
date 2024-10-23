@@ -342,7 +342,7 @@
           "site": "https://nfactorial.dev/",
           "verified": false,
           "oss": false,
-          "org_logo": null
+          "org_logo": "https://nfactorial.dev/logo400.png"
         },
         {
           "name": "Lingma Agent + Lingma SWE-GPT 72b (v0925)",
@@ -390,7 +390,7 @@
           "site": "https://nfactorial.dev/",
           "verified": false,
           "oss": false,
-          "org_logo": null
+          "org_logo": "https://nfactorial.dev/logo400.png"
         },
         {
           "name": "Amazon Q Developer Agent (v20240430-dev)",
