@@ -19,5 +19,3 @@ If you found SWE-bench helpful for your work, please cite as follows:
   year = {2023},
 }
 ```
-
-Our sincere thanks to Prof. Pranav Rajpurkar and the creators of the [SQuAD](https://rajpurkar.github.io/SQuAD-explorer/) dataset for allowing us to use their website template.
