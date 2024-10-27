@@ -13,7 +13,8 @@
           "site": "https://honeycomb.sh/",
           "verified": false,
           "oss": false,
-          "org_logo": "https://pbs.twimg.com/profile_images/1826351945021636608/eQgGBRKw_400x400.jpg"
+          "org_logo": "https://pbs.twimg.com/profile_images/1826351945021636608/eQgGBRKw_400x400.jpg",
+          "warning": null
         },
         {
           "name": "Amazon Q Developer Agent (v20240719-dev)",
@@ -25,7 +26,8 @@
           "site": "https://aws.amazon.com/q/developer/",
           "verified": false,
           "oss": false,
-          "org_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/2560px-Amazon_Web_Services_Logo.svg.png"
+          "org_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/2560px-Amazon_Web_Services_Logo.svg.png",
+          "warning": null
         },
         {
           "name": "Factory Code Droid",
@@ -37,7 +39,8 @@
           "site": "https://www.factory.ai/",
           "verified": false,
           "oss": false,
-          "org_logo": "https://pbs.twimg.com/profile_images/1768168785733980160/a4hWTSfN_400x400.jpg"
+          "org_logo": "https://pbs.twimg.com/profile_images/1768168785733980160/a4hWTSfN_400x400.jpg",
+          "warning": null
         },
         {
           "name": "AutoCodeRover (v20240620) + GPT 4o (2024-05-13)",
@@ -49,7 +52,8 @@
           "site": "https://autocoderover.dev/",
           "verified": false,
           "oss": false,
-          "org_logo": "https://avatars.githubusercontent.com/u/100131783?s=200&v=4"
+          "org_logo": "https://avatars.githubusercontent.com/u/100131783?s=200&v=4",
+          "warning": null
         },
         {
           "name": "SWE-agent + Claude 3.5 Sonnet",
@@ -61,7 +65,8 @@
           "site": null,
           "verified": true,
           "oss": true,
-          "org_logo": "https://avatars.githubusercontent.com/u/166046056?s=200&v=4"
+          "org_logo": "https://avatars.githubusercontent.com/u/166046056?s=200&v=4",
+          "warning": null
         },
         {
           "name": "AppMap Navie + GPT 4o (2024-05-13)",
@@ -73,7 +78,8 @@
           "site": "https://appmap.io/navie",
           "verified": true,
           "oss": true,
-          "org_logo": "https://pbs.twimg.com/profile_images/1393240555191160833/q5OUpB3Q_400x400.png"
+          "org_logo": "https://pbs.twimg.com/profile_images/1393240555191160833/q5OUpB3Q_400x400.png",
+          "warning": null
         },
         {
           "name": "Amazon Q Developer Agent (v20240430-dev)",
@@ -85,7 +91,8 @@
           "site": "https://aws.amazon.com/q/developer/",
           "verified": false,
           "oss": false,
-          "org_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/2560px-Amazon_Web_Services_Logo.svg.png"
+          "org_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/2560px-Amazon_Web_Services_Logo.svg.png",
+          "warning": null
         },
         {
           "name": "SWE-agent + GPT 4 (1106)",
@@ -97,7 +104,8 @@
           "site": "https://github.com/princeton-nlp/SWE-agent",
           "verified": true,
           "oss": true,
-          "org_logo": "https://avatars.githubusercontent.com/u/166046056?s=200&v=4"
+          "org_logo": "https://avatars.githubusercontent.com/u/166046056?s=200&v=4",
+          "warning": null
         },
         {
           "name": "SWE-agent + GPT 4o (2024-05-13)",
@@ -109,7 +117,8 @@
           "site": "https://github.com/princeton-nlp/SWE-agent",
           "verified": true,
           "oss": true,
-          "org_logo": "https://avatars.githubusercontent.com/u/166046056?s=200&v=4"
+          "org_logo": "https://avatars.githubusercontent.com/u/166046056?s=200&v=4",
+          "warning": null
         },
         {
           "name": "SWE-agent + Claude 3 Opus",
@@ -121,7 +130,8 @@
           "site": null,
           "verified": true,
           "oss": true,
-          "org_logo": "https://avatars.githubusercontent.com/u/166046056?s=200&v=4"
+          "org_logo": "https://avatars.githubusercontent.com/u/166046056?s=200&v=4",
+          "warning": null
         },
         {
           "name": "RAG + Claude 3 Opus",
@@ -133,7 +143,8 @@
           "site": "https://github.com/princeton-nlp/SWE-bench/tree/main/swebench/inference",
           "verified": true,
           "oss": true,
-          "org_logo": "https://avatars.githubusercontent.com/u/139597579?s=200&v=4"
+          "org_logo": "https://avatars.githubusercontent.com/u/139597579?s=200&v=4",
+          "warning": null
         },
         {
           "name": "RAG + Claude 2",
@@ -145,7 +156,8 @@
           "site": null,
           "verified": true,
           "oss": true,
-          "org_logo": "https://avatars.githubusercontent.com/u/139597579?s=200&v=4"
+          "org_logo": "https://avatars.githubusercontent.com/u/139597579?s=200&v=4",
+          "warning": null
         },
         {
           "name": "RAG + GPT 4 (1106)",
@@ -157,7 +169,8 @@
           "site": null,
           "verified": true,
           "oss": true,
-          "org_logo": "https://avatars.githubusercontent.com/u/139597579?s=200&v=4"
+          "org_logo": "https://avatars.githubusercontent.com/u/139597579?s=200&v=4",
+          "warning": null
         },
         {
           "name": "RAG + SWE-Llama 13B",
@@ -169,7 +182,8 @@
           "site": null,
           "verified": true,
           "oss": true,
-          "org_logo": "https://avatars.githubusercontent.com/u/139597579?s=200&v=4"
+          "org_logo": "https://avatars.githubusercontent.com/u/139597579?s=200&v=4",
+          "warning": null
         },
         {
           "name": "RAG + SWE-Llama 7B",
@@ -181,7 +195,8 @@
           "site": null,
           "verified": true,
           "oss": true,
-          "org_logo": "https://avatars.githubusercontent.com/u/139597579?s=200&v=4"
+          "org_logo": "https://avatars.githubusercontent.com/u/139597579?s=200&v=4",
+          "warning": null
         },
         {
           "name": "RAG + ChatGPT 3.5",
@@ -193,7 +208,8 @@
           "site": null,
           "verified": true,
           "oss": true,
-          "org_logo": "https://avatars.githubusercontent.com/u/139597579?s=200&v=4"
+          "org_logo": "https://avatars.githubusercontent.com/u/139597579?s=200&v=4",
+          "warning": null
         }
       ]
     },
@@ -210,7 +226,8 @@
           "site": "https://www.anthropic.com/",
           "verified": false,
           "oss": false,
-          "org_logo": "https://pbs.twimg.com/profile_images/1798110641414443008/XP8gyBaY_400x400.jpg"
+          "org_logo": "https://pbs.twimg.com/profile_images/1798110641414443008/XP8gyBaY_400x400.jpg",
+          "warning": null
         },
         {
           "name": "Solver (2024-09-12)",
@@ -222,7 +239,8 @@
           "site": "https://laredolabs.com/",
           "verified": false,
           "oss": false,
-          "org_logo": "https://pbs.twimg.com/profile_images/1847427476601053184/L3RCKwMu_400x400.png"
+          "org_logo": "https://pbs.twimg.com/profile_images/1847427476601053184/L3RCKwMu_400x400.png",
+          "warning": null
         },
         {
           "name": "Gru(2024-08-24)",
@@ -234,7 +252,8 @@
           "site": "https://gru.ai",
           "verified": false,
           "oss": false,
-          "org_logo": "https://pbs.twimg.com/profile_images/1832709320896917504/FB5KojGT_400x400.png"
+          "org_logo": "https://pbs.twimg.com/profile_images/1832709320896917504/FB5KojGT_400x400.png",
+          "warning": null
         },
         {
           "name": "Solver (2024-09-12)",
@@ -246,7 +265,8 @@
           "site": "https://laredolabs.com/",
           "verified": false,
           "oss": false,
-          "org_logo": "https://pbs.twimg.com/profile_images/1847427476601053184/L3RCKwMu_400x400.png"
+          "org_logo": "https://pbs.twimg.com/profile_images/1847427476601053184/L3RCKwMu_400x400.png",
+          "warning": null
         },
         {
           "name": "Tools + Claude 3.5 Haiku",
@@ -258,7 +278,8 @@
           "site": "https://www.anthropic.com/",
           "verified": false,
           "oss": false,
-          "org_logo": "https://pbs.twimg.com/profile_images/1798110641414443008/XP8gyBaY_400x400.jpg"
+          "org_logo": "https://pbs.twimg.com/profile_images/1798110641414443008/XP8gyBaY_400x400.jpg",
+          "warning": null
         },
         {
           "name": "Honeycomb",
@@ -270,7 +291,8 @@
           "site": "https://honeycomb.sh/",
           "verified": false,
           "oss": false,
-          "org_logo": "https://pbs.twimg.com/profile_images/1826351945021636608/eQgGBRKw_400x400.jpg"
+          "org_logo": "https://pbs.twimg.com/profile_images/1826351945021636608/eQgGBRKw_400x400.jpg",
+          "warning": null
         },
         {
           "name": "Composio SWEkit + Claude 3.5 Sonnet (2024-10-16)",
@@ -282,7 +304,8 @@
           "site": "https://github.com/ComposioHQ/composio/tree/master/python/swe/agent",
           "verified": false,
           "oss": true,
-          "org_logo": "https://avatars.githubusercontent.com/u/128464815?s=48&v=4"
+          "org_logo": "https://avatars.githubusercontent.com/u/128464815?s=48&v=4",
+          "warning": null
         },
         {
           "name": "Amazon Q Developer Agent (v20240719-dev)",
@@ -294,7 +317,8 @@
           "site": "https://aws.amazon.com/q/developer/",
           "verified": false,
           "oss": false,
-          "org_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/2560px-Amazon_Web_Services_Logo.svg.png"
+          "org_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/2560px-Amazon_Web_Services_Logo.svg.png",
+          "warning": null
         },
         {
           "name": "AutoCodeRover (v20240620) + GPT 4o (2024-05-13)",
@@ -306,7 +330,8 @@
           "site": "https://autocoderover.dev/",
           "verified": false,
           "oss": false,
-          "org_logo": "https://avatars.githubusercontent.com/u/100131783?s=200&v=4"
+          "org_logo": "https://avatars.githubusercontent.com/u/100131783?s=200&v=4",
+          "warning": null
         },
         {
           "name": "Factory Code Droid",
@@ -318,7 +343,8 @@
           "site": "https://www.factory.ai/",
           "verified": false,
           "oss": false,
-          "org_logo": "https://pbs.twimg.com/profile_images/1768168785733980160/a4hWTSfN_400x400.jpg"
+          "org_logo": "https://pbs.twimg.com/profile_images/1768168785733980160/a4hWTSfN_400x400.jpg",
+          "warning": true
         },
         {
           "name": "SWE-agent + Claude 3.5 Sonnet",
@@ -330,7 +356,8 @@
           "site": null,
           "verified": true,
           "oss": true,
-          "org_logo": "https://avatars.githubusercontent.com/u/166046056?s=200&v=4"
+          "org_logo": "https://avatars.githubusercontent.com/u/166046056?s=200&v=4",
+          "warning": null
         },
         {
           "name": "nFactorial (2024-10-07)",
@@ -342,7 +369,8 @@
           "site": "https://nfactorial.dev/",
           "verified": false,
           "oss": false,
-          "org_logo": "https://nfactorial.dev/logo400.png"
+          "org_logo": "https://nfactorial.dev/logo400.png",
+          "warning": null
         },
         {
           "name": "Lingma Agent + Lingma SWE-GPT 72b (v0925)",
@@ -354,7 +382,8 @@
           "site": "https://www.modelscope.cn/models/yingwei/Lingma-SWE-GPT (https://www.modelscope.cn/models/yingwei/Lingma-SWE-GPT-v20240925)",
           "verified": false,
           "oss": true,
-          "org_logo": "https://pbs.twimg.com/profile_images/1567807256091308032/4AXfLwia_400x400.jpg"
+          "org_logo": "https://pbs.twimg.com/profile_images/1567807256091308032/4AXfLwia_400x400.jpg",
+          "warning": null
         },
         {
           "name": "EPAM AI/Run Developer Agent + GPT4o",
@@ -366,7 +395,8 @@
           "site": "https://www.epam.com/services/artificial-intelligence",
           "verified": false,
           "oss": false,
-          "org_logo": "https://pbs.twimg.com/profile_images/1753265803191795712/qg3YENmV_400x400.png"
+          "org_logo": "https://pbs.twimg.com/profile_images/1753265803191795712/qg3YENmV_400x400.png",
+          "warning": null
         },
         {
           "name": "AppMap Navie + GPT 4o (2024-05-13)",
@@ -378,7 +408,8 @@
           "site": "https://appmap.io/navie",
           "verified": true,
           "oss": true,
-          "org_logo": "https://pbs.twimg.com/profile_images/1393240555191160833/q5OUpB3Q_400x400.png"
+          "org_logo": "https://pbs.twimg.com/profile_images/1393240555191160833/q5OUpB3Q_400x400.png",
+          "warning": null
         },
         {
           "name": "nFactorial (2024-10-01)",
@@ -390,7 +421,8 @@
           "site": "https://nfactorial.dev/",
           "verified": false,
           "oss": false,
-          "org_logo": "https://nfactorial.dev/logo400.png"
+          "org_logo": "https://nfactorial.dev/logo400.png",
+          "warning": null
         },
         {
           "name": "Amazon Q Developer Agent (v20240430-dev)",
@@ -402,7 +434,8 @@
           "site": "https://aws.amazon.com/q/developer/",
           "verified": false,
           "oss": false,
-          "org_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/2560px-Amazon_Web_Services_Logo.svg.png"
+          "org_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/2560px-Amazon_Web_Services_Logo.svg.png",
+          "warning": null
         },
         {
           "name": "Lingma Agent + Lingma SWE-GPT 72b (v0918)",
@@ -414,7 +447,8 @@
           "site": "https://www.modelscope.cn/models/yingwei/Lingma-SWE-GPT",
           "verified": false,
           "oss": true,
-          "org_logo": "https://pbs.twimg.com/profile_images/1567807256091308032/4AXfLwia_400x400.jpg"
+          "org_logo": "https://pbs.twimg.com/profile_images/1567807256091308032/4AXfLwia_400x400.jpg",
+          "warning": null
         },
         {
           "name": "EPAM AI/Run Developer Agent + GPT4o",
@@ -426,7 +460,8 @@
           "site": "https://www.epam.com/services/artificial-intelligence",
           "verified": false,
           "oss": false,
-          "org_logo": "https://pbs.twimg.com/profile_images/1753265803191795712/qg3YENmV_400x400.png"
+          "org_logo": "https://pbs.twimg.com/profile_images/1753265803191795712/qg3YENmV_400x400.png",
+          "warning": null
         },
         {
           "name": "SWE-agent + GPT 4o (2024-05-13)",
@@ -438,7 +473,8 @@
           "site": "https://github.com/princeton-nlp/SWE-agent",
           "verified": true,
           "oss": true,
-          "org_logo": "https://avatars.githubusercontent.com/u/166046056?s=200&v=4"
+          "org_logo": "https://avatars.githubusercontent.com/u/166046056?s=200&v=4",
+          "warning": null
         },
         {
           "name": "SWE-agent + GPT 4 (1106)",
@@ -450,7 +486,8 @@
           "site": "https://github.com/princeton-nlp/SWE-agent",
           "verified": true,
           "oss": true,
-          "org_logo": "https://avatars.githubusercontent.com/u/166046056?s=200&v=4"
+          "org_logo": "https://avatars.githubusercontent.com/u/166046056?s=200&v=4",
+          "warning": null
         },
         {
           "name": "SWE-agent + Claude 3 Opus",
@@ -462,7 +499,8 @@
           "site": null,
           "verified": true,
           "oss": true,
-          "org_logo": "https://avatars.githubusercontent.com/u/166046056?s=200&v=4"
+          "org_logo": "https://avatars.githubusercontent.com/u/166046056?s=200&v=4",
+          "warning": null
         },
         {
           "name": "Lingma Agent + Lingma SWE-GPT 7b (v0925)",
@@ -474,7 +512,8 @@
           "site": "https://www.modelscope.cn/models/yingwei/Lingma-SWE-GPT (https://www.modelscope.cn/models/yingwei/Lingma-SWE-GPT-v20240925)",
           "verified": false,
           "oss": true,
-          "org_logo": "https://pbs.twimg.com/profile_images/1567807256091308032/4AXfLwia_400x400.jpg"
+          "org_logo": "https://pbs.twimg.com/profile_images/1567807256091308032/4AXfLwia_400x400.jpg",
+          "warning": null
         },
         {
           "name": "Lingma Agent + Lingma SWE-GPT 7b (v0918)",
@@ -486,7 +525,8 @@
           "site": "https://www.modelscope.cn/models/yingwei/Lingma-SWE-GPT",
           "verified": false,
           "oss": true,
-          "org_logo": "https://pbs.twimg.com/profile_images/1567807256091308032/4AXfLwia_400x400.jpg"
+          "org_logo": "https://pbs.twimg.com/profile_images/1567807256091308032/4AXfLwia_400x400.jpg",
+          "warning": null
         },
         {
           "name": "RAG + Claude 3 Opus",
@@ -498,7 +538,8 @@
           "site": "https://github.com/princeton-nlp/SWE-bench/tree/main/swebench/inference",
           "verified": true,
           "oss": true,
-          "org_logo": "https://avatars.githubusercontent.com/u/139597579?s=200&v=4"
+          "org_logo": "https://avatars.githubusercontent.com/u/139597579?s=200&v=4",
+          "warning": null
         },
         {
           "name": "RAG + Claude 2",
@@ -510,7 +551,8 @@
           "site": null,
           "verified": true,
           "oss": true,
-          "org_logo": "https://avatars.githubusercontent.com/u/139597579?s=200&v=4"
+          "org_logo": "https://avatars.githubusercontent.com/u/139597579?s=200&v=4",
+          "warning": null
         },
         {
           "name": "RAG + GPT 4 (1106)",
@@ -522,7 +564,8 @@
           "site": null,
           "verified": true,
           "oss": true,
-          "org_logo": "https://avatars.githubusercontent.com/u/139597579?s=200&v=4"
+          "org_logo": "https://avatars.githubusercontent.com/u/139597579?s=200&v=4",
+          "warning": null
         },
         {
           "name": "RAG + SWE-Llama 7B",
@@ -534,7 +577,8 @@
           "site": null,
           "verified": true,
           "oss": true,
-          "org_logo": "https://avatars.githubusercontent.com/u/139597579?s=200&v=4"
+          "org_logo": "https://avatars.githubusercontent.com/u/139597579?s=200&v=4",
+          "warning": null
         },
         {
           "name": "RAG + SWE-Llama 13B",
@@ -546,7 +590,8 @@
           "site": null,
           "verified": true,
           "oss": true,
-          "org_logo": "https://avatars.githubusercontent.com/u/139597579?s=200&v=4"
+          "org_logo": "https://avatars.githubusercontent.com/u/139597579?s=200&v=4",
+          "warning": null
         },
         {
           "name": "RAG + ChatGPT 3.5",
@@ -558,7 +603,8 @@
           "site": null,
           "verified": true,
           "oss": true,
-          "org_logo": "https://avatars.githubusercontent.com/u/139597579?s=200&v=4"
+          "org_logo": "https://avatars.githubusercontent.com/u/139597579?s=200&v=4",
+          "warning": null
         }
       ]
     },
@@ -575,7 +621,8 @@
           "site": "https://aide.dev/",
           "verified": false,
           "oss": false,
-          "org_logo": null
+          "org_logo": null,
+          "warning": true
         },
         {
           "name": "Bytedance MarsCode Agent",
@@ -587,7 +634,8 @@
           "site": "https://www.marscode.com/",
           "verified": false,
           "oss": false,
-          "org_logo": "https://pbs.twimg.com/profile_images/1768232487271153664/etPzHPm1_400x400.jpg"
+          "org_logo": "https://pbs.twimg.com/profile_images/1768232487271153664/etPzHPm1_400x400.jpg",
+          "warning": null
         },
         {
           "name": "Honeycomb",
@@ -599,7 +647,8 @@
           "site": "https://honeycomb.sh/",
           "verified": false,
           "oss": false,
-          "org_logo": "https://pbs.twimg.com/profile_images/1826351945021636608/eQgGBRKw_400x400.jpg"
+          "org_logo": "https://pbs.twimg.com/profile_images/1826351945021636608/eQgGBRKw_400x400.jpg",
+          "warning": null
         },
         {
           "name": "AbanteAI MentatBot + GPT 4o (2024-05-13)",
@@ -611,7 +660,8 @@
           "site": "https://mentat.ai/blog/mentatbot-sota-coding-agent",
           "verified": false,
           "oss": false,
-          "org_logo": null
+          "org_logo": null,
+          "warning": true
         },
         {
           "name": "Gru(2024-08-11)",
@@ -623,7 +673,8 @@
           "site": "https://gru.ai",
           "verified": false,
           "oss": false,
-          "org_logo": "https://pbs.twimg.com/profile_images/1832709320896917504/FB5KojGT_400x400.png"
+          "org_logo": "https://pbs.twimg.com/profile_images/1832709320896917504/FB5KojGT_400x400.png",
+          "warning": null
         },
         {
           "name": "Isoform",
@@ -635,7 +686,8 @@
           "site": "https://isoform.ai",
           "verified": false,
           "oss": false,
-          "org_logo": null
+          "org_logo": null,
+          "warning": null
         },
         {
           "name": "SuperCoder2.0",
@@ -647,7 +699,8 @@
           "site": "https://superagi.com/supercoder/",
           "verified": false,
           "oss": false,
-          "org_logo": "https://pbs.twimg.com/profile_images/1678659510041456640/rxUIfulT_400x400.jpg"
+          "org_logo": "https://pbs.twimg.com/profile_images/1678659510041456640/rxUIfulT_400x400.jpg",
+          "warning": null
         },
         {
           "name": "Bytedance MarsCode Agent + GPT 4o (2024-05-13)",
@@ -659,7 +712,8 @@
           "site": "https://www.marscode.com/",
           "verified": false,
           "oss": false,
-          "org_logo": "https://pbs.twimg.com/profile_images/1768232487271153664/etPzHPm1_400x400.jpg"
+          "org_logo": "https://pbs.twimg.com/profile_images/1768232487271153664/etPzHPm1_400x400.jpg",
+          "warning": null
         },
         {
           "name": "Alibaba Lingma Agent",
@@ -671,7 +725,8 @@
           "site": "https://arxiv.org/abs/2406.01422",
           "verified": false,
           "oss": false,
-          "org_logo": "https://pbs.twimg.com/profile_images/1567807256091308032/4AXfLwia_400x400.jpg"
+          "org_logo": "https://pbs.twimg.com/profile_images/1567807256091308032/4AXfLwia_400x400.jpg",
+          "warning": null
         },
         {
           "name": "Factory Code Droid",
@@ -683,7 +738,8 @@
           "site": "https://www.factory.ai/",
           "verified": false,
           "oss": false,
-          "org_logo": "https://pbs.twimg.com/profile_images/1768168785733980160/a4hWTSfN_400x400.jpg"
+          "org_logo": "https://pbs.twimg.com/profile_images/1768168785733980160/a4hWTSfN_400x400.jpg",
+          "warning": true
         },
         {
           "name": "AutoCodeRover (v20240620) + GPT 4o (2024-05-13)",
@@ -695,7 +751,8 @@
           "site": "https://autocoderover.dev/",
           "verified": false,
           "oss": true,
-          "org_logo": "https://avatars.githubusercontent.com/u/100131783?s=200&v=4"
+          "org_logo": "https://avatars.githubusercontent.com/u/100131783?s=200&v=4",
+          "warning": null
         },
         {
           "name": "AIGCode Infant-Coder(2024-08-30)",
@@ -707,7 +764,8 @@
           "site": "https://aigcode.net/",
           "verified": false,
           "oss": false,
-          "org_logo": null
+          "org_logo": null,
+          "warning": null
         },
         {
           "name": "Amazon Q Developer Agent (v20240719-dev)",
@@ -719,7 +777,8 @@
           "site": "https://aws.amazon.com/q/developer/",
           "verified": false,
           "oss": false,
-          "org_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/2560px-Amazon_Web_Services_Logo.svg.png"
+          "org_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/2560px-Amazon_Web_Services_Logo.svg.png",
+          "warning": null
         },
         {
           "name": "Agentless + RepoGraph + GPT-4o",
@@ -731,7 +790,8 @@
           "site": "https://github.com/ozyyshr/RepoGraph",
           "verified": false,
           "oss": true,
-          "org_logo": "https://brand.illinois.edu/wp-content/uploads/2024/02/Color-Variation-Orange-Block-I-White-Background.png"
+          "org_logo": "https://brand.illinois.edu/wp-content/uploads/2024/02/Color-Variation-Orange-Block-I-White-Background.png",
+          "warning": null
         },
         {
           "name": "CodeR + GPT 4 (1106)",
@@ -743,7 +803,8 @@
           "site": "https://github.com/NL2Code/CodeR",
           "verified": false,
           "oss": false,
-          "org_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Huawei_Standard_logo.svg/1200px-Huawei_Standard_logo.svg.png"
+          "org_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Huawei_Standard_logo.svg/1200px-Huawei_Standard_logo.svg.png",
+          "warning": true
         },
         {
           "name": "MASAI + GPT 4o (2024-05-13)",
@@ -755,7 +816,8 @@
           "site": "https://github.com/masai-dev-agent/masai",
           "verified": false,
           "oss": false,
-          "org_logo": null
+          "org_logo": null,
+          "warning": true
         },
         {
           "name": "SIMA + GPT 4o (2024-05-13)",
@@ -767,7 +829,8 @@
           "site": "https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20240706_sima_gpt4o",
           "verified": false,
           "oss": false,
-          "org_logo": null
+          "org_logo": null,
+          "warning": null
         },
         {
           "name": "Agentless + GPT 4o (2024-05-13)",
@@ -779,7 +842,8 @@
           "site": "https://github.com/OpenAutoCoder/Agentless",
           "verified": false,
           "oss": true,
-          "org_logo": "https://brand.illinois.edu/wp-content/uploads/2024/02/Color-Variation-Orange-Block-I-White-Background.png"
+          "org_logo": "https://brand.illinois.edu/wp-content/uploads/2024/02/Color-Variation-Orange-Block-I-White-Background.png",
+          "warning": null
         },
         {
           "name": "Moatless Tools + Claude 3.5 Sonnet",
@@ -791,10 +855,11 @@
           "site": "https://github.com/aorwall/moatless-tools",
           "verified": true,
           "oss": true,
-          "org_logo": null
+          "org_logo": null,
+          "warning": null
         },
         {
-          "name": "OpenDevin + CodeAct v1.8",
+          "name": "OpenHands + CodeAct v1.8",
           "folder": "20240725_opendevin_codeact_v1.8_claude35sonnet",
           "resolved": 26.67,
           "date": "2024-07-25",
@@ -803,7 +868,8 @@
           "site": "https://docs.all-hands.dev/",
           "verified": true,
           "oss": true,
-          "org_logo": "https://pbs.twimg.com/profile_images/1825651863292882944/KQwkuu7P_400x400.jpg"
+          "org_logo": "https://pbs.twimg.com/profile_images/1825651863292882944/KQwkuu7P_400x400.jpg",
+          "warning": null
         },
         {
           "name": "IBM Research Agent-101",
@@ -815,7 +881,8 @@
           "site": "https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20240612_IBM_Research_Agent101",
           "verified": false,
           "oss": false,
-          "org_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPBss61ZSzmBM75JqdYCVqsfqJ4JijX0mt9g&s"
+          "org_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPBss61ZSzmBM75JqdYCVqsfqJ4JijX0mt9g&s",
+          "warning": null
         },
         {
           "name": "Aider + GPT 4o & Claude 3 Opus",
@@ -827,7 +894,8 @@
           "site": "https://github.com/paul-gauthier/aider",
           "verified": false,
           "oss": true,
-          "org_logo": "https://avatars.githubusercontent.com/u/172139148?s=48&v=4"
+          "org_logo": "https://avatars.githubusercontent.com/u/172139148?s=48&v=4",
+          "warning": null
         },
         {
           "name": "HyperAgent",
@@ -839,7 +907,8 @@
           "site": "https://arxiv.org/abs/2409.16299",
           "verified": false,
           "oss": false,
-          "org_logo": null
+          "org_logo": null,
+          "warning": null
         },
         {
           "name": "Moatless Tools + GPT 4o (2024-05-13)",
@@ -851,7 +920,8 @@
           "site": "https://github.com/aorwall/moatless-tools",
           "verified": true,
           "oss": true,
-          "org_logo": null
+          "org_logo": null,
+          "warning": null
         },
         {
           "name": "IBM SWE-1.0 (with open LLMs)",
@@ -863,7 +933,8 @@
           "site": "https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20241016_IBM-SWE-1.0",
           "verified": false,
           "oss": false,
-          "org_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPBss61ZSzmBM75JqdYCVqsfqJ4JijX0mt9g&s"
+          "org_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPBss61ZSzmBM75JqdYCVqsfqJ4JijX0mt9g&s",
+          "warning": null
         },
         {
           "name": "OpenCSG StarShip CodeGenAgent + GPT 4 (0613)",
@@ -875,7 +946,8 @@
           "site": "https://opencsg.com/product?class=StarShip",
           "verified": false,
           "oss": false,
-          "org_logo": null
+          "org_logo": null,
+          "warning": true
         },
         {
           "name": "SWE-agent + Claude 3.5 Sonnet",
@@ -887,7 +959,8 @@
           "site": null,
           "verified": true,
           "oss": true,
-          "org_logo": "https://avatars.githubusercontent.com/u/166046056?s=200&v=4"
+          "org_logo": "https://avatars.githubusercontent.com/u/166046056?s=200&v=4",
+          "warning": null
         },
         {
           "name": "AppMap Navie + GPT 4o (2024-05-13)",
@@ -899,7 +972,8 @@
           "site": "https://appmap.io/navie",
           "verified": true,
           "oss": true,
-          "org_logo": "https://pbs.twimg.com/profile_images/1393240555191160833/q5OUpB3Q_400x400.png"
+          "org_logo": "https://pbs.twimg.com/profile_images/1393240555191160833/q5OUpB3Q_400x400.png",
+          "warning": null
         },
         {
           "name": "Bytedance AutoSE (based on SWE-Agent) + GPT4/GPT4o Mixed (20240828)",
@@ -911,7 +985,8 @@
           "site": null,
           "verified": false,
           "oss": false,
-          "org_logo": "https://pbs.twimg.com/profile_images/1768232487271153664/etPzHPm1_400x400.jpg"
+          "org_logo": "https://pbs.twimg.com/profile_images/1768232487271153664/etPzHPm1_400x400.jpg",
+          "warning": null
         },
         {
           "name": "Amazon Q Developer Agent (v20240430-dev)",
@@ -923,7 +998,8 @@
           "site": "https://aws.amazon.com/q/developer/",
           "verified": false,
           "oss": false,
-          "org_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/2560px-Amazon_Web_Services_Logo.svg.png"
+          "org_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/2560px-Amazon_Web_Services_Logo.svg.png",
+          "warning": null
         },
         {
           "name": "AutoCodeRover (v20240408) + GPT 4 (0125)",
@@ -935,7 +1011,8 @@
           "site": "https://github.com/nus-apr/auto-code-rover",
           "verified": false,
           "oss": true,
-          "org_logo": "https://avatars.githubusercontent.com/u/100131783?s=200&v=4"
+          "org_logo": "https://avatars.githubusercontent.com/u/100131783?s=200&v=4",
+          "warning": null
         },
         {
           "name": "SWE-agent + GPT 4o (2024-05-13)",
@@ -947,7 +1024,8 @@
           "site": "https://github.com/princeton-nlp/SWE-agent",
           "verified": true,
           "oss": true,
-          "org_logo": "https://avatars.githubusercontent.com/u/166046056?s=200&v=4"
+          "org_logo": "https://avatars.githubusercontent.com/u/166046056?s=200&v=4",
+          "warning": null
         },
         {
           "name": "SWE-agent + GPT 4 (1106)",
@@ -959,7 +1037,8 @@
           "site": "https://github.com/princeton-nlp/SWE-agent",
           "verified": true,
           "oss": true,
-          "org_logo": "https://avatars.githubusercontent.com/u/166046056?s=200&v=4"
+          "org_logo": "https://avatars.githubusercontent.com/u/166046056?s=200&v=4",
+          "warning": null
         },
         {
           "name": "SWE-agent + Claude 3 Opus",
@@ -971,7 +1050,8 @@
           "site": null,
           "verified": true,
           "oss": true,
-          "org_logo": "https://avatars.githubusercontent.com/u/166046056?s=200&v=4"
+          "org_logo": "https://avatars.githubusercontent.com/u/166046056?s=200&v=4",
+          "warning": null
         },
         {
           "name": "RAG + Claude 3 Opus",
@@ -983,7 +1063,8 @@
           "site": "https://github.com/princeton-nlp/SWE-bench/tree/main/swebench/inference",
           "verified": true,
           "oss": true,
-          "org_logo": "https://avatars.githubusercontent.com/u/139597579?s=200&v=4"
+          "org_logo": "https://avatars.githubusercontent.com/u/139597579?s=200&v=4",
+          "warning": null
         },
         {
           "name": "RAG + Claude 2",
@@ -995,7 +1076,8 @@
           "site": null,
           "verified": true,
           "oss": true,
-          "org_logo": "https://avatars.githubusercontent.com/u/139597579?s=200&v=4"
+          "org_logo": "https://avatars.githubusercontent.com/u/139597579?s=200&v=4",
+          "warning": null
         },
         {
           "name": "RAG + GPT 4 (1106)",
@@ -1007,7 +1089,8 @@
           "site": null,
           "verified": true,
           "oss": true,
-          "org_logo": "https://avatars.githubusercontent.com/u/139597579?s=200&v=4"
+          "org_logo": "https://avatars.githubusercontent.com/u/139597579?s=200&v=4",
+          "warning": null
         },
         {
           "name": "RAG + SWE-Llama 7B",
@@ -1019,7 +1102,8 @@
           "site": null,
           "verified": true,
           "oss": true,
-          "org_logo": "https://avatars.githubusercontent.com/u/139597579?s=200&v=4"
+          "org_logo": "https://avatars.githubusercontent.com/u/139597579?s=200&v=4",
+          "warning": null
         },
         {
           "name": "RAG + SWE-Llama 13B",
@@ -1031,7 +1115,8 @@
           "site": null,
           "verified": true,
           "oss": true,
-          "org_logo": "https://avatars.githubusercontent.com/u/139597579?s=200&v=4"
+          "org_logo": "https://avatars.githubusercontent.com/u/139597579?s=200&v=4",
+          "warning": null
         },
         {
           "name": "RAG + ChatGPT 3.5",
@@ -1043,7 +1128,8 @@
           "site": null,
           "verified": true,
           "oss": true,
-          "org_logo": "https://avatars.githubusercontent.com/u/139597579?s=200&v=4"
+          "org_logo": "https://avatars.githubusercontent.com/u/139597579?s=200&v=4",
+          "warning": null
         }
       ]
     }

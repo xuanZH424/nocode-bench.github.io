@@ -335,13 +335,14 @@ tr {
 }
 
 .scrollable {
-  /* max-height: 300px; */
-  overflow-y: hidden;
+  overflow-y: auto;
   overflow-x: auto;
   display: block;
   width: 100%;
   border: 2px solid var(--accent_color);
   box-sizing: border-box;
+  max-height: calc(1.5em * 30);
+  scrollbar-width: thin;
 }
 
 .table {
@@ -403,27 +404,6 @@ tr {
 
 .table th:last-child .sticky-header-content {
   border-top-right-radius: 7px;
-}
-
-/* For Webkit browsers (e.g., Chrome, Safari) */
-.scrollable::-webkit-scrollbar {
-  width: 10px;  /* width of the entire scrollbar */
-}
-
-.scrollable::-webkit-scrollbar-track {
-  background: var(--grey);  /* color of the tracking area */
-}
-
-.scrollable::-webkit-scrollbar-thumb {
-  background: var(--accent_color);  /* color of the scroll thumb */
-  border-radius: 3px;  /* roundness of the scroll thumb */
-  border: 2px solid var(--accent_color);  /* creates padding around scroll thumb */
-}
-
-/* For Firefox */
-.scrollable {
-  scrollbar-width: thin;  /* "auto" or "thin" */
-  scrollbar-color: #888 var(--accent_color); /* scroll thumb and track */
 }
 
 #reasoning-traces {

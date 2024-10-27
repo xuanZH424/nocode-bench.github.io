@@ -154,9 +154,10 @@
                 </thead>
                 <tbody>
                   {% for item in leaderboard.results %}
-                  <tr>
+                  {% if item.warning %}<tr style="background-color: #fff3cd;">{% else %}<tr>{% endif %}
                     <td>
                       <p class="model-type">
+                        {% if item.warning %}⚠️{% endif %}
                         {% if loop.index == 1 %}🥇
                         {% elif loop.index == 2 %}🥈
                         {% elif loop.index == 3 %}🥉
@@ -215,6 +216,8 @@
               - <span style="color:#0ea7ff;"><b>🤠 Open</b></span> refers to submissions that have open-source code. This does <i>not</i>
               necessarily mean the underlying model is open-source.
               <br>
+              - <span style="color:#f8b100;"><b>⚠️ Warning</b></span> indicates that this submission has not submitted reasoning traces. By November 10, 2024, if reasoning traces are not submitted, the submission will be removed from the leaderboard.
+              <br><br>
               - The leaderboard is updated once a week on <b>Monday</b>.
               <br>
               - If you would like to submit your model to the leaderboard, please check the <a href="submit.html">submission</a> page.
