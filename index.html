@@ -131,7 +131,7 @@
           </div>
         </div>
         <div class="content-wrapper">
-          <div class="content-box">
+          <div class="content-box leaderboard">
             <h2 class="text-title">Leaderboard</h2>
             <ul class="tab">
               <li><button id="tab-lite" class="tablinks" data-leaderboard="Lite">Lite</button></li>
@@ -3989,6 +3989,8 @@
         tabs.forEach(function(tab) {
           tab.addEventListener('click', function(event) {
             openLeaderboard(this.getAttribute('data-leaderboard'));
+            // Scroll to leaderboard section
+            document.querySelector('.leaderboard').scrollIntoView({ behavior: 'smooth' });
           });
         });
 
@@ -3997,6 +3999,8 @@
         if (hash === 'lite' || hash === 'verified' || hash === 'full') {
           const tabName = hash.charAt(0).toUpperCase() + hash.slice(1);
           openLeaderboard(tabName, false);
+          // Scroll to leaderboard section
+          document.querySelector('.leaderboard').scrollIntoView({ behavior: 'smooth' });
         } else {
           // Open the 'lite' leaderboard by default if no hash
           openLeaderboard('Lite', false);
