@@ -3995,7 +3995,7 @@
         // Check URL hash for tab selection
         const hash = window.location.hash.slice(1).toLowerCase();
         if (hash === 'lite' || hash === 'verified' || hash === 'full') {
-          const tabName = hash === 'full' ? 'Test' : hash.charAt(0).toUpperCase() + hash.slice(1);
+          const tabName = hash.charAt(0).toUpperCase() + hash.slice(1);
           openLeaderboard(tabName, false);
         } else {
           // Open the 'lite' leaderboard by default if no hash
