@@ -3964,7 +3964,7 @@
       </section>
     </div>
     <script>
-      function openLeaderboard(leaderboard) {
+      function openLeaderboard(leaderboard, updateHash = true) {
         var tabcontent = document.getElementsByClassName("tabcontent");
         for (var i = 0; i < tabcontent.length; i++) {
           tabcontent[i].style.display = "none";
@@ -3977,6 +3977,11 @@
 
         document.getElementById(`leaderboard-${leaderboard}`).style.display = "block";
         document.querySelector(`[data-leaderboard="${leaderboard}"]`).classList.add("active");
+
+        // Update URL hash if requested
+        if (updateHash) {
+          window.location.hash = leaderboard.toLowerCase();
+        }
       }
 
       document.addEventListener('DOMContentLoaded', function() {
@@ -3987,8 +3992,15 @@
           });
         });
 
-        // Open the 'lite' leaderboard by default
-        openLeaderboard('Lite');
+        // Check URL hash for tab selection
+        const hash = window.location.hash.slice(1).toLowerCase();
+        if (hash === 'lite' || hash === 'verified' || hash === 'full') {
+          const tabName = hash === 'full' ? 'Test' : hash.charAt(0).toUpperCase() + hash.slice(1);
+          openLeaderboard(tabName, false);
+        } else {
+          // Open the 'lite' leaderboard by default if no hash
+          openLeaderboard('Lite', false);
+        }
       });
     </script>
   </body>
