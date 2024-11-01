@@ -3989,8 +3989,10 @@
         tabs.forEach(function(tab) {
           tab.addEventListener('click', function(event) {
             openLeaderboard(this.getAttribute('data-leaderboard'));
-            // Scroll to leaderboard section
-            document.querySelector('.leaderboard').scrollIntoView({ behavior: 'smooth' });
+            // Scroll to leaderboard section after a slight delay
+            setTimeout(() => {
+              document.querySelector('.leaderboard').scrollIntoView({ behavior: 'smooth' });
+            }, 100);
           });
         });
 
@@ -3999,8 +4001,10 @@
         if (hash === 'lite' || hash === 'verified' || hash === 'full') {
           const tabName = hash.charAt(0).toUpperCase() + hash.slice(1);
           openLeaderboard(tabName, false);
-          // Scroll to leaderboard section
-          document.querySelector('.leaderboard').scrollIntoView({ behavior: 'smooth' });
+          // Scroll to leaderboard section after a slight delay
+          setTimeout(() => {
+            document.querySelector('.leaderboard').scrollIntoView({ behavior: 'smooth' });
+          }, 100);
         } else {
           // Open the 'lite' leaderboard by default if no hash
           openLeaderboard('Lite', false);
