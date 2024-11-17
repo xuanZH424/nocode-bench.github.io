@@ -153,8 +153,8 @@
                   </tr>
                 </thead>
                 <tbody>
-                  {% for item in leaderboard.results %}
-                  {% if item.warning %}<tr style="background-color: #fff3cd;">{% else %}<tr>{% endif %}
+                  {% for item in leaderboard.results if not item.warning %}
+                  <tr>
                     <td>
                       <p class="model-type">
                         {% if item.warning %}⚠️{% endif %}
