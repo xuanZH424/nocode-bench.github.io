@@ -217,6 +217,32 @@
       "name": "Verified",
       "results": [
         {
+          "name": "Amazon Q Developer Agent (v20241202-dev)",
+          "folder": "20241202_amazon-q-developer-agent-20241202-dev",
+          "resolved": 54.8,
+          "date": "2024-12-02",
+          "logs": true,
+          "trajs": true,
+          "site": "https://aws.amazon.com/q/developer/",
+          "verified": false,
+          "oss": false,
+          "org_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/2560px-Amazon_Web_Services_Logo.svg.png",
+          "warning": null
+        },
+        {
+          "name": "devlo",
+          "folder": "20241108_devlo",
+          "resolved": 54.2,
+          "date": "2024-11-08",
+          "logs": true,
+          "trajs": true,
+          "site": "https://devlo.ai",
+          "verified": false,
+          "oss": false,
+          "org_logo": "https://devlo.ai/static/media/devlo.ef99a045eba5ea0bcada.png",
+          "warning": null
+        },
+        {
           "name": "OpenHands + CodeAct v2.1 (claude-3-5-sonnet-20241022)",
           "folder": "20241029_OpenHands-CodeAct-2.1-sonnet-20241022",
           "resolved": 53.0,
@@ -230,6 +256,32 @@
           "warning": null
         },
         {
+          "name": "Engine Labs (2024-11-25)",
+          "folder": "20241125_enginelabs",
+          "resolved": 51.8,
+          "date": "2024-11-25",
+          "logs": true,
+          "trajs": true,
+          "site": "https://www.enginelabs.ai/",
+          "verified": false,
+          "oss": false,
+          "org_logo": "https://cdn.prod.website-files.com/669e7d9c093a7bea79b5b218/66a01c087f080328e84cb463_Engine-Icon.svg",
+          "warning": null
+        },
+        {
+          "name": "Agentless-1.5 + GPT 4o (claude-3-5-sonnet-20241022)",
+          "folder": "20241202_agentless-1.5_claude-3.5-sonnet-20241022",
+          "resolved": 50.8,
+          "date": "2024-12-02",
+          "logs": true,
+          "trajs": true,
+          "site": "https://github.com/OpenAutoCoder/Agentless",
+          "verified": false,
+          "oss": true,
+          "org_logo": "https://brand.illinois.edu/wp-content/uploads/2024/02/Color-Variation-Orange-Block-I-White-Background.png",
+          "warning": null
+        },
+        {
           "name": "Solver (2024-10-28)",
           "folder": "20241028_solver",
           "resolved": 50.0,
@@ -240,6 +292,32 @@
           "verified": false,
           "oss": false,
           "org_logo": "https://pbs.twimg.com/profile_images/1847427476601053184/L3RCKwMu_400x400.png",
+          "warning": null
+        },
+        {
+          "name": "Bytedance MarsCode Agent",
+          "folder": "20241125_marscode-agent-dev",
+          "resolved": 50.0,
+          "date": "2024-11-25",
+          "logs": true,
+          "trajs": true,
+          "site": "https://www.marscode.com/",
+          "verified": false,
+          "oss": false,
+          "org_logo": "https://pbs.twimg.com/profile_images/1768232487271153664/etPzHPm1_400x400.jpg",
+          "warning": null
+        },
+        {
+          "name": "nFactorial (2024-11-05)",
+          "folder": "20241105_nfactorial",
+          "resolved": 49.2,
+          "date": "2024-11-05",
+          "logs": true,
+          "trajs": true,
+          "site": "https://nfactorial.dev/",
+          "verified": false,
+          "oss": false,
+          "org_logo": "https://nfactorial.dev/logo400.png",
           "warning": null
         },
         {
@@ -269,6 +347,19 @@
           "warning": null
         },
         {
+          "name": "AppMap Navie v2",
+          "folder": "20241106_navie-2-gpt4o-sonnet",
+          "resolved": 47.2,
+          "date": "2024-11-06",
+          "logs": true,
+          "trajs": true,
+          "site": "https://appmap.io/navie",
+          "verified": true,
+          "oss": true,
+          "org_logo": "https://pbs.twimg.com/profile_images/1393240555191160833/q5OUpB3Q_400x400.png",
+          "warning": null
+        },
+        {
           "name": "Emergent E1 (v2024-10-12)",
           "folder": "20241023_emergent",
           "resolved": 46.6,
@@ -279,6 +370,19 @@
           "verified": false,
           "oss": false,
           "org_logo": "https://framerusercontent.com/images/SgtAWOxwfupLelzIrK1vQiBWZvY.png",
+          "warning": null
+        },
+        {
+          "name": "AutoCodeRover-v2.0 (Claude-3.5-Sonnet-20241022)",
+          "folder": "20241108_autocoderover-v2.0-claude-3-5-sonnet-20241022",
+          "resolved": 46.2,
+          "date": "2024-11-08",
+          "logs": true,
+          "trajs": true,
+          "site": "https://www.autocoderover.net/",
+          "verified": false,
+          "oss": true,
+          "org_logo": "https://github.com/AutoCodeRoverSG/autocoderoversg.github.io/blob/main/img/logo_small.png?raw=true",
           "warning": null
         },
         {
@@ -318,6 +422,32 @@
           "verified": false,
           "oss": false,
           "org_logo": "https://pbs.twimg.com/profile_images/1847427476601053184/L3RCKwMu_400x400.png",
+          "warning": null
+        },
+        {
+          "name": "nFactorial (2024-10-30)",
+          "folder": "20241030_nfactorial",
+          "resolved": 41.6,
+          "date": "2024-10-30",
+          "logs": true,
+          "trajs": true,
+          "site": "https://nfactorial.dev/",
+          "verified": false,
+          "oss": false,
+          "org_logo": "https://nfactorial.dev/logo400.png",
+          "warning": null
+        },
+        {
+          "name": "Nebius AI Qwen 2.5 72B Generator + LLama 3.1 70B Critic",
+          "folder": "20241113_nebius-search-open-weight-models-11-24",
+          "resolved": 40.6,
+          "date": "2024-11-13",
+          "logs": true,
+          "trajs": true,
+          "site": "https://nebius.com/blog/posts/training-and-search-for-software-engineering-agents",
+          "verified": false,
+          "oss": false,
+          "org_logo": "https://nebius.com/favicon/favicon-192x192.png",
           "warning": null
         },
         {
@@ -435,6 +565,19 @@
           "verified": true,
           "oss": true,
           "org_logo": "https://avatars.githubusercontent.com/u/166046056?s=200&v=4",
+          "warning": null
+        },
+        {
+          "name": "Artemis Agent v1 (2024-11-20)",
+          "folder": "20241120_artemis_agent",
+          "resolved": 32.0,
+          "date": "2024-11-20",
+          "logs": true,
+          "trajs": true,
+          "site": "https://www.turintech.ai/",
+          "verified": false,
+          "oss": false,
+          "org_logo": "https://pbs.twimg.com/profile_images/1815722024121077760/KKFl48WM_400x400.jpg",
           "warning": null
         },
         {
@@ -690,6 +833,32 @@
       "name": "Lite",
       "results": [
         {
+          "name": "Globant Code Fixer Agent",
+          "folder": "20241127_globant_codefixer_agent",
+          "resolved": 48.33,
+          "date": "2024-11-27",
+          "logs": true,
+          "trajs": true,
+          "site": "https://ai.globant.com/us-en/",
+          "verified": false,
+          "oss": false,
+          "org_logo": "https://ai.globant.com/wp-content/uploads/2024/06/favicon.png",
+          "warning": null
+        },
+        {
+          "name": "devlo",
+          "folder": "20241122_devlo",
+          "resolved": 47.33,
+          "date": "2024-11-22",
+          "logs": true,
+          "trajs": true,
+          "site": "https://devlo.ai",
+          "verified": false,
+          "oss": false,
+          "org_logo": "https://devlo.ai/static/media/devlo.ef99a045eba5ea0bcada.png",
+          "warning": null
+        },
+        {
           "name": "CodeStory Aide + Mixed Models",
           "folder": "20240702_codestory_aide_mixed",
           "resolved": 43.0,
@@ -716,6 +885,32 @@
           "warning": null
         },
         {
+          "name": "Composio SWE-Kit (2024-10-30)",
+          "folder": "20241030_composio_swekit",
+          "resolved": 41.0,
+          "date": "2024-10-30",
+          "logs": true,
+          "trajs": true,
+          "site": "https://github.com/ComposioHQ/composio/tree/master/python/swe/agent",
+          "verified": false,
+          "oss": true,
+          "org_logo": "https://avatars.githubusercontent.com/u/128464815?s=48&v=4",
+          "warning": null
+        },
+        {
+          "name": "Agentless-1.5 + GPT 4o (claude-3-5-sonnet-20241022)",
+          "folder": "20241202_agentless-1.5_claude-3.5-sonnet-20241022",
+          "resolved": 40.67,
+          "date": "2024-12-02",
+          "logs": true,
+          "trajs": true,
+          "site": "https://github.com/OpenAutoCoder/Agentless",
+          "verified": false,
+          "oss": true,
+          "org_logo": "https://brand.illinois.edu/wp-content/uploads/2024/02/Color-Variation-Orange-Block-I-White-Background.png",
+          "warning": null
+        },
+        {
           "name": "Bytedance MarsCode Agent",
           "folder": "20240912_marscode-agent-dev",
           "resolved": 39.33,
@@ -726,6 +921,19 @@
           "verified": false,
           "oss": false,
           "org_logo": "https://pbs.twimg.com/profile_images/1768232487271153664/etPzHPm1_400x400.jpg",
+          "warning": null
+        },
+        {
+          "name": "Moatless Tools + Claude 3.5 Sonnet (20241022)",
+          "folder": "20241117_moatless_claude-3.5-sonnet-20241022",
+          "resolved": 38.33,
+          "date": "2024-11-17",
+          "logs": true,
+          "trajs": true,
+          "site": "https://github.com/aorwall/moatless-tools",
+          "verified": true,
+          "oss": true,
+          "org_logo": null,
           "warning": null
         },
         {
@@ -753,6 +961,19 @@
           "oss": false,
           "org_logo": null,
           "warning": true
+        },
+        {
+          "name": "AppMap Navie v2",
+          "folder": "20241113_navie-2-gpt4o-sonnet",
+          "resolved": 36.0,
+          "date": "2024-11-13",
+          "logs": true,
+          "trajs": true,
+          "site": "https://appmap.io/navie",
+          "verified": true,
+          "oss": true,
+          "org_logo": "https://pbs.twimg.com/profile_images/1393240555191160833/q5OUpB3Q_400x400.png",
+          "warning": null
         },
         {
           "name": "Gru(2024-08-11)",
@@ -846,6 +1067,19 @@
           "warning": true
         },
         {
+          "name": "CodeShellTester + GPT 4o (2024-05-13)",
+          "folder": "20241111_codeshelltester_gpt4o",
+          "resolved": 31.33,
+          "date": "2024-11-11",
+          "logs": true,
+          "trajs": true,
+          "site": "https://github.com/WisdomShell/codeshell",
+          "verified": false,
+          "oss": false,
+          "org_logo": "https://avatars.githubusercontent.com/u/145519942?s=200&v=4",
+          "warning": null
+        },
+        {
           "name": "AutoCodeRover (v20240620) + GPT 4o (2024-05-13)",
           "folder": "20240621_autocoderover-v20240620",
           "resolved": 30.67,
@@ -903,25 +1137,12 @@
           "resolved": 28.33,
           "date": "2024-06-04",
           "logs": true,
-          "trajs": false,
+          "trajs": true,
           "site": "https://github.com/NL2Code/CodeR",
           "verified": false,
           "oss": false,
           "org_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Huawei_Standard_logo.svg/1200px-Huawei_Standard_logo.svg.png",
-          "warning": true
-        },
-        {
-          "name": "MASAI + GPT 4o (2024-05-13)",
-          "folder": "20240612_MASAI_gpt4o",
-          "resolved": 28.0,
-          "date": "2024-06-12",
-          "logs": true,
-          "trajs": true,
-          "site": "https://github.com/masai-dev-agent/masai",
-          "verified": false,
-          "oss": false,
-          "org_logo": null,
-          "warning": false
+          "warning": null
         },
         {
           "name": "SIMA + GPT 4o (2024-05-13)",
@@ -931,6 +1152,19 @@
           "logs": true,
           "trajs": true,
           "site": "https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20240706_sima_gpt4o",
+          "verified": false,
+          "oss": false,
+          "org_logo": null,
+          "warning": null
+        },
+        {
+          "name": "MASAI + GPT 4o (2024-05-13)",
+          "folder": "20240612_MASAI_gpt4o",
+          "resolved": 27.33,
+          "date": "2024-06-12",
+          "logs": true,
+          "trajs": true,
+          "site": "https://masai-dev-agent.github.io/",
           "verified": false,
           "oss": false,
           "org_logo": null,
@@ -1028,7 +1262,7 @@
           "warning": null
         },
         {
-          "name": "IBM SWE-1.0 (with open LLMs)",
+          "name": "IBM AI Agent SWE-1.0 (with open LLMs)",
           "folder": "20241016_IBM-SWE-1.0",
           "resolved": 23.67,
           "date": "2024-10-16",
