@@ -219,7 +219,7 @@
         {
           "name": "Amazon Q Developer Agent (v20241202-dev)",
           "folder": "20241202_amazon-q-developer-agent-20241202-dev",
-          "resolved": 54.8,
+          "resolved": 55.0,
           "date": "2024-12-02",
           "logs": true,
           "trajs": true,
