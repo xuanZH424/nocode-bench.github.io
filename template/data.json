@@ -269,7 +269,7 @@
           "warning": null
         },
         {
-          "name": "Agentless-1.5 + GPT 4o (claude-3-5-sonnet-20241022)",
+          "name": "Agentless-1.5 + Claude-3.5 Sonnet (20241022)",
           "folder": "20241202_agentless-1.5_claude-3.5-sonnet-20241022",
           "resolved": 50.8,
           "date": "2024-12-02",
@@ -447,7 +447,7 @@
           "site": "https://nebius.com/blog/posts/training-and-search-for-software-engineering-agents",
           "verified": false,
           "oss": false,
-          "org_logo": "https://nebius.com/favicon/favicon-192x192.png",
+          "org_logo": "https://nebius.com/favicon/favicon-96x96.png",
           "warning": null
         },
         {
@@ -898,7 +898,7 @@
           "warning": null
         },
         {
-          "name": "Agentless-1.5 + GPT 4o (claude-3-5-sonnet-20241022)",
+          "name": "Agentless-1.5 + Claude-3.5 Sonnet (20241022)",
           "folder": "20241202_agentless-1.5_claude-3.5-sonnet-20241022",
           "resolved": 40.67,
           "date": "2024-12-02",
