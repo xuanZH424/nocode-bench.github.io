@@ -4,6 +4,32 @@
       "name": "Test",
       "results": [
         {
+          "name": "OpenHands + CodeAct v2.1 (claude-3-5-sonnet-20241022)",
+          "folder": "20241103_OpenHands-CodeAct-2.1-sonnet-20241022",
+          "resolved": 29.38,
+          "date": "2024-11-03",
+          "logs": true,
+          "trajs": true,
+          "site": "https://docs.all-hands.dev/",
+          "verified": true,
+          "oss": true,
+          "org_logo": "https://avatars.githubusercontent.com/u/169105795?s=200&v=4",
+          "warning": null
+        },
+        {
+          "name": "AutoCodeRover-v2.0 (Claude-3.5-Sonnet-20241022)",
+          "folder": "20241121_autocoderover-v2.0-claude-3-5-sonnet-20241022",
+          "resolved": 24.89,
+          "date": "2024-11-21",
+          "logs": true,
+          "trajs": true,
+          "site": "https://www.autocoderover.net/",
+          "verified": false,
+          "oss": true,
+          "org_logo": "https://github.com/AutoCodeRoverSG/autocoderoversg.github.io/blob/main/img/logo_small.png?raw=true",
+          "warning": null
+        },
+        {
           "name": "Honeycomb",
           "folder": "20240820_honeycomb",
           "resolved": 22.06,
