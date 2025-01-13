@@ -131,7 +131,7 @@
           </div>
         </div>
         <div class="content-wrapper">
-          <div class="content-box">
+          <div class="content-box leaderboard">
             <h2 class="text-title">Leaderboard</h2>
             <ul class="tab">
               <li><button id="tab-lite" class="tablinks" data-leaderboard="Lite">Lite</button></li>
@@ -154,11 +154,7 @@
                 </thead>
                 <tbody>
                   {% for item in leaderboard.results if not item.warning %}
-                  {% if item.date >= "2025-01-01" %}
-                  <tr style="background-color: #82CEFA;">
-                  {% else %}
-                  <tr>
-                  {% endif %}
+                  {% if item.date >= "2025-01-01" %}<tr style="background-color: #82CEFA;">{% else %}<tr>{% endif %}
                     <td>
                       <p class="model-type">
                         {% if item.date >= "2025-01-01" %}🆕{% endif %}
@@ -454,7 +450,7 @@
       </section>
     </div>
     <script>
-      function openLeaderboard(leaderboard) {
+      function openLeaderboard(leaderboard, updateHash = true) {
         var tabcontent = document.getElementsByClassName("tabcontent");
         for (var i = 0; i < tabcontent.length; i++) {
           tabcontent[i].style.display = "none";
@@ -467,6 +463,11 @@
 
         document.getElementById(`leaderboard-${leaderboard}`).style.display = "block";
         document.querySelector(`[data-leaderboard="${leaderboard}"]`).classList.add("active");
+
+        // Update URL hash if requested
+        if (updateHash) {
+          window.location.hash = leaderboard.toLowerCase();
+        }
       }
 
       document.addEventListener('DOMContentLoaded', function() {
@@ -474,11 +475,26 @@
         tabs.forEach(function(tab) {
           tab.addEventListener('click', function(event) {
             openLeaderboard(this.getAttribute('data-leaderboard'));
+            // Scroll to leaderboard section after a slight delay
+            setTimeout(() => {
+              document.querySelector('.leaderboard').scrollIntoView({ behavior: 'smooth' });
+            }, 100);
           });
         });
 
-        // Open the 'lite' leaderboard by default
-        openLeaderboard('Lite');
+        // Check URL hash for tab selection
+        const hash = window.location.hash.slice(1).toLowerCase();
+        if (hash === 'lite' || hash === 'verified' || hash === 'test') {
+          const tabName = hash.charAt(0).toUpperCase() + hash.slice(1);
+          openLeaderboard(tabName, false);
+          // Scroll to leaderboard section after a slight delay
+          setTimeout(() => {
+            document.querySelector('.leaderboard').scrollIntoView({ behavior: 'smooth' });
+          }, 100);
+        } else {
+          // Open the 'lite' leaderboard by default if no hash
+          openLeaderboard('Lite', false);
+        }
       });
     </script>
   </body>
