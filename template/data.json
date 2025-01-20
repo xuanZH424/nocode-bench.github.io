@@ -243,6 +243,19 @@
       "name": "Verified",
       "results": [
         {
+          "name": "W&B Programmer O1 crosscheck5",
+          "folder": "20250117_wandb_programmer_o1_crosscheck5",
+          "resolved": 64.6,
+          "date": "2025-01-17",
+          "logs": true,
+          "trajs": true,
+          "site": "https://wandb.ai",
+          "verified": false,
+          "oss": false,
+          "org_logo": "https://pbs.twimg.com/profile_images/1852488658936315904/y6TcmAPu_400x400.jpg",
+          "warning": null
+        },
+        {
           "name": "Blackbox AI Agent",
           "folder": "20250110_blackboxai_agent_v1.1",
           "resolved": 62.8,
@@ -357,6 +370,19 @@
           "verified": false,
           "oss": false,
           "org_logo": "https://devlo.ai/static/media/devlo.ef99a045eba5ea0bcada.png",
+          "warning": null
+        },
+        {
+          "name": "Bracket.sh",
+          "folder": "20250120_Bracket",
+          "resolved": 53.2,
+          "date": "2025-01-20",
+          "logs": true,
+          "trajs": true,
+          "site": "https://bracket.sh/",
+          "verified": false,
+          "oss": false,
+          "org_logo": "https://drive.google.com/file/d/1O7BKWdeLJANPGu41E5F4YE1VVFTkDRG5/",
           "warning": null
         },
         {
@@ -542,6 +568,19 @@
           "warning": null
         },
         {
+          "name": "CodeShellAgent + Gemini 2.0 Flash (Experimental)",
+          "folder": "20250118_codeshellagent_gemini_2.0_flash_experimental",
+          "resolved": 44.2,
+          "date": "2025-01-18",
+          "logs": true,
+          "trajs": true,
+          "site": "https://github.com/WisdomShell/codeshell",
+          "verified": false,
+          "oss": false,
+          "org_logo": "https://avatars.githubusercontent.com/u/145519942?s=200&v=4",
+          "warning": null
+        },
+        {
           "name": "Solver (2024-09-12)",
           "folder": "20240920_solver",
           "resolved": 43.6,
@@ -708,6 +747,19 @@
           "verified": true,
           "oss": true,
           "org_logo": "https://avatars.githubusercontent.com/u/166046056?s=200&v=4",
+          "warning": null
+        },
+        {
+          "name": "MASAI + GPT 4o (2024-06-12)",
+          "folder": "20240612_MASAI_gpt4o",
+          "resolved": 32.6,
+          "date": "2024-06-12",
+          "logs": false,
+          "trajs": false,
+          "site": "masai-dev-agent.github.io",
+          "verified": false,
+          "oss": false,
+          "org_logo": null,
           "warning": null
         },
         {
@@ -989,6 +1041,19 @@
       "name": "Lite",
       "results": [
         {
+          "name": "Isoform",
+          "folder": "20250114_Isoform",
+          "resolved": 55.0,
+          "date": "2025-01-14",
+          "logs": true,
+          "trajs": true,
+          "site": "https://www.isoform.ai",
+          "verified": false,
+          "oss": false,
+          "org_logo": "https://avatars.githubusercontent.com/u/4956703?s=200&v=4",
+          "warning": null
+        },
+        {
           "name": "Blackbox AI Agent",
           "folder": "20241220_blackboxai_agent_v1",
           "resolved": 49.0,
@@ -1119,6 +1184,19 @@
           "warning": null
         },
         {
+          "name": "OpenCSG Starship Agentic Coder + GPT 4 (0806)",
+          "folder": "20250113_OpenCSG-Starship-Agentic-Coder_gpt4o",
+          "resolved": 39.67,
+          "date": "2025-01-13",
+          "logs": true,
+          "trajs": true,
+          "site": "https://opencsg.com/starship",
+          "verified": false,
+          "oss": false,
+          "org_logo": null,
+          "warning": null
+        },
+        {
           "name": "Bytedance MarsCode Agent",
           "folder": "20240912_marscode-agent-dev",
           "resolved": 39.33,
@@ -1129,6 +1207,19 @@
           "verified": false,
           "oss": false,
           "org_logo": "https://pbs.twimg.com/profile_images/1768232487271153664/etPzHPm1_400x400.jpg",
+          "warning": null
+        },
+        {
+          "name": "Moatless Tools + Claude 3.5 Sonnet (20241022)",
+          "folder": "20250114_moatless_claude-3.5-sonnet-20241022",
+          "resolved": 39.0,
+          "date": "2025-01-14",
+          "logs": true,
+          "trajs": true,
+          "site": "https://github.com/aorwall/moatless-tools",
+          "verified": true,
+          "oss": true,
+          "org_logo": null,
           "warning": null
         },
         {
@@ -1311,19 +1402,6 @@
           "verified": false,
           "oss": false,
           "org_logo": "https://avatars.githubusercontent.com/u/145519942?s=200&v=4",
-          "warning": null
-        },
-        {
-          "name": "Moatless Tools + Deepseek V3",
-          "folder": "20250111_moatless_deepseek_v3",
-          "resolved": 30.67,
-          "date": "2025-01-11",
-          "logs": true,
-          "trajs": true,
-          "site": "https://github.com/aorwall/moatless-tools",
-          "verified": true,
-          "oss": true,
-          "org_logo": null,
           "warning": null
         },
         {
@@ -1753,6 +1831,19 @@
           "verified": true,
           "oss": true,
           "org_logo": "https://avatars.githubusercontent.com/u/139597579?s=200&v=4",
+          "warning": null
+        },
+        {
+          "name": "Moatless Tools + Deepseek V3",
+          "folder": "20250111_moatless_deepseek_v3",
+          "resolved": 0.0,
+          "date": "2025-01-11",
+          "logs": true,
+          "trajs": true,
+          "site": "https://github.com/aorwall/moatless-tools",
+          "verified": true,
+          "oss": true,
+          "org_logo": null,
           "warning": null
         }
       ]
