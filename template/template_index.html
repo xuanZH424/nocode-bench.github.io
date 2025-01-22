@@ -73,7 +73,7 @@
                 <i class="fa fa-paperclip"></i> Paper&nbsp;
               </button>
             </a>
-            <a href="https://github.com/princeton-nlp/SWE-bench">
+            <a href="https://github.com/swe-bench/SWE-bench">
               <button class="outline">
                 <i class="fab fa-github"></i> Code&nbsp;
               </button>
@@ -138,7 +138,7 @@
             </p>
             <p style="margin-bottom: 0.5em">
               📣 [06/2024] We've <b>Docker</b>-ized SWE-bench for easier, containerized, reproducible evaluation.
-              [<a style="color:#0ca7ff" href="https://github.com/princeton-nlp/SWE-bench/tree/main/docs/20240627_docker">Report</a>]
+              [<a style="color:#0ca7ff" href="https://github.com/swe-bench/SWE-bench/tree/main/docs/20240627_docker">Report</a>]
             </p>
             <p style="margin-bottom: 0.5em">
               📣 [03/2024] Check out our latest work, <b>SWE-agent</b>, which achieves a 12.47% resolve rate on SWE-bench!
@@ -175,11 +175,7 @@
                 </thead>
                 <tbody>
                   {% for item in leaderboard.results if not item.warning %}
-                  {% if item.date >= "2025-01-01" %}
-                  <tr style="background-color: #82CEFA;">
-                  {% else %}
                   <tr>
-                  {% endif %}
                     <td>
                       <p class="model-type">
                         {% if item.date >= "2025-01-01" %}🆕 {% endif %}
@@ -242,10 +238,11 @@
               <br>
               - <span style="color:#0ea7ff;"><b>🤠 Open</b></span> refers to submissions that have open-source code. This does <i>not</i>
               necessarily mean the underlying model is open-source.
-              <br><br>
-              - If you would like to submit your model to the leaderboard, please check the <a href="submit.html">submission</a> page.
               <br>
-              - All submissions are Pass@1, do not use
+              - <span style="color:#0ea7ff;"><b>🆕 New</b></span> refers to the most recently submitted solutions.
+              <br><br>
+              If you'd like to submit to the leaderboard, please check <a href="submit.html">this</a> page.
+              All submissions are Pass@1, do not use
               <code style="color:black;background-color:#ddd;border-radius: 0.25em">hints_text</code>,
               and are in the unassisted setting.
             </p>
