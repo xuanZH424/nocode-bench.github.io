@@ -1847,6 +1847,141 @@
           "warning": null
         }
       ]
+    },
+    {
+      "name": "Multimodal",
+      "results": [
+        {
+          "name": "SWE-agent Multimodal + GPT 4o (2024-08-06)",
+          "folder": "20241006_SWE-agent_M_gpt4o",
+          "resolved": 12.19,
+          "date": "2024-10-06",
+          "logs": false,
+          "trajs": false,
+          "site": "https://github.com/princeton-nlp/SWE-agent",
+          "verified": true,
+          "oss": true,
+          "org_logo": "https://avatars.githubusercontent.com/u/166046056?s=200&v=4",
+          "warning": null
+        },
+        {
+          "name": "SWE-agent + Claude Sonnet 3.5",
+          "folder": "20241006_SWE-agent_claude3.5",
+          "resolved": 12.19,
+          "date": "2024-10-06",
+          "logs": false,
+          "trajs": false,
+          "site": "https://github.com/princeton-nlp/SWE-agent",
+          "verified": true,
+          "oss": true,
+          "org_logo": "https://avatars.githubusercontent.com/u/166046056?s=200&v=4",
+          "warning": null
+        },
+        {
+          "name": "SWE-agent JavaScript + Claude Sonnet 3.5",
+          "folder": "20241006_SWE-agent_JS_claude3.5",
+          "resolved": 11.99,
+          "date": "2024-10-06",
+          "logs": false,
+          "trajs": false,
+          "site": "https://github.com/princeton-nlp/SWE-agent",
+          "verified": true,
+          "oss": true,
+          "org_logo": "https://avatars.githubusercontent.com/u/166046056?s=200&v=4",
+          "warning": null
+        },
+        {
+          "name": "SWE-agent + GPT 4o (2024-08-06)",
+          "folder": "20241006_SWE-agent_gpt4o",
+          "resolved": 11.99,
+          "date": "2024-10-06",
+          "logs": false,
+          "trajs": false,
+          "site": "https://github.com/princeton-nlp/SWE-agent",
+          "verified": true,
+          "oss": true,
+          "org_logo": "https://avatars.githubusercontent.com/u/166046056?s=200&v=4",
+          "warning": null
+        },
+        {
+          "name": "SWE-agent Multimodal + Claude 3.5 Sonnet",
+          "folder": "20241006_SWE-agent_M_claude3.5",
+          "resolved": 11.41,
+          "date": "2024-10-06",
+          "logs": false,
+          "trajs": false,
+          "site": "https://github.com/princeton-nlp/SWE-agent",
+          "verified": true,
+          "oss": true,
+          "org_logo": "https://avatars.githubusercontent.com/u/166046056?s=200&v=4",
+          "warning": null
+        },
+        {
+          "name": "SWE-agent JavaScript + GPT 4o (2024-08-06)",
+          "folder": "20241006_SWE-agent_JS_gpt4o",
+          "resolved": 9.28,
+          "date": "2024-10-06",
+          "logs": false,
+          "trajs": false,
+          "site": "https://github.com/princeton-nlp/SWE-agent",
+          "verified": true,
+          "oss": true,
+          "org_logo": "https://avatars.githubusercontent.com/u/166046056?s=200&v=4",
+          "warning": null
+        },
+        {
+          "name": "Agentless + Claude 3.5 Sonnet",
+          "folder": "20241006_Agentless_claude3.5",
+          "resolved": 6.19,
+          "date": "2024-10-06",
+          "logs": false,
+          "trajs": false,
+          "site": "https://github.com/OpenAutoCoder/Agentless",
+          "verified": true,
+          "oss": true,
+          "org_logo": "https://brand.illinois.edu/wp-content/uploads/2024/02/Color-Variation-Orange-Block-I-White-Background.png",
+          "warning": null
+        },
+        {
+          "name": "RAG + GPT 4o (2024-08-06)",
+          "folder": "20241006_RAG_gpt4o",
+          "resolved": 6.0,
+          "date": "2024-10-06",
+          "logs": false,
+          "trajs": false,
+          "site": "https://github.com/princeton-nlp/SWE-bench",
+          "verified": true,
+          "oss": true,
+          "org_logo": "https://avatars.githubusercontent.com/u/139597579?s=200&v=4",
+          "warning": null
+        },
+        {
+          "name": "RAG + Claude 3.5 Sonnet",
+          "folder": "20241006_RAG_claude3.5",
+          "resolved": 5.03,
+          "date": "2024-10-06",
+          "logs": false,
+          "trajs": false,
+          "site": "https://github.com/princeton-nlp/SWE-bench",
+          "verified": true,
+          "oss": true,
+          "org_logo": "https://avatars.githubusercontent.com/u/139597579?s=200&v=4",
+          "warning": null
+        },
+        {
+          "name": "Agentless + GPT 4o (2024-08-06)",
+          "folder": "20241006_Agentless_gpt4o",
+          "resolved": 3.09,
+          "date": "2024-10-06",
+          "logs": false,
+          "trajs": false,
+          "site": "https://github.com/OpenAutoCoder/Agentless",
+          "verified": true,
+          "oss": true,
+          "org_logo": "https://brand.illinois.edu/wp-content/uploads/2024/02/Color-Variation-Orange-Block-I-White-Background.png",
+          "warning": null
+        }
+      ]
     }
   ]
 }

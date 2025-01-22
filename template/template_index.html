@@ -93,14 +93,34 @@
       </section>
       <section class="main-container">
         <div class="content-wrapper" style="margin-top: 1em; display: flex; justify-content: center; align-items: center;">
+          <a href="lite.html">
+            <button
+              class="outline teaser swebl"
+              style="flex-direction: row; display: flex; justify-content: center; align-items: center; width: 15em;">
+              <img
+                src="img/swellama.png"
+                style="height: 1.3em; margin-right: 0.4em; margin-bottom: 0.1em;" />
+                SWE-bench Lite&nbsp;
+            </button>
+          </a>
           <a href="multimodal.html">
             <button
-              class="outline mmteaser"
+              class="outline teaser swebm"
               style="flex-direction: row; display: flex; justify-content: center; align-items: center; width: 15em;">
               <img
                 src="img/swellamamm.png"
-                style="height: 1.3em; margin-right: 0.4em; margin-bottom: 0.3em;" />
+                style="height: 1.3em; margin-right: 0.4em; margin-bottom: 0.1em;" />
                 SWE-bench Multimodal&nbsp;
+            </button>
+          </a>
+          <a href="https://openai.com/index/introducing-swe-bench-verified/">
+            <button
+              class="outline teaser swebv"
+              style="flex-direction: row; display: flex; justify-content: center; align-items: center; width: 15em;">
+              <img
+                src="img/openai.png"
+                style="height: 1.3em; margin-right: 0.4em; margin-bottom: 0.1em;" />
+                SWE-bench Verified&nbsp;
             </button>
           </a>
         </div>
@@ -137,6 +157,7 @@
               <li><button id="tab-lite" class="tablinks" data-leaderboard="Lite">Lite</button></li>
               <li><button id="tab-verified" class="tablinks" data-leaderboard="Verified">Verified</button></li>
               <li><button id="tab-test" class="tablinks" data-leaderboard="Test">Full</button></li>
+              <li><button id="tab-multimodal" class="tablinks" data-leaderboard="Multimodal">Multimodal</button></li>
             </ul>
             {% for leaderboard in leaderboards %}
             <div class="tabcontent" style="display: block" id="leaderboard-{{leaderboard.name}}">
@@ -154,16 +175,20 @@
                 </thead>
                 <tbody>
                   {% for item in leaderboard.results if not item.warning %}
-                  {% if item.date >= "2025-01-01" %}<tr style="background-color: #82CEFA;">{% else %}<tr>{% endif %}
+                  {% if item.date >= "2025-01-01" %}
+                  <tr style="background-color: #82CEFA;">
+                  {% else %}
+                  <tr>
+                  {% endif %}
                     <td>
                       <p class="model-type">
-                        {% if item.date >= "2025-01-01" %}🆕{% endif %}
-                        {% if loop.index == 1 %}🥇
-                        {% elif loop.index == 2 %}🥈
-                        {% elif loop.index == 3 %}🥉
+                        {% if item.date >= "2025-01-01" %}🆕 {% endif %}
+                        {% if loop.index == 1 %}🥇 
+                        {% elif loop.index == 2 %}🥈 
+                        {% elif loop.index == 3 %}🥉 
                         {% endif %}
-                        {% if item.oss %}🤠{% endif %}
-                        {% if item.verified %}✅{% endif %}
+                        {% if item.oss %}🤠 {% endif %}
+                        {% if item.verified %}✅ {% endif %}
                         {{item.name}}
                       </p>
                     </td>
@@ -205,10 +230,12 @@
               <br>
               SWE-bench <b>Verified</b> is a human annotator filtered subset that has been deemed to have a ceiling of 100% resolution rate
               [<a href="https://openai.com/index/introducing-swe-bench-verified/">Post</a>].
+              <br>
+              SWE-bench <b>Multimodal</b> is a new dataset featuring issues with visual elements (images, videos) from JavaScript repositories
+              [<a href="multimodal.html">Post</a>]
               <br><br>
-              - The <span style="color:#0ea7ff;"><b>% Resolved</b></span> metric refers to the percentage of SWE-bench instances
-              (<b>2294</b> for test, <b>500</b> for verified, <b>300</b> for lite)
-              that were <i>resolved</i> by the model.
+              - The <span style="color:#0ea7ff;"><b>% Resolved</b></span> metric is the percentage of instances
+              (<b>2294</b> for test, <b>500</b> for verified, <b>300</b> for lite, <b>517</b> for Multimodal) <i>solved</i> by the model.
               <br>
               - <span style="color:#0ea7ff;"><b>✅ Checked</b></span> indicates that we, the SWE-bench team, received access to the system and
               were able to reproduce the patch generations.
@@ -216,8 +243,6 @@
               - <span style="color:#0ea7ff;"><b>🤠 Open</b></span> refers to submissions that have open-source code. This does <i>not</i>
               necessarily mean the underlying model is open-source.
               <br><br>
-              - The leaderboard is updated once a week on <b>Monday</b>.
-              <br>
               - If you would like to submit your model to the leaderboard, please check the <a href="submit.html">submission</a> page.
               <br>
               - All submissions are Pass@1, do not use
@@ -432,7 +457,7 @@
             </p>
             <p class="text-content">
               Correspondence to: <a href="mailto:carlosej@princeton.edu">carlosej@princeton.edu</a>,
-              <a href="mailto:jy1682@princeton.edu">johnby@stanford.edu</a>
+              <a href="mailto:johnby@stanford.edu">johnby@stanford.edu</a>
             </p>
             <div class="content-wrapper" style="display: flex; flex-direction: row; margin-top: 0.5em;">
               <a href="https://princeton-nlp.github.io/">
