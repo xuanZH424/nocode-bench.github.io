@@ -12,6 +12,7 @@
   --lightgreen: #C2D8B9;
   --darkorange: #d54718;
   --accent_color: #1697e2;
+  --sweagent_color: #fff7ec;
   --dark_accent_color: #0ea7ff;
   --odd_line_color: #ffffff;
   --even_line_color: #f2f2f2; 
@@ -426,4 +427,27 @@ tr {
   p {
     margin-bottom: 1em;
   }
+}
+
+/* announcement system styling */
+.announcement {
+  width: 100%;
+  text-align: center;
+  padding: 0.5em;
+  margin: 0.5em 0;
+  border-radius: 7px;
+  border: 2px solid var(--black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--sweagent_color);
+}
+
+.announcement-content {
+  margin: 0;
+  font-weight: 500;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
