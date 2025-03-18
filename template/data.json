@@ -4,6 +4,32 @@
       "name": "Test",
       "results": [
         {
+          "name": "SWE-agent 1.0 (Claude 3.7 Sonnet)",
+          "folder": "20250227_sweagent-claude-3-7-20250219",
+          "resolved": 33.83,
+          "date": "2025-02-27",
+          "logs": true,
+          "trajs": true,
+          "site": "https://github.com/swe-agent/swe-agent",
+          "verified": true,
+          "oss": true,
+          "org_logo": null,
+          "warning": null
+        },
+        {
+          "name": "Amazon Q Developer Agent (v20241202-dev)",
+          "folder": "20250131_amazon-q-developer-agent-20241202-dev",
+          "resolved": 29.99,
+          "date": "2025-01-31",
+          "logs": true,
+          "trajs": true,
+          "site": "https://aws.amazon.com/q/developer/",
+          "verified": false,
+          "oss": false,
+          "org_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/2560px-Amazon_Web_Services_Logo.svg.png",
+          "warning": null
+        },
+        {
           "name": "OpenHands + CodeAct v2.1 (claude-3-5-sonnet-20241022)",
           "folder": "20241103_OpenHands-CodeAct-2.1-sonnet-20241022",
           "resolved": 29.38,
@@ -252,7 +278,20 @@
           "site": "https://wandb.ai",
           "verified": false,
           "oss": false,
-          "org_logo": "https://pbs.twimg.com/profile_images/1852488658936315904/y6TcmAPu_400x400.jpg",
+          "org_logo": "https://wandb.ai/logo.png",
+          "warning": null
+        },
+        {
+          "name": "AgentScope",
+          "folder": "20250206_agentscope",
+          "resolved": 63.4,
+          "date": "2025-02-06",
+          "logs": true,
+          "trajs": true,
+          "site": "https://github.com/modelscope/agentscope",
+          "verified": false,
+          "oss": false,
+          "org_logo": null,
           "warning": null
         },
         {
@@ -282,16 +321,29 @@
           "warning": null
         },
         {
+          "name": "OpenHands + 4x Scaled (2024-02-03)",
+          "folder": "20250203_openhands_4x_scaled",
+          "resolved": 60.8,
+          "date": "2025-02-03",
+          "logs": true,
+          "trajs": true,
+          "site": "https://all-hands.dev/",
+          "verified": false,
+          "oss": true,
+          "org_logo": "https://all-hands.dev/assets/all-hands-text-logo.png",
+          "warning": null
+        },
+        {
           "name": "Learn-by-interact",
           "folder": "20250110_learn_by_interact_claude3.5",
           "resolved": 60.2,
           "date": "2025-01-10",
           "logs": true,
           "trajs": true,
-          "site": "https://github.com/hongjin-su/hongjin-su.github.io/blob/main/learn_by_interact.pdf",
+          "site": "https://arxiv.org/pdf/2501.10893",
           "verified": false,
           "oss": false,
-          "org_logo": "https://drive.google.com/file/d/1GfSiVuJq6wEoz-6Z-GyYkJPcf42iE9hG/view?usp=sharing",
+          "org_logo": "https://static-00.iconduck.com/assets.00/google-cloud-icon-2048x1646-7admxejz.png",
           "warning": null
         },
         {
@@ -382,7 +434,7 @@
           "site": "https://bracket.sh/",
           "verified": false,
           "oss": false,
-          "org_logo": "https://drive.google.com/file/d/1O7BKWdeLJANPGu41E5F4YE1VVFTkDRG5/",
+          "org_logo": "https://bracket.sh/static/media/bracket_logo.d75584b91faa86a6314b.png",
           "warning": null
         },
         {
@@ -395,7 +447,7 @@
           "site": "https://docs.all-hands.dev/",
           "verified": true,
           "oss": true,
-          "org_logo": "https://avatars.githubusercontent.com/u/169105795?s=200&v=4",
+          "org_logo": "https://all-hands.dev/assets/all-hands-text-logo.png",
           "warning": null
         },
         {
@@ -422,6 +474,19 @@
           "verified": false,
           "oss": false,
           "org_logo": "https://cdn.prod.website-files.com/669e7d9c093a7bea79b5b218/66a01c087f080328e84cb463_Engine-Icon.svg",
+          "warning": null
+        },
+        {
+          "name": "AutoCodeRover-v2.1 (Claude-3.5-Sonnet-20241022)",
+          "folder": "20250122_autocoderover-v2.1-claude-3-5-sonnet-20241022",
+          "resolved": 51.6,
+          "date": "2025-01-22",
+          "logs": false,
+          "trajs": false,
+          "site": "https://www.autocoderover.net/",
+          "verified": false,
+          "oss": false,
+          "org_logo": "https://github.com/AutoCodeRoverSG/autocoderoversg.github.io/blob/main/img/logo_small.png?raw=true",
           "warning": null
         },
         {
@@ -594,6 +659,19 @@
           "warning": null
         },
         {
+          "name": "Agentless Lite + O3 Mini (20250214)",
+          "folder": "20250214_agentless_lite_o3_mini",
+          "resolved": 42.4,
+          "date": "2025-02-14",
+          "logs": true,
+          "trajs": true,
+          "site": "https://github.com/sorendunn/Agentless-Lite",
+          "verified": false,
+          "oss": true,
+          "org_logo": "https://brand.illinois.edu/wp-content/uploads/2024/02/Color-Variation-Orange-Block-I-White-Background.png",
+          "warning": null
+        },
+        {
           "name": "ugaiforge",
           "folder": "20250112_ugaiforge",
           "resolved": 41.6,
@@ -617,6 +695,19 @@
           "verified": false,
           "oss": false,
           "org_logo": "https://nfactorial.dev/logo400.png",
+          "warning": null
+        },
+        {
+          "name": "SWE-RL (Llama3-SWE-RL-70B + Agentless Mini) (20250226)",
+          "folder": "20250226_swerl_llama3_70b",
+          "resolved": 41.2,
+          "date": "2025-02-26",
+          "logs": true,
+          "trajs": true,
+          "site": "https://github.com/facebookresearch/swe-rl",
+          "verified": false,
+          "oss": true,
+          "org_logo": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Meta-Logo.png",
           "warning": null
         },
         {
@@ -1106,16 +1197,16 @@
           "warning": null
         },
         {
-          "name": "SWE-agent 1.0 (Claude 3.5 Sonnet + o1)",
-          "folder": "20250212_swe_agent_claude-3.5-sonnet-o1",
-          "resolved": 45.33,
-          "date": "2025-02-12",
+          "name": "DARS Agent",
+          "folder": "20250205_dars_agent_claude_3.5_sonnet_deepseek_r1",
+          "resolved": 47.0,
+          "date": "2025-02-05",
           "logs": true,
           "trajs": true,
-          "site": "https://github.com/SWE-agent/SWE-agent",
-          "verified": true,
+          "site": "https://github.com/darsagent/DARS-Agent",
+          "verified": false,
           "oss": true,
-          "org_logo": "https://avatars.githubusercontent.com/u/166046056?s=200&v=4",
+          "org_logo": "https://drive.google.com/drive/folders/1wKpaj_37NnbSaj3OuG_FP4RDhUlKIVYM?usp=sharing",
           "warning": null
         },
         {
@@ -1171,6 +1262,19 @@
           "warning": null
         },
         {
+          "name": "OrcaLoca + Agentless-1.5 + Claude-3.5 Sonnet (20241022)",
+          "folder": "20250113_OrcaLoca",
+          "resolved": 41.0,
+          "date": "2025-01-13",
+          "logs": false,
+          "trajs": false,
+          "site": "https://github.com/fishmingyu/OrcarLLM",
+          "verified": false,
+          "oss": true,
+          "org_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Seal_of_the_University_of_California%2C_San_Diego.svg/1200px-Seal_of_the_University_of_California%2C_San_Diego.svg.png",
+          "warning": null
+        },
+        {
           "name": "Composio SWE-Kit (2024-10-30)",
           "folder": "20241030_composio_swekit",
           "resolved": 41.0,
@@ -1206,7 +1310,7 @@
           "site": "https://opencsg.com/starship",
           "verified": false,
           "oss": false,
-          "org_logo": null,
+          "org_logo": "https://opencsg.com/images/OpenCSG_logo.svg",
           "warning": null
         },
         {
@@ -1379,6 +1483,19 @@
           "warning": null
         },
         {
+          "name": "Agentless Lite + O3 Mini (20250214)",
+          "folder": "20250214_agentless_lite_o3_mini",
+          "resolved": 32.33,
+          "date": "2025-02-14",
+          "logs": false,
+          "trajs": false,
+          "site": "https://github.com/sorendunn/Agentless-Lite",
+          "verified": false,
+          "oss": true,
+          "org_logo": "https://brand.illinois.edu/wp-content/uploads/2024/02/Color-Variation-Orange-Block-I-White-Background.png",
+          "warning": null
+        },
+        {
           "name": "Agentless-1.5 + GPT 4o (2024-05-13)",
           "folder": "20241028_agentless-1.5_gpt4o",
           "resolved": 32.0,
@@ -1428,6 +1545,19 @@
           "verified": false,
           "oss": true,
           "org_logo": "https://avatars.githubusercontent.com/u/100131783?s=200&v=4",
+          "warning": null
+        },
+        {
+          "name": "Aegis - o3-mini_1.0",
+          "folder": "20250207_aegis_o3mini",
+          "resolved": 30.33,
+          "date": "2025-02-07",
+          "logs": true,
+          "trajs": true,
+          "site": "https://github.com/evandiewald/aegis",
+          "verified": false,
+          "oss": true,
+          "org_logo": null,
           "warning": null
         },
         {
