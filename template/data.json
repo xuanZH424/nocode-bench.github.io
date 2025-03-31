@@ -275,10 +275,10 @@
           "date": "2025-03-16",
           "logs": true,
           "trajs": true,
-          "site": "www.augmentcode.com",
+          "site": "https://www.augmentcode.com",
           "verified": false,
           "oss": false,
-          "org_logo": null,
+          "org_logo": "https://augment-assets.com/augmentcode-mark-green.png",
           "warning": null
         },
         {
