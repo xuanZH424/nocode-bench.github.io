@@ -4,18 +4,6 @@
 
 {% block head_extra %}
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <style>
-        .tabcontent .table-responsive {
-            max-height: 60vh;
-            overflow-y: auto;
-        }
-        
-        @media (max-height: 700px) {
-            .tabcontent .table-responsive {
-                max-height: 50vh;
-            }
-        }
-    </style>
 {% endblock %}
 
 {% block js_files %}
@@ -39,6 +27,19 @@
     </header>
 
     <section class="container">
+
+        <a href="https://swesmith.com/">
+            <div class="announcement-container">
+                <p><img src="img/swe-smith-icon.svg" alt="SWE-smith icon" class="sidebar-family-icon"> Our new paper SWE-smith is out! Train your own models for software engineering agents. </p>
+            </div>
+        </a>
+
+        <a href="https://github.com/SWE-agent/SWE-agent">
+            <div class="announcement-container">
+                <p><img src="img/swe-agent-icon.svg" alt="SWE-agent icon" class="sidebar-family-icon"> SWE-agent 1.0 is the open source SOTA on SWE-bench Lite!</p>
+            </div>
+        </a>
+
         <div class="content-section" id="leaderboard">
             <h2>All Leaderboards</h2>
             <div class="leaderboard-tabs">
