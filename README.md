@@ -21,6 +21,7 @@ The SWE-bench website for leaderboards and project information.
   - [How the Website Works](#how-the-website-works)
     - [Build Process](#build-process)
     - [Template System](#template-system)
+    - [Leaderboard Data Flow](#leaderboard-data-flow)
     - [CSS Organization](#css-organization)
     - [JavaScript Usage](#javascript-usage)
   - [Customizing the Website](#customizing-the-website)
@@ -150,6 +151,65 @@ Templates use Jinja2 syntax for:
 - Block definitions and overriding (`{% block content %}{% endblock %}`)
 - Variable rendering (`{{ variable }}`)
 - Control structures (`{% if condition %}{% endif %}`)
+
+### Leaderboard Data Flow
+
+The leaderboard data follows a specific flow from JSON to rendered HTML:
+
+1. **Data Source**: All leaderboard data is stored in `data/leaderboards.json`. This JSON file contains an array of leaderboards under the key `"leaderboards"`, with each leaderboard having a `"name"` (e.g., "Test", "Lite", "Verified", "Multimodal") and a list of `"results"` entries.
+
+2. **Data Loading**: During the build process in `build.py`, the JSON file is loaded and passed to the Jinja2 templates as the `leaderboards` variable:
+   ```python
+   # From build.py
+   with open(ROOT / "data/leaderboards.json", "r") as f:
+       leaderboards = json.load(f)
+   
+   # Passed to templates during rendering
+   html = tpl.render(
+       title="SWE-bench", 
+       leaderboards=leaderboards["leaderboards"]
+   )
+   ```
+
+3. **Reusable Table Component**: The `_leaderboard_table.html` template is a reusable component that loops through the leaderboards array and renders a table for each one:
+   ```html
+   {% for leaderboard in leaderboards %}
+   <div class="tabcontent" id="leaderboard-{{leaderboard.name}}">
+       <table class="table table-striped scrollable data-table">
+           <!-- Table headers -->
+           <tbody>
+               {% for item in leaderboard.results if not item.warning %}
+               <tr>
+                   <!-- Row data from each result item -->
+               </tr>
+               {% endfor %}
+           </tbody>
+       </table>
+   </div>
+   {% endfor %}
+   ```
+
+4. **Page-Specific Rendering**: In page templates like `lite.html`, the leaderboard data can be rendered in a more focused way by filtering for a specific leaderboard:
+   ```html
+   {% for leaderboard in leaderboards %}
+       {% if leaderboard.name == "Lite" %}
+           <table class="table table-striped scrollable data-table">
+               <!-- Only renders the "Lite" leaderboard -->
+           </table>
+       {% endif %}
+   {% endfor %}
+   ```
+
+5. **Dynamic Badges and Formatting**: The templates add special badges and formatting to entries:
+   - Medal emoji (🥇, 🥈, 🥉) for the top 3 entries
+   - "New" badge (🆕) for recent submissions 
+   - "Open source" badge (🤠) when `item.oss` is true
+   - "Verified" checkmark (✅) when `item.verified` is true
+   - Percentage formatting with 2 decimal places: `{{ "%.2f"|format(item.resolved|float) }}`
+
+6. **JavaScript Enhancements**: After the HTML is rendered, JavaScript files like `mainResults.js`, `tableByRepo.js`, and `tableByYear.js` enhance the tables with sorting, filtering, and tab switching functionality.
+
+This modular approach allows for easy updates to leaderboard data - simply modify the JSON file, and the changes will propagate throughout the site during the next build.
 
 ### CSS Organization
 
