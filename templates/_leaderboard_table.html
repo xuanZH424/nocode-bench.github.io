@@ -1,7 +1,7 @@
 {% for leaderboard in leaderboards %}
 <div class="tabcontent" id="leaderboard-{{leaderboard.name}}">
     <div class="table-responsive">
-        <table class="table table-striped">
+        <table class="table table-striped scrollable data-table">
             <thead>
                 <tr>
                     <th>Model</th>
@@ -18,30 +18,32 @@
                 <tr>
                     <td>
                         <div class="flex items-center gap-1">
-                            {% if item.date >= "2025-02-13" %}<span>🆕</span>{% endif %}
-                            {% if loop.index == 1 %}<span class="text-warning">🥇</span>
-                            {% elif loop.index == 2 %}<span class="text-secondary">🥈</span>
-                            {% elif loop.index == 3 %}<span class="text-warning">🥉</span>
-                            {% endif %}
-                            {% if item.oss %}<span>🤠</span>{% endif %}
-                            {% if item.verified %}<span>✅</span>{% endif %}
-                            <span class="font-mono fw-medium">{{item.name}}</span>
+                            <div class="model-badges">
+                                {% if item.date >= "2025-02-13" %}<span>🆕</span>{% endif %}
+                                {% if loop.index == 1 %}<span class="text-warning">🥇</span>
+                                {% elif loop.index == 2 %}<span class="text-secondary">🥈</span>
+                                {% elif loop.index == 3 %}<span class="text-warning">🥉</span>
+                                {% endif %}
+                                {% if item.oss %}<span>🤠</span>{% endif %}
+                                {% if item.verified %}<span>✅</span>{% endif %}
+                            </div>
+                            <span class="model-name font-mono fw-medium">{{item.name}}</span>
                         </div>
                     </td>
-                    <td><span class="fw-medium text-primary">{{ "%.2f"|format(item.resolved|float) }}</span></td>
+                    <td><span class="number fw-medium text-primary">{{ "%.2f"|format(item.resolved|float) }}</span></td>
                     <td>
                         {% if item.org_logo %}
                         <img src="{{item.org_logo}}" alt="{{item.org}}" style="height: 1.5em; vertical-align: middle;" />
                         {% else %} - {% endif %}
                     </td>
-                    <td><span class="text-muted">{{item.date}}</span></td>
-                    <td class="text-center">
+                    <td><span class="label-date text-muted">{{item.date}}</span></td>
+                    <td class="centered-text text-center">
                         {% if item.logs %}<span class="text-success">✓</span>{% else %}<span class="text-muted">-</span>{% endif %}
                     </td>
-                    <td class="text-center">
+                    <td class="centered-text text-center">
                         {% if item.trajs %}<span class="text-success">✓</span>{% else %}<span class="text-muted">-</span>{% endif %}
                     </td>
-                    <td class="text-center">
+                    <td class="centered-text text-center">
                         {% if item.site %}
                             <a href="{{item.site}}" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
                         {% else %}<span class="text-muted">-</span>{% endif %}

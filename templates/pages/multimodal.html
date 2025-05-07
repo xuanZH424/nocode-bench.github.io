@@ -47,7 +47,7 @@
         <!-- Leaderboard Section -->
         <section class="content-box leaderboard" id="multimodal-leaderboard">
             <h2>Multimodal Leaderboard</h2>
-            <div class="leaderboard-container" style="width: 100%;">
+            <div class="table-responsive">
                 {% for leaderboard in leaderboards %}
                     {% if leaderboard.name == "Multimodal" %}
                         <table class="table table-striped scrollable data-table">
@@ -66,31 +66,33 @@
                                 {% for item in leaderboard.results if not item.warning %}
                                 <tr>
                                     <td>
-                                        <span class="model-name">
-                                            {% if item.date >= "2025-02-13" %}🆕 {% endif %}
-                                            {% if loop.index == 1 %}🥇
-                                            {% elif loop.index == 2 %}🥈
-                                            {% elif loop.index == 3 %}🥉
-                                            {% endif %}
-                                            {% if item.oss %}🤠 {% endif %}
-                                            {% if item.verified %}✅ {% endif %}
-                                            {{item.name}}
-                                        </span>
+                                        <div class="flex items-center gap-1">
+                                            <div class="model-badges">
+                                                {% if item.date >= "2025-02-13" %}<span>🆕</span>{% endif %}
+                                                {% if loop.index == 1 %}<span class="text-warning">🥇</span>
+                                                {% elif loop.index == 2 %}<span class="text-secondary">🥈</span>
+                                                {% elif loop.index == 3 %}<span class="text-warning">🥉</span>
+                                                {% endif %}
+                                                {% if item.oss %}<span>🤠</span>{% endif %}
+                                                {% if item.verified %}<span>✅</span>{% endif %}
+                                            </div>
+                                            <span class="model-name font-mono fw-medium">{{item.name}}</span>
+                                        </div>
                                     </td>
-                                    <td><span class="number">{{ "%.2f"|format(item.resolved|float) }}</span></td>
+                                    <td><span class="number fw-medium text-primary">{{ "%.2f"|format(item.resolved|float) }}</span></td>
                                     <td>
                                         {% if item.org_logo %}
                                         <img src="{{item.org_logo}}" alt="{{item.org}}" style="height: 1.5em; vertical-align: middle;" />
                                         {% else %} - {% endif %}
                                     </td>
-                                    <td><span class="label-date">{{item.date}}</span></td>
-                                    <td class="centered-text">
-                                        {% if item.logs %}✓{% else %} - {% endif %}
+                                    <td><span class="label-date text-muted">{{item.date}}</span></td>
+                                    <td class="centered-text text-center">
+                                        {% if item.logs %}<span class="text-success">✓</span>{% else %}<span class="text-muted">-</span>{% endif %}
                                     </td>
-                                    <td class="centered-text">
-                                        {% if item.trajs %}✓{% else %} - {% endif %}
+                                    <td class="centered-text text-center">
+                                        {% if item.trajs %}<span class="text-success">✓</span>{% else %}<span class="text-muted">-</span>{% endif %}
                                     </td>
-                                    <td class="centered-text">
+                                    <td class="centered-text text-center">
                                         {% if item.site %}
                                             <a href="{{item.site}}" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
                                         {% else %}<span class="text-muted">-</span>{% endif %}
