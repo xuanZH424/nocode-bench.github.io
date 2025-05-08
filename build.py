@@ -50,13 +50,17 @@ def main() -> None:
     # load data
     with open(ROOT / "data/leaderboards.json", "r") as f:
         leaderboards = json.load(f)
+    with open(ROOT / "data/press.json", "r") as f:
+        press = json.load(f)
+        press = sorted(press, key=lambda x: x["date"], reverse=True)
     
     # render all pages
     for tpl_name, out_name in PAGES.items():
         tpl = env.get_template(tpl_name)
         html = tpl.render(
             title="SWE-bench", 
-            leaderboards=leaderboards["leaderboards"] if isinstance(leaderboards, dict) else leaderboards
+            leaderboards=leaderboards["leaderboards"] if isinstance(leaderboards, dict) else leaderboards,
+            press=press,
         )
         (DIST / out_name).write_text(html)
         print(f"built {out_name}")
