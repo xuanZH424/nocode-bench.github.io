@@ -2,12 +2,28 @@
     <script src="js/leaderboardFilters.js"></script>
 {% endblock %}
 
-<div class="mb-3">
-    <div class="filter-buttons">
-        <button class="btn btn-sm btn-outline-secondary filter-toggle" data-filter="os_model">Open Source Model</button>
+<div class="mb-3 d-flex justify-content-between align-items-center" style="gap:0.5rem;">
+    <div class="filter-buttons" style="flex-shrink: 0;">
+        <button class="btn btn-sm btn-outline-secondary filter-toggle" data-filter="os_model">Open Weight Model</button>
         <button class="btn btn-sm btn-outline-secondary filter-toggle" data-filter="os_system">Open Source System</button>
         <button class="btn btn-sm btn-outline-secondary filter-toggle" data-filter="checked">Checked</button>
     </div>
+    <form id="tag-multiselect-form" style="flex: 1; min-width: 260px; display: flex; justify-content: flex-end;">
+        <div id="tag-multiselect" class="multiselect-dropdown" style="width: 100%;">
+            <div class="multiselect-selected" tabindex="0"><span class="multiselect-placeholder">Select tags...</span></div>
+            <div class="multiselect-options">
+                <input type="text" class="multiselect-search" placeholder="search" onkeyup="filterTagOptions(this)">
+                <div class="multiselect-option">
+                    <label><input type="checkbox" class="tag-checkbox" value="All" checked onchange="toggleAllTags(this)"> All</label>
+                </div>
+                {% for tag in all_tags %}
+                <div class="multiselect-option">
+                    <label><input type="checkbox" class="tag-checkbox" value="{{ tag }}" checked onchange="updateTagSelection()"> {{ tag }}</label>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </form>
 </div>
 
 {% for leaderboard in leaderboards %}
@@ -31,6 +47,7 @@
                     data-os_model="{{ 'true' if item.os_model else 'false' }}"
                     data-os_system="{{ 'true' if item.os_system else 'false' }}"
                     data-checked="{{ 'true' if item.checked else 'false' }}"
+                    data-tags="{{ item.tags|join(',') if item.tags else '' }}"
                 >
                     <td>
                         <div class="flex items-center gap-1">
@@ -70,32 +87,6 @@
 <div id="no-results" class="alert alert-info" style="display: none;">
     No entries match the selected filters. Try adjusting your filters.
 </div>
-
-<style>
-    .filter-buttons {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
-    }
-    
-    .filter-toggle {
-        transition: all 0.2s ease-in-out;
-    }
-    
-    .filter-toggle.active {
-        background-color: #0d6efd;
-        color: white;
-        border-color: #0d6efd;
-    }
-    
-    .filter-toggle:hover {
-        background-color: #e9ecef;
-    }
-    
-    .filter-toggle.active:hover {
-        background-color: #0b5ed7;
-    }
-</style>
 {% endfor %}
 
 <div class="leaderboard-notes">
