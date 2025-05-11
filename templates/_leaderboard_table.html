@@ -1,7 +1,19 @@
+{% block js_files %}
+    <script src="js/leaderboardFilters.js"></script>
+{% endblock %}
+
+<div class="mb-3">
+    <div class="filter-buttons">
+        <button class="btn btn-sm btn-outline-secondary filter-toggle" data-filter="os_model">Open Source Model</button>
+        <button class="btn btn-sm btn-outline-secondary filter-toggle" data-filter="os_system">Open Source System</button>
+        <button class="btn btn-sm btn-outline-secondary filter-toggle" data-filter="checked">Checked</button>
+    </div>
+</div>
+
 {% for leaderboard in leaderboards %}
 <div class="tabcontent" id="leaderboard-{{leaderboard.name}}">
     <div class="table-responsive">
-        <table class="table table-striped scrollable data-table">
+        <table class="table scrollable data-table">
             <thead>
                 <tr>
                     <th>Model</th>
@@ -15,25 +27,25 @@
             </thead>
             <tbody>
                 {% for item in leaderboard.results if not item.warning %}
-                <tr>
+                <tr
+                    data-os_model="{{ 'true' if item.os_model else 'false' }}"
+                    data-os_system="{{ 'true' if item.os_system else 'false' }}"
+                    data-checked="{{ 'true' if item.checked else 'false' }}"
+                >
                     <td>
                         <div class="flex items-center gap-1">
                             <div class="model-badges">
                                 {% if item.date >= "2025-02-13" %}<span>🆕</span>{% endif %}
-                                {% if loop.index == 1 %}<span class="text-warning">🥇</span>
-                                {% elif loop.index == 2 %}<span class="text-secondary">🥈</span>
-                                {% elif loop.index == 3 %}<span class="text-warning">🥉</span>
-                                {% endif %}
                                 {% if item.oss %}<span>🤠</span>{% endif %}
-                                {% if item.verified %}<span>✅</span>{% endif %}
+                                {% if item.checked %}<span>✅</span>{% endif %}
                             </div>
                             <span class="model-name font-mono fw-medium">{{item.name}}</span>
                         </div>
                     </td>
                     <td><span class="number fw-medium text-primary">{{ "%.2f"|format(item.resolved|float) }}</span></td>
                     <td>
-                        {% if item.org_logo %}
-                        <img src="{{item.org_logo}}" alt="{{item.org}}" style="height: 1.5em; vertical-align: middle;" />
+                        {% if item.logo %}
+                        <img src="{{item.logo}}" alt="{{item.org}}" style="height: 1.5em; vertical-align: middle;" />
                         {% else %} - {% endif %}
                     </td>
                     <td><span class="label-date text-muted">{{item.date}}</span></td>
@@ -54,6 +66,36 @@
         </table>
     </div>
 </div>
+
+<div id="no-results" class="alert alert-info" style="display: none;">
+    No entries match the selected filters. Try adjusting your filters.
+</div>
+
+<style>
+    .filter-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    
+    .filter-toggle {
+        transition: all 0.2s ease-in-out;
+    }
+    
+    .filter-toggle.active {
+        background-color: #0d6efd;
+        color: white;
+        border-color: #0d6efd;
+    }
+    
+    .filter-toggle:hover {
+        background-color: #e9ecef;
+    }
+    
+    .filter-toggle.active:hover {
+        background-color: #0b5ed7;
+    }
+</style>
 {% endfor %}
 
 <div class="leaderboard-notes">
@@ -62,10 +104,5 @@
         SWE-bench <b>Verified</b> is a human-filtered subset [<a href="https://openai.com/index/introducing-swe-bench-verified/">Post</a>].<br>
         SWE-bench <b>Multimodal</b> features issues with visual elements [<a href="multimodal.html">Post</a>].
     </p>
-    <p>
-        - <b>% Resolved</b>: Percentage of instances solved (out of 2294 Full, 500 Verified, 300 Lite, 517 Multimodal).<br>
-        - ✅ <b>Checked</b>: Results reproduced by the SWE-bench team.<br>
-        - 🤠 <b>Open</b>: Open-source code (model may not be).<br>
-        - 🆕 <b>New</b>: Recently submitted.<br>
-    </p>
+    <p>Each entry reports the <b>% Resolved</b> metric, the percentage of instances solved (out of 2294 Full, 500 Verified, 300 Lite, 517 Multimodal).</p>
 </div>

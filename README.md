@@ -175,7 +175,7 @@ The leaderboard data follows a specific flow from JSON to rendered HTML:
    ```html
    {% for leaderboard in leaderboards %}
    <div class="tabcontent" id="leaderboard-{{leaderboard.name}}">
-       <table class="table table-striped scrollable data-table">
+       <table class="table scrollable data-table">
            <!-- Table headers -->
            <tbody>
                {% for item in leaderboard.results if not item.warning %}
@@ -193,7 +193,7 @@ The leaderboard data follows a specific flow from JSON to rendered HTML:
    ```html
    {% for leaderboard in leaderboards %}
        {% if leaderboard.name == "Lite" %}
-           <table class="table table-striped scrollable data-table">
+           <table class="table scrollable data-table">
                <!-- Only renders the "Lite" leaderboard -->
            </table>
        {% endif %}

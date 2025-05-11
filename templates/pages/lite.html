@@ -9,10 +9,19 @@
 {% block content %}
     <header class="page-header">
         <div class="container">
-            <h1>SWE-bench Lite</h1>
+            <div class="d-flex align-center mb-3">
+                <img src="img/swe-llama.svg" alt="SWE-Llama Logo" style="height: 5em; width: auto; margin-right: 1em;">
+                <h1 class="mb-0">SWE-bench Lite</h1>
+            </div>
             <p>A curated subset of SWE-bench for faster, more cost-effective evaluation.</p>
             <div class="authors">
-                <small>Carlos E. Jimenez, John Yang, Jiayi Geng | March 19, 2024</small>
+                <small>Carlos E. Jimenez, John Yang, Jiayi Geng</small>
+            </div>
+            <br>
+            <div class="flex gap-2">
+                <a href="https://arxiv.org/abs/2310.06770" target="_blank" class="paper-link">Paper</a>
+                <a href="https://github.com/SWE-bench/SWE-bench" target="_blank" class="paper-link">GitHub</a>  
+                <a href="https://huggingface.co/datasets/SWE-bench/SWE-bench_Lite" target="_blank" class="paper-link">Dataset</a>                
             </div>
         </div>
     </header>
@@ -31,80 +40,6 @@
             <p>While the full SWE-bench test split comprises 2,294 issue-commit pairs across 12 Python repositories, SWE-bench Lite covers 11 of the original 12 repositories with a similar diversity and distribution. We also provide 23 development instances that can be useful for active development on the SWE-bench task.</p>
             
             <p>We recommend future systems evaluating on SWE-bench to report numbers on SWE-bench Lite in lieu of the full SWE-bench set when compute efficiency is a concern.</p>
-        </section>
-        
-        <!-- Leaderboard Section -->
-        <section class="content-box leaderboard" id="lite-leaderboard">
-            <h2>Lite Leaderboard</h2>
-            <div class="table-responsive">
-                {% for leaderboard in leaderboards %}
-                    {% if leaderboard.name == "Lite" %}
-                        <table class="table table-striped scrollable data-table">
-                            <thead>
-                                <tr>
-                                    <th>Model</th>
-                                    <th>% Resolved</th>
-                                    <th>Org</th>
-                                    <th>Date</th>
-                                    <th>Logs</th>
-                                    <th>Trajs</th>
-                                    <th>Site</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {% for item in leaderboard.results if not item.warning %}
-                                <tr>
-                                    <td>
-                                        <div class="flex items-center gap-1">
-                                            <div class="model-badges">
-                                                {% if item.date >= "2025-02-13" %}<span>🆕</span>{% endif %}
-                                                {% if loop.index == 1 %}<span class="text-warning">🥇</span>
-                                                {% elif loop.index == 2 %}<span class="text-secondary">🥈</span>
-                                                {% elif loop.index == 3 %}<span class="text-warning">🥉</span>
-                                                {% endif %}
-                                                {% if item.oss %}<span>🤠</span>{% endif %}
-                                                {% if item.verified %}<span>✅</span>{% endif %}
-                                            </div>
-                                            <span class="model-name font-mono fw-medium">{{item.name}}</span>
-                                        </div>
-                                    </td>
-                                    <td><span class="number fw-medium text-primary">{{ "%.2f"|format(item.resolved|float) }}</span></td>
-                                    <td>
-                                        {% if item.org_logo %}
-                                        <img src="{{item.org_logo}}" alt="{{item.org}}" style="height: 1.5em; vertical-align: middle;" />
-                                        {% else %} - {% endif %}
-                                    </td>
-                                    <td><span class="label-date text-muted">{{item.date}}</span></td>
-                                    <td class="centered-text text-center">
-                                        {% if item.logs %}<span class="text-success">✓</span>{% else %}<span class="text-muted">-</span>{% endif %}
-                                    </td>
-                                    <td class="centered-text text-center">
-                                        {% if item.trajs %}<span class="text-success">✓</span>{% else %}<span class="text-muted">-</span>{% endif %}
-                                    </td>
-                                    <td class="centered-text text-center">
-                                        {% if item.site %}
-                                            <a href="{{item.site}}" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
-                                        {% else %}<span class="text-muted">-</span>{% endif %}
-                                    </td>
-                                </tr>
-                                {% endfor %}
-                            </tbody>
-                        </table>
-                    {% endif %}
-                {% endfor %}
-            </div>
-            
-            <div class="leaderboard-notes">
-                <p>
-                    SWE-bench <b>Lite</b> is a subset curated for less costly evaluation.<br>
-                </p>
-                <p>
-                    - <b>% Resolved</b>: Percentage of instances solved out of 300 instances.<br>
-                    - ✅ <b>Checked</b>: Results reproduced by the SWE-bench team.<br>
-                    - 🤠 <b>Open</b>: Open-source code (model may not be).<br>
-                    - 🆕 <b>New</b>: Recently submitted.<br>
-                </p>
-            </div>
         </section>
         
         <!-- Selection Criteria Section -->
@@ -175,12 +110,15 @@
             
             <div class="citation-container display-none" id="lite-citation-apa">
                 <button class="copy-btn" aria-label="Copy citation">Copy</button>
-                <pre>Jimenez, C. E., Wettig, A., Yao, S., Yang, J., Pei, K., Jain, S., Press, O., & Narasimhan, K. (2024). Building Specialized Code LLMs: A Real-World Perspective on Scaling, Recipes, and Alignment. arXiv preprint arXiv:2404.11486.</pre>
+                <pre>
+                    Jimenez, C. E., Wettig, A., Yao, S., Yang, J., Pei, K., Jain, S., Press, O., & Narasimhan, K. (2024).
+                    SWE-bench: Can Language Models Resolve Real-world Github Issues? arXiv preprint arXiv:2310.06770.
+                </pre>
             </div>
             
             <div class="citation-container display-none" id="lite-citation-mla">
                 <button class="copy-btn" aria-label="Copy citation">Copy</button>
-                <pre>Jimenez, Carlos E., et al. "Building Specialized Code LLMs: A Real-World Perspective on Scaling, Recipes, and Alignment." arXiv preprint arXiv:2404.11486 (2024).</pre>
+                <pre>Jimenez, Carlos E., et al. "SWE-bench: Can Language Models Resolve Real-world Github Issues?" arXiv preprint arXiv:2310.06770 (2023).</pre>
             </div>
         </section>
     </div>

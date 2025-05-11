@@ -54,6 +54,14 @@ def main() -> None:
         press = json.load(f)
         press = sorted(press, key=lambda x: x["date"], reverse=True)
     
+    # Collect all unique tags
+    all_tags = set()
+    for leaderboard in leaderboards["leaderboards"] if isinstance(leaderboards, dict) else leaderboards:
+        for entry in leaderboard["results"]:
+            if "tags" in entry and entry["tags"]:
+                all_tags.update(entry["tags"])
+    all_tags = sorted(set(list(all_tags)))
+    
     # render all pages
     for tpl_name, out_name in PAGES.items():
         tpl = env.get_template(tpl_name)
@@ -61,6 +69,7 @@ def main() -> None:
             title="SWE-bench", 
             leaderboards=leaderboards["leaderboards"] if isinstance(leaderboards, dict) else leaderboards,
             press=press,
+            all_tags=all_tags,
         )
         (DIST / out_name).write_text(html)
         print(f"built {out_name}")

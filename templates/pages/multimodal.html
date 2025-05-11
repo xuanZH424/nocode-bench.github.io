@@ -10,7 +10,7 @@
     <header class="page-header">
         <div class="container">
             <div class="d-flex align-center mb-3">
-                <img src="img/swe-llama-mm.svg" alt="SWE-Llama MM Logo" style="height: 84px; width: auto; margin-right: 20px;">
+                <img src="img/swe-llama-mm.svg" alt="SWE-Llama MM Logo" style="height: 5em; width: auto; margin-right: 1em;">
                 <h1 class="mb-0">SWE-bench Multimodal</h1>
             </div>
             <p>Do AI Systems Generalize to Visual Software Domains?</p>
@@ -20,9 +20,10 @@
                 <small>*Equal contribution</small>
             </div>
             <br>
-            <div class="flex justify-center gap-2">
+            <div class="flex  gap-2">
                 <a href="https://arxiv.org/abs/2410.03859" target="_blank" class="paper-link">Paper</a>
-                <a href="https://huggingface.co/datasets/princeton-nlp/SWE-bench_Multimodal" target="_blank" class="paper-link">🤗 Datasets</a>                
+                <a href="https://github.com/SWE-bench/SWE-bench" target="_blank" class="paper-link">GitHub</a> 
+                <a href="https://huggingface.co/datasets/SWE-bench/SWE-bench_Multimodal" target="_blank" class="paper-link">Dataset</a>                
             </div>
         </div>
     </header>
@@ -44,79 +45,6 @@
             <p>This extension evaluates models' ability to interpret and act on information presented in both textual and visual formats.</p>
         </section>
 
-        <!-- Leaderboard Section -->
-        <section class="content-box leaderboard" id="multimodal-leaderboard">
-            <h2>Multimodal Leaderboard</h2>
-            <div class="table-responsive">
-                {% for leaderboard in leaderboards %}
-                    {% if leaderboard.name == "Multimodal" %}
-                        <table class="table table-striped scrollable data-table">
-                            <thead>
-                                <tr>
-                                    <th>Model</th>
-                                    <th>% Resolved</th>
-                                    <th>Org</th>
-                                    <th>Date</th>
-                                    <th>Logs</th>
-                                    <th>Trajs</th>
-                                    <th>Site</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {% for item in leaderboard.results if not item.warning %}
-                                <tr>
-                                    <td>
-                                        <div class="flex items-center gap-1">
-                                            <div class="model-badges">
-                                                {% if item.date >= "2025-02-13" %}<span>🆕</span>{% endif %}
-                                                {% if loop.index == 1 %}<span class="text-warning">🥇</span>
-                                                {% elif loop.index == 2 %}<span class="text-secondary">🥈</span>
-                                                {% elif loop.index == 3 %}<span class="text-warning">🥉</span>
-                                                {% endif %}
-                                                {% if item.oss %}<span>🤠</span>{% endif %}
-                                                {% if item.verified %}<span>✅</span>{% endif %}
-                                            </div>
-                                            <span class="model-name font-mono fw-medium">{{item.name}}</span>
-                                        </div>
-                                    </td>
-                                    <td><span class="number fw-medium text-primary">{{ "%.2f"|format(item.resolved|float) }}</span></td>
-                                    <td>
-                                        {% if item.org_logo %}
-                                        <img src="{{item.org_logo}}" alt="{{item.org}}" style="height: 1.5em; vertical-align: middle;" />
-                                        {% else %} - {% endif %}
-                                    </td>
-                                    <td><span class="label-date text-muted">{{item.date}}</span></td>
-                                    <td class="centered-text text-center">
-                                        {% if item.logs %}<span class="text-success">✓</span>{% else %}<span class="text-muted">-</span>{% endif %}
-                                    </td>
-                                    <td class="centered-text text-center">
-                                        {% if item.trajs %}<span class="text-success">✓</span>{% else %}<span class="text-muted">-</span>{% endif %}
-                                    </td>
-                                    <td class="centered-text text-center">
-                                        {% if item.site %}
-                                            <a href="{{item.site}}" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
-                                        {% else %}<span class="text-muted">-</span>{% endif %}
-                                    </td>
-                                </tr>
-                                {% endfor %}
-                            </tbody>
-                        </table>
-                    {% endif %}
-                {% endfor %}
-            </div>
-            
-            <div class="leaderboard-notes">
-                <p>
-                    SWE-bench <b>Multimodal</b> features issues with visual elements [<a href="multimodal.html">Post</a>].<br>
-                </p>
-                <p>
-                    - <b>% Resolved</b>: Percentage of instances solved out of 517 instances.<br>
-                    - ✅ <b>Checked</b>: Results reproduced by the SWE-bench team.<br>
-                    - 🤠 <b>Open</b>: Open-source code (model may not be).<br>
-                    - 🆕 <b>New</b>: Recently submitted.<br>
-                </p>
-            </div>
-        </section>
         <!-- Correspondence Section -->
         <section class="content-box" id="correspondence">
             <h2>Correspondence</h2>
