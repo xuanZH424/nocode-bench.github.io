@@ -350,6 +350,23 @@
       "name": "Verified",
       "results": [
         {
+          "name": "OpenHands",
+          "logo": "https://avatars.githubusercontent.com/u/169105795?s=200&v=4",
+          "site": "https://all-hands.dev/",
+          "folder": "20250415_openhands",
+          "resolved": 65.8,
+          "date": "2025-04-15",
+          "logs": "s3://swe-bench-experiments/verified/20250415_openhands/logs",
+          "trajs": "s3://swe-bench-experiments/verified/20250415_openhands/trajs",
+          "os_model": false,
+          "os_system": true,
+          "checked": true,
+          "tags": [
+            "Org: OpenHands"
+          ],
+          "warning": null
+        },
+        {
           "name": "Augment Agent v0",
           "logo": "https://augment-assets.com/augmentcode-mark-green.png",
           "site": "https://www.augmentcode.com",
@@ -362,6 +379,23 @@
           "os_system": false,
           "checked": false,
           "tags": [],
+          "warning": null
+        },
+        {
+          "name": "Amazon Q Developer Agent (v20250405-dev)",
+          "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/2560px-Amazon_Web_Services_Logo.svg.png",
+          "site": "https://aws.amazon.com/q/developer/",
+          "folder": "20250405_amazon-q-developer-agent-20250405-dev",
+          "resolved": 65.4,
+          "date": "2025-04-05",
+          "logs": "s3://swe-bench-experiments/verified/20250405_amazon-q-developer-agent-20250405-dev/logs",
+          "trajs": "s3://swe-bench-experiments/verified/20250405_amazon-q-developer-agent-20250405-dev/trajs",
+          "os_model": false,
+          "os_system": false,
+          "checked": false,
+          "tags": [
+            "Org: AWS"
+          ],
           "warning": null
         },
         {
@@ -475,7 +509,7 @@
           "trajs": "s3://swe-bench-experiments/verified/20250203_openhands_4x_scaled/trajs",
           "os_model": false,
           "os_system": true,
-          "checked": false,
+          "checked": true,
           "tags": [
             "Org: OpenHands"
           ],
@@ -496,6 +530,25 @@
           "tags": [
             "Model: claude-3-5-sonnet-20241022",
             "Org: Google"
+          ],
+          "warning": null
+        },
+        {
+          "name": "CORTEXA",
+          "logo": "https://s3.amazonaws.com/cms.ipressroom.com/219/files/20149/544a6120f6091d588d000048_NVLogo_2D_H/NVLogo_2D_H_0b8ebd28-4ba6-403f-864b-f5b4712a5ad6-prv.jpg",
+          "site": "https://research.nvidia.com/labs/adlr/cortexa/",
+          "folder": "20250410_cortexa",
+          "resolved": 58.2,
+          "date": "2025-04-10",
+          "logs": "s3://swe-bench-experiments/verified/20250410_cortexa/logs",
+          "trajs": "s3://swe-bench-experiments/verified/20250410_cortexa/trajs",
+          "os_model": false,
+          "os_system": false,
+          "checked": true,
+          "tags": [
+            "Model: claude-3-5-sonnet-20241022",
+            "Model: deepseek-v3",
+            "Org: NVIDIA"
           ],
           "warning": null
         },
@@ -1042,6 +1095,24 @@
           "warning": null
         },
         {
+          "name": "SWE-agent + SWE-agent-LM-32B",
+          "logo": "https://avatars.githubusercontent.com/u/166046056?s=200&v=4",
+          "site": "https://swesmith.com/",
+          "folder": "20250511_sweagent_lm_32b",
+          "resolved": 40.2,
+          "date": "2025-05-11",
+          "logs": "s3://swe-bench-experiments/verified/20250511_sweagent_lm_32b/logs",
+          "trajs": "s3://swe-bench-experiments/verified/20250511_sweagent_lm_32b/trajs",
+          "os_model": true,
+          "os_system": true,
+          "checked": true,
+          "tags": [
+            "Org: SWE-agent",
+            "Model: Qwen 2.5"
+          ],
+          "warning": null
+        },
+        {
           "name": "EPAM AI/Run Developer Agent v20241029 + Anthopic Claude 3.5 Sonnet",
           "logo": "https://www.epam.com/content/dam/epam/homepage/epam_logo_light.svg",
           "site": "https://www.epam.com/services/artificial-intelligence",
@@ -1140,6 +1211,23 @@
           "tags": [
             "Model: claude-3-5-sonnet-20241022",
             "Org: SWE-agent"
+          ],
+          "warning": null
+        },
+        {
+          "name": "SWE-Fixer (Qwen2.5-7b retriever + Qwen2.5-72b editor)",
+          "logo": "https://www.shlab.org.cn/static/img/index_11.1280f447.png",
+          "site": "https://github.com/InternLM/SWE-Fixer",
+          "folder": "20250306_SWE-Fixer_Qwen2.5-7b-retriever_Qwen2.5-72b-editor",
+          "resolved": 32.8,
+          "date": "2025-03-06",
+          "logs": "s3://swe-bench-experiments/verified/20250306_SWE-Fixer_Qwen2.5-7b-retriever_Qwen2.5-72b-editor/logs",
+          "trajs": "s3://swe-bench-experiments/verified/20250306_SWE-Fixer_Qwen2.5-7b-retriever_Qwen2.5-72b-editor/trajs",
+          "os_model": true,
+          "os_system": true,
+          "checked": true,
+          "tags": [
+            "Model: Qwen 2.5"
           ],
           "warning": null
         },
@@ -2308,6 +2396,23 @@
           "checked": false,
           "tags": [
             "Model: gpt-4o-2024-08-06"
+          ],
+          "warning": null
+        },
+        {
+          "name": "SWE-Fixer (Qwen2.5-7b retriever + Qwen2.5-72b editor)",
+          "logo": "https://www.shlab.org.cn/static/img/index_11.1280f447.png",
+          "site": "https://github.com/InternLM/SWE-Fixer",
+          "folder": "20250306_SWE-Fixer_Qwen2.5-7b-retriever_Qwen2.5-72b-editor",
+          "resolved": 24.67,
+          "date": "2025-03-06",
+          "logs": "s3://swe-bench-experiments/lite/20250306_SWE-Fixer_Qwen2.5-7b-retriever_Qwen2.5-72b-editor/logs",
+          "trajs": "s3://swe-bench-experiments/lite/20250306_SWE-Fixer_Qwen2.5-7b-retriever_Qwen2.5-72b-editor/trajs",
+          "os_model": true,
+          "os_system": true,
+          "checked": true,
+          "tags": [
+            "Model: Qwen 2.5"
           ],
           "warning": null
         },
