@@ -416,6 +416,23 @@
           "warning": null
         },
         {
+          "name": "PatchPilot-v1.1",
+          "logo": "https://brand.ucsb.edu/sites/default/files/images/pages/Visual-Identity/Marks/Seal/navy-seal.gif",
+          "site": null,
+          "folder": "20250503_patchpilot-v1.1-o4-mini",
+          "resolved": 64.6,
+          "date": "2025-05-03",
+          "logs": "s3://swe-bench-experiments/verified/20250503_patchpilot-v1.1-o4-mini/logs",
+          "trajs": "s3://swe-bench-experiments/verified/20250503_patchpilot-v1.1-o4-mini/trajs",
+          "os_model": false,
+          "os_system": true,
+          "checked": false,
+          "tags": [
+            "Model: o4-mini"
+          ],
+          "warning": null
+        },
+        {
           "name": "AgentScope",
           "logo": null,
           "site": "https://github.com/modelscope/agentscope",
@@ -2786,6 +2803,23 @@
     {
       "name": "Multimodal",
       "results": [
+        {
+          "name": "Zencoder (2025-04-01)",
+          "logo": "https://storage.googleapis.com/zencoder-public/zencoder-logo.svg",
+          "site": "https://zencoder.ai",
+          "folder": "20250401_zencoder",
+          "resolved": 30.56,
+          "date": "2025-04-01",
+          "logs": false,
+          "trajs": false,
+          "os_model": false,
+          "os_system": false,
+          "checked": true,
+          "tags": [
+            "Model: claude-3-7-20250219"
+          ],
+          "warning": null
+        },
         {
           "name": "Globant Code Fixer Agent",
           "logo": "https://ai.globant.com/wp-content/uploads/2024/06/favicon.png",
