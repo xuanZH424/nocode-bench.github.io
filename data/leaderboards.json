@@ -800,7 +800,8 @@
           "checked": false,
           "tags": [
             "Model: claude-3-5-sonnet-20241022",
-            "System: Attempts - 2+"
+            "Org: Engine Labs",
+            "System: Attempts - 1"
           ],
           "warning": null
         },
@@ -2930,7 +2931,8 @@
           "os_system": false,
           "checked": true,
           "tags": [
-            "Model: claude-3-7-20250219"
+            "Model: claude-3-7-20250219",
+            "System: Attempts - 1"
           ],
           "warning": null
         },
@@ -2946,7 +2948,9 @@
           "os_model": false,
           "os_system": false,
           "checked": true,
-          "tags": [],
+          "tags": [
+            "System: Attempts - 1"
+          ],
           "warning": null
         },
         {
@@ -2961,7 +2965,9 @@
           "os_model": false,
           "os_system": false,
           "checked": true,
-          "tags": [],
+          "tags": [
+            "System: Attempts - 1"
+          ],
           "warning": null
         },
         {
@@ -2978,7 +2984,8 @@
           "checked": true,
           "tags": [
             "Model: claude-3-5-sonnet-20241022",
-            "Org: Agentless"
+            "Org: Agentless",
+            "System: Attempts - 1"
           ],
           "warning": null
         },
@@ -2995,7 +3002,8 @@
           "os_system": true,
           "checked": true,
           "tags": [
-            "Org: SWE-agent"
+            "Org: SWE-agent",
+            "System: Attempts - 1"
           ],
           "warning": null
         },
@@ -3012,7 +3020,8 @@
           "os_system": true,
           "checked": true,
           "tags": [
-            "Org: SWE-agent"
+            "Org: SWE-agent",
+            "System: Attempts - 1"
           ],
           "warning": null
         },
@@ -3029,7 +3038,8 @@
           "os_system": true,
           "checked": true,
           "tags": [
-            "Org: SWE-agent"
+            "Org: SWE-agent",
+            "System: Attempts - 1"
           ],
           "warning": null
         },
@@ -3046,7 +3056,8 @@
           "os_system": true,
           "checked": true,
           "tags": [
-            "Org: SWE-agent"
+            "Org: SWE-agent",
+            "System: Attempts - 1"
           ],
           "warning": null
         },
@@ -3064,7 +3075,8 @@
           "checked": true,
           "tags": [
             "Model: claude-3-5-sonnet-20241022",
-            "Org: SWE-agent"
+            "Org: SWE-agent",
+            "System: Attempts - 1"
           ],
           "warning": null
         },
@@ -3081,7 +3093,8 @@
           "os_system": true,
           "checked": true,
           "tags": [
-            "Org: SWE-agent"
+            "Org: SWE-agent",
+            "System: Attempts - 1"
           ],
           "warning": null
         },
@@ -3099,7 +3112,8 @@
           "checked": true,
           "tags": [
             "Model: claude-3-5-sonnet-20241022",
-            "Org: Agentless"
+            "Org: Agentless",
+            "System: Attempts - 1"
           ],
           "warning": null
         },
@@ -3116,7 +3130,8 @@
           "os_system": true,
           "checked": true,
           "tags": [
-            "Model: gpt-4o-2024-08-06"
+            "Model: gpt-4o-2024-08-06",
+            "System: Attempts - 1"
           ],
           "warning": null
         },
@@ -3133,7 +3148,8 @@
           "os_system": true,
           "checked": true,
           "tags": [
-            "Model: claude-3-5-sonnet-20241022"
+            "Model: claude-3-5-sonnet-20241022",
+            "System: Attempts - 1"
           ],
           "warning": null
         },
@@ -3151,7 +3167,8 @@
           "checked": true,
           "tags": [
             "Model: gpt-4o-2024-08-06",
-            "Org: Agentless"
+            "Org: Agentless",
+            "System: Attempts - 1"
           ],
           "warning": null
         }
