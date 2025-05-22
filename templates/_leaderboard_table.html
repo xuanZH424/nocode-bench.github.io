@@ -68,8 +68,14 @@
                     <td><span class="number fw-medium text-primary">{{ "%.2f"|format(item.resolved|float) }}</span></td>
                     <td>
                         {% if item.logo %}
-                        <img src="{{item.logo}}" alt="{{item.org}}" style="height: 1.5em; vertical-align: middle;" />
-                        {% else %} - {% endif %}
+                        <div style="display: flex; align-items: center;">
+                            {% for logo_url in item.logo %}
+                            <img src="{{logo_url}}" style="height: 1.5em;" />
+                            {% endfor %}
+                        </div>
+                        {% else %}
+                            -
+                        {% endif %}
                     </td>
                     <td><span class="label-date text-muted">{{item.date}}</span></td>
                     <td class="centered-text text-center">

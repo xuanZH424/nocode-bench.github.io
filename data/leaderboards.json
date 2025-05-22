@@ -16,6 +16,7 @@
           "os_system": true,
           "checked": true,
           "tags": [
+            "Model: claude-3-7-sonnet-20250219",
             "Org: SWE-agent",
             "System: Attempts - 1"
           ],
@@ -23,7 +24,9 @@
         },
         {
           "name": "Amazon Q Developer Agent (v20241202-dev)",
-          "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/2560px-Amazon_Web_Services_Logo.svg.png",
+          "logo": [
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/2560px-Amazon_Web_Services_Logo.svg.png"
+          ],
           "site": "https://aws.amazon.com/q/developer/",
           "folder": "20250131_amazon-q-developer-agent-20241202-dev",
           "resolved": 29.99,
@@ -41,7 +44,9 @@
         },
         {
           "name": "OpenHands + CodeAct v2.1 (claude-3-5-sonnet-20241022)",
-          "logo": "https://avatars.githubusercontent.com/u/169105795?s=200&v=4",
+          "logo": [
+            "https://avatars.githubusercontent.com/u/169105795?s=200&v=4"
+          ],
           "site": "https://docs.all-hands.dev/",
           "folder": "20241103_OpenHands-CodeAct-2.1-sonnet-20241022",
           "resolved": 29.38,
@@ -59,7 +64,9 @@
         },
         {
           "name": "AutoCodeRover-v2.0 (Claude-3.5-Sonnet-20241022)",
-          "logo": "https://github.com/AutoCodeRoverSG/autocoderoversg.github.io/blob/main/img/logo_small.png?raw=true",
+          "logo": [
+            "https://github.com/AutoCodeRoverSG/autocoderoversg.github.io/blob/main/img/logo_small.png?raw=true"
+          ],
           "site": "https://www.autocoderover.net/",
           "folder": "20241121_autocoderover-v2.0-claude-3-5-sonnet-20241022",
           "resolved": 24.89,
@@ -77,7 +84,9 @@
         },
         {
           "name": "Honeycomb",
-          "logo": "https://pbs.twimg.com/profile_images/1826351945021636608/eQgGBRKw_400x400.jpg",
+          "logo": [
+            "https://pbs.twimg.com/profile_images/1826351945021636608/eQgGBRKw_400x400.jpg"
+          ],
           "site": "https://honeycomb.sh/",
           "folder": "20240820_honeycomb",
           "resolved": 22.06,
@@ -94,7 +103,9 @@
         },
         {
           "name": "Amazon Q Developer Agent (v20240719-dev)",
-          "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/2560px-Amazon_Web_Services_Logo.svg.png",
+          "logo": [
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/2560px-Amazon_Web_Services_Logo.svg.png"
+          ],
           "site": "https://aws.amazon.com/q/developer/",
           "folder": "20240721_amazon-q-developer-agent-20240719-dev",
           "resolved": 19.75,
@@ -112,7 +123,9 @@
         },
         {
           "name": "Factory Code Droid",
-          "logo": "https://pbs.twimg.com/profile_images/1768168785733980160/a4hWTSfN_400x400.jpg",
+          "logo": [
+            "https://pbs.twimg.com/profile_images/1768168785733980160/a4hWTSfN_400x400.jpg"
+          ],
           "site": "https://www.factory.ai/",
           "folder": "20240617_factory_code_droid",
           "resolved": 19.27,
@@ -129,7 +142,9 @@
         },
         {
           "name": "AutoCodeRover (v20240620) + GPT 4o (2024-05-13)",
-          "logo": "https://avatars.githubusercontent.com/u/100131783?s=200&v=4",
+          "logo": [
+            "https://avatars.githubusercontent.com/u/100131783?s=200&v=4"
+          ],
           "site": "https://autocoderover.dev/",
           "folder": "20240628_autocoderover-v20240620",
           "resolved": 18.83,
@@ -147,7 +162,9 @@
         },
         {
           "name": "SWE-agent + Claude 3.5 Sonnet",
-          "logo": "https://avatars.githubusercontent.com/u/166046056?s=200&v=4",
+          "logo": [
+            "https://avatars.githubusercontent.com/u/166046056?s=200&v=4"
+          ],
           "site": null,
           "folder": "20240620_sweagent_claude3.5sonnet",
           "resolved": 18.13,
@@ -166,7 +183,9 @@
         },
         {
           "name": "AppMap Navie + GPT 4o (2024-05-13)",
-          "logo": "https://pbs.twimg.com/profile_images/1393240555191160833/q5OUpB3Q_400x400.png",
+          "logo": [
+            "https://pbs.twimg.com/profile_images/1393240555191160833/q5OUpB3Q_400x400.png"
+          ],
           "site": "https://appmap.io/navie",
           "folder": "20240615_appmap-navie_gpt4o",
           "resolved": 14.6,
@@ -184,7 +203,9 @@
         },
         {
           "name": "Amazon Q Developer Agent (v20240430-dev)",
-          "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/2560px-Amazon_Web_Services_Logo.svg.png",
+          "logo": [
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/2560px-Amazon_Web_Services_Logo.svg.png"
+          ],
           "site": "https://aws.amazon.com/q/developer/",
           "folder": "20240509_amazon-q-developer-agent-20240430-dev",
           "resolved": 13.82,
@@ -202,7 +223,9 @@
         },
         {
           "name": "SWE-agent + GPT 4 (1106)",
-          "logo": "https://avatars.githubusercontent.com/u/166046056?s=200&v=4",
+          "logo": [
+            "https://avatars.githubusercontent.com/u/166046056?s=200&v=4"
+          ],
           "site": "https://github.com/SWE-agent/SWE-agent",
           "folder": "20240402_sweagent_gpt4",
           "resolved": 12.47,
@@ -221,7 +244,9 @@
         },
         {
           "name": "SWE-agent + GPT 4o (2024-05-13)",
-          "logo": "https://avatars.githubusercontent.com/u/166046056?s=200&v=4",
+          "logo": [
+            "https://avatars.githubusercontent.com/u/166046056?s=200&v=4"
+          ],
           "site": "https://github.com/SWE-agent/SWE-agent",
           "folder": "20240728_sweagent_gpt4o",
           "resolved": 11.99,
@@ -240,7 +265,9 @@
         },
         {
           "name": "SWE-agent + Claude 3 Opus",
-          "logo": "https://avatars.githubusercontent.com/u/166046056?s=200&v=4",
+          "logo": [
+            "https://avatars.githubusercontent.com/u/166046056?s=200&v=4"
+          ],
           "site": null,
           "folder": "20240402_sweagent_claude3opus",
           "resolved": 10.51,
@@ -259,7 +286,9 @@
         },
         {
           "name": "RAG + Claude 3 Opus",
-          "logo": "https://avatars.githubusercontent.com/u/139597579?s=200&v=4",
+          "logo": [
+            "https://avatars.githubusercontent.com/u/139597579?s=200&v=4"
+          ],
           "site": "https://github.com/SWE-bench/SWE-bench/tree/main/swebench/inference",
           "folder": "20240402_rag_claude3opus",
           "resolved": 3.79,
@@ -277,7 +306,9 @@
         },
         {
           "name": "RAG + Claude 2",
-          "logo": "https://avatars.githubusercontent.com/u/139597579?s=200&v=4",
+          "logo": [
+            "https://avatars.githubusercontent.com/u/139597579?s=200&v=4"
+          ],
           "site": null,
           "folder": "20231010_rag_claude2",
           "resolved": 1.96,
@@ -295,7 +326,9 @@
         },
         {
           "name": "RAG + GPT 4 (1106)",
-          "logo": "https://avatars.githubusercontent.com/u/139597579?s=200&v=4",
+          "logo": [
+            "https://avatars.githubusercontent.com/u/139597579?s=200&v=4"
+          ],
           "site": null,
           "folder": "20240402_rag_gpt4",
           "resolved": 1.31,
@@ -313,7 +346,9 @@
         },
         {
           "name": "RAG + SWE-Llama 13B",
-          "logo": "https://avatars.githubusercontent.com/u/139597579?s=200&v=4",
+          "logo": [
+            "https://avatars.githubusercontent.com/u/139597579?s=200&v=4"
+          ],
           "site": null,
           "folder": "20231010_rag_swellama13b",
           "resolved": 0.7,
@@ -331,7 +366,9 @@
         },
         {
           "name": "RAG + SWE-Llama 7B",
-          "logo": "https://avatars.githubusercontent.com/u/139597579?s=200&v=4",
+          "logo": [
+            "https://avatars.githubusercontent.com/u/139597579?s=200&v=4"
+          ],
           "site": null,
           "folder": "20231010_rag_swellama7b",
           "resolved": 0.7,
@@ -350,7 +387,9 @@
         },
         {
           "name": "RAG + ChatGPT 3.5",
-          "logo": "https://avatars.githubusercontent.com/u/139597579?s=200&v=4",
+          "logo": [
+            "https://avatars.githubusercontent.com/u/139597579?s=200&v=4"
+          ],
           "site": null,
           "folder": "20231010_rag_gpt35",
           "resolved": 0.17,
@@ -372,8 +411,63 @@
       "name": "Verified",
       "results": [
         {
+          "name": "CORTEXA",
+          "logo": [
+            "https://research.nvidia.com/labs/adlr/images/nvidia-ai.jpg"
+          ],
+          "site": "https://research.nvidia.com/labs/adlr/cortexa/",
+          "folder": "20250516_cortexa_o3",
+          "resolved": 68.2,
+          "date": "2025-05-16",
+          "logs": "s3://swe-bench-experiments/verified/20250516_cortexa_o3/logs",
+          "trajs": "s3://swe-bench-experiments/verified/20250516_cortexa_o3/trajs",
+          "os_model": false,
+          "os_system": false,
+          "checked": false,
+          "tags": [
+            "Model: NV-EmbedCode",
+            "Model: o3",
+            "Model: o3-mini",
+            "Model: o1",
+            "Model: gpt-4.1",
+            "Model: gpt-4o-2024-05-13",
+            "Model: gpt-4-turbo-2024-04-09",
+            "Model: claude-3-7-sonnet-20250219",
+            "Model: deepseek-v3",
+            "Model: Qwen/Qwen2.5-72B-Instruct",
+            "Model: meta-llama/Llama-3.1-405B-Instruct",
+            "Model: meta-llama/Llama-3.3-70B-Instruct",
+            "Org: NVIDIA",
+            "System: Attempts - 2+"
+          ],
+          "warning": null
+        },
+        {
+          "name": "Aime-coder v1 + Anthopic Claude 3.7 Sonnet",
+          "logo": [
+            "https://aime-coder-lgtm.github.io/image-host/aime-icon.png"
+          ],
+          "site": null,
+          "folder": "20250514_aime_coder",
+          "resolved": 66.4,
+          "date": "2025-05-14",
+          "logs": "s3://swe-bench-experiments/verified/20250514_aime_coder/logs",
+          "trajs": "s3://swe-bench-experiments/verified/20250514_aime_coder/trajs",
+          "os_model": false,
+          "os_system": false,
+          "checked": false,
+          "tags": [
+            "Model: claude-3-7-sonnet-20250219",
+            "Org: ByteDance DevInfra",
+            "System: Attempts - 2+"
+          ],
+          "warning": null
+        },
+        {
           "name": "OpenHands",
-          "logo": "https://avatars.githubusercontent.com/u/169105795?s=200&v=4",
+          "logo": [
+            "https://avatars.githubusercontent.com/u/169105795?s=200&v=4"
+          ],
           "site": "https://all-hands.dev/",
           "folder": "20250415_openhands",
           "resolved": 65.8,
@@ -391,7 +485,9 @@
         },
         {
           "name": "Augment Agent v0",
-          "logo": "https://augment-assets.com/augmentcode-mark-green.png",
+          "logo": [
+            "https://augment-assets.com/augmentcode-mark-green.png"
+          ],
           "site": "https://www.augmentcode.com",
           "folder": "20250316_augment_agent_v0",
           "resolved": 65.4,
@@ -399,7 +495,7 @@
           "logs": "s3://swe-bench-experiments/evaluation/verified/20250316_augment_agent_v0/logs",
           "trajs": "s3://swe-bench-experiments/evaluation/verified/20250316_augment_agent_v0/trajs",
           "os_model": false,
-          "os_system": false,
+          "os_system": true,
           "checked": false,
           "tags": [
             "System: Attempts - 2+"
@@ -408,7 +504,9 @@
         },
         {
           "name": "Amazon Q Developer Agent (v20250405-dev)",
-          "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/2560px-Amazon_Web_Services_Logo.svg.png",
+          "logo": [
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/2560px-Amazon_Web_Services_Logo.svg.png"
+          ],
           "site": "https://aws.amazon.com/q/developer/",
           "folder": "20250405_amazon-q-developer-agent-20250405-dev",
           "resolved": 65.4,
@@ -426,7 +524,9 @@
         },
         {
           "name": "W&B Programmer O1 crosscheck5",
-          "logo": "https://wandb.ai/logo.png",
+          "logo": [
+            "https://wandb.ai/logo.png"
+          ],
           "site": "https://wandb.ai",
           "folder": "20250117_wandb_programmer_o1_crosscheck5",
           "resolved": 64.6,
@@ -444,7 +544,9 @@
         },
         {
           "name": "PatchPilot-v1.1",
-          "logo": "https://brand.ucsb.edu/sites/default/files/images/pages/Visual-Identity/Marks/Seal/navy-seal.gif",
+          "logo": [
+            "https://brand.ucsb.edu/sites/default/files/images/pages/Visual-Identity/Marks/Seal/navy-seal.gif"
+          ],
           "site": null,
           "folder": "20250503_patchpilot-v1.1-o4-mini",
           "resolved": 64.6,
@@ -462,7 +564,9 @@
         },
         {
           "name": "AgentScope",
-          "logo": "https://pbs.twimg.com/profile_images/1567807256091308032/4AXfLwia_400x400.jpg",
+          "logo": [
+            "https://pbs.twimg.com/profile_images/1567807256091308032/4AXfLwia_400x400.jpg"
+          ],
           "site": "https://github.com/modelscope/agentscope",
           "folder": "20250206_agentscope",
           "resolved": 63.4,
@@ -481,7 +585,9 @@
         },
         {
           "name": "Tools + Claude 3.7 Sonnet (2025-02-24)",
-          "logo": "https://pbs.twimg.com/profile_images/1798110641414443008/XP8gyBaY_400x400.jpg",
+          "logo": [
+            "https://pbs.twimg.com/profile_images/1798110641414443008/XP8gyBaY_400x400.jpg"
+          ],
           "site": "https://www.anthropic.com/",
           "folder": "20250224_tools_claude-3-7-sonnet",
           "resolved": 63.2,
@@ -516,7 +622,9 @@
         },
         {
           "name": "EPAM AI/Run Developer Agent v20250219 + Anthopic Claude 3.5 Sonnet",
-          "logo": "https://www.epam.com/content/dam/epam/homepage/epam_logo_light.svg",
+          "logo": [
+            "https://www.epam.com/content/dam/epam/homepage/epam_logo_light.svg"
+          ],
           "site": "https://www.epam.com/services/artificial-intelligence",
           "folder": "20250228_epam-ai-run-claude-3-5-sonnet",
           "resolved": 62.8,
@@ -534,7 +642,9 @@
         },
         {
           "name": "SWE-agent + Claude 3.7 Sonnet w/ Review Heavy",
-          "logo": "https://avatars.githubusercontent.com/u/166046056?s=200&v=4",
+          "logo": [
+            "https://avatars.githubusercontent.com/u/166046056?s=200&v=4"
+          ],
           "site": "https://github.com/SWE-agent/SWE-agent",
           "folder": "20250225_sweagent_claude-3-7-sonnet",
           "resolved": 62.4,
@@ -571,7 +681,9 @@
         },
         {
           "name": "OpenHands + 4x Scaled (2024-02-03)",
-          "logo": "https://avatars.githubusercontent.com/u/169105795?s=200&v=4",
+          "logo": [
+            "https://avatars.githubusercontent.com/u/169105795?s=200&v=4"
+          ],
           "site": "https://all-hands.dev/",
           "folder": "20250203_openhands_4x_scaled",
           "resolved": 60.8,
@@ -589,7 +701,9 @@
         },
         {
           "name": "Learn-by-interact",
-          "logo": "https://static-00.iconduck.com/assets.00/google-cloud-icon-2048x1646-7admxejz.png",
+          "logo": [
+            "https://static-00.iconduck.com/assets.00/google-cloud-icon-2048x1646-7admxejz.png"
+          ],
           "site": "https://arxiv.org/pdf/2501.10893",
           "folder": "20250110_learn_by_interact_claude3.5",
           "resolved": 60.2,
@@ -608,7 +722,9 @@
         },
         {
           "name": "CORTEXA",
-          "logo": "https://s3.amazonaws.com/cms.ipressroom.com/219/files/20149/544a6120f6091d588d000048_NVLogo_2D_H/NVLogo_2D_H_0b8ebd28-4ba6-403f-864b-f5b4712a5ad6-prv.jpg",
+          "logo": [
+            "https://s3.amazonaws.com/cms.ipressroom.com/219/files/20149/544a6120f6091d588d000048_NVLogo_2D_H/NVLogo_2D_H_0b8ebd28-4ba6-403f-864b-f5b4712a5ad6-prv.jpg"
+          ],
           "site": "https://research.nvidia.com/labs/adlr/cortexa/",
           "folder": "20250410_cortexa",
           "resolved": 58.2,
@@ -628,7 +744,9 @@
         },
         {
           "name": "devlo",
-          "logo": "https://devlo.ai/static/media/devlo.ef99a045eba5ea0bcada.png",
+          "logo": [
+            "https://devlo.ai/static/media/devlo.ef99a045eba5ea0bcada.png"
+          ],
           "site": "https://devlo.ai",
           "folder": "20241213_devlo",
           "resolved": 58.2,
@@ -645,7 +763,9 @@
         },
         {
           "name": "Emergent E1 (v2024-12-23)",
-          "logo": "https://framerusercontent.com/images/SgtAWOxwfupLelzIrK1vQiBWZvY.png",
+          "logo": [
+            "https://framerusercontent.com/images/SgtAWOxwfupLelzIrK1vQiBWZvY.png"
+          ],
           "site": "https://emergent.sh",
           "folder": "20241223_emergent",
           "resolved": 57.2,
@@ -664,7 +784,9 @@
         },
         {
           "name": "Gru(2024-12-08)",
-          "logo": "https://pbs.twimg.com/profile_images/1832709320896917504/FB5KojGT_400x400.png",
+          "logo": [
+            "https://pbs.twimg.com/profile_images/1832709320896917504/FB5KojGT_400x400.png"
+          ],
           "site": "https://gru.ai",
           "folder": "20241208_gru",
           "resolved": 57.0,
@@ -681,7 +803,9 @@
         },
         {
           "name": "EPAM AI/Run Developer Agent v20241212 + Anthopic Claude 3.5 Sonnet",
-          "logo": "https://www.epam.com/content/dam/epam/homepage/epam_logo_light.svg",
+          "logo": [
+            "https://www.epam.com/content/dam/epam/homepage/epam_logo_light.svg"
+          ],
           "site": "https://www.epam.com/services/artificial-intelligence",
           "folder": "20241212_epam-ai-run-claude-3-5-sonnet",
           "resolved": 55.4,
@@ -699,7 +823,9 @@
         },
         {
           "name": "Amazon Q Developer Agent (v20241202-dev)",
-          "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/2560px-Amazon_Web_Services_Logo.svg.png",
+          "logo": [
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/2560px-Amazon_Web_Services_Logo.svg.png"
+          ],
           "site": "https://aws.amazon.com/q/developer/",
           "folder": "20241202_amazon-q-developer-agent-20241202-dev",
           "resolved": 55.0,
@@ -717,7 +843,9 @@
         },
         {
           "name": "devlo",
-          "logo": "https://devlo.ai/static/media/devlo.ef99a045eba5ea0bcada.png",
+          "logo": [
+            "https://devlo.ai/static/media/devlo.ef99a045eba5ea0bcada.png"
+          ],
           "site": "https://devlo.ai",
           "folder": "20241108_devlo",
           "resolved": 54.2,
@@ -735,7 +863,9 @@
         },
         {
           "name": "Bracket.sh",
-          "logo": "https://bracket.sh/static/media/bracket_logo.d75584b91faa86a6314b.png",
+          "logo": [
+            "https://bracket.sh/static/media/bracket_logo.d75584b91faa86a6314b.png"
+          ],
           "site": "https://bracket.sh/",
           "folder": "20250120_Bracket",
           "resolved": 53.2,
@@ -752,7 +882,9 @@
         },
         {
           "name": "OpenHands + CodeAct v2.1 (claude-3-5-sonnet-20241022)",
-          "logo": "https://avatars.githubusercontent.com/u/169105795?s=200&v=4",
+          "logo": [
+            "https://avatars.githubusercontent.com/u/169105795?s=200&v=4"
+          ],
           "site": "https://docs.all-hands.dev/",
           "folder": "20241029_OpenHands-CodeAct-2.1-sonnet-20241022",
           "resolved": 53.0,
@@ -770,7 +902,9 @@
         },
         {
           "name": "Google Jules + Gemini 2.0 Flash (v20241212-experimental)",
-          "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/2560px-Google_2015_logo.svg.png",
+          "logo": [
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/2560px-Google_2015_logo.svg.png"
+          ],
           "site": "https://developers.googleblog.com/en/the-next-chapter-of-the-gemini-era-for-developers/",
           "folder": "20241212_google_jules_gemini_2.0_flash_experimental",
           "resolved": 52.2,
@@ -788,7 +922,9 @@
         },
         {
           "name": "Engine Labs (2024-11-25)",
-          "logo": "https://cdn.prod.website-files.com/669e7d9c093a7bea79b5b218/66a01c087f080328e84cb463_Engine-Icon.svg",
+          "logo": [
+            "https://cdn.prod.website-files.com/669e7d9c093a7bea79b5b218/66a01c087f080328e84cb463_Engine-Icon.svg"
+          ],
           "site": "https://www.enginelabs.ai/",
           "folder": "20241125_enginelabs",
           "resolved": 51.8,
@@ -807,7 +943,9 @@
         },
         {
           "name": "AutoCodeRover-v2.1 (Claude-3.5-Sonnet-20241022)",
-          "logo": "https://github.com/AutoCodeRoverSG/autocoderoversg.github.io/blob/main/img/logo_small.png?raw=true",
+          "logo": [
+            "https://github.com/AutoCodeRoverSG/autocoderoversg.github.io/blob/main/img/logo_small.png?raw=true"
+          ],
           "site": "https://www.autocoderover.net/",
           "folder": "20250122_autocoderover-v2.1-claude-3-5-sonnet-20241022",
           "resolved": 51.6,
@@ -825,7 +963,9 @@
         },
         {
           "name": "Agentless-1.5 + Claude-3.5 Sonnet (20241022)",
-          "logo": "https://brand.illinois.edu/wp-content/uploads/2024/02/Color-Variation-Orange-Block-I-White-Background.png",
+          "logo": [
+            "https://brand.illinois.edu/wp-content/uploads/2024/02/Color-Variation-Orange-Block-I-White-Background.png"
+          ],
           "site": "https://github.com/OpenAutoCoder/Agentless",
           "folder": "20241202_agentless-1.5_claude-3.5-sonnet-20241022",
           "resolved": 50.8,
@@ -844,7 +984,9 @@
         },
         {
           "name": "Solver (2024-10-28)",
-          "logo": "https://pbs.twimg.com/profile_images/1847427476601053184/L3RCKwMu_400x400.png",
+          "logo": [
+            "https://pbs.twimg.com/profile_images/1847427476601053184/L3RCKwMu_400x400.png"
+          ],
           "site": "https://solverai.com/",
           "folder": "20241028_solver",
           "resolved": 50.0,
@@ -861,7 +1003,9 @@
         },
         {
           "name": "Bytedance MarsCode Agent",
-          "logo": "https://pbs.twimg.com/profile_images/1768232487271153664/etPzHPm1_400x400.jpg",
+          "logo": [
+            "https://pbs.twimg.com/profile_images/1768232487271153664/etPzHPm1_400x400.jpg"
+          ],
           "site": "https://www.marscode.com/",
           "folder": "20241125_marscode-agent-dev",
           "resolved": 50.0,
@@ -879,7 +1023,9 @@
         },
         {
           "name": "nFactorial (2024-11-05)",
-          "logo": "https://nfactorial.dev/logo400.png",
+          "logo": [
+            "https://nfactorial.dev/logo400.png"
+          ],
           "site": "https://nfactorial.dev/",
           "folder": "20241105_nfactorial",
           "resolved": 49.2,
@@ -898,7 +1044,9 @@
         },
         {
           "name": "Tools + Claude 3.5 Sonnet (2024-10-22)",
-          "logo": "https://pbs.twimg.com/profile_images/1798110641414443008/XP8gyBaY_400x400.jpg",
+          "logo": [
+            "https://pbs.twimg.com/profile_images/1798110641414443008/XP8gyBaY_400x400.jpg"
+          ],
           "site": "https://www.anthropic.com/",
           "folder": "20241022_tools_claude-3-5-sonnet-updated",
           "resolved": 49.0,
@@ -918,7 +1066,9 @@
         },
         {
           "name": "Composio SWE-Kit (2024-10-25)",
-          "logo": "https://avatars.githubusercontent.com/u/128464815?s=48&v=4",
+          "logo": [
+            "https://avatars.githubusercontent.com/u/128464815?s=48&v=4"
+          ],
           "site": "https://github.com/ComposioHQ/composio/tree/master/python/swe/agent",
           "folder": "20241025_composio_swekit",
           "resolved": 48.6,
@@ -937,7 +1087,9 @@
         },
         {
           "name": "AppMap Navie v2",
-          "logo": "https://pbs.twimg.com/profile_images/1393240555191160833/q5OUpB3Q_400x400.png",
+          "logo": [
+            "https://pbs.twimg.com/profile_images/1393240555191160833/q5OUpB3Q_400x400.png"
+          ],
           "site": "https://appmap.io/navie",
           "folder": "20241106_navie-2-gpt4o-sonnet",
           "resolved": 47.2,
@@ -955,8 +1107,33 @@
           "warning": null
         },
         {
+          "name": "OpenHands + DevStral Small 2505",
+          "logo": [
+            "https://avatars.githubusercontent.com/u/169105795?s=200&v=4",
+            "https://avatars.githubusercontent.com/u/132372032?s=200&v=4"
+          ],
+          "site": "https://all-hands.dev/",
+          "folder": "20250520_openhands_devstral_small",
+          "resolved": 46.8,
+          "date": "2025-05-20",
+          "logs": "s3://swe-bench-experiments/verified/20250520_openhands_devstral_small/logs",
+          "trajs": "s3://swe-bench-experiments/verified/20250520_openhands_devstral_small/trajs",
+          "os_model": true,
+          "os_system": true,
+          "checked": true,
+          "tags": [
+            "Model: mistralai/Devstral-Small-2505",
+            "Org: OpenHands",
+            "Org: Mistral",
+            "System: Attempts - 1"
+          ],
+          "warning": null
+        },
+        {
           "name": "Emergent E1 (v2024-10-12)",
-          "logo": "https://framerusercontent.com/images/SgtAWOxwfupLelzIrK1vQiBWZvY.png",
+          "logo": [
+            "https://framerusercontent.com/images/SgtAWOxwfupLelzIrK1vQiBWZvY.png"
+          ],
           "site": "https://emergent.sh",
           "folder": "20241023_emergent",
           "resolved": 46.6,
@@ -975,7 +1152,9 @@
         },
         {
           "name": "AutoCodeRover-v2.0 (Claude-3.5-Sonnet-20241022)",
-          "logo": "https://github.com/AutoCodeRoverSG/autocoderoversg.github.io/blob/main/img/logo_small.png?raw=true",
+          "logo": [
+            "https://github.com/AutoCodeRoverSG/autocoderoversg.github.io/blob/main/img/logo_small.png?raw=true"
+          ],
           "site": "https://www.autocoderover.net/",
           "folder": "20241108_autocoderover-v2.0-claude-3-5-sonnet-20241022",
           "resolved": 46.2,
@@ -993,7 +1172,9 @@
         },
         {
           "name": "Solver (2024-09-12)",
-          "logo": "https://pbs.twimg.com/profile_images/1847427476601053184/L3RCKwMu_400x400.png",
+          "logo": [
+            "https://pbs.twimg.com/profile_images/1847427476601053184/L3RCKwMu_400x400.png"
+          ],
           "site": "https://laredolabs.com/",
           "folder": "20240924_solver",
           "resolved": 45.4,
@@ -1010,7 +1191,9 @@
         },
         {
           "name": "Gru(2024-08-24)",
-          "logo": "https://pbs.twimg.com/profile_images/1832709320896917504/FB5KojGT_400x400.png",
+          "logo": [
+            "https://pbs.twimg.com/profile_images/1832709320896917504/FB5KojGT_400x400.png"
+          ],
           "site": "https://gru.ai",
           "folder": "20240824_gru",
           "resolved": 45.2,
@@ -1027,7 +1210,9 @@
         },
         {
           "name": "CodeShellAgent + Gemini 2.0 Flash (Experimental)",
-          "logo": "https://avatars.githubusercontent.com/u/145519942?s=200&v=4",
+          "logo": [
+            "https://avatars.githubusercontent.com/u/145519942?s=200&v=4"
+          ],
           "site": "https://github.com/WisdomShell/codeshell",
           "folder": "20250118_codeshellagent_gemini_2.0_flash_experimental",
           "resolved": 44.2,
@@ -1045,7 +1230,9 @@
         },
         {
           "name": "Solver (2024-09-12)",
-          "logo": "https://pbs.twimg.com/profile_images/1847427476601053184/L3RCKwMu_400x400.png",
+          "logo": [
+            "https://pbs.twimg.com/profile_images/1847427476601053184/L3RCKwMu_400x400.png"
+          ],
           "site": "https://laredolabs.com/",
           "folder": "20240920_solver",
           "resolved": 43.6,
@@ -1062,7 +1249,9 @@
         },
         {
           "name": "Agentless Lite + O3 Mini (20250214)",
-          "logo": "https://brand.illinois.edu/wp-content/uploads/2024/02/Color-Variation-Orange-Block-I-White-Background.png",
+          "logo": [
+            "https://brand.illinois.edu/wp-content/uploads/2024/02/Color-Variation-Orange-Block-I-White-Background.png"
+          ],
           "site": "https://github.com/sorendunn/Agentless-Lite",
           "folder": "20250214_agentless_lite_o3_mini",
           "resolved": 42.4,
@@ -1098,7 +1287,9 @@
         },
         {
           "name": "nFactorial (2024-10-30)",
-          "logo": "https://nfactorial.dev/logo400.png",
+          "logo": [
+            "https://nfactorial.dev/logo400.png"
+          ],
           "site": "https://nfactorial.dev/",
           "folder": "20241030_nfactorial",
           "resolved": 41.6,
@@ -1118,7 +1309,9 @@
         },
         {
           "name": "SWE-RL (Llama3-SWE-RL-70B + Agentless Mini) (20250226)",
-          "logo": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Meta-Logo.png",
+          "logo": [
+            "https://upload.wikimedia.org/wikipedia/commons/a/ab/Meta-Logo.png"
+          ],
           "site": "https://github.com/facebookresearch/swe-rl",
           "folder": "20250226_swerl_llama3_70b",
           "resolved": 41.2,
@@ -1138,7 +1331,9 @@
         },
         {
           "name": "Nebius AI Qwen 2.5 72B Generator + LLama 3.1 70B Critic",
-          "logo": "https://nebius.com/favicon/favicon-96x96.png",
+          "logo": [
+            "https://nebius.com/favicon/favicon-96x96.png"
+          ],
           "site": "https://nebius.com/blog/posts/training-and-search-for-software-engineering-agents",
           "folder": "20241113_nebius-search-open-weight-models-11-24",
           "resolved": 40.6,
@@ -1157,7 +1352,9 @@
         },
         {
           "name": "Tools + Claude 3.5 Haiku",
-          "logo": "https://pbs.twimg.com/profile_images/1798110641414443008/XP8gyBaY_400x400.jpg",
+          "logo": [
+            "https://pbs.twimg.com/profile_images/1798110641414443008/XP8gyBaY_400x400.jpg"
+          ],
           "site": "https://www.anthropic.com/",
           "folder": "20241022_tools_claude-3-5-haiku",
           "resolved": 40.6,
@@ -1176,7 +1373,9 @@
         },
         {
           "name": "Honeycomb",
-          "logo": "https://pbs.twimg.com/profile_images/1826351945021636608/eQgGBRKw_400x400.jpg",
+          "logo": [
+            "https://pbs.twimg.com/profile_images/1826351945021636608/eQgGBRKw_400x400.jpg"
+          ],
           "site": "https://honeycomb.sh/",
           "folder": "20240820_honeycomb",
           "resolved": 40.6,
@@ -1193,7 +1392,9 @@
         },
         {
           "name": "Composio SWEkit + Claude 3.5 Sonnet (2024-10-16)",
-          "logo": "https://avatars.githubusercontent.com/u/128464815?s=48&v=4",
+          "logo": [
+            "https://avatars.githubusercontent.com/u/128464815?s=48&v=4"
+          ],
           "site": "https://github.com/ComposioHQ/composio/tree/master/python/swe/agent",
           "folder": "20241016_composio_swekit",
           "resolved": 40.6,
@@ -1212,7 +1413,9 @@
         },
         {
           "name": "SWE-agent + SWE-agent-LM-32B",
-          "logo": "https://avatars.githubusercontent.com/u/166046056?s=200&v=4",
+          "logo": [
+            "https://avatars.githubusercontent.com/u/166046056?s=200&v=4"
+          ],
           "site": "https://swesmith.com/",
           "folder": "20250511_sweagent_lm_32b",
           "resolved": 40.2,
@@ -1231,7 +1434,9 @@
         },
         {
           "name": "EPAM AI/Run Developer Agent v20241029 + Anthopic Claude 3.5 Sonnet",
-          "logo": "https://www.epam.com/content/dam/epam/homepage/epam_logo_light.svg",
+          "logo": [
+            "https://www.epam.com/content/dam/epam/homepage/epam_logo_light.svg"
+          ],
           "site": "https://www.epam.com/services/artificial-intelligence",
           "folder": "20241029_epam-ai-run-claude-3-5-sonnet",
           "resolved": 39.6,
@@ -1249,7 +1454,9 @@
         },
         {
           "name": "Amazon Q Developer Agent (v20240719-dev)",
-          "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/2560px-Amazon_Web_Services_Logo.svg.png",
+          "logo": [
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/2560px-Amazon_Web_Services_Logo.svg.png"
+          ],
           "site": "https://aws.amazon.com/q/developer/",
           "folder": "20240721_amazon-q-developer-agent-20240719-dev",
           "resolved": 38.8,
@@ -1267,7 +1474,9 @@
         },
         {
           "name": "Agentless-1.5 + GPT 4o (2024-05-13)",
-          "logo": "https://brand.illinois.edu/wp-content/uploads/2024/02/Color-Variation-Orange-Block-I-White-Background.png",
+          "logo": [
+            "https://brand.illinois.edu/wp-content/uploads/2024/02/Color-Variation-Orange-Block-I-White-Background.png"
+          ],
           "site": "https://github.com/OpenAutoCoder/Agentless",
           "folder": "20241028_agentless-1.5_gpt4o",
           "resolved": 38.8,
@@ -1286,7 +1495,9 @@
         },
         {
           "name": "AutoCodeRover (v20240620) + GPT 4o (2024-05-13)",
-          "logo": "https://avatars.githubusercontent.com/u/100131783?s=200&v=4",
+          "logo": [
+            "https://avatars.githubusercontent.com/u/100131783?s=200&v=4"
+          ],
           "site": "https://autocoderover.dev/",
           "folder": "20240628_autocoderover-v20240620",
           "resolved": 38.4,
@@ -1304,7 +1515,9 @@
         },
         {
           "name": "Factory Code Droid",
-          "logo": "https://pbs.twimg.com/profile_images/1768168785733980160/a4hWTSfN_400x400.jpg",
+          "logo": [
+            "https://pbs.twimg.com/profile_images/1768168785733980160/a4hWTSfN_400x400.jpg"
+          ],
           "site": "https://www.factory.ai/",
           "folder": "20240617_factory_code_droid",
           "resolved": 37.0,
@@ -1321,7 +1534,9 @@
         },
         {
           "name": "SWE-agent + Claude 3.5 Sonnet",
-          "logo": "https://avatars.githubusercontent.com/u/166046056?s=200&v=4",
+          "logo": [
+            "https://avatars.githubusercontent.com/u/166046056?s=200&v=4"
+          ],
           "site": "https://github.com/SWE-agent/SWE-agent",
           "folder": "20240620_sweagent_claude3.5sonnet",
           "resolved": 33.6,
@@ -1340,7 +1555,9 @@
         },
         {
           "name": "SWE-Fixer (Qwen2.5-7b retriever + Qwen2.5-72b editor)",
-          "logo": "https://www.shlab.org.cn/static/img/index_11.1280f447.png",
+          "logo": [
+            "https://www.shlab.org.cn/static/img/index_11.1280f447.png"
+          ],
           "site": "https://github.com/InternLM/SWE-Fixer",
           "folder": "20250306_SWE-Fixer_Qwen2.5-7b-retriever_Qwen2.5-72b-editor",
           "resolved": 32.8,
@@ -1376,7 +1593,9 @@
         },
         {
           "name": "Artemis Agent v1 (2024-11-20)",
-          "logo": "https://pbs.twimg.com/profile_images/1815722024121077760/KKFl48WM_400x400.jpg",
+          "logo": [
+            "https://pbs.twimg.com/profile_images/1815722024121077760/KKFl48WM_400x400.jpg"
+          ],
           "site": "https://www.turintech.ai/",
           "folder": "20241120_artemis_agent",
           "resolved": 32.0,
@@ -1393,7 +1612,9 @@
         },
         {
           "name": "nFactorial (2024-10-07)",
-          "logo": "https://nfactorial.dev/logo400.png",
+          "logo": [
+            "https://nfactorial.dev/logo400.png"
+          ],
           "site": "https://nfactorial.dev/",
           "folder": "20241007_nfactorial",
           "resolved": 31.6,
@@ -1410,7 +1631,9 @@
         },
         {
           "name": "SWE-Fixer (Qwen2.5-7b retriever + Qwen2.5-72b editor) 20241128",
-          "logo": "https://www.shlab.org.cn/static/img/index_11.1280f447.png",
+          "logo": [
+            "https://www.shlab.org.cn/static/img/index_11.1280f447.png"
+          ],
           "site": "https://github.com/InternLM/SWE-Fixer",
           "folder": "20241128_SWE-Fixer_Qwen2.5-7b-retriever_Qwen2.5-72b-editor_20241128",
           "resolved": 30.2,
@@ -1428,7 +1651,9 @@
         },
         {
           "name": "Lingma Agent + Lingma SWE-GPT 72b (v0925)",
-          "logo": "https://pbs.twimg.com/profile_images/1567807256091308032/4AXfLwia_400x400.jpg",
+          "logo": [
+            "https://pbs.twimg.com/profile_images/1567807256091308032/4AXfLwia_400x400.jpg"
+          ],
           "site": "https://www.modelscope.cn/models/yingwei/Lingma-SWE-GPT (https://www.modelscope.cn/models/yingwei/Lingma-SWE-GPT-v20240925)",
           "folder": "20241002_lingma-agent_lingma-swe-gpt-72b",
           "resolved": 28.8,
@@ -1446,7 +1671,9 @@
         },
         {
           "name": "EPAM AI/Run Developer Agent + GPT4o",
-          "logo": "https://pbs.twimg.com/profile_images/1753265803191795712/qg3YENmV_400x400.png",
+          "logo": [
+            "https://pbs.twimg.com/profile_images/1753265803191795712/qg3YENmV_400x400.png"
+          ],
           "site": "https://www.epam.com/services/artificial-intelligence",
           "folder": "20241016_epam-ai-run-gpt-4o",
           "resolved": 27.0,
@@ -1464,7 +1691,9 @@
         },
         {
           "name": "AppMap Navie + GPT 4o (2024-05-13)",
-          "logo": "https://pbs.twimg.com/profile_images/1393240555191160833/q5OUpB3Q_400x400.png",
+          "logo": [
+            "https://pbs.twimg.com/profile_images/1393240555191160833/q5OUpB3Q_400x400.png"
+          ],
           "site": "https://appmap.io/navie",
           "folder": "20240615_appmap-navie_gpt4o",
           "resolved": 26.2,
@@ -1482,7 +1711,9 @@
         },
         {
           "name": "nFactorial (2024-10-01)",
-          "logo": "https://nfactorial.dev/logo400.png",
+          "logo": [
+            "https://nfactorial.dev/logo400.png"
+          ],
           "site": "https://nfactorial.dev/",
           "folder": "20241001_nfactorial",
           "resolved": 25.8,
@@ -1499,7 +1730,9 @@
         },
         {
           "name": "Amazon Q Developer Agent (v20240430-dev)",
-          "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/2560px-Amazon_Web_Services_Logo.svg.png",
+          "logo": [
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/2560px-Amazon_Web_Services_Logo.svg.png"
+          ],
           "site": "https://aws.amazon.com/q/developer/",
           "folder": "20240509_amazon-q-developer-agent-20240430-dev",
           "resolved": 25.6,
@@ -1517,7 +1750,9 @@
         },
         {
           "name": "Lingma Agent + Lingma SWE-GPT 72b (v0918)",
-          "logo": "https://pbs.twimg.com/profile_images/1567807256091308032/4AXfLwia_400x400.jpg",
+          "logo": [
+            "https://pbs.twimg.com/profile_images/1567807256091308032/4AXfLwia_400x400.jpg"
+          ],
           "site": "https://www.modelscope.cn/models/yingwei/Lingma-SWE-GPT",
           "folder": "20240918_lingma-agent_lingma-swe-gpt-72b",
           "resolved": 25.0,
@@ -1535,7 +1770,9 @@
         },
         {
           "name": "EPAM AI/Run Developer Agent + GPT4o",
-          "logo": "https://pbs.twimg.com/profile_images/1753265803191795712/qg3YENmV_400x400.png",
+          "logo": [
+            "https://pbs.twimg.com/profile_images/1753265803191795712/qg3YENmV_400x400.png"
+          ],
           "site": "https://www.epam.com/services/artificial-intelligence",
           "folder": "20240820_epam-ai-run-gpt-4o",
           "resolved": 24.0,
@@ -1553,7 +1790,9 @@
         },
         {
           "name": "SWE-agent + GPT 4o (2024-05-13)",
-          "logo": "https://avatars.githubusercontent.com/u/166046056?s=200&v=4",
+          "logo": [
+            "https://avatars.githubusercontent.com/u/166046056?s=200&v=4"
+          ],
           "site": "https://github.com/SWE-agent/SWE-agent",
           "folder": "20240728_sweagent_gpt4o",
           "resolved": 23.2,
@@ -1572,7 +1811,9 @@
         },
         {
           "name": "SWE-agent + GPT 4 (1106)",
-          "logo": "https://avatars.githubusercontent.com/u/166046056?s=200&v=4",
+          "logo": [
+            "https://avatars.githubusercontent.com/u/166046056?s=200&v=4"
+          ],
           "site": "https://github.com/SWE-agent/SWE-agent",
           "folder": "20240402_sweagent_gpt4",
           "resolved": 22.4,
@@ -1591,7 +1832,9 @@
         },
         {
           "name": "SWE-agent + Claude 3 Opus",
-          "logo": "https://avatars.githubusercontent.com/u/166046056?s=200&v=4",
+          "logo": [
+            "https://avatars.githubusercontent.com/u/166046056?s=200&v=4"
+          ],
           "site": "https://github.com/SWE-agent/SWE-agent",
           "folder": "20240402_sweagent_claude3opus",
           "resolved": 18.2,
@@ -1610,7 +1853,9 @@
         },
         {
           "name": "Lingma Agent + Lingma SWE-GPT 7b (v0925)",
-          "logo": "https://pbs.twimg.com/profile_images/1567807256091308032/4AXfLwia_400x400.jpg",
+          "logo": [
+            "https://pbs.twimg.com/profile_images/1567807256091308032/4AXfLwia_400x400.jpg"
+          ],
           "site": "https://www.modelscope.cn/models/yingwei/Lingma-SWE-GPT (https://www.modelscope.cn/models/yingwei/Lingma-SWE-GPT-v20240925)",
           "folder": "20241002_lingma-agent_lingma-swe-gpt-7b",
           "resolved": 18.2,
@@ -1628,7 +1873,9 @@
         },
         {
           "name": "Lingma Agent + Lingma SWE-GPT 7b (v0918)",
-          "logo": "https://pbs.twimg.com/profile_images/1567807256091308032/4AXfLwia_400x400.jpg",
+          "logo": [
+            "https://pbs.twimg.com/profile_images/1567807256091308032/4AXfLwia_400x400.jpg"
+          ],
           "site": "https://www.modelscope.cn/models/yingwei/Lingma-SWE-GPT",
           "folder": "20240918_lingma-agent_lingma-swe-gpt-7b",
           "resolved": 10.2,
@@ -1646,7 +1893,9 @@
         },
         {
           "name": "RAG + Claude 3 Opus",
-          "logo": "https://avatars.githubusercontent.com/u/139597579?s=200&v=4",
+          "logo": [
+            "https://avatars.githubusercontent.com/u/139597579?s=200&v=4"
+          ],
           "site": "https://github.com/SWE-bench/SWE-bench/tree/main/swebench/inference",
           "folder": "20240402_rag_claude3opus",
           "resolved": 7.0,
@@ -1664,7 +1913,9 @@
         },
         {
           "name": "RAG + Claude 2",
-          "logo": "https://avatars.githubusercontent.com/u/139597579?s=200&v=4",
+          "logo": [
+            "https://avatars.githubusercontent.com/u/139597579?s=200&v=4"
+          ],
           "site": null,
           "folder": "20231010_rag_claude2",
           "resolved": 4.4,
@@ -1682,7 +1933,9 @@
         },
         {
           "name": "RAG + GPT 4 (1106)",
-          "logo": "https://avatars.githubusercontent.com/u/139597579?s=200&v=4",
+          "logo": [
+            "https://avatars.githubusercontent.com/u/139597579?s=200&v=4"
+          ],
           "site": null,
           "folder": "20240402_rag_gpt4",
           "resolved": 2.8,
@@ -1700,7 +1953,9 @@
         },
         {
           "name": "RAG + SWE-Llama 7B",
-          "logo": "https://avatars.githubusercontent.com/u/139597579?s=200&v=4",
+          "logo": [
+            "https://avatars.githubusercontent.com/u/139597579?s=200&v=4"
+          ],
           "site": null,
           "folder": "20231010_rag_swellama7b",
           "resolved": 1.4,
@@ -1719,7 +1974,9 @@
         },
         {
           "name": "RAG + SWE-Llama 13B",
-          "logo": "https://avatars.githubusercontent.com/u/139597579?s=200&v=4",
+          "logo": [
+            "https://avatars.githubusercontent.com/u/139597579?s=200&v=4"
+          ],
           "site": null,
           "folder": "20231010_rag_swellama13b",
           "resolved": 1.2,
@@ -1737,7 +1994,9 @@
         },
         {
           "name": "RAG + ChatGPT 3.5",
-          "logo": "https://avatars.githubusercontent.com/u/139597579?s=200&v=4",
+          "logo": [
+            "https://avatars.githubusercontent.com/u/139597579?s=200&v=4"
+          ],
           "site": null,
           "folder": "20231010_rag_gpt35",
           "resolved": 0.4,
@@ -1760,7 +2019,9 @@
       "results": [
         {
           "name": "Isoform",
-          "logo": "https://avatars.githubusercontent.com/u/4956703?s=200&v=4",
+          "logo": [
+            "https://avatars.githubusercontent.com/u/4956703?s=200&v=4"
+          ],
           "site": "https://www.isoform.ai",
           "folder": "20250114_Isoform",
           "resolved": 55.0,
@@ -1790,7 +2051,9 @@
         },
         {
           "name": "Gru(2024-12-08)",
-          "logo": "https://pbs.twimg.com/profile_images/1832709320896917504/FB5KojGT_400x400.png",
+          "logo": [
+            "https://pbs.twimg.com/profile_images/1832709320896917504/FB5KojGT_400x400.png"
+          ],
           "site": "https://gru.ai",
           "folder": "20241208_gru",
           "resolved": 48.67,
@@ -1805,7 +2068,9 @@
         },
         {
           "name": "Globant Code Fixer Agent",
-          "logo": "https://ai.globant.com/wp-content/uploads/2024/06/favicon.png",
+          "logo": [
+            "https://ai.globant.com/wp-content/uploads/2024/06/favicon.png"
+          ],
           "site": "https://ai.globant.com/us-en/",
           "folder": "20241127_globant_codefixer_agent",
           "resolved": 48.33,
@@ -1819,8 +2084,31 @@
           "warning": null
         },
         {
+          "name": "SWE-agent + Claude 3.7 Sonnet",
+          "logo": [
+            "https://avatars.githubusercontent.com/u/166046056?s=200&v=4"
+          ],
+          "site": "https://github.com/SWE-agent/SWE-agent",
+          "folder": "20250226_sweagent_claude-3-7-sonnet-20250219",
+          "resolved": 48.0,
+          "date": "2025-02-26",
+          "logs": "s3://swe-bench-experiments/lite/20250226_sweagent_claude-3-7-sonnet-20250219/trajs",
+          "trajs": "s3://swe-bench-experiments/lite/20250226_sweagent_claude-3-7-sonnet-20250219/logs",
+          "os_model": false,
+          "os_system": true,
+          "checked": true,
+          "tags": [
+            "Model: claude-3-7-sonnet-20250219",
+            "Org: SWE-agent",
+            "System: Attempts - 1"
+          ],
+          "warning": null
+        },
+        {
           "name": "devlo",
-          "logo": "https://devlo.ai/static/media/devlo.ef99a045eba5ea0bcada.png",
+          "logo": [
+            "https://devlo.ai/static/media/devlo.ef99a045eba5ea0bcada.png"
+          ],
           "site": "https://devlo.ai",
           "folder": "20241122_devlo",
           "resolved": 47.33,
@@ -1837,7 +2125,9 @@
         },
         {
           "name": "DARS Agent",
-          "logo": "https://drive.google.com/drive/folders/1wKpaj_37NnbSaj3OuG_FP4RDhUlKIVYM?usp=sharing",
+          "logo": [
+            "https://drive.google.com/drive/folders/1wKpaj_37NnbSaj3OuG_FP4RDhUlKIVYM?usp=sharing"
+          ],
           "site": "https://github.com/darsagent/DARS-Agent",
           "folder": "20250205_dars_agent_claude_3.5_sonnet_deepseek_r1",
           "resolved": 47.0,
@@ -1855,7 +2145,9 @@
         },
         {
           "name": "Kodu-v1 + Claude-3.5 Sonnet (20241022)",
-          "logo": "https://raw.githubusercontent.com/kodu-ai/claude-coder/main/extension/assets/kodu.png",
+          "logo": [
+            "https://raw.githubusercontent.com/kodu-ai/claude-coder/main/extension/assets/kodu.png"
+          ],
           "site": "https://www.kodu.ai/",
           "folder": "20241207_kodu_sonnet_v1",
           "resolved": 44.67,
@@ -1887,7 +2179,9 @@
         },
         {
           "name": "Lingxi",
-          "logo": "https://drive.google.com/file/d/1K0BbkmwSeX-uYLL_9GL_QxP9RPW6_okv/view?usp=sharing",
+          "logo": [
+            "https://drive.google.com/file/d/1K0BbkmwSeX-uYLL_9GL_QxP9RPW6_okv/view?usp=sharing"
+          ],
           "site": "https://github.com/nimasteryang/Lingxi",
           "folder": "20250509_Lingxi_claude-3-5-sonnet-20241022",
           "resolved": 42.67,
@@ -1904,7 +2198,9 @@
         },
         {
           "name": "OpenHands + CodeAct v2.1 (claude-3-5-sonnet-20241022)",
-          "logo": "https://avatars.githubusercontent.com/u/169105795?s=200&v=4",
+          "logo": [
+            "https://avatars.githubusercontent.com/u/169105795?s=200&v=4"
+          ],
           "site": "https://docs.all-hands.dev/",
           "folder": "20241025_OpenHands-CodeAct-2.1-sonnet-20241022",
           "resolved": 41.67,
@@ -1921,8 +2217,30 @@
           "warning": null
         },
         {
+          "name": "Codart AI",
+          "logo": null,
+          "site": "https://srics96.github.io/Codart-AI/",
+          "folder": "20250515_codartai",
+          "resolved": 41.67,
+          "date": "2025-05-15",
+          "logs": "s3://swe-bench-experiments/lite/20250515_codartai/logs",
+          "trajs": "s3://swe-bench-experiments/lite/20250515_codartai/trajs",
+          "os_model": false,
+          "os_system": false,
+          "checked": false,
+          "tags": [
+            "Model: claude-3-5-haiku-latest",
+            "Model: claude-3.5-sonnet-latest",
+            "Org: Codart AI",
+            "System: Attempts - 1"
+          ],
+          "warning": null
+        },
+        {
           "name": "PatchKitty-0.9 + Claude-3.5 Sonnet (20241022)",
-          "logo": "https://brand.ucsb.edu/sites/default/files/images/pages/Visual-Identity/Marks/Seal/navy-seal.gif",
+          "logo": [
+            "https://brand.ucsb.edu/sites/default/files/images/pages/Visual-Identity/Marks/Seal/navy-seal.gif"
+          ],
           "site": null,
           "folder": "20241220_PatchKitty-0.9_claude-3.5-sonnet-20241022",
           "resolved": 41.33,
@@ -1939,7 +2257,9 @@
         },
         {
           "name": "OrcaLoca + Agentless-1.5 + Claude-3.5 Sonnet (20241022)",
-          "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Seal_of_the_University_of_California%2C_San_Diego.svg/1200px-Seal_of_the_University_of_California%2C_San_Diego.svg.png",
+          "logo": [
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Seal_of_the_University_of_California%2C_San_Diego.svg/1200px-Seal_of_the_University_of_California%2C_San_Diego.svg.png"
+          ],
           "site": "https://github.com/fishmingyu/OrcarLLM",
           "folder": "20250113_OrcaLoca",
           "resolved": 41.0,
@@ -1957,7 +2277,9 @@
         },
         {
           "name": "Composio SWE-Kit (2024-10-30)",
-          "logo": "https://avatars.githubusercontent.com/u/128464815?s=48&v=4",
+          "logo": [
+            "https://avatars.githubusercontent.com/u/128464815?s=48&v=4"
+          ],
           "site": "https://github.com/ComposioHQ/composio/tree/master/python/swe/agent",
           "folder": "20241030_composio_swekit",
           "resolved": 41.0,
@@ -1975,7 +2297,9 @@
         },
         {
           "name": "Agentless-1.5 + Claude-3.5 Sonnet (20241022)",
-          "logo": "https://brand.illinois.edu/wp-content/uploads/2024/02/Color-Variation-Orange-Block-I-White-Background.png",
+          "logo": [
+            "https://brand.illinois.edu/wp-content/uploads/2024/02/Color-Variation-Orange-Block-I-White-Background.png"
+          ],
           "site": "https://github.com/OpenAutoCoder/Agentless",
           "folder": "20241202_agentless-1.5_claude-3.5-sonnet-20241022",
           "resolved": 40.67,
@@ -1993,7 +2317,9 @@
         },
         {
           "name": "OpenCSG Starship Agentic Coder + GPT 4 (0806)",
-          "logo": "https://opencsg.com/images/OpenCSG_logo.svg",
+          "logo": [
+            "https://opencsg.com/images/OpenCSG_logo.svg"
+          ],
           "site": "https://opencsg.com/starship",
           "folder": "20250113_OpenCSG-Starship-Agentic-Coder_gpt4o",
           "resolved": 39.67,
@@ -2010,7 +2336,9 @@
         },
         {
           "name": "Bytedance MarsCode Agent",
-          "logo": "https://pbs.twimg.com/profile_images/1768232487271153664/etPzHPm1_400x400.jpg",
+          "logo": [
+            "https://pbs.twimg.com/profile_images/1768232487271153664/etPzHPm1_400x400.jpg"
+          ],
           "site": "https://www.marscode.com/",
           "folder": "20240912_marscode-agent-dev",
           "resolved": 39.33,
@@ -2063,7 +2391,9 @@
         },
         {
           "name": "Honeycomb",
-          "logo": "https://pbs.twimg.com/profile_images/1826351945021636608/eQgGBRKw_400x400.jpg",
+          "logo": [
+            "https://pbs.twimg.com/profile_images/1826351945021636608/eQgGBRKw_400x400.jpg"
+          ],
           "site": "https://honeycomb.sh/",
           "folder": "20240820_honeycomb",
           "resolved": 38.33,
@@ -2095,7 +2425,9 @@
         },
         {
           "name": "Patched.Codes Patchwork",
-          "logo": "https://imgur.com/vwVD7aJ.png",
+          "logo": [
+            "https://imgur.com/vwVD7aJ.png"
+          ],
           "site": "https://github.com/patched-codes/patchwork",
           "folder": "20250104_patched_codes_claude-3.5-sonnet-20241022",
           "resolved": 37.0,
@@ -2112,7 +2444,9 @@
         },
         {
           "name": "AppMap Navie v2",
-          "logo": "https://pbs.twimg.com/profile_images/1393240555191160833/q5OUpB3Q_400x400.png",
+          "logo": [
+            "https://pbs.twimg.com/profile_images/1393240555191160833/q5OUpB3Q_400x400.png"
+          ],
           "site": "https://appmap.io/navie",
           "folder": "20241113_navie-2-gpt4o-sonnet",
           "resolved": 36.0,
@@ -2130,7 +2464,9 @@
         },
         {
           "name": "CodeFuse-AAIS",
-          "logo": "https://raw.githubusercontent.com/codefuse-ai/codefuse/master/assets/LOGO.png",
+          "logo": [
+            "https://raw.githubusercontent.com/codefuse-ai/codefuse/master/assets/LOGO.png"
+          ],
           "site": "https://codefuse.ai/",
           "folder": "20250104_codefuse-aais",
           "resolved": 35.67,
@@ -2145,7 +2481,9 @@
         },
         {
           "name": "Gru(2024-08-11)",
-          "logo": "https://pbs.twimg.com/profile_images/1832709320896917504/FB5KojGT_400x400.png",
+          "logo": [
+            "https://pbs.twimg.com/profile_images/1832709320896917504/FB5KojGT_400x400.png"
+          ],
           "site": "https://gru.ai",
           "folder": "20240811_gru",
           "resolved": 35.67,
@@ -2175,7 +2513,9 @@
         },
         {
           "name": "SuperCoder2.0",
-          "logo": "https://pbs.twimg.com/profile_images/1678659510041456640/rxUIfulT_400x400.jpg",
+          "logo": [
+            "https://pbs.twimg.com/profile_images/1678659510041456640/rxUIfulT_400x400.jpg"
+          ],
           "site": "https://superagi.com/supercoder/",
           "folder": "20240806_SuperCoder2.0",
           "resolved": 34.0,
@@ -2190,7 +2530,9 @@
         },
         {
           "name": "Bytedance MarsCode Agent + GPT 4o (2024-05-13)",
-          "logo": "https://pbs.twimg.com/profile_images/1768232487271153664/etPzHPm1_400x400.jpg",
+          "logo": [
+            "https://pbs.twimg.com/profile_images/1768232487271153664/etPzHPm1_400x400.jpg"
+          ],
           "site": "https://www.marscode.com/",
           "folder": "20240723_marscode-agent-dev",
           "resolved": 34.0,
@@ -2208,7 +2550,9 @@
         },
         {
           "name": "Alibaba Lingma Agent",
-          "logo": "https://pbs.twimg.com/profile_images/1567807256091308032/4AXfLwia_400x400.jpg",
+          "logo": [
+            "https://pbs.twimg.com/profile_images/1567807256091308032/4AXfLwia_400x400.jpg"
+          ],
           "site": "https://arxiv.org/abs/2406.01422",
           "folder": "20240622_Lingma_Agent",
           "resolved": 33.0,
@@ -2225,7 +2569,9 @@
         },
         {
           "name": "Agentless Lite + O3 Mini (20250214)",
-          "logo": "https://brand.illinois.edu/wp-content/uploads/2024/02/Color-Variation-Orange-Block-I-White-Background.png",
+          "logo": [
+            "https://brand.illinois.edu/wp-content/uploads/2024/02/Color-Variation-Orange-Block-I-White-Background.png"
+          ],
           "site": "https://github.com/sorendunn/Agentless-Lite",
           "folder": "20250214_agentless_lite_o3_mini",
           "resolved": 32.33,
@@ -2243,7 +2589,9 @@
         },
         {
           "name": "Agentless-1.5 + GPT 4o (2024-05-13)",
-          "logo": "https://brand.illinois.edu/wp-content/uploads/2024/02/Color-Variation-Orange-Block-I-White-Background.png",
+          "logo": [
+            "https://brand.illinois.edu/wp-content/uploads/2024/02/Color-Variation-Orange-Block-I-White-Background.png"
+          ],
           "site": "https://github.com/OpenAutoCoder/Agentless",
           "folder": "20241028_agentless-1.5_gpt4o",
           "resolved": 32.0,
@@ -2261,7 +2609,9 @@
         },
         {
           "name": "Factory Code Droid",
-          "logo": "https://pbs.twimg.com/profile_images/1768168785733980160/a4hWTSfN_400x400.jpg",
+          "logo": [
+            "https://pbs.twimg.com/profile_images/1768168785733980160/a4hWTSfN_400x400.jpg"
+          ],
           "site": "https://www.factory.ai/",
           "folder": "20240617_factory_code_droid",
           "resolved": 31.33,
@@ -2276,7 +2626,9 @@
         },
         {
           "name": "CodeShellTester + GPT 4o (2024-05-13)",
-          "logo": "https://avatars.githubusercontent.com/u/145519942?s=200&v=4",
+          "logo": [
+            "https://avatars.githubusercontent.com/u/145519942?s=200&v=4"
+          ],
           "site": "https://github.com/WisdomShell/codeshell",
           "folder": "20241111_codeshelltester_gpt4o",
           "resolved": 31.33,
@@ -2293,7 +2645,9 @@
         },
         {
           "name": "AutoCodeRover (v20240620) + GPT 4o (2024-05-13)",
-          "logo": "https://avatars.githubusercontent.com/u/100131783?s=200&v=4",
+          "logo": [
+            "https://avatars.githubusercontent.com/u/100131783?s=200&v=4"
+          ],
           "site": "https://autocoderover.dev/",
           "folder": "20240621_autocoderover-v20240620",
           "resolved": 30.67,
@@ -2342,7 +2696,9 @@
         },
         {
           "name": "Kortix AI (claude-3-5-sonnet-20241022)",
-          "logo": "https://avatars.githubusercontent.com/u/170767358?s=200&v=4",
+          "logo": [
+            "https://avatars.githubusercontent.com/u/170767358?s=200&v=4"
+          ],
           "site": "https://www.kortix.ai/",
           "folder": "20241203_KortixAI-AgentPress-sonnet-20241022",
           "resolved": 30.0,
@@ -2359,7 +2715,9 @@
         },
         {
           "name": "Amazon Q Developer Agent (v20240719-dev)",
-          "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/2560px-Amazon_Web_Services_Logo.svg.png",
+          "logo": [
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/2560px-Amazon_Web_Services_Logo.svg.png"
+          ],
           "site": "https://aws.amazon.com/q/developer/",
           "folder": "20240721_amazon-q-developer-agent-20240719-dev",
           "resolved": 29.67,
@@ -2376,7 +2734,9 @@
         },
         {
           "name": "Agentless + RepoGraph + GPT-4o",
-          "logo": "https://brand.illinois.edu/wp-content/uploads/2024/02/Color-Variation-Orange-Block-I-White-Background.png",
+          "logo": [
+            "https://brand.illinois.edu/wp-content/uploads/2024/02/Color-Variation-Orange-Block-I-White-Background.png"
+          ],
           "site": "https://github.com/ozyyshr/RepoGraph",
           "folder": "20240808_RepoGraph_gpt4o",
           "resolved": 29.67,
@@ -2394,7 +2754,9 @@
         },
         {
           "name": "CodeR + GPT 4 (1106)",
-          "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Huawei_Standard_logo.svg/1200px-Huawei_Standard_logo.svg.png",
+          "logo": [
+            "https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Huawei_Standard_logo.svg/1200px-Huawei_Standard_logo.svg.png"
+          ],
           "site": "https://github.com/NL2Code/CodeR",
           "folder": "20240604_CodeR",
           "resolved": 28.33,
@@ -2462,7 +2824,9 @@
         },
         {
           "name": "Agentless + GPT 4o (2024-05-13)",
-          "logo": "https://brand.illinois.edu/wp-content/uploads/2024/02/Color-Variation-Orange-Block-I-White-Background.png",
+          "logo": [
+            "https://brand.illinois.edu/wp-content/uploads/2024/02/Color-Variation-Orange-Block-I-White-Background.png"
+          ],
           "site": "https://github.com/OpenAutoCoder/Agentless",
           "folder": "20240630_agentless_gpt4o",
           "resolved": 27.33,
@@ -2498,7 +2862,9 @@
         },
         {
           "name": "OpenHands + CodeAct v1.8",
-          "logo": "https://avatars.githubusercontent.com/u/169105795?s=200&v=4",
+          "logo": [
+            "https://avatars.githubusercontent.com/u/169105795?s=200&v=4"
+          ],
           "site": "https://docs.all-hands.dev/",
           "folder": "20240725_opendevin_codeact_v1.8_claude35sonnet",
           "resolved": 26.67,
@@ -2516,7 +2882,9 @@
         },
         {
           "name": "IBM Research Agent-101",
-          "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPBss61ZSzmBM75JqdYCVqsfqJ4JijX0mt9g&s",
+          "logo": [
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPBss61ZSzmBM75JqdYCVqsfqJ4JijX0mt9g&s"
+          ],
           "site": "https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20240612_IBM_Research_Agent101",
           "folder": "20240612_IBM_Research_Agent101",
           "resolved": 26.67,
@@ -2533,7 +2901,9 @@
         },
         {
           "name": "Aider + GPT 4o & Claude 3 Opus",
-          "logo": "https://avatars.githubusercontent.com/u/172139148?s=48&v=4",
+          "logo": [
+            "https://avatars.githubusercontent.com/u/172139148?s=48&v=4"
+          ],
           "site": "https://github.com/paul-gauthier/aider",
           "folder": "20240523_aider",
           "resolved": 26.33,
@@ -2568,7 +2938,9 @@
         },
         {
           "name": "SWE-Fixer (Qwen2.5-7b retriever + Qwen2.5-72b editor)",
-          "logo": "https://www.shlab.org.cn/static/img/index_11.1280f447.png",
+          "logo": [
+            "https://www.shlab.org.cn/static/img/index_11.1280f447.png"
+          ],
           "site": "https://github.com/InternLM/SWE-Fixer",
           "folder": "20250306_SWE-Fixer_Qwen2.5-7b-retriever_Qwen2.5-72b-editor",
           "resolved": 24.67,
@@ -2603,7 +2975,9 @@
         },
         {
           "name": "IBM AI Agent SWE-1.0 (with open LLMs)",
-          "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPBss61ZSzmBM75JqdYCVqsfqJ4JijX0mt9g&s",
+          "logo": [
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPBss61ZSzmBM75JqdYCVqsfqJ4JijX0mt9g&s"
+          ],
           "site": "https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20241016_IBM-SWE-1.0",
           "folder": "20241016_IBM-SWE-1.0",
           "resolved": 23.67,
@@ -2637,7 +3011,9 @@
         },
         {
           "name": "SWE-Fixer (Qwen2.5-7b retriever + Qwen2.5-72b editor) 20241128",
-          "logo": "https://www.shlab.org.cn/static/img/index_11.1280f447.png",
+          "logo": [
+            "https://www.shlab.org.cn/static/img/index_11.1280f447.png"
+          ],
           "site": "https://github.com/InternLM/SWE-Fixer",
           "folder": "20241128_SWE-Fixer_Qwen2.5-7b-retriever_Qwen2.5-72b-editor_20241128",
           "resolved": 23.33,
@@ -2654,7 +3030,9 @@
         },
         {
           "name": "SWE-agent + Claude 3.5 Sonnet",
-          "logo": "https://avatars.githubusercontent.com/u/166046056?s=200&v=4",
+          "logo": [
+            "https://avatars.githubusercontent.com/u/166046056?s=200&v=4"
+          ],
           "site": "https://github.com/SWE-agent/SWE-agent",
           "folder": "20240620_sweagent_claude3.5sonnet",
           "resolved": 23.0,
@@ -2672,7 +3050,9 @@
         },
         {
           "name": "AppMap Navie + GPT 4o (2024-05-13)",
-          "logo": "https://pbs.twimg.com/profile_images/1393240555191160833/q5OUpB3Q_400x400.png",
+          "logo": [
+            "https://pbs.twimg.com/profile_images/1393240555191160833/q5OUpB3Q_400x400.png"
+          ],
           "site": "https://appmap.io/navie",
           "folder": "20240615_appmap-navie_gpt4o",
           "resolved": 21.67,
@@ -2689,7 +3069,9 @@
         },
         {
           "name": "Bytedance AutoSE (based on SWE-Agent) + GPT4/GPT4o Mixed (20240828)",
-          "logo": "https://pbs.twimg.com/profile_images/1768232487271153664/etPzHPm1_400x400.jpg",
+          "logo": [
+            "https://pbs.twimg.com/profile_images/1768232487271153664/etPzHPm1_400x400.jpg"
+          ],
           "site": null,
           "folder": "20240828_autose_mixed",
           "resolved": 21.67,
@@ -2707,7 +3089,9 @@
         },
         {
           "name": "Amazon Q Developer Agent (v20240430-dev)",
-          "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/2560px-Amazon_Web_Services_Logo.svg.png",
+          "logo": [
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/2560px-Amazon_Web_Services_Logo.svg.png"
+          ],
           "site": "https://aws.amazon.com/q/developer/",
           "folder": "20240509_amazon-q-developer-agent-20240430-dev",
           "resolved": 20.33,
@@ -2724,7 +3108,9 @@
         },
         {
           "name": "AutoCodeRover (v20240408) + GPT 4 (0125)",
-          "logo": "https://avatars.githubusercontent.com/u/100131783?s=200&v=4",
+          "logo": [
+            "https://avatars.githubusercontent.com/u/100131783?s=200&v=4"
+          ],
           "site": "https://github.com/nus-apr/auto-code-rover",
           "folder": "20240530_autocoderover-v20240408",
           "resolved": 19.0,
@@ -2741,7 +3127,9 @@
         },
         {
           "name": "SWE-agent + GPT 4o (2024-05-13)",
-          "logo": "https://avatars.githubusercontent.com/u/166046056?s=200&v=4",
+          "logo": [
+            "https://avatars.githubusercontent.com/u/166046056?s=200&v=4"
+          ],
           "site": "https://github.com/SWE-agent/SWE-agent",
           "folder": "20240728_sweagent_gpt4o",
           "resolved": 18.33,
@@ -2759,7 +3147,9 @@
         },
         {
           "name": "SWE-agent + GPT 4 (1106)",
-          "logo": "https://avatars.githubusercontent.com/u/166046056?s=200&v=4",
+          "logo": [
+            "https://avatars.githubusercontent.com/u/166046056?s=200&v=4"
+          ],
           "site": "https://github.com/SWE-agent/SWE-agent",
           "folder": "20240402_sweagent_gpt4",
           "resolved": 18.0,
@@ -2777,7 +3167,9 @@
         },
         {
           "name": "SWE-agent + Claude 3 Opus",
-          "logo": "https://avatars.githubusercontent.com/u/166046056?s=200&v=4",
+          "logo": [
+            "https://avatars.githubusercontent.com/u/166046056?s=200&v=4"
+          ],
           "site": "https://github.com/SWE-agent/SWE-agent",
           "folder": "20240402_sweagent_claude3opus",
           "resolved": 11.67,
@@ -2794,7 +3186,9 @@
         },
         {
           "name": "RAG + Claude 3 Opus",
-          "logo": "https://avatars.githubusercontent.com/u/139597579?s=200&v=4",
+          "logo": [
+            "https://avatars.githubusercontent.com/u/139597579?s=200&v=4"
+          ],
           "site": "https://swebench.com/",
           "folder": "20240402_rag_claude3opus",
           "resolved": 4.33,
@@ -2811,7 +3205,9 @@
         },
         {
           "name": "RAG + Claude 2",
-          "logo": "https://avatars.githubusercontent.com/u/139597579?s=200&v=4",
+          "logo": [
+            "https://avatars.githubusercontent.com/u/139597579?s=200&v=4"
+          ],
           "site": "https://swebench.com/",
           "folder": "20231010_rag_claude2",
           "resolved": 3.0,
@@ -2828,7 +3224,9 @@
         },
         {
           "name": "RAG + GPT 4 (1106)",
-          "logo": "https://avatars.githubusercontent.com/u/139597579?s=200&v=4",
+          "logo": [
+            "https://avatars.githubusercontent.com/u/139597579?s=200&v=4"
+          ],
           "site": "https://swebench.com/",
           "folder": "20240402_rag_gpt4",
           "resolved": 2.67,
@@ -2845,7 +3243,9 @@
         },
         {
           "name": "RAG + SWE-Llama 7B",
-          "logo": "https://avatars.githubusercontent.com/u/139597579?s=200&v=4",
+          "logo": [
+            "https://avatars.githubusercontent.com/u/139597579?s=200&v=4"
+          ],
           "site": "https://swebench.com/",
           "folder": "20231010_rag_swellama7b",
           "resolved": 1.33,
@@ -2863,7 +3263,9 @@
         },
         {
           "name": "RAG + SWE-Llama 13B",
-          "logo": "https://avatars.githubusercontent.com/u/139597579?s=200&v=4",
+          "logo": [
+            "https://avatars.githubusercontent.com/u/139597579?s=200&v=4"
+          ],
           "site": "https://swebench.com/",
           "folder": "20231010_rag_swellama13b",
           "resolved": 1.0,
@@ -2880,7 +3282,9 @@
         },
         {
           "name": "RAG + ChatGPT 3.5",
-          "logo": "https://avatars.githubusercontent.com/u/139597579?s=200&v=4",
+          "logo": [
+            "https://avatars.githubusercontent.com/u/139597579?s=200&v=4"
+          ],
           "site": "https://swebench.com/",
           "folder": "20231010_rag_gpt35",
           "resolved": 0.33,
@@ -2920,7 +3324,9 @@
       "results": [
         {
           "name": "Zencoder (2025-04-01)",
-          "logo": "https://storage.googleapis.com/zencoder-public/zencoder-logo.svg",
+          "logo": [
+            "https://storage.googleapis.com/zencoder-public/zencoder-logo.svg"
+          ],
           "site": "https://zencoder.ai",
           "folder": "20250401_zencoder",
           "resolved": 30.56,
@@ -2931,14 +3337,16 @@
           "os_system": false,
           "checked": true,
           "tags": [
-            "Model: claude-3-7-20250219",
+            "Model: claude-3-7-sonnet-20250219",
             "System: Attempts - 1"
           ],
           "warning": null
         },
         {
           "name": "Globant Code Fixer Agent",
-          "logo": "https://ai.globant.com/wp-content/uploads/2024/06/favicon.png",
+          "logo": [
+            "https://ai.globant.com/wp-content/uploads/2024/06/favicon.png"
+          ],
           "site": "https://ai.globant.com/us-en/",
           "folder": "20250325_globant_codefixer_agent",
           "resolved": 29.59,
@@ -2955,7 +3363,9 @@
         },
         {
           "name": "Zencoder (2025-03-10)",
-          "logo": "https://storage.googleapis.com/zencoder-public/zencoder-logo.svg",
+          "logo": [
+            "https://storage.googleapis.com/zencoder-public/zencoder-logo.svg"
+          ],
           "site": "https://zencoder.ai",
           "folder": "20250311_zencoder",
           "resolved": 27.08,
@@ -2972,7 +3382,9 @@
         },
         {
           "name": "Agentless Lite + Claude-3.5 Sonnet",
-          "logo": "https://brand.illinois.edu/wp-content/uploads/2024/02/Color-Variation-Orange-Block-I-White-Background.png",
+          "logo": [
+            "https://brand.illinois.edu/wp-content/uploads/2024/02/Color-Variation-Orange-Block-I-White-Background.png"
+          ],
           "site": "https://github.com/sorendunn/Agentless-Lite",
           "folder": "20250226_agentless_lite_claude3.5",
           "resolved": 25.34,
@@ -2991,7 +3403,9 @@
         },
         {
           "name": "SWE-agent Multimodal + GPT 4o (2024-08-06)",
-          "logo": "https://avatars.githubusercontent.com/u/166046056?s=200&v=4",
+          "logo": [
+            "https://avatars.githubusercontent.com/u/166046056?s=200&v=4"
+          ],
           "site": "https://github.com/SWE-agent/SWE-agent",
           "folder": "20241006_SWE-agent_M_gpt4o",
           "resolved": 12.19,
@@ -3009,7 +3423,9 @@
         },
         {
           "name": "SWE-agent + Claude Sonnet 3.5",
-          "logo": "https://avatars.githubusercontent.com/u/166046056?s=200&v=4",
+          "logo": [
+            "https://avatars.githubusercontent.com/u/166046056?s=200&v=4"
+          ],
           "site": "https://github.com/SWE-agent/SWE-agent",
           "folder": "20241006_SWE-agent_claude3.5",
           "resolved": 12.19,
@@ -3027,7 +3443,9 @@
         },
         {
           "name": "SWE-agent JavaScript + Claude Sonnet 3.5",
-          "logo": "https://avatars.githubusercontent.com/u/166046056?s=200&v=4",
+          "logo": [
+            "https://avatars.githubusercontent.com/u/166046056?s=200&v=4"
+          ],
           "site": "https://github.com/SWE-agent/SWE-agent",
           "folder": "20241006_SWE-agent_JS_claude3.5",
           "resolved": 11.99,
@@ -3045,7 +3463,9 @@
         },
         {
           "name": "SWE-agent + GPT 4o (2024-08-06)",
-          "logo": "https://avatars.githubusercontent.com/u/166046056?s=200&v=4",
+          "logo": [
+            "https://avatars.githubusercontent.com/u/166046056?s=200&v=4"
+          ],
           "site": "https://github.com/SWE-agent/SWE-agent",
           "folder": "20241006_SWE-agent_gpt4o",
           "resolved": 11.99,
@@ -3063,7 +3483,9 @@
         },
         {
           "name": "SWE-agent Multimodal + Claude 3.5 Sonnet",
-          "logo": "https://avatars.githubusercontent.com/u/166046056?s=200&v=4",
+          "logo": [
+            "https://avatars.githubusercontent.com/u/166046056?s=200&v=4"
+          ],
           "site": "https://github.com/SWE-agent/SWE-agent",
           "folder": "20241006_SWE-agent_M_claude3.5",
           "resolved": 11.41,
@@ -3082,7 +3504,9 @@
         },
         {
           "name": "SWE-agent JavaScript + GPT 4o (2024-08-06)",
-          "logo": "https://avatars.githubusercontent.com/u/166046056?s=200&v=4",
+          "logo": [
+            "https://avatars.githubusercontent.com/u/166046056?s=200&v=4"
+          ],
           "site": "https://github.com/SWE-agent/SWE-agent",
           "folder": "20241006_SWE-agent_JS_gpt4o",
           "resolved": 9.28,
@@ -3100,7 +3524,9 @@
         },
         {
           "name": "Agentless + Claude 3.5 Sonnet",
-          "logo": "https://brand.illinois.edu/wp-content/uploads/2024/02/Color-Variation-Orange-Block-I-White-Background.png",
+          "logo": [
+            "https://brand.illinois.edu/wp-content/uploads/2024/02/Color-Variation-Orange-Block-I-White-Background.png"
+          ],
           "site": "https://github.com/OpenAutoCoder/Agentless",
           "folder": "20241006_Agentless_claude3.5",
           "resolved": 6.19,
@@ -3119,7 +3545,9 @@
         },
         {
           "name": "RAG + GPT 4o (2024-08-06)",
-          "logo": "https://avatars.githubusercontent.com/u/139597579?s=200&v=4",
+          "logo": [
+            "https://avatars.githubusercontent.com/u/139597579?s=200&v=4"
+          ],
           "site": "https://github.com/SWE-bench/SWE-bench",
           "folder": "20241006_RAG_gpt4o",
           "resolved": 6.0,
@@ -3137,7 +3565,9 @@
         },
         {
           "name": "RAG + Claude 3.5 Sonnet",
-          "logo": "https://avatars.githubusercontent.com/u/139597579?s=200&v=4",
+          "logo": [
+            "https://avatars.githubusercontent.com/u/139597579?s=200&v=4"
+          ],
           "site": "https://github.com/SWE-bench/SWE-bench",
           "folder": "20241006_RAG_claude3.5",
           "resolved": 5.03,
@@ -3155,7 +3585,9 @@
         },
         {
           "name": "Agentless + GPT 4o (2024-08-06)",
-          "logo": "https://brand.illinois.edu/wp-content/uploads/2024/02/Color-Variation-Orange-Block-I-White-Background.png",
+          "logo": [
+            "https://brand.illinois.edu/wp-content/uploads/2024/02/Color-Variation-Orange-Block-I-White-Background.png"
+          ],
           "site": "https://github.com/OpenAutoCoder/Agentless",
           "folder": "20241006_Agentless_gpt4o",
           "resolved": 3.09,

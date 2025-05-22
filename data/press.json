@@ -1,5 +1,12 @@
 [
     {
+        "title": "PyTorch Expert Exchange: Towards Autonomous Language Model Systems",
+        "link": "https://www.youtube.com/watch?v=yAQw77juYSg",
+        "date": "2025-05-21",
+        "source": "PyTorch",
+        "video": true
+    },
+    {
         "title": "How to build a better AI benchmark",
         "link": "https://www.technologyreview.com/2025/05/08/1116192/how-to-build-a-better-ai-benchmark/",
         "date": "2025-05-08",
