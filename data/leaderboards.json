@@ -411,7 +411,7 @@
       "name": "Verified",
       "results": [
         {
-          "name": "CORTEXA",
+          "name": "Nemotron-CORTEXA",
           "logo": [
             "https://research.nvidia.com/labs/adlr/images/nvidia-ai.jpg"
           ],
@@ -447,7 +447,7 @@
           "logo": [
             "https://aime-coder-lgtm.github.io/image-host/aime-icon.png"
           ],
-          "site": null,
+          "site": "https://github.com/SWE-bench/experiments/blob/main/evaluation/verified/20250514_aime_coder/README.md",
           "folder": "20250514_aime_coder",
           "resolved": 66.4,
           "date": "2025-05-14",
@@ -721,9 +721,9 @@
           "warning": null
         },
         {
-          "name": "CORTEXA",
+          "name": "Nemotron-CORTEXA",
           "logo": [
-            "https://s3.amazonaws.com/cms.ipressroom.com/219/files/20149/544a6120f6091d588d000048_NVLogo_2D_H/NVLogo_2D_H_0b8ebd28-4ba6-403f-864b-f5b4712a5ad6-prv.jpg"
+            "https://research.nvidia.com/labs/adlr/images/nvidia-ai.jpg"
           ],
           "site": "https://research.nvidia.com/labs/adlr/cortexa/",
           "folder": "20250410_cortexa",
@@ -735,8 +735,15 @@
           "os_system": false,
           "checked": true,
           "tags": [
+            "Model: NV-EmbedCode",
             "Model: claude-3-5-sonnet-20241022",
             "Model: deepseek-v3",
+            "Model: o3-mini",
+            "Model: gpt-4o-2024-05-13",
+            "Model: gpt-4-turbo-2024-04-09",
+            "Model: Qwen/Qwen2.5-72B-Instruct",
+            "Model: meta-llama/Llama-3.1-405B-Instruct",
+            "Model: meta-llama/Llama-3.3-70B-Instruct",
             "Org: NVIDIA",
             "System: Attempts - 2+"
           ],
