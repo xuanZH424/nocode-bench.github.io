@@ -6,6 +6,8 @@
 
 # SWE-bench Website
 
+[![CC BY-NC 4.0][cc-by-nc-shield]][cc-by-nc]
+
 The SWE-bench website for leaderboards and project information.
 
 ## Table of Contents
