@@ -1157,7 +1157,7 @@
           "logs": "s3://swe-bench-experiments/verified/20250405_swe-rizzo_claude37/logs",
           "trajs": "s3://swe-bench-experiments/verified/20250405_swe-rizzo_claude37/trajs",
           "os_model": false,
-          "os_system": true,
+          "os_system": false,
           "checked": false,
           "tags": [
             "System: Attempts - 2+"
