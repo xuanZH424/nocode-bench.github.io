@@ -48,8 +48,8 @@ The site is statically generated and can be hosted on GitHub Pages or any other 
 
 ### Prerequisites
 
-- Python 3.6 or higher
-- `pip` for installing Python packages
+- Python 3.8 or higher
+- [`uv`](https://docs.astral.sh/uv/getting-started/installation/) for Python package management
 
 ### Installation
 
@@ -59,13 +59,7 @@ The site is statically generated and can be hosted on GitHub Pages or any other 
    cd swe-bench.github.io
    ```
 
-2. Create and activate a virtual environment:
-   ```bash
-   make venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
-
-3. Install required packages:
+2. Install dependencies (uv will automatically create and manage the virtual environment):
    ```bash
    make install
    ```
@@ -110,7 +104,7 @@ The site is statically generated and can be hosted on GitHub Pages or any other 
 │   ├── tableByYear.js   # Year filter functionality
 │   └── viewer.js        # Results viewer functionality
 ├── Makefile             # Automation for common tasks
-├── requirements.txt     # Python dependencies
+├── pyproject.toml      # Python project configuration and dependencies
 └── templates/           # Jinja2 templates
     ├── base.html        # Base template with common structure
     ├── _leaderboard_table.html  # Reusable leaderboard table component
