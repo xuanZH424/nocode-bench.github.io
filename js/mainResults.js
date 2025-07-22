@@ -60,7 +60,7 @@ function renderLeaderboardTable (leaderboard) {
                                             <div class="model-badges">
                                                 ${item.date >= "2025-04-25" ? '<span>🆕</span>' : ''}
                                                 ${item.oss ? '<span>🤠</span>' : ''}
-                                                ${item.checked ? '<span title="The agent run was performed by or directly verified by the SWE-bench team">✅</span>' : ''}
+                                                ${item.checked ? '<span title="The agent run was performed by or directly verified by the Nocode-bench team">✅</span>' : ''}
                                             </div>
                                             <span class="model-name font-mono fw-medium">${item.name}</span>
                                         </div>
@@ -285,6 +285,6 @@ document.addEventListener('DOMContentLoaded', function () {
         const tabName = hash.charAt(0).toUpperCase() + hash.slice(1)
         openLeaderboard(tabName)
     } else {
-        openLeaderboard('verified')
+        openLeaderboard('Verified')
     }
 })

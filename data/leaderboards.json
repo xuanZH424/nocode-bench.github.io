@@ -18,7 +18,8 @@
           "os_system": false,
           "checked": true,
           "tags": [
-            ""
+            "Model: DeepSeek-v3",
+            "Org: Agentless"
           ],
           "warning": null
         },
@@ -37,7 +38,8 @@
           "os_system": false,
           "checked": true,
           "tags": [
-            ""
+            "Model: GPT-4o",
+            "Org: Agentless"
           ],
           "warning": null
         },
@@ -56,7 +58,8 @@
           "os_system": false,
           "checked": true,
           "tags": [
-            ""
+            "Model: Qwen3-235B",
+            "Org: Agentless"
           ],
           "warning": null
         }
@@ -80,7 +83,8 @@
           "os_system": false,
           "checked": true,
           "tags": [
-            ""
+            "Model: Claude-4-Sonnet",
+            "Org: OpenHands"
           ],
           "warning": null
         },
@@ -99,7 +103,8 @@
           "os_system": false,
           "checked": true,
           "tags": [
-            ""
+            "Model: Claude-4-Sonnet",
+            "Org: Agentless"
           ],
           "warning": null
         },
@@ -118,7 +123,8 @@
           "os_system": false,
           "checked": true,
           "tags": [
-            ""
+            "Model: DeepSeek-v3",
+            "Org: Agentless"
           ],
           "warning": null
         },
@@ -137,7 +143,8 @@
           "os_system": false,
           "checked": true,
           "tags": [
-            ""
+            "Model: DeepSeek-R1",
+            "Org: Agentless"
           ],
           "warning": null
         },
@@ -156,7 +163,8 @@
           "os_system": false,
           "checked": true,
           "tags": [
-            ""
+            "Model: Qwen3-235B",
+            "Org: Agentless"
           ],
           "warning": null
         },
@@ -175,7 +183,8 @@
           "os_system": false,
           "checked": true,
           "tags": [
-            ""
+            "Model: Gemini-2.5-Pro",
+            "Org: Agentless"
           ],
           "warning": null
         },
@@ -194,7 +203,8 @@
           "os_system": false,
           "checked": true,
           "tags": [
-            ""
+            "Model: GPT-4o",
+            "Org: Agentless"
           ],
           "warning": null
         },
@@ -213,7 +223,8 @@
           "os_system": false,
           "checked": true,
           "tags": [
-            ""
+            "Model: DeepSeek-v3",
+            "Org: OpenHands"
           ],
           "warning": null
         },
@@ -232,7 +243,8 @@
           "os_system": false,
           "checked": true,
           "tags": [
-            ""
+            "Model: DeepSeek-R1",
+            "Org: OpenHands"
           ],
           "warning": null
         },
@@ -251,7 +263,8 @@
           "os_system": false,
           "checked": true,
           "tags": [
-            ""
+            "Model: Qwen3-235B",
+            "Org: OpenHands"
           ],
           "warning": null
         },
@@ -270,7 +283,8 @@
           "os_system": false,
           "checked": true,
           "tags": [
-            ""
+            "Model: GPT-4o",
+            "Org: OpenHands"
           ],
           "warning": null
         },
@@ -289,7 +303,8 @@
           "os_system": false,
           "checked": true,
           "tags": [
-            ""
+            "Model: Gemini-2.5-Pro",
+            "Org: OpenHands"
           ],
           "warning": null
         }
