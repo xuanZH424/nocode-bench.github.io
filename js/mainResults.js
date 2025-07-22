@@ -9,26 +9,26 @@ const statusToNaturalLanguage = {
     'applied': 'Patch Applied',
     'test_errored': 'Test Errored',
     'test_timeout': 'Test Timed Out',
-    'resolved': 'Resolved'
+    'success': 'Success',
 }
 
 // Store loaded leaderboards to avoid re-rendering
-const loadedLeaderboards = new Set();
-let leaderboardData = null;
+const loadedLeaderboards = new Set()
+let leaderboardData = null
 
-function loadLeaderboardData() {
+function loadLeaderboardData () {
     if (!leaderboardData) {
-        const dataScript = document.getElementById('leaderboard-data');
+        const dataScript = document.getElementById('leaderboard-data')
         if (dataScript) {
-            leaderboardData = JSON.parse(dataScript.textContent);
+            leaderboardData = JSON.parse(dataScript.textContent)
         }
     }
-    return leaderboardData;
+    return leaderboardData
 }
 
-function renderLeaderboardTable(leaderboard) {
-    const container = document.getElementById('leaderboard-container');
-    
+function renderLeaderboardTable (leaderboard) {
+    const container = document.getElementById('leaderboard-container')
+
     // Create table content
     const tableHtml = `
         <div class="tabcontent active" id="leaderboard-${leaderboard.name}">
@@ -37,7 +37,7 @@ function renderLeaderboardTable(leaderboard) {
                     <thead>
                         <tr>
                             <th>Model</th>
-                            <th>% Resolved</th>
+                            <th>% Success</th>
                             <th>Org</th>
                             <th>Date</th>
                             <th>Logs</th>
@@ -47,8 +47,8 @@ function renderLeaderboardTable(leaderboard) {
                     </thead>
                     <tbody>
                         ${leaderboard.results
-                            .filter(item => !item.warning)
-                            .map(item => `
+            .filter(item => !item.warning)
+            .map(item => `
                                 <tr
                                     data-os_model="${item.os_model ? 'true' : 'false'}"
                                     data-os_system="${item.os_system ? 'true' : 'false'}"
@@ -65,7 +65,7 @@ function renderLeaderboardTable(leaderboard) {
                                             <span class="model-name font-mono fw-medium">${item.name}</span>
                                         </div>
                                     </td>
-                                    <td><span class="number fw-medium text-primary">${parseFloat(item.resolved).toFixed(2)}</span></td>
+                                    <td><span class="number fw-medium text-primary">${parseFloat(item.success).toFixed(2)}</span></td>
                                     <td>
                                         ${item.logo && item.logo.length > 0 ? `
                                             <div style="display: flex; align-items: center;">
@@ -94,196 +94,197 @@ function renderLeaderboardTable(leaderboard) {
                 </table>
             </div>
         </div>
-    `;
-    
-    container.innerHTML = tableHtml;
-    loadedLeaderboards.add(leaderboard.name);
+    `
+
+    container.innerHTML = tableHtml
+    loadedLeaderboards.add(leaderboard.name)
 }
 
-function updateLogViewer(inst_id, split, model) {
+function updateLogViewer (inst_id, split, model) {
     if (inst_id == 'No Instance Selected') {
-        const logViewer = document.querySelector('#log-viewer');
-        logViewer.innerHTML = 'No instance selected.';
-        return;
+        const logViewer = document.querySelector('#log-viewer')
+        logViewer.innerHTML = 'No instance selected.'
+        return
     }
-    const url = `https://raw.githubusercontent.com/swe-bench/experiments/main/evaluation/${split}/${model}/logs/${inst_id}.${model}.eval.log`;
+    const url = `https://raw.githubusercontent.com/swe-bench/experiments/main/evaluation/${split}/${model}/logs/${inst_id}.${model}.eval.log`
     fetch(url)
         .then(response => response.text())
         .then(data => {
-            const logViewer = document.querySelector('#log-viewer');
-            logViewer.innerHTML = '';
+            const logViewer = document.querySelector('#log-viewer')
+            logViewer.innerHTML = ''
 
-            const inst_p = document.createElement('p');
-            inst_p.textContent = `Instance ID: ${inst_id}`;
-            logViewer.appendChild(inst_p);
+            const inst_p = document.createElement('p')
+            inst_p.textContent = `Instance ID: ${inst_id}`
+            logViewer.appendChild(inst_p)
 
-            const pre = document.createElement('pre');
-            pre.textContent = data;
-            logViewer.appendChild(pre);
+            const pre = document.createElement('pre')
+            pre.textContent = data
+            logViewer.appendChild(pre)
         })
         .catch(error => {
-            console.error('Error fetching the JSON data:', error);
-        });
+            console.error('Error fetching the JSON data:', error)
+        })
 }
 
-function createTableHeader(keys, table) {
-    const headerRowWrapper = document.createElement('thead');
-    const headerRow = document.createElement('tr');
+function createTableHeader (keys, table) {
+    const headerRowWrapper = document.createElement('thead')
+    const headerRow = document.createElement('tr')
     for (const status of keys) {
-        const th = document.createElement('th');
-        th.textContent = statusToNaturalLanguage[status];
-        headerRow.appendChild(th);
+        const th = document.createElement('th')
+        th.textContent = statusToNaturalLanguage[status]
+        headerRow.appendChild(th)
     }
-    headerRowWrapper.appendChild(headerRow);
-    table.appendChild(headerRowWrapper);
+    headerRowWrapper.appendChild(headerRow)
+    table.appendChild(headerRowWrapper)
 }
 
-function createTableBody(data, split, model, keys, table) {
-    const bodyRowWrapper = document.createElement('tbody');
-    const bodyRow = document.createElement('tr');
+function createTableBody (data, split, model, keys, table) {
+    const bodyRowWrapper = document.createElement('tbody')
+    const bodyRow = document.createElement('tr')
     for (const status of keys) {
-        const td = document.createElement('td');
+        const td = document.createElement('td')
 
-        const ids = data[status].slice().sort();
+        const ids = data[status].slice().sort()
 
         ids.forEach(id => {
-            const div = document.createElement('div');
-            div.textContent = id;
+            const div = document.createElement('div')
+            div.textContent = id
             if (!(status === 'no_generation' || status === 'generated')) {
-                div.classList.add('instance');
-                div.classList.add(id);
+                div.classList.add('instance')
+                div.classList.add(id)
             } else {
-                div.classList.add('instance-not-clickable');
+                div.classList.add('instance-not-clickable')
             }
-            td.appendChild(div);
-        });
+            td.appendChild(div)
+        })
 
-        bodyRow.appendChild(td);
+        bodyRow.appendChild(td)
     }
-    bodyRowWrapper.appendChild(bodyRow);
-    table.appendChild(bodyRowWrapper);
+    bodyRowWrapper.appendChild(bodyRow)
+    table.appendChild(bodyRowWrapper)
 
     for (const status of keys) {
-        const ids = data[status].slice().sort();
+        const ids = data[status].slice().sort()
         ids.forEach(id => {
             if (!(status === 'no_generation' || status === 'generated')) {
-                const divs = document.getElementsByClassName(id);
+                const divs = document.getElementsByClassName(id)
                 Array.from(divs).forEach(div => {
                     div.addEventListener('click', () => {
-                        updateLogViewer(id, split, model);
-                    });
-                });
+                        updateLogViewer(id, split, model)
+                    })
+                })
             }
-        });
+        })
     }
 }
 
-function updateMainResults(split, model) {
-    const url = `https://raw.githubusercontent.com/swe-bench/experiments/main/evaluation/${split}/${model}/results/results.json`;
+function updateMainResults (split, model) {
+    const url = `https://raw.githubusercontent.com/swe-bench/experiments/main/evaluation/${split}/${model}/results/results.json`
     fetch(url)
         .then(response => response.json())
         .then(data => {
-            if (data && data.resolved) {
-                const resolved = data.resolved.length;
-                const total = 
-                    split === 'lite' ? 300 : 
-                    split === 'verified' ? 500 : 
-                    split === 'multimodal' ? 517 : 2294;
-                const percentResolved = (resolved / total * 100).toFixed(2);
-                const resolvedElement = document.getElementById('selectedResolved');
-                resolvedElement.textContent = percentResolved;
+            if (data && data.success) {
+                const success = data.success.length
+                const total =
+                    split === 'lite' ? 300 :
+                        split === 'verified' ? 500 :
+                            split === 'multimodal' ? 517 : 2294
+                const percentSuccess = (success / total * 100).toFixed(2)
+                const successElement = document.getElementById('selectedSuccess')
+                successElement.textContent = percentSuccess
             } else {
-                console.error('Invalid results data format:', data);
-                document.getElementById('selectedResolved').textContent = 'N/A';
+                console.error('Invalid results data format:', data)
+                document.getElementById('selectedSuccess').textContent = 'N/A'
             }
         })
         .catch(error => {
-            console.error('Error fetching the results data:', error);
-            document.getElementById('selectedResolved').textContent = 'Error';
-        });
+            console.error('Error fetching the results data:', error)
+            document.getElementById('selectedSuccess').textContent = 'Error'
+        })
 }
 
-function openLeaderboard(leaderboardName) {
-    const data = loadLeaderboardData();
-    if (!data) return;
-    
+function openLeaderboard (leaderboardName) {
+    const data = loadLeaderboardData()
+
+    if (!data) return
+
     // Find the leaderboard data
-    const leaderboard = data.find(lb => lb.name === leaderboardName);
-    if (!leaderboard) return;
-    
+    const leaderboard = data.find(lb => lb.name === leaderboardName)
+    if (!leaderboard) return
+
     // Render the table if not already loaded
     if (!loadedLeaderboards.has(leaderboardName)) {
-        renderLeaderboardTable(leaderboard);
+        renderLeaderboardTable(leaderboard)
     } else {
         // Just show the existing table
-        const container = document.getElementById('leaderboard-container');
-        const existingTable = container.querySelector(`#leaderboard-${leaderboardName}`);
+        const container = document.getElementById('leaderboard-container')
+        const existingTable = container.querySelector(`#leaderboard-${leaderboardName}`)
         if (existingTable) {
             // Hide all other tables and show this one
             container.querySelectorAll('.tabcontent').forEach(content => {
-                content.classList.remove('active');
-            });
-            existingTable.classList.add('active');
+                content.classList.remove('active')
+            })
+            existingTable.classList.add('active')
         } else {
             // Re-render if somehow missing
-            renderLeaderboardTable(leaderboard);
+            renderLeaderboardTable(leaderboard)
         }
     }
-    
+
     // Update tab button states
-    const tablinks = document.querySelectorAll('.tablinks');
-    tablinks.forEach(link => link.classList.remove('active'));
-    
-    const activeButton = document.querySelector(`.tablinks[data-leaderboard="${leaderboardName}"]`);
+    const tablinks = document.querySelectorAll('.tablinks')
+    tablinks.forEach(link => link.classList.remove('active'))
+
+    const activeButton = document.querySelector(`.tablinks[data-leaderboard="${leaderboardName}"]`)
     if (activeButton) {
-        activeButton.classList.add('active');
+        activeButton.classList.add('active')
     }
-    
+
     // Apply current filters to the newly displayed table
     if (typeof updateTable === 'function') {
-        setTimeout(updateTable, 0);
+        setTimeout(updateTable, 0)
     }
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-    const currentPath = window.location.pathname;
-    const currentPage = currentPath.split('/').pop().split('.')[0] || 'index';
-    
-    const navLinks = document.querySelectorAll('.nav-link');
+document.addEventListener('DOMContentLoaded', function () {
+    const currentPath = window.location.pathname
+    const currentPage = currentPath.split('/').pop().split('.')[0] || 'index'
+
+    const navLinks = document.querySelectorAll('.nav-link')
     navLinks.forEach(link => {
-        const linkPage = link.getAttribute('data-page');
-        
-        link.classList.remove('active');
-        
+        const linkPage = link.getAttribute('data-page')
+
+        link.classList.remove('active')
+
         if (linkPage === currentPage) {
-            link.classList.add('active');
+            link.classList.add('active')
         }
-        
+
         if (currentPage === 'index' && window.location.hash) {
-            const currentHash = window.location.hash.substring(1);
-            
-            if (linkPage === currentHash && !['lite', 'verified', 'test', 'multimodal'].includes(currentHash.toLowerCase())) {
-                link.classList.add('active');
+            const currentHash = window.location.hash.substring(1)
+
+            if (linkPage === currentHash && !['verified', 'test'].includes(currentHash.toLowerCase())) {
+                link.classList.add('active')
             }
         }
-    });
-    
-    const tabLinks = document.querySelectorAll('.tablinks');
+    })
+
+    const tabLinks = document.querySelectorAll('.tablinks')
     tabLinks.forEach(tab => {
-        tab.addEventListener('click', function() {
-            const leaderboardType = this.getAttribute('data-leaderboard');
-            openLeaderboard(leaderboardType);
-        });
-    });
-    
-    // Load initial tab based on hash or default to Lite
-    const hash = window.location.hash.slice(1).toLowerCase();
-    const validTabs = ['lite', 'verified', 'test', 'multimodal'];
-    
+        tab.addEventListener('click', function () {
+            const leaderboardType = this.getAttribute('data-leaderboard')
+            openLeaderboard(leaderboardType)
+        })
+    })
+
+    // Load initial tab based on hash or default to Verified
+    const hash = window.location.hash.slice(1).toLowerCase()
+    const validTabs = ['verified', 'test']
+
     if (hash && validTabs.includes(hash)) {
-        const tabName = hash.charAt(0).toUpperCase() + hash.slice(1);
-        openLeaderboard(tabName);
+        const tabName = hash.charAt(0).toUpperCase() + hash.slice(1)
+        openLeaderboard(tabName)
     } else {
-        openLeaderboard('Lite');
+        openLeaderboard('verified')
     }
-});
+})
