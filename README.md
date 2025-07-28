@@ -4,13 +4,13 @@
   </a>
 </p>
 
-# SWE-bench Website
+# Nocode-bench Website
 
-The SWE-bench website for leaderboards and project information.
+The Nocode-bench website for leaderboards and project information.
 
 ## Table of Contents
 
-- [SWE-bench Website](#swe-bench-website)
+- [Nocode-bench Website](#nocode-bench-website)
   - [Table of Contents](#table-of-contents)
   - [Overview](#overview)
   - [Getting Started](#getting-started)
@@ -34,7 +34,7 @@ The SWE-bench website for leaderboards and project information.
 
 ## Overview
 
-This is the codebase for the [SWE-bench website](https://www.swebench.com), which showcases leaderboards for the SWE-bench benchmark. SWE-bench tests systems' ability to solve GitHub issues automatically.
+This is the codebase for the [Nocode-bench website](https://www.swebench.com), which showcases leaderboards for the Nocode-bench benchmark. Nocode-bench tests systems' ability to solve GitHub issues automatically.
 
 The site is built using:
 - Jinja2 for HTML templating
@@ -56,7 +56,7 @@ The site is statically generated and can be hosted on GitHub Pages or any other 
 1. Clone this repository:
    ```bash
    git clone https://github.com/swe-bench/swe-bench.github.io.git
-   cd swe-bench.github.io
+   cd nocode-bench.github.io
    ```
 
 2. Install dependencies (uv will automatically create and manage the virtual environment):
@@ -160,7 +160,7 @@ The leaderboard data follows a specific flow from JSON to rendered HTML:
    
    # Passed to templates during rendering
    html = tpl.render(
-       title="SWE-bench", 
+       title="Nocode-bench", 
        leaderboards=leaderboards["leaderboards"]
    )
    ```

@@ -1,5 +1,5 @@
 [project]
-name = "swe-bench-website"
+name = "nocode-bench-website"
 readme = "README.md"
 version = "0"
 license = { file = "LICENSE" }
