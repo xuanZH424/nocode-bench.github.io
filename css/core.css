@@ -16,72 +16,72 @@
   
   /* Colors - Modern palette */
   --black: #000000;
-  --white: #f8f8f8;
-  --gray-50: #f9fafb;
-  --gray-100: #f3f4f6;
-  --gray-200: #e5e7eb;
-  --gray-300: #d1d5db;
-  --gray-400: #9ca3af;
-  --gray-500: #6b7280;
-  --gray-600: #4b5563;
-  --gray-700: #374151;
-  --gray-800: #1f2937;
-  --gray-900: #111827;
+  --white: #ffffff;
+  --gray-50: #fafcfd;
+  --gray-100: #f2f5f7;
+  --gray-200: #e4e9ec;
+  --gray-300: #d1d9df;
+  --gray-400: #a3b0bd;
+  --gray-500: #748494;
+  --gray-600: #4e5d6d;
+  --gray-700: #374553;
+  --gray-800: #222e3a;
+  --gray-900: #121a23;
+
+  --blue-50: #f0f9ff;
+  --blue-100: #e0f2fe;
+  --blue-200: #bae6fd;
+  --blue-300: #7dd3fc;
+  --blue-400: #38bdf8;
+  --blue-500: #0ea5e9;
+  --blue-600: #0284c7;
+  --blue-700: #0369a1;
+  --blue-800: #075985;
+  --blue-900: #0c4a6e;
   
-  --blue-50: #eff6ff;
-  --blue-100: #dbeafe;
-  --blue-200: #bfdbfe;
-  --blue-300: #93c5fd;
-  --blue-400: #60a5fa;
-  --blue-500: #3b82f6;
-  --blue-600: #2563eb;
-  --blue-700: #1d4ed8;
-  --blue-800: #1e40af;
-  --blue-900: #1e3a8a;
-  
-  --green-50: #ecfdf5;
-  --green-100: #d1fae5;
-  --green-500: #10b981;
-  --green-600: #059669;
+  --green-50: #f0fdf4;
+  --green-100: #dcfce7;
+  --green-500: #22c55e;
+  --green-600: #16a34a;
   
   --red-50: #fef2f2;
   --red-100: #fee2e2;
-  --red-500: #ef4444;
-  --red-600: #dc2626;
-  
+  --red-500: #f43f5e;
+  --red-600: #e11d48;
+
   --yellow-50: #fffbeb;
   --yellow-100: #fef3c7;
   --yellow-500: #f59e0b;
-  --yellow-600: #d97706;
-  
+  --yellow-600: #d97706;  
+
   /* Semantic colors */
-  --color-background: var(--white);
-  --color-background-alt: var(--gray-50);
-  --color-sidebar: var(--white);
-  --color-sidebar-accent: #fddeb1;
-  --color-header: #1697E2;
+  --color-background: var(--gray-50);
+  --color-background-alt: var(--white);
+  --color-sidebar: #f0f7ff;
+  --color-sidebar-accent: #c2e0ff;
+  --color-header: #0c4a6e;
   --color-text: var(--gray-900);
   --color-text-secondary: var(--gray-600);
   --color-text-muted: var(--gray-500);
   --color-link: var(--blue-600);
   --color-link-hover: var(--blue-700);
-  --color-border: var(--gray-200);
+  --color-border: var(--gray-300);
   --color-accent: var(--blue-600);
-  --color-accent-light: var(--blue-50);
-  --color-accent-dark: var(--blue-700);
-  --color-success: var(--green-500);
+  --color-accent-light: var(--blue-100);
+  --color-accent-dark: var(--blue-800);
+  --color-success: var(--green-600);
   --color-success-light: var(--green-50);
-  --color-danger: var(--red-500);
+  --color-danger: var(--red-600);
   --color-danger-light: var(--red-50);
   --color-warning: var(--yellow-500);
   --color-warning-light: var(--yellow-50);
-  --color-sweagent: #fff7ec;
-  
+  --color-sweagent: #eef9ff;
+
   /* Table colors */
-  --table-header-bg: var(--gray-100);
-  --table-row-hover: var(--gray-50);
-  --table-border: var(--gray-200);
-  
+  --table-header-bg: var(--blue-50);
+  --table-row-hover: var(--blue-100);
+  --table-border: var(--gray-200);  
+
   /* Typography */
   --font-primary: 'DM-Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   --font-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
